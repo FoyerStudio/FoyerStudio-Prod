@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ✅ Title & Description -->
+  <title>Foyer Studio™ — Order Payment</title>
+  <meta name="description" content="Foyer Studio™ is one of the best online boutiques in Kerala, offering elegant women's clothing in Kasaragod, Manjeshwar, and Kunjathur. Shop timeless fashion that inspires confidence and style. Visit foyerstudio.in or contact fashion@foyerstudio.in.">
+
+  <!-- ✅ Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- ✅ Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #fefef6;
+      color: #731a2f;
+      text-align: center;
+      padding: 40px 20px;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+
+    h2 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: #6d2f2d;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #731a2f;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+
+
+    .frame {
+      display: inline-block;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-top: 20px;
+      max-width: 400px;
+      width: 100%;
+      animation: fadeIn 0.6s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .qr-img {
+      width: 100%;
+      max-width: 240px;
+      height: auto;
+      border: 2px solid #eee;
+      border-radius: 8px;
+      margin: 15px auto;
+      display: block;
+    }
+
+    .message {
+      font-size: 1em;
+      margin: 10px 0 20px;
+    }
+
+    .apps {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .apps img {
+      height: 30px;
+      object-fit: contain;
+    }
+
+    .upi-section {
+      margin-top: 15px;
+    }
+
+
+.upi-pay-btn {
+  display: inline-block;
+  background-color: #731a2f;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  max-width: 280px;
+  transition: all 0.1s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.upi-pay-btn:hover {
+  background-color: #7d3f3d;
+  transform: translateY(2px);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.upi-pay-btn:active {
+  transform: translateY(3px);
+  box-shadow: inset 0 3px 6px rgba(0,0,0,0.3);
+}
+
+
+.sub-header {
+  font-size: 1.3rem;      /* Bigger than normal text but smaller than h2 */
+  color: #6d2f2d;
+  font-weight: 500;
+  margin-top: 6px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+
+
+
+    .upi-text {
+      margin-top: 12px;
+      font-size: 0.95em;
+      color: #555;
+      word-break: break-word;
+    }
+
+    .upi-id-text {
+      font-weight: bold;
+      color: #731a2f;
+    }
+
+    .close-btn {
+      display: block;
+      margin: 30px auto 0;
+      background: #731a2f;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 24px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background 0.3s;
+      width: 100%;
+      max-width: 280px;
+    }
+
+    .close-btn:hover {
+      background: #7d3f3d;
+    }
+
+    /* ✅ Responsive adjustments */
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 10px;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      .frame {
+        padding: 20px;
+      }
+
+      .upi-pay-btn, .close-btn {
+        font-size: 1em;
+        padding: 12px 20px;
+      }
+
+      .apps img {
+        height: 26px;
+      }
+
+      .message {
+        font-size: 0.95em;
+      }
+    }
+  </style>
+</head>
+<body>
+ <h2 id="orderHeader">Foyer Studio-Order Payment</h2>
+<div id="subHeader" class="sub-header"></div>
+
+
+
+  <div class="frame" id="frame">
+    <p class="message" id="loadingMsg">Loading payment details…</p>
+  </div>
+
+  <button class="close-btn" onclick="closeTab()">Close</button>
+
+ <script>
+  function copyToClipboard(text) {
+    // copy silently without alert
+    navigator.clipboard.writeText(text).catch(err => console.error("Failed to copy!", err));
+  }
+
+ async function initPayment() {
+  const params = new URLSearchParams(window.location.search);
+  const valueParam = params.get("value"); // get single param
+
+  if (!valueParam) {
+    document.getElementById("frame").innerHTML = "<p>Missing payment details.</p>";
+    return;
+  }
+
+  // Split value into orderId and amount
+  const [orderIdRaw, amountRaw] = valueParam.split("-");
+  const orderId = orderIdRaw || "";
+  const amount = Number(amountRaw);
+
+  // Update sub-header dynamically with Order ID and Amount
+  const subHeader = document.getElementById("subHeader");
+  if (orderId && amount) {
+    subHeader.textContent = `Order ${orderId} — ₹${amount}`;
+  } else if (orderId) {
+    subHeader.textContent = `Order ${orderId}`;
+  } else if (amount) {
+    subHeader.textContent = `Amount: ₹${amount}`;
+  }
+
+  if (!amount || isNaN(amount) || amount <= 0) {
+    document.getElementById("frame").innerHTML = "<p>Invalid amount.</p>";
+    return;
+  }
+
+  try {
+    const res = await fetch(`/.netlify/functions/createUpiLink?amount=${amount}`);
+    const data = await res.json();
+
+    if (!data.upiLink) {
+      document.getElementById("frame").innerHTML = "<p>Could not generate payment link.</p>";
+      return;
+    }
+
+    const qrAPI = `https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=${encodeURIComponent(data.upiLink)}`;
+    const upiID = data.upiLink.split('?pa=')[1].split('&')[0].replace('%40', '@');
+
+    document.getElementById("frame").innerHTML = `
+      <img class="qr-img" id="qrImg" src="${qrAPI}" alt="UPI QR Code" />
+      <p class="message">Scan this QR code using any UPI app</p>
+      <p class="message">OR</p>
+      <button class="upi-pay-btn" style="margin-top:10px;" onclick="downloadQR()">Download QR Code</button>
+      
+      <div class="apps">
+        <img src="images/gpay.png" alt="GPay">
+        <img src="images/phonepe.png" alt="PhonePe">
+        <img src="images/paytm.png" alt="Paytm">
+        <img src="images/amazon.png" alt="Amazon Pay">
+      </div>
+
+      <hr style="border:none; border-top:1px solid #eee; margin:25px 0;">
+
+      <p class="message">Or use the UPI ID below</p>
+
+      <div class="upi-section">
+        <p class="upi-text" style="display:flex; justify-content:center; align-items:center; gap:8px;">
+          <span class="upi-id-text">${upiID}</span>
+          <button class="upi-pay-btn" style="padding:4px 10px; font-size:0.85em; width:auto;" onclick="copyToClipboard('${upiID}')">Copy</button>
+        </p>
+      </div>
+    `;
+  } catch (err) {
+    console.error(err);
+    document.getElementById("frame").innerHTML = "<p>Error generating payment link.</p>";
+  }
+}
+
+
+  async function downloadQR() {
+    const qrImg = document.getElementById("qrImg");
+
+    // fetch the image as blob
+    const res = await fetch(qrImg.src);
+    const blob = await res.blob();
+
+    // create object URL
+    const url = URL.createObjectURL(blob);
+
+    // create hidden anchor element to trigger download
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "upi_qr_code.png";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  }
+
+  initPayment();
+</script>
+
+
+</body>
+</html>

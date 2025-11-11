@@ -1,0 +1,1537 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <script src="https://mercury.phonepe.com/web/bundle/checkout.js"></script>
+    <meta charset="UTF-8">
+    <title>Foyer Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo_red.png">
+
+    <style>
+      /* --- General Styles --- */
+  body { margin:0; font-family:'Arial',sans-serif; background:#fefef6; color:#731a2f; }
+    /* --- Banner --- */
+     /* --- Banner --- */
+   .banner {
+    width: 100%;
+    min-height: 80px;              /* taller since text goes below */
+    display: flex;
+    flex-direction: column;        /* ✅ stack logo and text vertically */
+    align-items: center;           /* center horizontally */
+    justify-content: center;       /* center vertically */
+    font-weight: bold;
+    background: #fefef6;           /* optional */
+    color: #731a2f;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.0em;
+    border-bottom: 3px solid #731a2f;
+    z-index: 1000;
+    gap: 6px;                      /* space between logo and text */
+  }
+
+  .banner-logo {
+    height: 2.5em;                 /* a bit bigger so logo stands out */
+    width: auto;                   /* keep aspect ratio */
+    display: block;                /* ensure it's treated as block */
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 14px;
+    background: #fefef6;
+    position: relative;
+    z-index: 1200;
+    border-bottom: 2px solid #731a2f; /* 👈 add this line */
+  }
+
+  .nav button {
+    background: transparent;
+    border: 0;
+    color: #731a2f;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all .22s ease;
+  }
+
+  .nav button:hover, .nav button.active {
+    background: #731a2f;
+    color: #fff;
+  }
+  .main {
+    padding: 1px 15px 40px 15px; /* top 20px, right 15px, bottom 40px, left 15px */
+    margin-top: 2px;            /* Space to push content below fixed banner + nav */
+    text-align: center;           /* Center-align text inside main */
+  }
+
+  h1 { margin:10px 0; font-size:1.5em; color:#731a2f; font-family:'Georgia',serif; letter-spacing:1.5px; position:relative; display:inline-block; padding-bottom:6px; }
+  h1::after { content:""; display:block; width:50%; margin:6px auto 0; border-bottom:2px solid #731a2f; border-radius:2px; }
+  .cart-list { display:flex; flex-direction:column; gap:15px; margin-top:20px; }
+  .cart-item { display:flex; align-items:center; justify-content:space-between; border:1px solid #d4af37; border-radius:8px; padding:10px; background:#fefef6; }
+  .cart-info { display:flex; align-items:center; cursor:pointer; flex:1; }
+  .cart-info:hover { opacity:0.85; }
+  .cart-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid #731a2f;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 12px;
+    flex-wrap: wrap; /* allow wrapping for small screens */
+  }
+
+  .cart-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #731a2f;
+  }
+
+  .cart-details {
+    flex: 1; /* take up remaining space */
+    margin-left: 10px;
+    text-align: left;
+    min-width: 200px; /* enough room for long names */
+  }
+
+  .cart-details .name {
+    font-size: 16px;
+    font-weight: bold;
+    word-wrap: break-word; /* break long names */
+  }
+
+  .cart-details .size,
+  .cart-details .color,
+  .cart-details .price {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+
+  /* Right section (qty + delete) */
+  .cart-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: auto;
+  }
+
+  /* Quantity buttons */
+  .qty-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .qty-group button {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: none;
+    background: #731a2f;
+    color: #fefef6;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  /* Responsive fix: stack actions below on mobile */
+  @media (max-width: 600px) {
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .cart-actions {
+      margin-left: 0;
+      margin-top: 10px;
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }
+
+  #cartnote { text-align: left; }
+
+
+  .qty-btn { background:#731a2f; color:#fefef6; border:none; width:28px; height:28px; border-radius:50%; cursor:pointer; font-weight:bold; font-size:16px; display:flex; align-items:center; justify-content:center; }
+  .qty-btn:disabled { background:#666; color:#999; cursor:not-allowed; }
+  .qty { min-width:24px; text-align:center; font-size:14px; }
+  .delete-btn { background:none; border:none; color:#731a2f; font-size:18px; cursor:pointer; }
+  .empty-msg { text-align:center; margin-top:40px; font-size:16px; color:#777; font-style:italic; }
+       /* Loader (Under Navigation Bar) */
+      .loader {
+        position: relative;
+        width: 100%;
+        height: 2px;
+        background: transparent;
+        display: none;
+      }
+      .loader .bar {
+        height: 100%;
+        width: 0;
+        background: #731a2f;
+        box-shadow: 0 0 8px #731a2f, 0 0 15px #731a2f;
+        animation: loadingAnim 5s linear infinite;
+      }
+      @keyframes loadingAnim {
+        0%   { width: 0; margin-left: 0; }
+        50%  { width: 60%; margin-left: 20%; }
+        100% { width: 0; margin-left: 100%; }
+      }
+
+
+          .mobile-row {
+              display: flex;
+              gap: 10px; /* horizontal gap between mobile input and button */
+              width: 100%;
+              max-width: 350px;
+          }
+
+          input {
+              padding: 10px;
+              border-radius: 5px;
+              border: 1px solid #d4af37;
+              background: #111;
+              color: #d4af37;
+              font-size: 14px;
+          }
+
+          .mobile-row input {
+              flex: 1;
+          }
+
+        
+
+          #otpSection {
+              display: none;
+  	    margin-top: 20px;
+              flex-direction: column;
+              gap: 10px;
+              align-items: center;
+          }
+
+
+
+
+          #otpSection input{
+  width:100%; padding:8px; border:1px solid #731a2f; border-radius:6px; font-size:14px; background:#fefef6; color:#731a2f; 
+
+  }
+   #otpSection button {
+              margin-top:20px; background:#731a2f; color:#fefef6; border:none; padding:12px 30px; font-size:16px; border-radius:8px; font-weight:bold; cursor:pointer; width:100%;
+          }
+
+          #recaptcha-container {
+              margin: 10px auto;
+              width: fit-content;
+          }
+
+
+
+
+  .toast {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #731a2f;
+    color: #fefef6;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;   /* ✅ center align multi-line text */
+    max-width: 90%;       /* ✅ prevent going outside screen */
+    word-wrap: break-word;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 2000;
+  }
+  .toast.show {
+    opacity: 1;
+  }
+
+  .place-order-btn { margin:25px auto 0 auto; display:block; background:#731a2f; color:#fefef6; border:none; padding:12px 30px; font-size:16px; border-radius:8px; font-weight:bold; cursor:pointer; }
+  .place-order-btn:hover { opacity:0.9; }
+  .order-form { margin-top:25px; text-align:left; max-width:400px; margin-left:auto; margin-right:auto; display:none; }
+  .order-form label { display:block; margin:10px 0 5px; font-weight:bold; font-size:14px; }
+  .order-form input, .order-form select { width:100%; padding:8px; border:1px solid #731a2f; border-radius:6px; font-size:14px; background:#fefef6; color:#731a2f; }
+  .order-form button { margin-top:20px; background:#731a2f; color:#fefef6; border:none; padding:12px 30px; font-size:16px; border-radius:8px; font-weight:bold; cursor:pointer; width:100%; }
+  .order-form button:hover { opacity:0.9; }
+  .cart-item .cart-details .name,
+  .cart-item .cart-details .size,
+  .cart-item .cart-details .color,
+  .cart-item .cart-details .price {
+      padding-left: 10px; /* Add desired space */
+  }
+  @media screen and (max-width:600px) {
+    .cart-actions {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; /* delete button on right */
+      align-items: center;            /* vertical alignment */
+    }
+    .qty-group {
+      display: flex;
+      gap: 8px;                       /* keeps - [qty] + buttons together */
+    }
+  }
+
+  #cartHeader {
+      font-size: 16px;
+      padding: 5px 10px;
+      border-bottom: 1px solid #ccc;
+      background: #eeeede;
+      border-radius: 8px 8px 0 0;
+  }
+
+  #cartValue {
+      font-weight: bold;
+      color: #731a2f; /* matches your theme */
+  }
+
+
+  /* Confirm Order Button Loading State */
+  #confirmOrderBtn.loading {
+    position: relative;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+
+  #confirmOrderBtn.loading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fefef6;
+    border-top-color: transparent;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: translateY(-50%) rotate(360deg);
+    }
+  }
+
+  /* Confirm Order Button Loading State */
+  #sendOtpBtn.loading {
+    position: relative;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+
+  #sendOtpBtn.loading::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #fefef6;
+    border-top-color: transparent;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    animation: spin 0.8s linear infinite;
+  }
+
+  @keyframes spin {
+    to {
+      transform: translateY(-50%) rotate(360deg);
+    }
+  }
+
+  .payment-options {
+  display: flex;
+  width: 100%;
+  margin-bottom: 8px;
+  font-family: Poppins, sans-serif;
+  gap: 50px;
+  margin-left: 85px;
+}
+
+.payment-options input[type="radio"] {
+  display: none;
+}
+
+.payment-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  color: #731a2f;
+  transition: color 0.25s ease;
+}
+
+/* Create custom circle */
+.payment-options label::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border: 2px solid #731a2f;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+/* When checked */
+.payment-options input[type="radio"]:checked + label::before {
+  background-color: #731a2f;
+  box-shadow: inset 0 0 0 4px #fff;
+}
+
+/* Optional hover effect */
+.payment-options label:hover::before {
+  border-color: #a12c48;
+}
+
+
+
+
+
+
+  </style>
+  </head>
+  <body>
+
+  <div class="banner">
+    <img src="images/logo_red.png" alt="Foyer Studio Logo" class="banner-logo">
+    Foyer Studio
+  </div>
+
+  <div class="nav">
+    <button onclick="goToIndex('shopping')">Continue Shopping</button>
+    <button class="active">Cart</button>
+  </div>
+   <div id="loader" class="loader">
+      <div class="bar"></div>
+    </div>
+
+  <div class="main">
+    <h1>Your Cart</h1>
+  <div id="cartHeader" style="display:flex; justify-content: space-between; align-items:center; margin-bottom:10px;">
+      <div><strong>Cart Summary</strong></div>
+      <div id="cartValue">Cart Value: ₹0</div>
+  </div>
+    <div id="cartList" class="cart-list" style="display:none;"></div>
+  <div id="cartnote" style="color:#731a2f; font-size:0.9rem; margin-top:4px; display:none;">
+  <b>Note: </b>All the orders are processed only after the payment is completed.
+  </div>
+
+    <button id="placeOrderBtn" class="place-order-btn" style="display:none;">Place Your Order</button>
+
+    <form id="orderForm" class="order-form">
+
+
+
+
+
+
+    <label for="coupon">Coupon Codes</label>
+   <select id="coupon" name="coupon">
+      <option value=""></option>
+  </select>
+
+  <div id="couponNote" style="color:#731a2f; font-size:0.9rem; margin-top:4px;"></div>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+
+    <label for="address1">Address Line 1</label>
+    <input type="text" id="address1" name="address1">
+
+    <label for="address2">Address Line 2</label>
+    <input type="text" id="address2" name="address2">
+
+    <label for="city">City</label>
+    <input type="text" id="city" name="city">
+
+    <label for="state">State</label>
+    <input type="text" id="state" name="state">
+
+    <label for="country">Country</label>
+    <input type="text" id="country" name="country">
+
+    <label for="pin">Pin</label>
+  <input type="text" id="pin" name="pin" maxlength="6">
+
+
+   <label for="email">Mail ID</label>
+    <input type="email" id="email" name="email">
+
+
+
+   	<label for="mobile">Mobile Number</label>
+  	<input type="text" id="mobile" name="mobile" value="+91" maxlength="13">
+    <div id="timerText" style="margin-top:8px;color:#731a2f;font-family:Poppins;"></div>
+
+  <div class="payment-options">
+    <input type="radio" id="payNow" name="paymentOption" value="payNow" checked>
+    <label for="payNow">Pay Now</label>
+
+    <input type="radio" id="payLater" name="paymentOption" value="payLater">
+    <label for="payLater">Pay Later</label>
+  </div>
+
+
+
+
+        <button type="button" id="sendOtpBtn">Proceed</button>
+   	
+  	<div id="otpSection">
+              <input type="text" id="otp" placeholder="Enter OTP" maxlength="6">
+  	     <button type="button" id="confirmOrderBtn">Confirm Order</button>
+          </div>
+
+          <div id="recaptcha-container"></div>
+
+
+ </form>
+  <p id="emptyMsg" class="empty-msg" style="display:none;">Your cart is empty.</p>
+</div>
+  <div id="toast" class="toast"></div>
+
+
+
+  <!-- Include Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script type="module">
+
+  // ------------------ Firebase Config ------------------
+  const firestoreConfig = {
+    apiKey: "AIzaSyAjlHBB46moYAuus9aNb_ZYD_C-duqf7lM",
+    authDomain: "foyerstudio-6fa35.firebaseapp.com",
+    projectId: "foyerstudio-6fa35",
+    storageBucket: "foyerstudio-6fa35.firebasestorage.app",
+    messagingSenderId: "406213917569",
+    appId: "1:406213917569:web:aba9885f5815cba0f18680",
+    measurementId: "G-DSFEHX0LTM"
+  };
+
+  firebase.initializeApp(firestoreConfig);
+  const db = firebase.firestore();
+
+  // ------------------ Fetch Inventory from Firestore ------------------
+  async function fetchInventoryFromFirestore(cart) {
+    try {
+      if (!cart || cart.length === 0) return [];
+
+      // Get just the codes from the cart
+      const codes = cart.map(item => item.code);
+
+      // Firestore allows max 10 items per `in` query
+      const chunks = [];
+      for (let i = 0; i < codes.length; i += 10) {
+        chunks.push(codes.slice(i, i + 10));
+      }
+
+      let inventory = [];
+      for (const chunk of chunks) {
+        const snapshot = await db.collection("Inventory")
+          .where(firebase.firestore.FieldPath.documentId(), "in", chunk)
+          .get();
+
+        snapshot.forEach(doc => {
+          inventory.push({ code: doc.id, ...doc.data() });
+        });
+      }
+
+      return inventory;
+    } catch (error) {
+      console.error("Error fetching inventory from Firestore:", error);
+      return [];
+    }
+  }
+
+
+  async function fetchCouponsFromFirestore() {
+    try {
+      const snapshot = await db.collection("CouponCode")
+        .where("status", "==", "ACTIVE") // only active coupons
+        .get();
+
+      const coupons = [];
+      snapshot.forEach(doc => {
+        const data = doc.data();
+        // Exclude coupons whose 'code' field matches any in excludedCodes
+          coupons.push({ code: data.code, ...data });
+      });
+
+      return coupons;
+    } catch (error) {
+      console.error("Error fetching coupons from Firestore:", error);
+      return [];
+    }
+  }
+
+
+
+
+  // ------------------ Global Variables ------------------
+  const cartList = document.getElementById("cartList");
+  const emptyMsg = document.getElementById("emptyMsg");
+  const loader = document.getElementById("loader");
+  const placeOrderBtn = document.getElementById("placeOrderBtn");
+  const orderForm = document.getElementById("orderForm");
+  const confirmOrderBtn = document.getElementById("confirmOrderBtn");
+  const couponSelect = document.getElementById('coupon');
+  const couponNote = document.getElementById('couponNote');
+
+  let inventoryMap = {};
+  let currentCoupon = null; // stores selected coupon details
+
+  // ------------------ Helper Functions ------------------
+  function getUserCart() {
+    return JSON.parse(localStorage.getItem('cart') || "[]");
+  }
+
+  function saveUserCart(cart) {
+    localStorage.setItem('cart', JSON.stringify(cart));
+  }
+
+  window.goToIndex = (tab)=>{ window.location.href=`index.html?tab=${tab}`; }
+  window.goToProduct = (code) => {
+    const lowerCode = (code || "").toLowerCase();
+    if (lowerCode.includes("pf")) {
+      window.location.href = `fragrance-details.html?code=${code}`;
+    } else {
+      window.location.href = `shopping-details.html?code=${code}`;
+    }
+  };
+
+  window.updateQty = (code, change)=>{
+    let cart = getUserCart();
+    const item = cart.find(i=>i.code===code);
+    if(!item) return;
+    const maxStock = inventoryMap[code]||1;
+    item.quantity = Math.max(1, Math.min(maxStock, item.quantity+change));
+    saveUserCart(cart);
+    renderCart();
+  };
+
+  window.removeItem = (code)=>{
+    let cart = getUserCart();
+    cart = cart.filter(i=>i.code!==code);
+    saveUserCart(cart);
+    renderCart();
+  };
+
+  function showToast(msg){
+    const t=document.getElementById("toast");
+    t.textContent=msg;
+    t.classList.add("show");
+    setTimeout(()=>t.classList.remove("show"),3000);
+  }
+
+ function showPopup(message, onOk) {
+  return new Promise((resolve) => {
+    const popup = document.getElementById("customPopup");
+    const msg = document.getElementById("popupMessage");
+    const btn = document.getElementById("popupOk");
+
+    // Set HTML content (support <br>)
+    msg.innerHTML = message;
+    popup.style.display = "flex";
+
+    btn.onclick = () => {
+      popup.style.display = "none";
+      if (onOk) onOk(); // optional callback
+      resolve(); // resolve promise so next popup can show
+    };
+  });
+}
+
+
+  function showLoader(){ 
+    loader.style.display="block"; 
+    cartList.style.display="none"; 
+    cartnote.style.display = "none";
+    emptyMsg.style.display="none"; 
+    placeOrderBtn.style.display="none"; 
+    orderForm.style.display="none";
+  }
+
+  function hideLoader(){ loader.style.display="none"; }
+
+  // ------------------ Render Cart with Discounts and Cart Value ------------------
+  let totalCartValue = 0;
+  function renderCart() {
+    totalCartValue = 0;
+      let cart = getUserCart();
+      cartList.innerHTML = "";
+
+      if (cart.length === 0) {
+          emptyMsg.style.display = "block";
+          cartList.style.display = "none";
+          cartnote.style.display = "none";
+          placeOrderBtn.style.display = "none";
+          orderForm.style.display = "none";
+          document.getElementById("cartValue").textContent = "₹0";
+          return;
+      } else {
+          emptyMsg.style.display = "none";
+          cartList.style.display = "flex";
+          cartnote.style.display = "block";
+          if(orderForm.style.display!=="block"){
+            placeOrderBtn.style.display = "block";
+          }
+          
+      }
+
+      
+
+      cart.forEach(item => {
+          const maxStock = inventoryMap[item.code] || 1;
+          const displaySize = (item.size && item.size !== '#N/A') ? item.size : '-';
+          const showColor = !(item.code || "").toLowerCase().includes("pf");
+          const displayColor = showColor && item.color && item.color !== '#N/A' ? item.color : '';
+
+          // --- Apply Coupon Discount ---
+          let originalPrice = Number(item.price || 0);
+          let discountedPrice = originalPrice;
+
+          if(currentCoupon){
+              const applicableProductsRaw = currentCoupon.products || "No Products";
+              const applicableProducts = applicableProductsRaw === "All Products"
+                  ? ["All Products"]
+                  : applicableProductsRaw.split(",").map(p => p.trim());
+
+              if(currentCoupon.code.includes("FLAT")){
+                  if(applicableProducts.includes("All Products") || applicableProducts.includes(item.code)){
+                      discountedPrice = Math.max(0, originalPrice - Number(currentCoupon.discInPct || 0));
+                  }
+              } else { // percentage
+                  if(applicableProducts.includes("All Products") || applicableProducts.includes(item.code)){
+                      discountedPrice = Math.max(0, originalPrice * (1 - (Number(currentCoupon.discInPct || 0)/100)));
+                  }
+              }
+          }
+
+          // Round off discounted price
+          discountedPrice = Math.round(discountedPrice);
+          totalCartValue += discountedPrice * item.quantity;
+
+          const priceHtml = discountedPrice !== originalPrice
+              ? `<span style="text-decoration:line-through; color:#777;">₹${originalPrice}</span> ₹${discountedPrice}`
+              : `₹${originalPrice}`;
+
+          const div = document.createElement("div");
+          div.className = "cart-item";
+          div.innerHTML = `
+              <div class="cart-info" onclick="goToProduct('${item.code}')">
+                 <img src="images/products/${item.code}/1.jpg" alt="${item.name}" loading="lazy" />
+                  <div class="cart-details">
+                      <div class="name">${item.name}</div>
+                      <div class="size-price" style="display: flex; gap: 5px; align-items: center; margin-top: 5px;">
+                          <div class="size"><strong>Size:</strong> ${displaySize}</div>
+                          ${displayColor ? `<div class="color"><strong>Color:</strong> ${displayColor}</div>` : ''}
+                          <div class="price"><strong>Price:</strong> ${priceHtml}</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="cart-actions">
+                  <div class="qty-group">
+                      <button class="qty-btn" onclick="updateQty('${item.code}',-1)" ${item.quantity <= 1 ? "disabled" : ""}>-</button>
+                      <span class="qty">${item.quantity}</span>
+                      <button class="qty-btn" onclick="updateQty('${item.code}',1)" ${item.quantity >= maxStock ? "disabled" : ""}>+</button>
+                  </div>
+                  <button class="delete-btn" onclick="removeItem('${item.code}')">🗑</button>
+              </div>
+          `;
+          cartList.appendChild(div);
+      });
+
+      // Update Cart Value
+  document.getElementById("cartValue").textContent = `Cart Value: ₹${totalCartValue}`;
+  }
+
+
+  // ------------------ Load Coupons ------------------
+  async function loadCoupons() {
+    try {
+      const data = await fetchCouponsFromFirestore();
+      couponSelect.innerHTML = '<option value="">--Select Coupon--</option>';
+      data.forEach(coupon => {
+        const option = document.createElement('option');
+        option.value = coupon.code;
+        option.textContent = coupon.code;
+        couponSelect.appendChild(option);
+      });
+    } catch (error) {
+      console.error('Failed to load coupons:', error);
+      showToast('Could not load coupons');
+    }
+  }
+
+
+  // ------------------ Coupon Select Listener ------------------
+  couponSelect.addEventListener('change', async () => {
+    const value = couponSelect.value;
+
+    if (!value) {
+      couponNote.textContent = "";
+      currentCoupon = null;
+    } else {
+      try {
+        const allCoupons = await fetchCouponsFromFirestore();
+        const selected = allCoupons.find(c => c.code === value);
+        currentCoupon = selected || null;
+
+        if (!currentCoupon) {
+          couponNote.textContent = "Coupon not found!";
+        } else if (currentCoupon.code.includes("FLAT")) {
+          couponNote.textContent = "Code is applied only for applicable products.";
+        } else {
+          couponNote.textContent = "Coupon code applied.";
+        }
+      } catch (err) {
+        console.error("Coupon fetch error:", err);
+        showToast("Error applying coupon");
+      }
+    }
+
+    renderCart();
+  });
+
+  // ------------------ Load Cart ------------------
+  async function loadCart(){
+    showLoader();
+    try{
+      let cart = getUserCart();
+      const inv = await fetchInventoryFromFirestore(cart);
+      inv.forEach(i => inventoryMap[i.code] = Number(i.inStock) || 0);
+
+      let updatedCart = cart.filter(i=>inventoryMap[i.code]>0);
+      if(updatedCart.length!==cart.length){
+        saveUserCart(updatedCart);
+        showToast("Some items removed due to out of stock");
+      }
+      renderCart();
+    } catch(e){ console.error(e);}
+    hideLoader();
+    loadCoupons();
+  }
+
+  // ------------------ Place & Confirm Order ------------------
+  placeOrderBtn.addEventListener("click", ()=>{
+    orderForm.style.display="block"; 
+    placeOrderBtn.style.display="none";
+  });
+
+  // ------------------ OTP Verification ------------------
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+  import { getAuth, RecaptchaVerifier, signInWithPhoneNumber } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
+
+  const firebaseConfigAuth = {
+      apiKey: "AIzaSyDBz_g68B0q51UmQ_vCIXqlUdTx4eaKwLs",
+      authDomain: "foyerstudioorderplacement.firebaseapp.com",
+      projectId: "foyerstudioorderplacement",
+      storageBucket: "foyerstudioorderplacement.firebasestorage.app",
+      messagingSenderId: "458864509421",
+      appId: "1:458864509421:web:fe0368613d321ea8a167e4"
+  };
+
+  const app = initializeApp(firebaseConfigAuth);
+  const auth = getAuth();
+
+  const mobileInput = document.getElementById("mobile");
+  const sendOtpBtn = document.getElementById("sendOtpBtn");
+  const otpSection = document.getElementById("otpSection");
+  const otpInput = document.getElementById("otp");
+  const confirmOtpBtn = document.getElementById("confirmOrderBtn");
+  const toast = document.getElementById("toast");
+
+  let recaptchaVerifier;
+  let confirmationResult;
+
+  mobileInput.addEventListener("input", () => {
+      if (!mobileInput.value.startsWith("+91")) { mobileInput.value = "+91"; }
+      let digits = mobileInput.value.replace("+91", "").replace(/\D/g, "");
+      mobileInput.value = "+91" + digits.substring(0, 10);
+  });
+
+  window.onload = () => {
+      recaptchaVerifier = new RecaptchaVerifier('recaptcha-container', {
+          'size': 'invisible',
+          'callback': () => sendOTP(),
+          'expired-callback': () => showToast("reCAPTCHA expired. Please try again.")
+      }, auth);
+  };
+
+  let countdown; // store interval
+  const timerText = document.getElementById("timerText");
+
+
+  function startOtpTimer(duration = 60) {
+      let timeLeft = duration;
+
+      sendOtpBtn.disabled = true;
+      sendOtpBtn.style.opacity = "0.6";
+      sendOtpBtn.style.cursor = "not-allowed";
+
+      timerText.textContent = `Resend OTP in ${timeLeft}s`;
+
+      countdown = setInterval(() => {
+          timeLeft--;
+          if (timeLeft <= 0) {
+              clearInterval(countdown);
+              timerText.textContent = "";
+              sendOtpBtn.disabled = false;
+              sendOtpBtn.style.opacity = "1";
+              sendOtpBtn.style.cursor = "pointer";
+              sendOtpBtn.textContent = "Proceed";
+          } else {
+              timerText.textContent = `Resend OTP in ${timeLeft}s`;
+          }
+      }, 1000);
+  }
+
+  function sendOTP() {
+      const mobile = mobileInput.value.trim();
+      otpInput.value = "";
+
+      if (!/^\+91\d{10}$/.test(mobile)) {
+          showToast("Enter valid 10 digit mobile number");
+          clearInterval(countdown);
+          sendOtpBtn.disabled = false;
+          sendOtpBtn.style.opacity = "1";
+          sendOtpBtn.style.cursor = "pointer";
+          timerText.textContent = "";
+          return;
+      }
+
+      // Proceed to send OTP (after disabling button)
+      signInWithPhoneNumber(auth, mobile, recaptchaVerifier)
+          .then(result => {
+              confirmationResult = result;
+              showToast("OTP sent successfully!");
+              otpSection.style.display = "flex";
+          })
+          .catch(err => {
+              console.error("OTP Error:", err);
+              showToast(`Error sending OTP: ${err.code}`);
+
+              // 🧠 Re-enable early if OTP fails
+              clearInterval(countdown);
+              timerText.textContent = "";
+              sendOtpBtn.disabled = false;
+              sendOtpBtn.style.opacity = "1";
+              sendOtpBtn.style.cursor = "pointer";
+          });
+  }
+
+  sendOtpBtn.addEventListener("click", async () => { // ✅ add async here
+
+const paymentOption = document.querySelector('input[name="paymentOption"]:checked').value;
+var paymentData=[];
+if (paymentOption === "payNow") {
+  try{
+
+if (!validateOrderForm()) return;
+
+    // Disable + show spinner
+    const originalText = sendOtpBtn.textContent;
+    sendOtpBtn.classList.add("loading");
+    sendOtpBtn.textContent = "Processing...";
+    sendOtpBtn.style.cursor = "not-allowed";
+    
+
+     const cart = getUserCart();
+      const latestInventory = await fetchInventoryFromFirestore(cart);
+
+       filteredCart = cart.filter(item => {
+        const invItem = latestInventory.find(i => i.code.toString().trim() === item.code.toString().trim());
+        if (!invItem) return false;
+        const availableQty = (invItem.totalStock || 0) - (invItem.sold || 0);
+        return availableQty > 0;
+      });
+
+      if (filteredCart.length !== cart.length) {
+        showPopup("⚠️ Some items went out of stock. Please refresh and place the order again.", () => location.reload());
+        return;
+      } 
+     
+   
+      
+
+      const totalAmount = totalCartValue * 100; // amount in paise
+      const merchantOrderId = "FS" + Date.now();
+
+      showToast("Redirecting to PhonePe Checkout...");
+       paymentData =await startPhonePePayment(totalAmount, merchantOrderId);
+
+      if(paymentData.status==="CANCELLED"){
+        showPopup("Payment was cancelled. Please try again to complete your order.");
+        return;
+      }
+      else if(paymentData.status==="FAILED"){
+        showPopup("Payment failed. Please try again to complete your order or choose the Pay Later option.");
+        return;
+      }else if(paymentData.status==="PENDING"){
+        showPopup("Payment aborted as it is taking too long. Any money deducted will be refunded by your bank. Please try again or proceed with the Pay Later option.");
+        return;
+      }else if(paymentData.status==="COMPLETED"){
+        var transactionDetails="Payment Success!<br>Amount Received : ₹"+paymentData.amountPaid+"<br><br>";
+        var comment = 
+  "-Amount Received: " + String(paymentData.amountPaid) +"-"+
+  "Payment Mode: " + String(paymentData.paymentMode) +"-"+
+  "Transaction ID: " + String(paymentData.transactionId);
+
+        await placeOrder("Payment Received",comment,transactionDetails);
+        return;
+      }
+      
+  }catch(err){
+  console.log("Error :"+err.message);
+ showPopup("⚠️ Something went wrong. Please try again.");
+ return;
+  }
+  finally {
+      // Restore button state
+      sendOtpBtn.classList.remove("loading");
+      sendOtpBtn.textContent = "Proceed";
+      sendOtpBtn.style.cursor = "pointer";
+      return;
+    }
+}
+
+    if (!validateOrderForm()) return;
+
+      // Disable button immediately + start countdown
+      startOtpTimer(60);
+
+      // Trigger reCAPTCHA + send OTP
+      recaptchaVerifier.verify().then(() => {
+          sendOTP();
+          otpInput.style.display = "block";
+      confirmOrderBtn.style.display = "block";
+      }).catch(err => {
+          console.error("reCAPTCHA failed:", err);
+          showToast("reCAPTCHA verification failed. Try again.");
+          
+          // Re-enable if captcha fails
+          clearInterval(countdown);
+          timerText.textContent = "";
+          sendOtpBtn.disabled = false;
+          sendOtpBtn.style.opacity = "1";
+          sendOtpBtn.style.cursor = "pointer";
+      });
+  });
+
+
+  // Confirm Order Button Click
+  confirmOrderBtn.addEventListener("click", async () => {
+    const otp = otpInput.value.trim();
+    const paymentOption = document.querySelector('input[name="paymentOption"]:checked').value;
+    let paymentStatus;
+
+    if (paymentOption === "payLater") {
+      paymentStatus = "Payment Pending";
+    }
+
+    // Disable + show spinner
+    const originalText = confirmOrderBtn.textContent;
+    confirmOrderBtn.classList.add("loading");
+    confirmOrderBtn.textContent = "Processing...";
+    confirmOrderBtn.style.cursor = "not-allowed";
+
+    try {
+      // Validate OTP format
+      if (!/^\d{6}$/.test(otp)) {
+        showToast("Enter 6 digit OTP");
+        return;
+      }
+
+      // Verify OTP with Firebase
+      try {
+        const res = await confirmationResult.confirm(otp);
+        showToast("OTP verified successfully!");
+        console.log("User signed in:", res.user);
+      } catch (err) {
+        showPopup("Invalid or expired OTP. Please try again.");
+        confirmOrderBtn.disabled = false;
+        confirmOrderBtn.textContent = originalText;
+        confirmOrderBtn.style.opacity = "1";
+        confirmOrderBtn.style.cursor = "pointer";
+        return;
+      }
+
+      
+       const cart = getUserCart();
+      const latestInventory = await fetchInventoryFromFirestore(cart);
+
+       filteredCart = cart.filter(item => {
+        const invItem = latestInventory.find(i => i.code.toString().trim() === item.code.toString().trim());
+        if (!invItem) return false;
+        const availableQty = (invItem.totalStock || 0) - (invItem.sold || 0);
+        return availableQty > 0;
+      });
+
+      if (filteredCart.length !== cart.length) {
+        showPopup("⚠️ Some items went out of stock. Please refresh and place the order again.", () => location.reload());
+        return;
+      } 
+
+
+      // Call the separate placeOrder function
+      await placeOrder(paymentStatus,"","");
+
+    } catch (err) {
+      console.error("Error in confirmOrderBtn:", err);
+      showPopup("⚠️ Something went wrong. Please try again.");
+    } finally {
+      // Restore button state
+      confirmOrderBtn.classList.remove("loading");
+      confirmOrderBtn.textContent = "Confirm Order";
+      confirmOrderBtn.style.cursor = "pointer";
+    }
+  });
+
+
+
+  // ------------------ Init ------------------
+  loadCart();
+  loadCoupons();
+  let filteredCart = [];
+  // Function to handle form submission
+  async function placeOrder(paymentStatus, paymentData,transactionDetails) {
+  const coupon = document.getElementById("coupon").value;
+  const name = document.getElementById("name").value.trim();
+  const addr1 = document.getElementById("address1").value.trim();
+  const addr2 = document.getElementById("address2").value.trim();
+  const city = document.getElementById("city").value.trim();
+  const state = document.getElementById("state").value.trim();
+  const country = document.getElementById("country").value.trim();
+  const pin = document.getElementById("pin").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const mobilenumber = document.getElementById("mobile").value.trim();
+
+  console.log("🏷️ placeOrder called");
+  console.log("Payment Status:", paymentStatus);
+  console.log("Payment Data:", paymentData);
+  console.log("User Details:", { name, addr1, addr2, city, state, country, pin, email, mobilenumber });
+  console.log("Coupon:", coupon);
+  console.log("Cart Items:", filteredCart);
+
+  try {
+    const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdyj2y19S5FgMHMLTT63iFtXlld-fX5HfArhYY_sZQe8WVQqA/formResponse";
+    const formData = new FormData();
+
+    filteredCart.forEach((item, index) => {
+      console.log(`Adding item ${index} to form data:`, item);
+      if (index === 0) {
+        formData.append("entry.1453696170", "SID001");
+        formData.append("entry.2026604478", item.code);
+        formData.append("entry.1056003169", item.quantity);
+      } else if (index === 1) {
+        formData.append("entry.636124876", item.code);
+        formData.append("entry.852799381", item.quantity);
+      } else if (index === 2) {
+        formData.append("entry.467787359", item.code);
+        formData.append("entry.1763830691", item.quantity);
+      }
+    });
+
+    formData.append("entry.1456464645", coupon || "");
+    formData.append("entry.1258817351", paymentStatus);
+    formData.append("entry.124073182", name);
+    formData.append("entry.712788009", addr1);
+    formData.append("entry.353870055", addr2);
+    formData.append("entry.493343130", city);
+    formData.append("entry.1152010028", state);
+    formData.append("entry.558673369", country);
+    formData.append("entry.1379269", pin);
+    formData.append("entry.520881615", mobilenumber);
+    formData.append("entry.573063981", email);
+    formData.append("entry.1061102400", "Courier Delivery");
+    formData.append("entry.1509767842",paymentData);
+
+    console.log("Submitting form data to Google Forms...");
+
+    // Safe submission function
+    async function safeSubmit(url, formData, retries = 2, delay = 1000) {
+      for (let attempt = 0; attempt <= retries; attempt++) {
+        try {
+          console.log(`Form submission attempt ${attempt + 1}`);
+          const response = await fetch(url, {
+            method: "POST",
+            mode: "no-cors",
+            body: formData
+          });
+          console.log("Form submitted successfully (no-cors mode, can't verify response).");
+          return response;
+        } catch (err) {
+          console.warn(`Form submission failed (attempt ${attempt + 1}):`, err);
+          if (attempt === retries) throw err;
+          await new Promise(r => setTimeout(r, delay));
+        }
+      }
+    }
+
+    await safeSubmit(formUrl, formData, 3, 3000);
+
+    console.log("Clearing cart and updating UI...");
+    localStorage.removeItem('cart');
+    renderCart();
+    orderForm.style.display = "none";
+
+    showPopup(transactionDetails+"Order placed successfully! You’ll get a confirmation email soon.");
+    console.log("Order placed successfully.");
+
+  } catch (err) {
+    console.error("Error in placeOrder:", err);
+    showPopup("⚠️ Something went wrong. Please try again.");
+  }
+}
+
+
+
+const payNowRadio = document.getElementById("payNow");
+  payNowRadio.addEventListener("change", () => {
+    if (payNowRadio.checked) {
+      otpInput.style.display = "none";
+      confirmOrderBtn.style.display = "none";
+    }
+  });
+
+
+  function validateOrderForm() {
+      const coupon = document.getElementById("coupon").value;
+      const name = document.getElementById("name").value.trim();
+      const addr1 = document.getElementById("address1").value.trim();
+      const addr2 = document.getElementById("address2").value.trim();
+      const city = document.getElementById("city").value.trim();
+      const state = document.getElementById("state").value.trim();
+      const country = document.getElementById("country").value.trim();
+      const pin = document.getElementById("pin").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const mobile = document.getElementById("mobile").value.trim();
+
+      if (!name || !addr1 || !addr2 || !city || !state || !country || !pin || !mobile || !email) {
+          showToast("All fields are mandatory");
+          return false;
+      }
+      if (!/^\d{6}$/.test(pin)) { showToast("PIN must be 6 digit numeric"); return false; }
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { showToast("Enter valid email"); return false; }
+      if (!/^\+91\d{10}$/.test(mobile)) { showToast("Enter valid 10 digit mobile number"); return false; }
+
+      return true;
+  }
+
+
+  const SESSION_KEY = "visitorSession";
+  const LOCATION_KEY = "visitorLatLon";
+  let heartbeatTimer = null;
+  let lastActivityTime = Date.now();
+  let isTabActive = true;
+  const HEARTBEAT_INTERVAL = 15 * 1000; // 15 seconds
+  const INACTIVITY_LIMIT = 60 * 1000;   // 1 minute of inactivity
+
+  // --- Get or create session ID ---
+  function getSessionId() {
+      const now = Date.now();
+      let sessionData = null;
+      try { sessionData = JSON.parse(localStorage.getItem(SESSION_KEY)); } catch {}
+      if (sessionData && (now - sessionData.lastActive < 2 * 60 * 60 * 1000)) {
+          sessionData.lastActive = now;
+      } else {
+          sessionData = { id: Math.random().toString(36).substring(2, 10), lastActive: now };
+      }
+      localStorage.setItem(SESSION_KEY, JSON.stringify(sessionData));
+      return sessionData.id;
+  }
+
+  // --- Get GPS location (cached per session) ---
+  async function getGeoLocation() {
+      const cached = localStorage.getItem(LOCATION_KEY);
+      if (cached) return JSON.parse(cached);
+      if (!navigator.geolocation) return { lat: "unknown", lon: "unknown" };
+      try {
+          const pos = await new Promise((resolve, reject) => {
+              navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 10000 });
+          });
+          const coords = { lat: pos.coords.latitude, lon: pos.coords.longitude };
+          localStorage.setItem(LOCATION_KEY, JSON.stringify(coords));
+          return coords;
+      } catch {
+          return { lat: "unknown", lon: "unknown" };
+      }
+  }
+
+  // --- Get public IP ---
+  async function getPublicIP() {
+      try {
+          const res = await fetch("https://api.ipify.org?format=json");
+          const data = await res.json();
+          return data.ip || "unknown";
+      } catch {
+          return "unknown";
+      }
+  }
+
+  // --- Core function: Send visit or heartbeat ---
+  async function trackVisitor(type = "pageview") {
+      const sessionId = getSessionId();
+      const { lat, lon } = await getGeoLocation();
+      const ip = await getPublicIP();
+      const page = window.location.href;
+      const browser = navigator.userAgent;
+
+      const callbackName = "visitorCallback_" + Math.random().toString(36).substring(2, 10);
+      const url = new URL("https://script.google.com/macros/s/AKfycbw5tep2lIfqr0ITB_M2TQWSZ9aPXkXcK_0pX2eCL47AnEwuuQ-CIMzmTgkqsRSM6U29tw/exec");
+
+      url.searchParams.set("callback", callbackName);
+      url.searchParams.set("sessionId", sessionId);
+      url.searchParams.set("ip", ip);
+      url.searchParams.set("page", page);
+      url.searchParams.set("browser", browser);
+      url.searchParams.set("lat", lat);
+      url.searchParams.set("lon", lon);
+      url.searchParams.set("type", type);
+
+      window[callbackName] = function (data) {
+          console.log(`Visitor ${type}:`, data);
+          delete window[callbackName];
+          document.body.removeChild(script);
+      };
+
+      const script = document.createElement("script");
+      script.src = url.toString();
+      document.body.appendChild(script);
+
+      // reset heartbeat timing reference
+      lastActivityTime = Date.now();
+      resetHeartbeat(); 
+  }
+
+  // --- Heartbeat Control ---
+  function startHeartbeat() {
+      if (heartbeatTimer) return;
+      heartbeatTimer = setInterval(() => {
+          const now = Date.now();
+          const inactive = now - lastActivityTime > INACTIVITY_LIMIT;
+          if (!isTabActive || inactive) {
+              console.log("Heartbeat paused (inactive/tab hidden)");
+              stopHeartbeat();
+              return;
+          }
+          trackVisitor("heartbeat");
+      }, HEARTBEAT_INTERVAL);
+  }
+
+  function stopHeartbeat() {
+      if (heartbeatTimer) {
+          clearInterval(heartbeatTimer);
+          heartbeatTimer = null;
+      }
+  }
+
+  function resetHeartbeat() {
+      stopHeartbeat();
+      startHeartbeat();
+  }
+
+  // --- Activity tracking ---
+  function markActive() {
+      lastActivityTime = Date.now();
+      if (isTabActive && !heartbeatTimer) {
+          console.log("User active — restarting heartbeat");
+          startHeartbeat();
+      }
+  }
+
+  // --- Tab visibility ---
+  document.addEventListener("visibilitychange", () => {
+      isTabActive = !document.hidden;
+      if (isTabActive) {
+          console.log("Tab active again — resuming heartbeat");
+          markActive();
+      } else {
+          console.log("Tab hidden — stopping heartbeat");
+          stopHeartbeat();
+      }
+  });
+
+  // --- Detect user activity events ---
+  ["mousemove", "keydown", "scroll", "touchstart"].forEach(evt =>
+      window.addEventListener(evt, markActive)
+  );
+
+  // --- When page loads ---
+  window.addEventListener("DOMContentLoaded", async () => {
+      await trackVisitor("pageview"); // Always call on page load
+      startHeartbeat();               // Start interval heartbeat
+  });
+
+  // --- Stop heartbeat when leaving page ---
+  window.addEventListener("beforeunload", () => {
+      stopHeartbeat();
+  });
+
+  </script>
+
+
+  <!-- Custom Black & Gold Popup -->
+  <div id="customPopup" style="
+      display:none;
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,0.8);
+      justify-content:center;
+      align-items:center;
+      z-index:10000;
+      padding: 0 20px; /* ✅ breathing space on small screens */
+      box-sizing: border-box;
+  ">
+      <div style="
+          background:#fefef6;
+          color:#731a2f;
+          padding:25px 20px;  /* adjusted padding for small screens */
+          border-radius:12px;
+          text-align:center;
+          width:100%;         /* ✅ responsive */
+          max-width:320px;    /* ✅ don’t stretch too much */
+          margin:0 auto;
+          box-shadow: 0 0 15px #731a2f;
+          font-family: 'Arial', sans-serif;
+      ">
+          <p id="popupMessage" style="margin-bottom:20px; font-size:1.1em; line-height:1.4;">
+              Message goes here
+          </p>
+          <button id="popupOk" style="
+              background:#731a2f;
+              color:#fefef6;
+              padding:10px 25px;
+              font-size:1em;
+              border:none;
+              border-radius:8px;
+              cursor:pointer;
+              font-weight:bold;
+              transition:0.3s;
+          ">OK</button>
+      </div>
+  </div>
+
+
+  <style>
+  /* 🔲 Full-screen dimmed overlay */
+  .overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.3s ease;
+  }
+
+  /* 📦 PhonePe container (wide modal on desktop) */
+  .phonepe-container {
+    position: relative;
+    width: 95%;             /* ✅ take almost full width */
+    max-width: 1200px;      /* ✅ up to 1200px wide */
+    height: 90vh;           /* ✅ tall but not touching edges */
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.5);
+    animation: slideIn 0.4s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 🧾 Iframe */
+  .phonepe-frame {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  /* ❌ Close button */
+  .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    font-size: 24px;
+    font-weight: bold;
+    background: #fff;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    z-index: 10000;
+    transition: all 0.2s ease;
+  }
+  .close-btn:hover {
+    background: #eee;
+    transform: scale(1.05);
+  }
+
+  /* 📱 Mobile: true fullscreen */
+  @media (max-width: 768px) {
+    .phonepe-container {
+      width: 100%;
+      height: 100vh;
+      border-radius: 0;
+      max-width: none;
+    }
+    .close-btn {
+      background: rgba(255, 255, 255, 0.9);
+      top: 15px;
+      right: 15px;
+      font-size: 26px;
+    }
+  }
+
+  /* ✨ Slide-in animation */
+  @keyframes slideIn {
+    from {
+      transform: translateY(60px) scale(0.98);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+
+  </style>
+
+
+  <!-- 🌑 Overlay for PhonePe payment -->
+  <div id="overlay" class="overlay">
+    <div id="phonepeContainer" class="phonepe-container">
+      <button id="closeIframeBtn" class="close-btn">&times;</button>
+      <iframe id="phonepeFrame" class="phonepe-frame"></iframe>
+    </div>
+  </div>
+
+  <script src="cart.js"></script>
+
+  </body>
+  </html>

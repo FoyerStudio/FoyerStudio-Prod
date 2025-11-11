@@ -1,0 +1,922 @@
+[
+  {
+    "code": "FS0020WT000M",
+    "name": "Cotton Silk Suit",
+    "sellingPrice": 1099,
+    "spec": "This product is a women's kurti, designed in a white color with elegant embellishments. The kurti features delicate, small dotted embroidery throughout the fabric, providing subtle texture and visual interest. There is intricate floral embroidery near the neckline and the lower part of the kurti, adding a touch of sophistication and detail. The neckline is round-shaped and showcases vertically-aligned embroidered motifs. Both the sleeve cuffs and the hemline of the kurti are finished with white lace borders, enhancing its overall feminine and premium appearance. The adjacent piece of fabric in the image appears to be a matching dupatta or a part of the suit set, made from a light, striped material that complements the kurti. This style is ideal for elegant, semi-formal occasions or festive wear, emphasizing refined sophistication and classic beauty.",
+    "size": "M",
+    "color": "White",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear"
+  },
+  {
+    "code": "FS0001BL0000",
+    "name": "Malika Karachi Cotton Salwar Suit",
+    "sellingPrice": 649,
+    "spec": "100% Cotton Salwar Suits\n\n<b>Top</b> Pure Cotton with beautiful print neck pattern \n<b>Bottom</b> Pure Cotton \n<b>Dupatta</b> Pure Cotton with print \n\n<b>Top</b>- 2.25mtr \n<b>Bottom</b> - 2.25 mtr \n<b>Dupatta</b> - 2.25 mtr",
+    "size": "UnStitched",
+    "color": "Blue",
+    "type": "Daily Wear",
+    "tags": "UnStitched"
+  },
+  {
+    "code": "FS0002BR0000",
+    "name": "Malika Karachi Cotton Salwar Suit",
+    "sellingPrice": 649,
+    "spec": "100% Cotton Salwar Suits\n\n<b>Top</b> Pure Cotton with beautiful print neck pattern \n<b>Bottom</b> Pure Cotton \n<b>Dupatta</b> Pure Cotton with print \n\n<b>Top</b>- 2.25mtr \n<b>Bottom</b> - 2.25 mtr \n<b>Dupatta</b> - 2.25 mtr",
+    "size": "UnStitched",
+    "color": "Brown",
+    "type": "Daily Wear",
+    "tags": "UnStitched"
+  },
+  {
+    "code": "FS0005GR0000",
+    "name": "Zellbury Cotton Salwar Suits",
+    "sellingPrice": 649,
+    "spec": "100% Cotton Salwar Suits\n\n<b>Top</b> Pure Cotton with beautiful print neck pattern \n<b>Bottom</b> Pure Cotton \n<b>Dupatta</b> Pure Cotton with print \n\n<b>Top</b>- 2.25mtr \n<b>Bottom</b> - 2.25 mtr \n<b>Dupatta</b> - 2.25 mtr",
+    "size": "UnStitched",
+    "color": "Green",
+    "type": "Daily Wear",
+    "tags": "UnStitched"
+  },
+  {
+    "code": "FS0006BL0000",
+    "name": "Zellbury Cotton Salwar Suit",
+    "sellingPrice": 649,
+    "spec": "100% Cotton Salwar Suits\n\n<b>Top</b> Pure Cotton with beautiful print neck pattern \n<b>Bottom</b> Pure Cotton \n<b>Dupatta</b> Pure Cotton with print \n\n<b>Top</b>- 2.25mtr \n<b>Bottom</b> - 2.25 mtr \n<b>Dupatta</b> - 2.25 mtr",
+    "size": "UnStitched",
+    "color": "Blue",
+    "type": "Daily Wear",
+    "tags": "UnStitched"
+  },
+  {
+    "code": "FS0007PP0000",
+    "name": "Zellbury Cotton Salwar Suit",
+    "sellingPrice": 649,
+    "spec": "100% Cotton Salwar Suits\n\n<b>Top</b> Pure Cotton with beautiful print neck pattern \n<b>Bottom</b> Pure Cotton \n<b>Dupatta</b> Pure Cotton with print \n\n<b>Top</b>- 2.25mtr \n<b>Bottom</b> - 2.25 mtr \n<b>Dupatta</b> - 2.25 mtr",
+    "size": "UnStitched",
+    "color": "Purple",
+    "type": "Daily Wear",
+    "tags": "UnStitched"
+  },
+  {
+    "code": "FS0008BR0000",
+    "name": "Zellbury Cotton Salwar Suit",
+    "sellingPrice": 649,
+    "spec": "100% Cotton Salwar Suits\n\n<b>Top</b> Pure Cotton with beautiful print neck pattern \n<b>Bottom</b> Pure Cotton \n<b>Dupatta</b> Pure Cotton with print \n\n<b>Top</b>- 2.25mtr \n<b>Bottom</b> - 2.25 mtr \n<b>Dupatta</b> - 2.25 mtr",
+    "size": "UnStitched",
+    "color": "Brown",
+    "type": "Daily Wear",
+    "tags": "UnStitched"
+  },
+  {
+    "code": "FS0010BP0000",
+    "name": "Riwayat Lawn Suit",
+    "sellingPrice": 649,
+    "spec": "Lawn Suits\n\n<b>Top</b> Pure lawn with beautiful print neck pattern \n<b>Bottom</b> Pure lawn \n<b>Dupatta</b> Pure lawn with print \n\n<b>Top</b>- 2.25mtr \n<b>Bottom</b> - 2.25 mtr \n<b>Dupatta</b> - 2.25 mtr",
+    "size": "UnStitched",
+    "color": "Baby Pink",
+    "type": "Daily Wear",
+    "tags": "UnStitched"
+  },
+  {
+    "code": "FS0011PK000M",
+    "name": "Jaipur Gown Top",
+    "sellingPrice": 599,
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
+    "size": "M",
+    "color": "Pink",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0011PK000L",
+    "name": "Jaipur Gown Top",
+    "sellingPrice": 599,
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
+    "size": "L",
+    "color": "Pink",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0011PK00XL",
+    "name": "Jaipur Gown Top",
+    "sellingPrice": 599,
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
+    "size": "XL",
+    "color": "Pink",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0012BL000M",
+    "name": "Jaipur Gown Top",
+    "sellingPrice": 599,
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
+    "size": "M",
+    "color": "Blue",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0012BL000L",
+    "name": "Jaipur Gown Top",
+    "sellingPrice": 599,
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
+    "size": "L",
+    "color": "Blue",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0012BL00XL",
+    "name": "Jaipur Gown Top",
+    "sellingPrice": 599,
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
+    "size": "XL",
+    "color": "Blue",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0013MG000M",
+    "name": "Jaipur Gown top",
+    "sellingPrice": 599,
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
+    "size": "M",
+    "color": "Magenta",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0013MG000L",
+    "name": "Jaipur Gown Top",
+    "sellingPrice": 599,
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
+    "size": "L",
+    "color": "Magenta",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0013MG00XL",
+    "name": "Jaipur Gown Top",
+    "sellingPrice": 599,
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
+    "size": "XL",
+    "color": "Magenta",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0013MG0XXL",
+    "name": "Jaipur Gown Top",
+    "sellingPrice": 599,
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
+    "size": "XXL",
+    "color": "Magenta",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0014MR000M",
+    "name": "Jaipur Gown Top",
+    "sellingPrice": 599,
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
+    "size": "M",
+    "color": "Maroon",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0014MR000L",
+    "name": "Jaipur Gown Top",
+    "sellingPrice": 599,
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
+    "size": "L",
+    "color": "Maroon",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0014MR00XL",
+    "name": "Jaipur Gown Top",
+    "sellingPrice": 599,
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
+    "size": "XL",
+    "color": "Maroon",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0014MR0XXL",
+    "name": "Jaipur Gown Top",
+    "sellingPrice": 599,
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
+    "size": "XXL",
+    "color": "Maroon",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0015YL000M",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "M",
+    "color": "Yellow",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0015YL000L",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "L",
+    "color": "Yellow",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0015YL00XL",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "XL",
+    "color": "Yellow",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0016PK000M",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "M",
+    "color": "Pink",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0016PK000L",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "L",
+    "color": "Pink",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0016PK00XL",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "XL",
+    "color": "Pink",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0016PK0XXL",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "XXL",
+    "color": "Pink",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0017LV000M",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "M",
+    "color": "Lavender",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0017LV000L",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "L",
+    "color": "Lavender",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0017LV00XL",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "XL",
+    "color": "Lavender",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0017LV0XXL",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "XXL",
+    "color": "Lavender",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0018BL00XL",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "XL",
+    "color": "Blue",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0019HN000M",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "M",
+    "color": "Hazlnut",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0019HN000L",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "L",
+    "color": "Hazlnut",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0020WT0XXL",
+    "name": "Cotton Silk Suit",
+    "sellingPrice": 1099,
+    "spec": "This product is a women's kurti, designed in a white color with elegant embellishments. The kurti features delicate, small dotted embroidery throughout the fabric, providing subtle texture and visual interest. There is intricate floral embroidery near the neckline and the lower part of the kurti, adding a touch of sophistication and detail. The neckline is round-shaped and showcases vertically-aligned embroidered motifs. Both the sleeve cuffs and the hemline of the kurti are finished with white lace borders, enhancing its overall feminine and premium appearance. The adjacent piece of fabric in the image appears to be a matching dupatta or a part of the suit set, made from a light, striped material that complements the kurti. This style is ideal for elegant, semi-formal occasions or festive wear, emphasizing refined sophistication and classic beauty",
+    "size": "XXL",
+    "color": "White",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear"
+  },
+  {
+    "code": "FS0021YL000L",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "L",
+    "color": "Yellow",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0021YL00XL",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "XL",
+    "color": "Yellow",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0021YL0XXL",
+    "name": "Jaipur Cotton Suit",
+    "sellingPrice": 699,
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "size": "XXL",
+    "color": "Yellow",
+    "type": "Work & Casuals",
+    "tags": "Work & Casuals"
+  },
+  {
+    "code": "FS0022GR000L",
+    "name": "Pakistani Cotton  Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top With GPO Laces Attached \n\nCotton stitched pant \n\nPrinted Cotton dupatta\n",
+    "size": "L",
+    "color": "Green",
+    "type": "Daily Wear",
+    "tags": "Daily Wear"
+  },
+  {
+    "code": "FS0022GR00XL",
+    "name": "Pakistani Cotton  Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top With GPO Laces Attached \n\nCotton stitched pant \n\nPrinted Cotton dupatta",
+    "size": "XL",
+    "color": "Green",
+    "type": "Daily Wear",
+    "tags": "Daily Wear"
+  },
+  {
+    "code": "FS0022GR0XXL",
+    "name": "Pakistani Cotton  Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top With GPO Laces Attached \n\nCotton stitched pant \n\nPrinted Cotton dupatta",
+    "size": "XXL",
+    "color": "Green",
+    "type": "Daily Wear",
+    "tags": "Daily Wear"
+  },
+  {
+    "code": "FS0024PP0XXL",
+    "name": "Pakistani Cotton  Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top With GPO Laces Attached \n\nCotton stitched pant \n\nPrinted Cotton dupatta",
+    "size": "XXL",
+    "color": "Purple",
+    "type": "Daily Wear",
+    "tags": "Daily Wear"
+  },
+  {
+    "code": "FS0024PPXXXL",
+    "name": "Pakistani Cotton  Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top With GPO Laces Attached \n\nCotton stitched pant \n\nPrinted Cotton dupatta",
+    "size": "XXXL",
+    "color": "Purple",
+    "type": "Daily Wear",
+    "tags": "Daily Wear"
+  },
+  {
+    "code": "FS0029GR000M",
+    "name": "Vatican Silk Suit",
+    "sellingPrice": 1049,
+    "spec": "This product is ready to wear three-piece kurti suit material set designed for women. The set features a soft olive green color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:\n* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.\n* A matching plain bottom fabric in a similar olive green shade.\n* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
+    "size": "M",
+    "color": "Green",
+    "type": "Ethnic Wear",
+    "tags": "Ethnic Wear"
+  },
+  {
+    "code": "FS0029GR000L",
+    "name": "Vatican Silk Suit",
+    "sellingPrice": 1049,
+    "spec": "This product is ready to wear three-piece kurti suit material set designed for women. The set features a soft olive green color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:\n* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.\n* A matching plain bottom fabric in a similar olive green shade.\n* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
+    "size": "L",
+    "color": "Green",
+    "type": "Ethnic Wear",
+    "tags": "Ethnic Wear"
+  },
+  {
+    "code": "FS0029GR0XXL",
+    "name": "Vatican Silk Suit",
+    "sellingPrice": 1049,
+    "spec": "This product is ready to wear three-piece kurti suit material set designed for women. The set features a soft olive green color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:\n* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.\n* A matching plain bottom fabric in a similar olive green shade.\n* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
+    "size": "XXL",
+    "color": "Green",
+    "type": "Ethnic Wear",
+    "tags": "Ethnic Wear"
+  },
+  {
+    "code": "FS0030PK000M",
+    "name": "Vatican Silk Suit",
+    "sellingPrice": 1049,
+    "spec": "This product is an ready to wear three-piece kurti suit material set designed for women. The set features a pink color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:\n* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.\n* A matching plain bottom fabric in a similar pink shade.\n* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
+    "size": "M",
+    "color": "Pink",
+    "type": "Ethnic Wear",
+    "tags": "Ethnic Wear"
+  },
+  {
+    "code": "FS0030PK000L",
+    "name": "Vatican Silk Suit",
+    "sellingPrice": 1049,
+    "spec": "This product is an ready to wear three-piece kurti suit material set designed for women. The set features a pink color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:\n* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.\n* A matching plain bottom fabric in a similar pink shade.\n* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
+    "size": "L",
+    "color": "Pink",
+    "type": "Ethnic Wear",
+    "tags": "Ethnic Wear"
+  },
+  {
+    "code": "FS0030PK00XL",
+    "name": "Vatican Silk Suit",
+    "sellingPrice": 1049,
+    "spec": "This product is an ready to wear three-piece kurti suit material set designed for women. The set features a pink color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:\n* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.\n* A matching plain bottom fabric in a similar pink shade.\n* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
+    "size": "XL",
+    "color": "Pink",
+    "type": "Ethnic Wear",
+    "tags": "Ethnic Wear"
+  },
+  {
+    "code": "FS0030PK0XXL",
+    "name": "Vatican Silk Suit",
+    "sellingPrice": 1049,
+    "spec": "This product is an ready to wear three-piece kurti suit material set designed for women. The set features a pink color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:\n* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.\n* A matching plain bottom fabric in a similar pink shade.\n* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
+    "size": "XXL",
+    "color": "Pink",
+    "type": "Ethnic Wear",
+    "tags": "Ethnic Wear"
+  },
+  {
+    "code": "FS0031BK000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1199,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "size": "L",
+    "color": "Black",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0031BKXXXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1199,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "size": "XXXL",
+    "color": "Black",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0032PK000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1199,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tassels on slit with plain bottom and cotton dupatta.",
+    "size": "L",
+    "color": "Pink",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0033RD00XL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1199,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck and hand, tassels on slit with plain bottom and cotton dupatta.",
+    "size": "XL",
+    "color": "Red",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0034GR000L",
+    "name": "Pakistani Cotton Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
+    "size": "L",
+    "color": "Green",
+    "type": "Daily Wear",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0034GR00XL",
+    "name": "Pakistani Cotton Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
+    "size": "XL",
+    "color": "Green",
+    "type": "Daily Wear",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0034GR0XXL",
+    "name": "Pakistani Cotton Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
+    "size": "XXL",
+    "color": "Green",
+    "type": "Daily Wear",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0035BL000L",
+    "name": "Pakistani Cotton Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
+    "size": "L",
+    "color": "Blue",
+    "type": "Daily Wear",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0035BL00XL",
+    "name": "Pakistani Cotton Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
+    "size": "XL",
+    "color": "Blue",
+    "type": "Daily Wear",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0035BL0XXL",
+    "name": "Pakistani Cotton Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
+    "size": "XXL",
+    "color": "Blue",
+    "type": "Daily Wear",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0031BL000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1199,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "size": "L",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0031BL00XL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1199,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "size": "XL",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0031BL0XXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1199,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "size": "XXL",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0031BLXXXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1199,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "size": "XXXL",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0036BL000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1199,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "size": "L",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0036BL00XL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1199,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "size": "XL",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0036BL0XXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1199,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "size": "XXL",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0036BLXXXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1199,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "size": "XXXL",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0037MR000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1099,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches and, tessels on slit with floral bottom and cotton dupatta.",
+    "size": "L",
+    "color": "Maroon",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0037MR00XL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1099,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with floral bottom and cotton dupatta.",
+    "size": "XL",
+    "color": "Maroon",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0037MRXXXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1099,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with floral bottom and cotton dupatta.",
+    "size": "XXXL",
+    "color": "Maroon",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0038BK000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1099,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.",
+    "size": "L",
+    "color": "Black",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0038BK00XL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1099,
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.",
+    "size": "XL",
+    "color": "Black",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0038BK0XXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1099,
+    "spec": "\"Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.\"",
+    "size": "XXL",
+    "color": "Black",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0038BKXXXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1099,
+    "spec": "\"Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.\"",
+    "size": "XXXL",
+    "color": "Black",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0039YL000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1099,
+    "spec": "\"Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.\"",
+    "size": "L",
+    "color": "Yellow",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0039YL00XL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1099,
+    "spec": "\"Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.\"",
+    "size": "XL",
+    "color": "Yellow",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0039YL0XXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1099,
+    "spec": "\"Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.\"",
+    "size": "XXL",
+    "color": "Yellow",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0039YLXXXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 1099,
+    "spec": "\"Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.\"",
+    "size": "XXXL",
+    "color": "Yellow",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0040PP000L",
+    "name": "Pakistani Cotton Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
+    "size": "L",
+    "color": "Purple",
+    "type": "Daily Wear",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0040PP00XL",
+    "name": "Pakistani Cotton Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
+    "size": "XL",
+    "color": "Purple",
+    "type": "Daily Wear",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0040PP0XXL",
+    "name": "Pakistani Cotton Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
+    "size": "XXL",
+    "color": "Purple",
+    "type": "Daily Wear",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0040PPXXXL",
+    "name": "Pakistani Cotton Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
+    "size": "XXXL",
+    "color": "Purple",
+    "type": "Daily Wear",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0041BR000L",
+    "name": "Pakistani Cotton Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
+    "size": "L",
+    "color": "Brown",
+    "type": "Daily Wear",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0041BR00XL",
+    "name": "Pakistani Cotton Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
+    "size": "XL",
+    "color": "Brown",
+    "type": "Daily Wear",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0041BR0XXL",
+    "name": "Pakistani Cotton Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
+    "size": "XXL",
+    "color": "Brown",
+    "type": "Daily Wear",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0041BRXXXL",
+    "name": "Pakistani Cotton Suit",
+    "sellingPrice": 899,
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
+    "size": "XXXL",
+    "color": "Brown",
+    "type": "Daily Wear",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0042GR0000",
+    "name": "Pakistani Lawn Material",
+    "sellingPrice": 699,
+    "spec": "Floral prints on top and  2 patch works \nNo embroidery dupatta",
+    "size": "UnStitched",
+    "color": "Green",
+    "type": "Semi Casual",
+    "tags": "Daily Wear,New Arrivals"
+  },
+  {
+    "code": "FS0043GY0000",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 699,
+    "spec": "Floral prints on top 2 patch works no embroidery dupatta",
+    "size": "UnStitched",
+    "color": "Grey",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0044CR0000",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": 699,
+    "spec": "Floral print top and chiffon duppata",
+    "size": "UnStitched",
+    "color": "Cream",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  }
+]

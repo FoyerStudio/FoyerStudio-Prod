@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Foyer Studio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/logo_red.png">
+
+
+<style>
+/* --- General Styles --- */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fefef6;
+  color: #731a2f;
+}
+
+/* --- Banner --- */
+.banner {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  background: #fefef6;
+  color: #731a2f;
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  border-bottom: 3px solid #731a2f;
+  z-index: 1000;
+  gap: 6px;
+}
+.banner-logo {
+  height: 2.5em;
+  width: auto;
+  display: block;
+}
+
+/* --- Navigation --- */
+.nav {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 5px;
+  background: #fefef6;
+  border-bottom: 2px solid #731a2f;
+  z-index: 999;
+}
+.nav button {
+  flex: 0 0 auto;
+  background: #731a2f;
+  border: 1px solid #731a2f;
+  color: #fefef6;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+.nav button:hover,
+.nav button.active {
+  background: #9e5740;
+  font-weight: bold;
+}
+
+/* --- Main content wrapper --- */
+.main {
+  padding: 20px 15px 40px 15px;
+  margin-top: 2px;
+}
+
+/* --- Header --- */
+.header-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.header-wrapper h1 {
+  font-size: 1.8em;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin: 0;
+}
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #731a2f;
+  border: none;
+  color: #fefef6;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 210;
+  transition: background 0.3s ease;
+}
+.back-btn:hover {
+  background: #9e5740;
+}
+
+/* --- Loader --- */
+.loader {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: transparent;
+  display: none;
+}
+.loader .bar {
+  height: 100%;
+  width: 0;
+  background: #731a2f;
+  box-shadow: 0 0 8px #731a2f, 0 0 15px #731a2f;
+  animation: loadingAnim 5s linear infinite;
+}
+@keyframes loadingAnim {
+  0%   { width: 0; margin-left: 0; }
+  50%  { width: 60%; margin-left: 20%; }
+  100% { width: 0; margin-left: 100%; }
+}
+
+/* --- Product Layout --- */
+.product-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+/* Carousel Section */
+.carousel-container {
+  flex: 1 1 400px;
+  position: relative;
+  display: none;
+}
+.carousel {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-color: #fefef6;
+}
+.carousel img {
+  display: none;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: opacity 0.5s ease-in-out;
+}
+.carousel img.active {
+  display: block;
+}
+
+/* Carousel arrows */
+.carousel-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(115,26,47,0.9);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+.carousel-arrow:hover { background: rgba(115,26,47,1); }
+.carousel-arrow.left { left: 10px; }
+.carousel-arrow.right { right: 10px; }
+
+/* Magnify button */
+.magnify-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #fefef6;
+  border: 1px solid #731a2f;
+  color: #731a2f;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 50;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+.magnify-btn:hover { background: #731a2f; color: #fefef6; }
+
+/* Fullscreen overlay */
+.image-fullscreen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.95);
+  z-index: 200;
+  justify-content: center;
+  align-items: center;
+}
+.image-fullscreen img { max-width: 95%; max-height: 95%; object-fit: contain; }
+
+/* Product Info Section */
+.product-info {
+  flex: 1 1 400px;
+  display: none;
+}
+.product-name {
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.price-size-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+.product-price {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #731a2f;
+}
+.size-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.size-select {
+  background: #fff;
+  border: 1px solid #731a2f;
+  border-radius: 25px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #731a2f;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.size-select:hover,
+.size-select.active { background: #731a2f; color: #fff; font-weight: bold; }
+
+/* Add-to-cart button */
+.add-cart-btn {
+  background: #731a2f;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+.add-cart-btn:hover { background: #9e5740; }
+.add-cart-btn:disabled { background: #555; color: #ccc; cursor: not-allowed; }
+
+/* Description & disclaimer */
+.product-spec {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #731a2f;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+.product-spec b { font-weight: bold; }
+h3 { margin-bottom: 8px; font-size: 16px; }
+
+/* Delivery date */
+.delivery-date {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .product-container { flex-direction: column; }
+  .carousel-container, .product-info { flex: 1 1 100%; }
+  h1 { font-size: 1.5em; }
+  .product-name { font-size: 1.5em; }
+  .product-price { font-size: 1.3em; }
+  .size-select { padding: 6px 12px; font-size: 13px; }
+  .add-cart-btn { font-size: 15px; padding: 12px 20px; }
+  .carousel-arrow { font-size: 20px; padding: 4px 8px; }
+  .carousel img { max-height: 70vh; }
+}
+</style>
+</head>
+<body>
+
+<div class="banner">
+  <img src="images/logo_red.png" alt="Foyer Studio Logo" class="banner-logo">
+  Foyer Studio
+</div>
+
+<div class="nav">
+  <button class="tablink" onclick="goToCart()">Cart</button>
+</div>
+
+<div id="loader" class="loader">
+  <div class="bar"></div>
+</div>
+
+<div class="main">
+
+  <div class="header-wrapper">
+    <h1>Product Details</h1>
+  </div>
+
+  <div class="product-container">
+    <!-- Carousel Section -->
+    <div class="carousel-container" id="carouselContainer">
+      <div id="carousel" class="carousel"></div>
+      <button id="magnifyBtn" class="magnify-btn">
+        🔍
+      </button>
+      <button id="leftArrow" class="carousel-arrow left">‹</button>
+      <button id="rightArrow" class="carousel-arrow right">›</button>
+    </div>
+
+    <!-- Product Info Section -->
+    <div class="product-info" id="productInfo">
+      <div id="productName" class="product-name"></div>
+      <div class="price-size-row">
+        <div id="sizeContainer" class="size-container"></div>
+        <div id="productPrice" class="product-price"></div>
+      </div>
+      <h3>Description</h3>
+      <div id="productSpec" class="product-spec"></div>
+      <div class="product-spec"><b>Disclaimer:</b> For exact product details, please refer to the original images. All displayed images are for reference.</div>
+      <div id="deliveryDate" class="delivery-date"></div>
+      <button id="addCartBtn" class="add-cart-btn" onclick="toggleCart()">Add to Cart</button>
+      <button class="add-cart-btn" onclick="backToShopping()">Back</button>
+    </div>
+  </div>
+
+  <!-- Fullscreen overlay -->
+  <div id="fullscreenView" class="image-fullscreen">
+    <button id="backBtn" class="back-btn">← Back</button>
+    <img src="" alt="Fullscreen Image">
+  </div>
+
+</div>
+
+
+<!-- Include Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<script>
+ // Firebase config
+const firebaseConfig = {
+    apiKey: "AIzaSyAjlHBB46moYAuus9aNb_ZYD_C-duqf7lM",
+    authDomain: "foyerstudio-6fa35.firebaseapp.com",
+    projectId: "foyerstudio-6fa35",
+    storageBucket: "foyerstudio-6fa35.firebasestorage.app",
+    messagingSenderId: "406213917569",
+    appId: "1:406213917569:web:aba9885f5815cba0f18680",
+    measurementId: "G-DSFEHX0LTM"
+};
+firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+async function fetchInventoryFromFirestore(baseCode) {
+     try {
+        const snapshot = await db.collection("Inventory")
+          .where(firebase.firestore.FieldPath.documentId(), ">=", baseCode)
+          .where(firebase.firestore.FieldPath.documentId(), "<", baseCode + "\uf8ff")
+          .get();
+
+        const inventory = [];
+        snapshot.forEach(doc => {
+            inventory.push({ code: doc.id, ...doc.data() });
+        });
+        return inventory;
+    } catch (error) {
+        console.error("Error fetching inventory from Firestore:", error);
+        return [];
+    }
+}
+
+const urlParams = new URLSearchParams(window.location.search);
+// --- Backward compatible: support OR condition only when '|' is used ---
+let codeParam = urlParams.get('code') || '';
+let codeList = codeParam.includes('|') 
+  ? codeParam.split('|').map(c => c.trim()).filter(c => c)
+  : [codeParam];
+
+let productCode = codeList[0] || '';
+
+Promise.all([
+    fetch('./JSON/products.json').then(r => r.json()),
+    fetchInventoryFromFirestore(productCode.slice(0, -4))
+]).then(([prodList, invList]) => {
+    hideLoader();
+    products = prodList;
+    invList.forEach(i => inventoryMap[i.code] = Number(i.inStock) || 0);
+
+    // --- OR logic only if multiple codes were passed ---
+    if (codeList.length > 1) {
+        const available = codeList.find(c => inventoryMap[c] > 0);
+        productCode = available || codeList[codeList.length - 1];
+    }
+}).catch(err => { hideLoader(); console.error(err); });
+
+
+const loader = document.getElementById('loader');
+const carousel = document.getElementById('carousel');
+const leftArrow = document.getElementById('leftArrow');
+const rightArrow = document.getElementById('rightArrow');
+const productNameEl = document.getElementById('productName');
+const productPriceEl = document.getElementById('productPrice');
+const productSpecEl = document.getElementById('productSpec');
+const deliveryDateEl = document.getElementById('deliveryDate');
+const addCartBtn = document.getElementById('addCartBtn');
+const carouselContainer = document.querySelector('.carousel-container');
+const sizeContainer = document.getElementById('sizeContainer');
+const cartTab = document.querySelector(".nav button");
+
+function showLoader() { loader.style.display = 'block'; }
+function hideLoader() { loader.style.display = 'none'; }
+
+let images = [];
+let currentIndex = 0;
+let product = null;
+let products = [];
+let inventoryMap = {};
+
+// ------------------- Image Carousel -------------------
+function showImage(index) {
+    carousel.querySelectorAll('img').forEach((img, i) => {
+        img.classList.toggle('active', i === index);
+    });
+}
+function nextImage() { if (images.length > 0) { currentIndex = (currentIndex + 1) % images.length; showImage(currentIndex); } }
+function prevImage() { if (images.length > 0) { currentIndex = (currentIndex - 1 + images.length) % images.length; showImage(currentIndex); } }
+
+// Swipe support
+let startX = 0, startY = 0, isDragging = false;
+carousel.addEventListener('touchstart', e => { startX = e.touches[0].clientX; startY = e.touches[0].clientY; isDragging = true; });
+carousel.addEventListener('touchmove', e => { if (!isDragging) return; const dx = e.touches[0].clientX - startX; const dy = e.touches[0].clientY - startY; if (Math.abs(dx) > Math.abs(dy)) e.preventDefault(); });
+carousel.addEventListener('touchend', e => { if (!isDragging) return; const endX = e.changedTouches[0].clientX; const dx = endX - startX; if (Math.abs(dx) > 30) { if (dx < 0) nextImage(); else prevImage(); } isDragging = false; });
+
+// ------------------- Load Products & Inventory -------------------
+showLoader();
+const baseCode = productCode.slice(0, -4);
+Promise.all([
+    fetch('./JSON/products.json').then(r => r.json()),
+    fetchInventoryFromFirestore(baseCode)
+]).then(([prodList, invList]) => {
+    hideLoader();
+    products = prodList;
+    invList.forEach(i => inventoryMap[i.code] = Number(i.inStock) || 0);
+
+    renderProduct(productCode);
+}).catch(err => { hideLoader(); console.error(err); });
+
+// ------------------- Render Product -------------------
+function renderProduct(code) {
+    const stock = inventoryMap[code] || 0;
+    const prod = products.find(p => p.code === code);
+
+    if (!prod) {
+        carousel.innerHTML = "<p style='color:#d4af37;text-align:center;'>Product not found.</p>";
+         carousel.innerHTML = `
+      <img src="images/SoldOut.jpg"
+       class="active"
+       alt="Sold Out"
+       style="width:100%;object-fit:contain;border-radius:12px;">
+        `;
+        carouselContainer.style.display = 'block';
+        document.querySelector('.product-info').style.display = 'none';
+        hideLoader();
+        return;
+    }
+
+    // --- 🧠 Show Sold Out image if quantity = 0 ---
+    if (stock === 0) {
+        carousel.innerHTML = `
+      <img src="images/SoldOut.jpg"
+       class="active"
+       alt="Sold Out"
+       style="width:100%;object-fit:contain;border-radius:12px;">
+        `;
+        carouselContainer.style.display = 'block';
+        document.querySelector('.product-info').style.display = 'none';
+        hideLoader();
+        return;
+    }
+
+    product = prod;
+
+    productNameEl.textContent = product.name;
+    productPriceEl.innerHTML = product.sellingPrice ? `<strong>Price:</strong> ₹${product.sellingPrice}` : '';
+    productSpecEl.innerHTML = product.specifications || product.spec;
+    const delivery = new Date(); delivery.setDate(delivery.getDate() + 7);
+    deliveryDateEl.innerHTML = `<strong>Expected Delivery:</strong> ${delivery.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}`;
+
+    // Hide product info & carousel until images load
+carouselContainer.style.display = 'none';
+document.querySelector('.product-info').style.display = 'none';
+
+
+    // ---------- Size Dropdown ----------
+    
+    const availableProducts = products.filter(p => p.code.startsWith(baseCode) && inventoryMap[p.code] > 0);
+    sizeContainer.innerHTML = '';
+    const label = document.createElement('label'); label.textContent = 'Size:';
+    const select = document.createElement('select'); select.className = 'size-select';
+    const sizeMap = {
+        "XXXS":"XXXS","0XXS":"XXS","00XS":"XS","000S":"S","000M":"M",
+        "000L":"L","00XL":"XL","0XXL":"XXL","XXXL":"XXXL",
+        "0000":"UnStitched","0100":"100 ml","0050":"50 ml"
+    };
+    availableProducts.forEach(p => {
+        const opt = document.createElement('option');
+        const sizeSuffix = p.code.slice(-4);
+        opt.value = p.code;
+        opt.textContent = sizeMap[sizeSuffix] || sizeSuffix;
+        if (p.code === product.code) opt.selected = true;
+        select.appendChild(opt);
+    });
+    select.addEventListener('change', e => renderProduct(e.target.value));
+    sizeContainer.appendChild(label); sizeContainer.appendChild(select);
+
+    // ---------- Images ----------
+    carousel.innerHTML = '';
+    images = [];
+    magnifyBtn.style.display = 'none'; // ✅ reset before loading new images
+    leftArrow.style.display = rightArrow.style.display = 'none';
+    let imgIndex = 1;
+
+    function tryLoad() {
+        const img = new Image();
+        img.src = `images/products/${product.code}/${imgIndex}.jpg`;
+
+        img.onload = () => {
+            img.classList.add('carousel-img');
+            carousel.appendChild(img);
+            images.push(img);
+
+            // Attach magnifier click
+            img.addEventListener('click', () => {
+                openMagnifier(images.indexOf(img));
+            });
+
+           // ✅ Show UI only when first image is loaded
+if (images.length === 1) {
+    currentIndex = 0;
+    showImage(currentIndex);
+    carouselContainer.style.display = 'block';
+    document.querySelector('.product-info').style.display = 'block';
+}
+
+	    
+ if (images.length > 0) {
+        magnifyBtn.style.display = 'block';
+    }
+
+if (images.length > 1) {
+    leftArrow.style.display = rightArrow.style.display = 'flex';
+
+    
+
+} else {
+    leftArrow.style.display = rightArrow.style.display = 'none';
+
+}
+
+
+            imgIndex++;
+            tryLoad();
+        };
+
+        img.onerror = () => {
+            if (images.length === 0) {
+                carousel.innerHTML = "<p style='color:#731a2f;text-align:center;'>No images available.</p>";
+                leftArrow.style.display = rightArrow.style.display = 'none';
+                carouselContainer.style.display = 'none';
+                document.querySelector('.product-info').style.display = 'none';
+
+            }
+            setInitialCartButton();
+        };
+    }
+
+    tryLoad();
+}
+
+// ------------------- Cart Logic -------------------
+function getCart() { return JSON.parse(localStorage.getItem('cart') || "[]"); }
+function toggleCart() {
+    if (!product) return;
+    let cart = getCart();
+    const idx = cart.findIndex(item => item.code === product.code);
+    if (idx >= 0) { cart.splice(idx, 1); addCartBtn.textContent = "Add to Cart"; }
+    else if (cart.length < 3) { cart.push({ code: product.code, name: product.name, price: product.sellingPrice, img: images[0] || '', size: product.size || '-', color: product.color || '-', quantity: 1 }); addCartBtn.textContent = "Remove from Cart"; }
+    localStorage.setItem('cart', JSON.stringify(cart));
+    setInitialCartButton();
+    updateCartTabCount(cart);
+}
+function updateCartTabCount(cart) { let total = 0; cart.forEach(i => total += i.quantity); cartTab.textContent = total > 0 ? `Cart (${total})` : "Cart"; }
+function setInitialCartButton() {
+    if (!product) return;
+    let cart = getCart();
+    const itemInCart = cart.find(i => i.code === product.code);
+    addCartBtn.textContent = itemInCart ? "Remove from Cart" : "Add to Cart";
+    addCartBtn.disabled = !itemInCart && cart.length >= 3;
+    updateCartTabCount(cart);
+}
+
+// ------------------- Navigation -------------------
+function backToShopping() { window.location.href = "index.html?tab=shopping"; }
+function goToIndex(tabName) { window.location.href = `index.html?tab=${tabName}`; }
+function goToCart() { window.location.href = "cart.html"; }
+leftArrow.addEventListener("click", prevImage);
+rightArrow.addEventListener("click", nextImage);
+
+
+
+
+// ------------------- Magnifier / Fullscreen -------------------
+const fullscreenView = document.getElementById('fullscreenView');
+const fullscreenImg = fullscreenView.querySelector('img');
+const fullscreenBackBtn = document.getElementById('backBtn');
+const magnifyBtn = document.getElementById('magnifyBtn');
+const detailsBackBtn = document.querySelector('.header-wrapper .back-btn');
+
+// Already declared: images[], currentIndex, fullscreenIndex
+
+// Zoom / pan variables
+let scale = 1;
+let targetScale = 1;
+let offsetX = 0, offsetY = 0;
+let targetOffsetX = 0, targetOffsetY = 0;
+let lastX = 0, lastY = 0;
+
+// Animation / inertia
+let velocityX = 0, velocityY = 0;
+let animationFrameId = null;
+
+// Zoom limits
+const minScale = 1;
+const maxScale = 5;
+
+// ------------------- Open / Close -------------------
+function openMagnifier(index) {
+    if (!images.length) return;
+    fullscreenIndex = index;
+    fullscreenImg.src = images[fullscreenIndex].src || images[fullscreenIndex];
+    fullscreenView.style.display = 'flex';
+    detailsBackBtn.style.display = 'none';
+    resetTransform();
+}
+
+function closeMagnifier() {
+    fullscreenView.style.display = 'none';
+    detailsBackBtn.style.display = 'inline-block';
+    resetTransform();
+}
+
+fullscreenBackBtn.addEventListener('click', closeMagnifier);
+magnifyBtn.addEventListener('click', () => openMagnifier(currentIndex));
+
+function resetTransform() {
+    scale = targetScale = 1;
+    offsetX = targetOffsetX = 0;
+    offsetY = targetOffsetY = 0;
+    velocityX = velocityY = 0;
+    fullscreenImg.style.transform = `translate(0px,0px) scale(1)`;
+}
+
+// ------------------- Double-tap zoom -------------------
+fullscreenImg.addEventListener('click', e => {
+    const rect = fullscreenImg.getBoundingClientRect();
+    const tapX = e.clientX - rect.left;
+    const tapY = e.clientY - rect.top;
+
+    // Toggle zoom
+    if (targetScale <= 1) {
+        // Zoom in
+        targetScale = 2;
+
+        // Center zoom on tap
+        targetOffsetX = -(tapX - rect.width / 2);
+        targetOffsetY = -(tapY - rect.height / 2);
+    } else {
+        // Zoom out
+        targetScale = 1;
+        targetOffsetX = 0;
+        targetOffsetY = 0;
+    }
+
+    clampTarget(); // make sure image stays inside viewport
+    requestAnimationFrame(updateTransform);
+});
+
+// ------------------- Pan when zoomed -------------------
+fullscreenImg.addEventListener('touchstart', e => {
+    if (targetScale > 1 && e.touches.length === 1) {
+        lastX = e.touches[0].clientX - targetOffsetX;
+        lastY = e.touches[0].clientY - targetOffsetY;
+        velocityX = 0;
+        velocityY = 0;
+    }
+});
+
+fullscreenImg.addEventListener('touchmove', e => {
+    if (targetScale > 1 && e.touches.length === 1) {
+        const newX = e.touches[0].clientX - lastX;
+        const newY = e.touches[0].clientY - lastY;
+
+        velocityX = newX - targetOffsetX;
+        velocityY = newY - targetOffsetY;
+
+        targetOffsetX = newX;
+        targetOffsetY = newY;
+
+        clampTarget(); // clamp while moving
+        e.preventDefault();
+        requestAnimationFrame(updateTransform);
+    }
+});
+
+fullscreenImg.addEventListener('touchend', e => {
+    if (targetScale > 1) smoothReset();
+});
+
+// ------------------- Clamp target to keep image inside view -------------------
+function clampTarget() {
+    const imgRect = {
+        width: fullscreenImg.naturalWidth * targetScale,
+        height: fullscreenImg.naturalHeight * targetScale
+    };
+    const parentRect = fullscreenView.getBoundingClientRect();
+
+    const maxOffsetX = Math.max(0, (imgRect.width - parentRect.width) / 2);
+    const maxOffsetY = Math.max(0, (imgRect.height - parentRect.height) / 2);
+
+    if (targetOffsetX > maxOffsetX) targetOffsetX = maxOffsetX;
+    if (targetOffsetX < -maxOffsetX) targetOffsetX = -maxOffsetX;
+    if (targetOffsetY > maxOffsetY) targetOffsetY = maxOffsetY;
+    if (targetOffsetY < -maxOffsetY) targetOffsetY = -maxOffsetY;
+}
+
+// ------------------- Smooth reset -------------------
+function smoothReset() {
+    clampTarget();
+    requestAnimationFrame(updateTransform);
+    applyInertia();
+}
+
+// ------------------- Animate transform smoothly -------------------
+function updateTransform() {
+    scale += (targetScale - scale) * 0.2;
+    offsetX += (targetOffsetX - offsetX) * 0.2;
+    offsetY += (targetOffsetY - offsetY) * 0.2;
+
+    fullscreenImg.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
+
+    if (Math.abs(scale - targetScale) > 0.001 ||
+        Math.abs(offsetX - targetOffsetX) > 0.5 ||
+        Math.abs(offsetY - targetOffsetY) > 0.5) {
+        requestAnimationFrame(updateTransform);
+    }
+}
+
+// ------------------- Inertia -------------------
+function applyInertia() {
+    velocityX *= 0.9;
+    velocityY *= 0.9;
+
+    targetOffsetX += velocityX;
+    targetOffsetY += velocityY;
+    clampTarget();
+    requestAnimationFrame(updateTransform);
+
+    if (Math.abs(velocityX) > 0.5 || Math.abs(velocityY) > 0.5) {
+        animationFrameId = requestAnimationFrame(applyInertia);
+    }
+}
+
+// ------------------- Keyboard navigation -------------------
+document.addEventListener('keydown', e => {
+    if (fullscreenView.style.display !== 'flex') return;
+    if (e.key === 'Escape') closeMagnifier();
+});
+
+
+const SESSION_KEY = "visitorSession";
+const LOCATION_KEY = "visitorLatLon";
+let heartbeatTimer = null;
+let lastActivityTime = Date.now();
+let isTabActive = true;
+const HEARTBEAT_INTERVAL = 15 * 1000; // 15 seconds
+const INACTIVITY_LIMIT = 60 * 1000;   // 1 minute of inactivity
+
+// --- Get or create session ID ---
+function getSessionId() {
+    const now = Date.now();
+    let sessionData = null;
+    try { sessionData = JSON.parse(localStorage.getItem(SESSION_KEY)); } catch {}
+    if (sessionData && (now - sessionData.lastActive < 2 * 60 * 60 * 1000)) {
+        sessionData.lastActive = now;
+    } else {
+        sessionData = { id: Math.random().toString(36).substring(2, 10), lastActive: now };
+    }
+    localStorage.setItem(SESSION_KEY, JSON.stringify(sessionData));
+    return sessionData.id;
+}
+
+// --- Get GPS location (cached per session) ---
+async function getGeoLocation() {
+    const cached = localStorage.getItem(LOCATION_KEY);
+    if (cached) return JSON.parse(cached);
+    if (!navigator.geolocation) return { lat: "unknown", lon: "unknown" };
+    try {
+        const pos = await new Promise((resolve, reject) => {
+            navigator.geolocation.getCurrentPosition(resolve, reject, { timeout: 10000 });
+        });
+        const coords = { lat: pos.coords.latitude, lon: pos.coords.longitude };
+        localStorage.setItem(LOCATION_KEY, JSON.stringify(coords));
+        return coords;
+    } catch {
+        return { lat: "unknown", lon: "unknown" };
+    }
+}
+
+// --- Get public IP ---
+async function getPublicIP() {
+    try {
+        const res = await fetch("https://api.ipify.org?format=json");
+        const data = await res.json();
+        return data.ip || "unknown";
+    } catch {
+        return "unknown";
+    }
+}
+
+// --- Core function: Send visit or heartbeat ---
+async function trackVisitor(type = "pageview") {
+    const sessionId = getSessionId();
+    const { lat, lon } = await getGeoLocation();
+    const ip = await getPublicIP();
+    const page = window.location.href;
+    const browser = navigator.userAgent;
+
+    const callbackName = "visitorCallback_" + Math.random().toString(36).substring(2, 10);
+    const url = new URL("https://script.google.com/macros/s/AKfycbw5tep2lIfqr0ITB_M2TQWSZ9aPXkXcK_0pX2eCL47AnEwuuQ-CIMzmTgkqsRSM6U29tw/exec");
+
+    url.searchParams.set("callback", callbackName);
+    url.searchParams.set("sessionId", sessionId);
+    url.searchParams.set("ip", ip);
+    url.searchParams.set("page", page);
+    url.searchParams.set("browser", browser);
+    url.searchParams.set("lat", lat);
+    url.searchParams.set("lon", lon);
+    url.searchParams.set("type", type);
+
+    window[callbackName] = function (data) {
+        console.log(`Visitor ${type}:`, data);
+        delete window[callbackName];
+        document.body.removeChild(script);
+    };
+
+    const script = document.createElement("script");
+    script.src = url.toString();
+    document.body.appendChild(script);
+
+    // reset heartbeat timing reference
+    lastActivityTime = Date.now();
+    resetHeartbeat(); 
+}
+
+// --- Heartbeat Control ---
+function startHeartbeat() {
+    if (heartbeatTimer) return;
+    heartbeatTimer = setInterval(() => {
+        const now = Date.now();
+        const inactive = now - lastActivityTime > INACTIVITY_LIMIT;
+        if (!isTabActive || inactive) {
+            console.log("Heartbeat paused (inactive/tab hidden)");
+            stopHeartbeat();
+            return;
+        }
+        trackVisitor("heartbeat");
+    }, HEARTBEAT_INTERVAL);
+}
+
+function stopHeartbeat() {
+    if (heartbeatTimer) {
+        clearInterval(heartbeatTimer);
+        heartbeatTimer = null;
+    }
+}
+
+function resetHeartbeat() {
+    stopHeartbeat();
+    startHeartbeat();
+}
+
+// --- Activity tracking ---
+function markActive() {
+    lastActivityTime = Date.now();
+    if (isTabActive && !heartbeatTimer) {
+        console.log("User active — restarting heartbeat");
+        startHeartbeat();
+    }
+}
+
+// --- Tab visibility ---
+document.addEventListener("visibilitychange", () => {
+    isTabActive = !document.hidden;
+    if (isTabActive) {
+        console.log("Tab active again — resuming heartbeat");
+        markActive();
+    } else {
+        console.log("Tab hidden — stopping heartbeat");
+        stopHeartbeat();
+    }
+});
+
+// --- Detect user activity events ---
+["mousemove", "keydown", "scroll", "touchstart"].forEach(evt =>
+    window.addEventListener(evt, markActive)
+);
+
+// --- When page loads ---
+window.addEventListener("DOMContentLoaded", async () => {
+    await trackVisitor("pageview"); // Always call on page load
+    startHeartbeat();               // Start interval heartbeat
+});
+
+// --- Stop heartbeat when leaving page ---
+window.addEventListener("beforeunload", () => {
+    stopHeartbeat();
+});
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

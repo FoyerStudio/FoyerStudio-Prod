@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Foyer Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo_red.png">
+
+  <style>
+    /* --- General Styles --- */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #fefef6;
+      color: #731a2f;
+    }
+
+    /* --- Banner --- */
+ .banner {
+  width: 100%;
+  min-height: 80px;              /* taller since text goes below */
+  display: flex;
+  flex-direction: column;        /* ✅ stack logo and text vertically */
+  align-items: center;           /* center horizontally */
+  justify-content: center;       /* center vertically */
+  font-weight: bold;
+  background: #fefef6;           /* optional */
+  color: #731a2f;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.0em;
+  border-bottom: 3px solid #731a2f;
+  z-index: 1000;
+  gap: 6px;                      /* space between logo and text */
+}
+
+.banner-logo {
+  height: 2.5em;                 /* a bit bigger so logo stands out */
+  width: auto;                   /* keep aspect ratio */
+  display: block;                /* ensure it's treated as block */
+}
+    /* Navigation */
+    .nav {
+      display: flex;
+      justify-content: center;
+      overflow-x: auto;
+      gap: 10px;
+      padding: 10px 5px;
+      background: #fefef6;
+      border-bottom: 2px solid #731a2f;
+   //   position: fixed;
+   //   top: 180px;
+   //   width: 100%;
+      z-index: 999;
+    }
+    .nav button {
+      flex: 0 0 auto;
+      background: #731a2f;
+      border: 1px solid #731a2f;
+      color: #fefef6;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .nav button:hover,
+    .nav button.active {
+      background: #731a2f;
+      color: #fefef6;
+      font-weight: bold;
+    }
+
+    /* Main Content */
+    .main {
+      padding: 20px 15px 40px 15px;
+     // margin-top: 250px;
+	margin-top: 20px; /* instead of 250px */
+    }
+
+    h1 {
+      text-align: center;
+      margin: 10px 0;
+      font-size: 1.5em;
+      color: #731a2f;
+      font-family: 'Georgia', serif;
+      letter-spacing: 1.5px;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 6px;
+    }
+
+    h1::after {
+      content: "";
+      display: block;
+      width: 50%;
+      margin: 6px auto 0;
+      border-bottom: 2px solid #731a2f;
+      border-radius: 2px;
+    }
+
+    .back-btn {
+  display: inline-block;
+  font-size: 1.5em;
+  color: #fff;
+  background: #731a2f;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 8px;
+  cursor: pointer;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  transition: background 0.3s ease;
+}
+
+    .header-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+        /* Loader (Under Navigation Bar) */
+    .loader {
+      position: relative;
+      width: 100%;
+      height: 2px;
+      background: transparent;
+      display: none;
+    }
+    .loader .bar {
+      height: 100%;
+      width: 0;
+      background: #731a2f;
+      box-shadow: 0 0 8px #731a2f, 0 0 15px #731a2f;
+      animation: loadingAnim 5s linear infinite;
+    }
+    @keyframes loadingAnim {
+      0%   { width: 0; margin-left: 0; }
+      50%  { width: 60%; margin-left: 20%; }
+      100% { width: 0; margin-left: 100%; }
+    }
+
+
+
+
+
+    /* Product Carousel */
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      display: none; /* hidden initially */
+    }
+
+    .carousel {
+      overflow: hidden;
+      border-radius: 10px;
+      max-width: 100%;
+      display: block;
+      text-align: center;
+      background-color: #fefef6;
+      position: relative;
+    }
+
+    .carousel img {
+      display: none;
+      width: 100%;
+      height: auto;
+      object-fit: contain; /* Ensure full image is visible */
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .carousel img.active {
+      display: block; /* Show only the active image */
+    }
+
+   .carousel-arrow {
+  display: none; /* hide arrows initially */
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #731a2f;
+  border: none;
+  color: #fefef6;
+  font-size: 24px;
+  padding: 3px 7px;
+  cursor: pointer;
+  border-radius: 25px;
+  z-index: 10;
+}
+
+
+    .carousel-arrow.left {
+      left: 10px;
+    }
+
+    .carousel-arrow.right {
+      right: 10px;
+    }
+
+
+.carousel-container,
+.product-info,
+.carousel-arrow {
+  display: none; /* hide everything initially */
+}
+   
+
+    .product-name {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .product-price {
+      color: #731a2f;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+     .product-info {
+  display: none;
+  text-align: left;      /* left align details */
+  margin: 15px 0;
+  max-width: 400px;      /* match carousel width */
+  margin-left: auto;     /* center block with image */
+  margin-right: auto;    /* center block with image */
+}
+
+
+    .product-name { font-weight: bold; font-size: 18px; margin-bottom: 5px; }
+
+.product-spec {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.6;
+  word-break: break-word;
+  white-space: pre-line;   /* <-- keeps new lines */
+  color: #731a2f;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.product-info h3 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #731a2f;               /* gold theme color */
+  text-align: left;
+  border-top: 2px solid #731a2f;    /* top border only */
+  border-bottom: 2px solid #731a2f; /* bottom border only */
+  border-left: none;
+  border-right: none;
+  padding: 8px 12px;             /* breathing space inside */
+  margin: 10px 0 15px 0;         /* space above and below */
+  width: calc(100% - 24px);      /* full width minus horizontal padding */
+  box-sizing: border-box;        /* include padding in width */
+  background-color: #fefef6;        /* match page bg */
+}
+
+    .delivery-date {
+      color: #731a2f;
+      font-size: 13px;
+      margin-bottom: 15px;
+    }
+
+.price-size-row {
+  display: flex;
+  justify-content: space-between; /* size left, price right */
+  align-items: center;
+  margin: 10px 0 15px 0;
+  gap: 10px;
+}
+
+.size-container {
+  font-size: 14px;
+  color: #731a2f;
+}
+
+
+
+
+    .add-cart-btn {
+      background: #731a2f;
+      color: #fefef6;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .add-cart-btn:disabled {
+      background: #555;
+      cursor: default;
+      color: #ccc;
+    }
+
+    /* Responsive layout for small screens */
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 1.3em;
+      }
+
+      .carousel {
+        height: auto; /* Let height adjust to image height */
+      }
+
+      .carousel img {
+        max-height: 80vh; /* Limit max image height to viewport */
+      }
+
+      .product-name {
+        font-size: 16px;
+      }
+
+      .product-price,
+      .delivery-date {
+        font-size: 14px;
+      }
+
+      .carousel-arrow {
+        font-size: 20px;
+        padding: 4px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ 
+<div class="banner">
+  <img src="images/logo_red.png" alt="Foyer Studio Logo" class="banner-logo">
+  Foyer Studio
+</div>
+
+  <div class="nav">
+    <button class="tablink" onclick="goToCart()">Cart</button>
+  </div>
+  <div id="loader" class="loader">
+    <div class="bar"></div>
+  </div>
+
+  <div class="main">
+    <div class="header-wrapper">
+      <button class="back-btn" onclick="backToShopping()">←</button>
+      <h1>Product Details</h1>
+    </div>
+
+   
+
+	<div class="carousel-container" id="carouselContainer" style="display:none;">
+      <div id="carousel" class="carousel"></div>
+      <button id="leftArrow" class="carousel-arrow left" onclick="prevImage()">‹</button>
+      <button id="rightArrow" class="carousel-arrow right" onclick="nextImage()">›</button>
+    </div>
+
+
+   <div class="product-info" id="productInfo" style="display:none;">
+      <div id="productName" class="product-name"></div>
+
+      <div class="price-size-row">
+  <div class="size-container" id="sizeContainer"></div>
+  <div id="productPrice" class="product-price"></div>
+</div>
+
+
+      <h3>Description</h3>
+      <div id="productSpec" class="product-spec"></div>
+
+      <div id="deliveryDate" class="delivery-date"></div>
+      <button id="addCartBtn" class="add-cart-btn" onclick="toggleCart()">Add to Cart</button>
+
+   </div>
+  </div>
+
+<!-- Include Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+
+<script>
+
+
+ // Firebase config
+  const firebaseConfig = {
+    apiKey: "AIzaSyAjlHBB46moYAuus9aNb_ZYD_C-duqf7lM",
+    authDomain: "foyerstudio-6fa35.firebaseapp.com",
+    projectId: "foyerstudio-6fa35",
+    storageBucket: "foyerstudio-6fa35.firebasestorage.app",
+    messagingSenderId: "406213917569",
+    appId: "1:406213917569:web:aba9885f5815cba0f18680",
+    measurementId: "G-DSFEHX0LTM"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+
+
+
+
+// --- Fetch inventory directly from Firestore ---
+  async function fetchInventoryFromFirestore(productCode) {
+  try {
+    const doc = await db.collection("Inventory").doc(productCode).get();
+    if (doc.exists) {
+      return [{ code: doc.id, ...doc.data() }];
+    } else {
+      return []; // not found
+    }
+  } catch (error) {
+    console.error("Error fetching inventory from Firestore:", error);
+    return [];
+  }
+}
+
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const productCode = urlParams.get('code');
+
+  const loader = document.getElementById('loader');
+  const carousel = document.getElementById('carousel');
+  const leftArrow = document.getElementById('leftArrow');
+  const rightArrow = document.getElementById('rightArrow');
+  const productNameEl = document.getElementById('productName');
+  const productPriceEl = document.getElementById('productPrice');
+  const productSpecEl = document.getElementById('productSpec');
+  const deliveryDateEl = document.getElementById('deliveryDate');
+  const addCartBtn = document.getElementById('addCartBtn');
+  const carouselContainer = document.querySelector('.carousel-container');
+  const cartTab = document.querySelector(".nav button"); // select the Cart button
+
+  function showLoader() { loader.style.display = 'block'; }
+  function hideLoader() { loader.style.display = 'none'; }
+
+  let images = [];
+  let currentIndex = 0;
+  let product = null;
+
+  function showImage(index){
+    carousel.querySelectorAll('img').forEach((img,i)=>{
+      img.classList.toggle('active', i===index);
+    });
+  }
+
+  function nextImage(){ 
+    if(images.length>0){ 
+      currentIndex=(currentIndex+1)%images.length; 
+      showImage(currentIndex); 
+    }
+  }
+  function prevImage(){ 
+    if(images.length>0){ 
+      currentIndex=(currentIndex-1+images.length)%images.length; 
+      showImage(currentIndex); 
+    }
+  }
+
+  // Swipe support
+  let startX = 0, startY = 0, isDragging = false;
+
+  carousel.addEventListener('touchstart', e => {
+    startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
+    isDragging = true;
+  });
+
+  carousel.addEventListener('touchmove', e => {
+    if (!isDragging) return;
+    const dx = e.touches[0].clientX - startX;
+    const dy = e.touches[0].clientY - startY;
+
+    // Only prevent default if horizontal movement is greater than vertical
+    if (Math.abs(dx) > Math.abs(dy)) e.preventDefault();
+  });
+
+  carousel.addEventListener('touchend', e => {
+    if (!isDragging) return;
+    const endX = e.changedTouches[0].clientX;
+    const dx = endX - startX;
+
+    if (Math.abs(dx) > 30) {
+      if (dx < 0) nextImage();
+      else prevImage();
+    }
+
+    isDragging = false;
+  });
+
+  // Load product data
+  showLoader();
+  Promise.all([
+    fetch('./JSON/products.json').then(r => r.json()),
+      fetchInventoryFromFirestore(productCode) 
+])
+.then(([products, inventory]) => {
+    hideLoader();
+    const inventoryMap = {};
+    inventory.forEach(i => inventoryMap[i.code] = Number(i.inStock) || 0);
+
+    product = products.find(p => p.code === productCode && inventoryMap[p.code] > 0);
+    if (!product) {
+      carousel.innerHTML = "<p style='color:#731a2f;text-align:center;'>Product not found or out of stock.</p>";
+      return;
+    }
+
+    productNameEl.textContent = product.name;
+
+    document.getElementById("sizeContainer").innerHTML = `<strong>Size:</strong> ${product.size || '-'}`;
+
+
+
+    productPriceEl.innerHTML = product.sellingPrice ? `<strong>Price:</strong> ₹${product.sellingPrice}` : '';
+    productSpecEl.innerHTML = product.specifications || product.spec;
+
+    const delivery = new Date();
+    delivery.setDate(delivery.getDate() + 7);
+    deliveryDateEl.innerHTML = `<strong>Expected Delivery:</strong> ${delivery.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}`;
+
+    // Load images dynamically
+
+    let imgIndex = 1;
+images = [];
+
+function loadNextImage() {
+  const img = new Image();
+  img.src = `images/products/${product.code}/${imgIndex}.jpg`;
+
+  img.onload = () => {
+    img.classList.add('carousel-img');
+    carousel.appendChild(img);
+    images.push(img);
+
+    currentIndex = 0;
+    showImage(currentIndex);
+
+    // Show carousel and arrows ONLY after first image
+    if (images.length === 1) {
+      carouselContainer.style.display = 'block';
+      document.querySelector('.product-info').style.display = 'block';
+      leftArrow.style.display = rightArrow.style.display = 'flex';
+    }
+
+    imgIndex++;
+    loadNextImage(); // load next image
+  };
+
+  img.onerror = () => {
+    if (images.length > 0) {
+      showImage(0);
+      leftArrow.style.display = rightArrow.style.display = 'flex';
+      document.querySelector('.product-info').style.display = 'block';
+    } else {
+      carousel.innerHTML = "<p style='color:#731a2f;text-align:center;'>No images available.</p>";
+    }
+    setInitialCartButton();
+  };
+}
+
+loadNextImage();
+
+  })
+  .catch(err => { hideLoader(); });
+
+  function backToShopping() { window.location.href="index.html?tab=fragrance"; }
+  function goToIndex(tabName){ window.location.href=`index.html?tab=${tabName}`; }
+  function goToCart(){ window.location.href="cart.html"; }
+
+  // -------------------- CART LOGIC (No Login) --------------------
+function getCart() {
+  return JSON.parse(localStorage.getItem('cart') || "[]");
+}
+
+function saveCart(cart) {
+  localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+function toggleCart() {
+  if (!product) return;
+
+  let cart = getCart();
+  const itemIndex = cart.findIndex(item => item.code === product.code);
+
+  if (itemIndex >= 0) {
+    // Remove from cart
+    cart.splice(itemIndex, 1);
+    saveCart(cart);
+    addCartBtn.textContent = "Add to Cart";
+    addCartBtn.disabled = false;
+  } else {
+    // Add to cart (max 3 items)
+    if (cart.length < 3) {
+      cart.push({
+        code: product.code,
+        name: product.name,
+        price: product.sellingPrice,
+        img: images[0] || '',
+        size: product.size || '-',
+        quantity: 1
+      });
+      saveCart(cart);
+      addCartBtn.textContent = "Remove from Cart";
+      addCartBtn.disabled = false;
+    }
+  }
+
+  updateCartTabCount(cart);
+}
+
+function updateCartTabCount(cart) {
+  let totalCount = 0;
+  cart.forEach(item => totalCount += item.quantity);
+  cartTab.textContent = totalCount > 0 ? `Cart (${totalCount})` : "Cart";
+}
+
+function setInitialCartButton() {
+  if (!product) return; // <-- prevent error if product is not loaded yet
+
+  let cart = getCart();
+  const itemInCart = cart.find(item => item.code === product.code);
+
+  if (itemInCart) {
+    addCartBtn.textContent = "Remove from Cart";
+    addCartBtn.disabled = false;
+  } else {
+    addCartBtn.textContent = "Add to Cart";
+    addCartBtn.disabled = cart.length >= 3;
+  }
+
+  updateCartTabCount(cart);
+}
+</script>
+
+
+</body>
+</html>
