@@ -22,7 +22,7 @@
 
   <!-- ✅ Open Graph / Facebook / WhatsApp -->
   <meta property="og:title" content="Foyer Studio™ - Best Online Boutique in Kerala">
-  <meta property="og:description" content="Explore elegant women's clothing from Foyer Studio™, a leading online boutique in Kasaragod, Manjeshwar, and Kunjathur, Kerala.">
+  <meta property="og:description" content="Explore elegant clothing from Foyer Studio™, a leading online boutique in Kasaragod, Manjeshwar, and Kunjathur, Kerala.">
   <meta property="og:image" content="https://foyerstudio.in/images/logo_red.png">
   <meta property="og:url" content="https://foyerstudio.in">
   <meta property="og:type" content="website">
@@ -31,7 +31,7 @@
   <!-- ✅ Twitter (X) Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Foyer Studio™ - Best Online Boutique in Kerala">
-  <meta name="twitter:description" content="Discover timeless women's clothing from Foyer Studio™ — serving Kasaragod, Manjeshwar, and Kunjathur, Kerala.">
+  <meta name="twitter:description" content="Discover timeless clothing from Foyer Studio™ — serving Kasaragod, Manjeshwar, and Kunjathur, Kerala.">
   <meta name="twitter:image" content="https://foyerstudio.in/images/logo_red.png">
 
   <!-- ✅ Favicons -->
@@ -59,7 +59,7 @@
       "https://www.instagram.com/foyerstudio",
       "https://wa.me/919037622566"
     ],
-    "description": "Foyer Studio™ is an online boutique dedicated to timeless women’s fashion, offering elegant clothing designed to inspire confidence and style.",
+    "description": "Foyer Studio™ is an online boutique dedicated to timeless fashion, offering elegant clothing designed to inspire confidence and style.",
     "founder": "Foyer Studio Team",
     "contactPoint": {
       "@type": "ContactPoint",
@@ -94,7 +94,7 @@
       "https://www.instagram.com/foyerstudio",
       "https://wa.me/919037622566"
     ],
-    "description": "Foyer Studio™ is a local online boutique in Kerala offering elegant women's clothing. Serving customers in Kasaragod, Manjeshwar, and Kunjathur."
+    "description": "Foyer Studio™ is a local online boutique in Kerala offering elegant clothing. Serving customers in Kasaragod, Manjeshwar, and Kunjathur."
   }
   </script>
 
@@ -3067,6 +3067,18 @@ window.addEventListener("beforeunload", () => {
 });
 
 
+window.addEventListener("load", () => {
+  const hash = window.location.hash.replace("#", "");
+
+  if (!hash) return;
+
+  // If it's a normal tab (Women, Men, Fragrance)
+  const tabButton = document.querySelector(`.tablink[onclick*="${hash}"]`);
+  if (tabButton) {
+    tabButton.click();
+    return;
+  }
+});
 
 
 
