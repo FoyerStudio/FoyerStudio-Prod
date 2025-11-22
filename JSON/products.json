@@ -918,5 +918,1085 @@
     "color": "Cream",
     "type": "Semi Casual",
     "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FM0001GR000S",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "S",
+    "color": "Green",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001GR000M",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "M",
+    "color": "Green",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001GR000L",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "L",
+    "color": "Green",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001GR00XL",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "XL",
+    "color": "Green",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001PP000S",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "S",
+    "color": "Purple",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001PP000M",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "M",
+    "color": "Purple",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001PP000L",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "L",
+    "color": "Purple",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001PP00XL",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "XL",
+    "color": "Purple",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001BK000S",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "S",
+    "color": "Black",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001BK000M",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "M",
+    "color": "Black",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001BK000L",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "L",
+    "color": "Black",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001BK00XL",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "XL",
+    "color": "Black",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001WT000S",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "S",
+    "color": "White",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001WT000M",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "M",
+    "color": "White",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001WT000L",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "L",
+    "color": "White",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001WT00XL",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "XL",
+    "color": "White",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001BR000S",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "S",
+    "color": "Brown",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001BR000M",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "M",
+    "color": "Brown",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001BR000L",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "L",
+    "color": "Brown",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001BR00XL",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "XL",
+    "color": "Brown",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001MR000S",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "S",
+    "color": "Maroon",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001MR000M",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "M",
+    "color": "Maroon",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001MR000L",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "L",
+    "color": "Maroon",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001MR00XL",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "XL",
+    "color": "Maroon",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001VT000S",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "S",
+    "color": "Violet",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001VT000M",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "M",
+    "color": "Violet",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001VT000L",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "L",
+    "color": "Violet",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001VT00XL",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "XL",
+    "color": "Violet",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001RR000S",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "S",
+    "color": "Brick Red",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001RR000M",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "M",
+    "color": "Brick Red",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001RR000L",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "L",
+    "color": "Brick Red",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001RR00XL",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "XL",
+    "color": "Brick Red",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001DB000S",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "S",
+    "color": "Dark Brown",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001DB000M",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "M",
+    "color": "Dark Brown",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001DB000L",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "L",
+    "color": "Dark Brown",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0001DB00XL",
+    "name": "Premium Poly Lycra Shirt",
+    "sellingPrice": 899,
+    "spec": "Relaxed fit shirt made of poly lycra fabric. Featuring button-down collar, long sleeves with button cuffs.",
+    "size": "XL",
+    "color": "Dark Brown",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Poly Lycra Shirts"
+  },
+  {
+    "code": "FM0002YL000S",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "S",
+    "color": "Yellow",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002YL000M",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "M",
+    "color": "Yellow",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002YL000L",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "L",
+    "color": "Yellow",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002YL00XL",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "XL",
+    "color": "Yellow",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002PK000S",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "S",
+    "color": "Pink",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002PK000M",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "M",
+    "color": "Pink",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002PK000L",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "L",
+    "color": "Pink",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002PK00XL",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "XL",
+    "color": "Pink",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002PP000S",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "S",
+    "color": "Purple",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002PP000M",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "M",
+    "color": "Purple",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002PP000L",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "L",
+    "color": "Purple",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002PP00XL",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "XL",
+    "color": "Purple",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002GR000S",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "S",
+    "color": "Green",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002GR000M",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "M",
+    "color": "Green",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002GR000L",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "L",
+    "color": "Green",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002GR00XL",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "XL",
+    "color": "Green",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002BK000S",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "S",
+    "color": "Black",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002BK000M",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "M",
+    "color": "Black",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002BK000L",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "L",
+    "color": "Black",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0002BK00XL",
+    "name": "Cavalry Stripes",
+    "sellingPrice": 949,
+    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
+    "size": "XL",
+    "color": "Black",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
+  },
+  {
+    "code": "FM0003CR000S",
+    "name": "Textured Stripe",
+    "sellingPrice": 949,
+    "spec": "A soft textured stripe shirt with clean and timeless look. Lightweight, comfortable and easy to style for any occassion",
+    "size": "S",
+    "color": "Cream",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Textured Stripe"
+  },
+  {
+    "code": "FM0003CR000M",
+    "name": "Textured Stripe",
+    "sellingPrice": 949,
+    "spec": "A soft textured stripe shirt with clean and timeless look. Lightweight, comfortable and easy to style for any occassion",
+    "size": "M",
+    "color": "Cream",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Textured Stripe"
+  },
+  {
+    "code": "FM0003CR000L",
+    "name": "Textured Stripe",
+    "sellingPrice": 949,
+    "spec": "A soft textured stripe shirt with clean and timeless look. Lightweight, comfortable and easy to style for any occassion",
+    "size": "L",
+    "color": "Cream",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Textured Stripe"
+  },
+  {
+    "code": "FM0003CR00XL",
+    "name": "Textured Stripe",
+    "sellingPrice": 949,
+    "spec": "A soft textured stripe shirt with clean and timeless look. Lightweight, comfortable and easy to style for any occassion",
+    "size": "XL",
+    "color": "Cream",
+    "type": "Top Wear",
+    "tags": "Top Wear,New Arrivals,Textured Stripe"
+  },
+  {
+    "code": "FM0004WT0030",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 30,
+    "color": "White",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004WT0032",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 32,
+    "color": "White",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004WT0034",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 34,
+    "color": "White",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004WT0036",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 36,
+    "color": "White",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004BK0030",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 30,
+    "color": "Black",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004BK0032",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 32,
+    "color": "Black",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004BK0034",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 34,
+    "color": "Black",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004BK0036",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 36,
+    "color": "Black",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004DB0030",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 30,
+    "color": "Dark Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004DB0032",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 32,
+    "color": "Dark Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004DB0034",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 34,
+    "color": "Dark Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004DB0036",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 36,
+    "color": "Dark Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004GY0030",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 30,
+    "color": "Grey",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0040GY0032",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 32,
+    "color": "Grey",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004GY0034",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 34,
+    "color": "Grey",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004GY0036",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1149,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 36,
+    "color": "Grey",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004BG0030",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 30,
+    "color": "Beige",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004BG0032",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 32,
+    "color": "Beige",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004BG0034",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 34,
+    "color": "Beige",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004BG0036",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 36,
+    "color": "Beige",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004TB0030",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 30,
+    "color": "Dusty Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004TB0032",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 32,
+    "color": "Dusty Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004TB0034",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 34,
+    "color": "Dusty Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0004TB0036",
+    "name": "Tailored Linen Gurkha",
+    "sellingPrice": 1199,
+    "spec": "Refined take on the classic gurkha silhoutte, tailored from breathable linen for a crisp lightweight feel.This trousers offer a sharp,structured fit while keeping confort at its core.",
+    "size": 36,
+    "color": "Dusty Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Tailored Linen Gurkha Pants"
+  },
+  {
+    "code": "FM0005BK0030",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 30,
+    "color": "Black",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005BK0032",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 32,
+    "color": "Black",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005BK0034",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 34,
+    "color": "Black",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005BK0036",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 36,
+    "color": "Black",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005WT0030",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 30,
+    "color": "White",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005WT0032",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 32,
+    "color": "White",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005WT0034",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 34,
+    "color": "White",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005WT0036",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 36,
+    "color": "White",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005DB0030",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 30,
+    "color": "Dark Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005DB0032",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 32,
+    "color": "Dark Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005DB0034",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 34,
+    "color": "Dark Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005DB0036",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 36,
+    "color": "Dark Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005BR0030",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 30,
+    "color": "Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005BR0032",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 32,
+    "color": "Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005BR0034",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 34,
+    "color": "Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005BR0036",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 36,
+    "color": "Brown",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005BG0030",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 30,
+    "color": "Beige",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005BG0032",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 32,
+    "color": "Beige",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005BG0034",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 34,
+    "color": "Beige",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005BG0036",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 36,
+    "color": "Beige",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005PT0030",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 30,
+    "color": "Pistatio",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005PT0032",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 32,
+    "color": "Pistatio",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005PT0034",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 34,
+    "color": "Pistatio",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
+  },
+  {
+    "code": "FM0005PT0036",
+    "name": "Relaxed Linen Bottoms",
+    "sellingPrice": 1299,
+    "spec": "Lightweight and effortlessly breathable, these relaxed linen bottoms offer all-day comfort with a naturally airy drape. Designed with a loose, easy fit and soft texture, they’re perfect for everyday wear, warm weather, and laid-back styling.",
+    "size": 36,
+    "color": "Pistatio",
+    "type": "Bottoms",
+    "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
   }
 ]

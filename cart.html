@@ -796,7 +796,7 @@
         } else if (currentCoupon.code.includes("FLAT")) {
           couponNote.textContent = "Code is applied only for applicable products.";
         } else {
-          couponNote.textContent = "Coupon code applied.";
+          couponNote.textContent = "Code is applied only for applicable products.";
         }
       } catch (err) {
         console.error("Coupon fetch error:", err);
@@ -855,7 +855,6 @@
   const confirmOtpBtn = document.getElementById("confirmOrderBtn");
   const toast = document.getElementById("toast");
 
-  let recaptchaVerifier;
   let confirmationResult;
 
   mobileInput.addEventListener("input", () => {
@@ -864,13 +863,16 @@
       mobileInput.value = "+91" + digits.substring(0, 10);
   });
 
-  window.onload = () => {
-      recaptchaVerifier = new RecaptchaVerifier('recaptcha-container', {
-          'size': 'invisible',
-          'callback': () => sendOTP(),
-          'expired-callback': () => showToast("reCAPTCHA expired. Please try again.")
-      }, auth);
-  };
+ let recaptchaVerifier;
+
+window.onload = () => {
+    recaptchaVerifier = new RecaptchaVerifier('recaptcha-container', {
+        'size': 'invisible'
+    }, auth);
+};
+
+
+
 
   let countdown; // store interval
   const timerText = document.getElementById("timerText");
@@ -1012,25 +1014,31 @@ if (!validateOrderForm()) return;
     if (!validateOrderForm()) return;
 
       // Disable button immediately + start countdown
-      startOtpTimer(60);
+     startOtpTimer(60);
 
-      // Trigger reCAPTCHA + send OTP
-      recaptchaVerifier.verify().then(() => {
-          sendOTP();
-          otpInput.style.display = "block";
-      confirmOrderBtn.style.display = "block";
-      }).catch(err => {
-          console.error("reCAPTCHA failed:", err);
-          showToast("reCAPTCHA verification failed. Try again.");
-          
-          // Re-enable if captcha fails
-          clearInterval(countdown);
-          timerText.textContent = "";
-          sendOtpBtn.disabled = false;
-          sendOtpBtn.style.opacity = "1";
-          sendOtpBtn.style.cursor = "pointer";
-      });
-  });
+try {
+    // Run invisible reCAPTCHA (already created on page load)
+    await recaptchaVerifier.verify();
+
+    // Send OTP only once
+    await sendOTP();
+
+    // Show OTP input + confirm button
+    otpInput.style.display = "block";
+    confirmOrderBtn.style.display = "block";
+
+} catch (err) {
+    console.error("reCAPTCHA failed:", err);
+    showToast("reCAPTCHA verification failed. Try again.");
+
+    // Re-enable button + reset UI
+    clearInterval(countdown);
+    timerText.textContent = "";
+    sendOtpBtn.disabled = false;
+    sendOtpBtn.style.opacity = "1";
+    sendOtpBtn.style.cursor = "pointer";
+}
+});
 
 
   // Confirm Order Button Click

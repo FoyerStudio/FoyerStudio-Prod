@@ -9,328 +9,301 @@
   <link rel="icon" type="image/png" href="images/logo_red.png">
 
   <style>
-    /* --- General Styles --- */
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: #fefef6;
-      color: #731a2f;
-    }
+   /* --- General Styles --- */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fefef6;
+  color: #731a2f;
+}
 
-    /* --- Banner --- */
- .banner {
+/* --- Banner --- */
+.banner {
   width: 100%;
-  min-height: 80px;              /* taller since text goes below */
+  min-height: 80px;
   display: flex;
-  flex-direction: column;        /* ✅ stack logo and text vertically */
-  align-items: center;           /* center horizontally */
-  justify-content: center;       /* center vertically */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
-  background: #fefef6;           /* optional */
+  background: #fefef6;
   color: #731a2f;
   font-family: 'Playfair Display', serif;
-  font-size: 2.0em;
+  font-size: 2em;
   border-bottom: 3px solid #731a2f;
   z-index: 1000;
-  gap: 6px;                      /* space between logo and text */
+  gap: 6px;
 }
-
 .banner-logo {
-  height: 2.5em;                 /* a bit bigger so logo stands out */
-  width: auto;                   /* keep aspect ratio */
-  display: block;                /* ensure it's treated as block */
+  height: 2.5em;
+  width: auto;
+  display: block;
 }
-    /* Navigation */
-    .nav {
-      display: flex;
-      justify-content: center;
-      overflow-x: auto;
-      gap: 10px;
-      padding: 10px 5px;
-      background: #fefef6;
-      border-bottom: 2px solid #731a2f;
-   //   position: fixed;
-   //   top: 180px;
-   //   width: 100%;
-      z-index: 999;
-    }
-    .nav button {
-      flex: 0 0 auto;
-      background: #731a2f;
-      border: 1px solid #731a2f;
-      color: #fefef6;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 8px;
-      cursor: pointer;
-      white-space: nowrap;
-    }
-    .nav button:hover,
-    .nav button.active {
-      background: #731a2f;
-      color: #fefef6;
-      font-weight: bold;
-    }
 
-    /* Main Content */
-    .main {
-      padding: 20px 15px 40px 15px;
-     // margin-top: 250px;
-	margin-top: 20px; /* instead of 250px */
-    }
+/* --- Navigation --- */
+.nav {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 10px;
+  padding: 10px 5px;
+  background: #fefef6;
+  border-bottom: 2px solid #731a2f;
+  z-index: 999;
+}
+.nav button {
+  flex: 0 0 auto;
+  background: #731a2f;
+  border: 1px solid #731a2f;
+  color: #fefef6;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+.nav button:hover,
+.nav button.active {
+  background: #9e5740;
+  font-weight: bold;
+}
 
-    h1 {
-      text-align: center;
-      margin: 10px 0;
-      font-size: 1.5em;
-      color: #731a2f;
-      font-family: 'Georgia', serif;
-      letter-spacing: 1.5px;
-      position: relative;
-      display: inline-block;
-      padding-bottom: 6px;
-    }
+/* --- Main content wrapper --- */
+.main {
+  padding: 20px 15px 40px 15px;
+  margin-top: 2px;
+}
 
-    h1::after {
-      content: "";
-      display: block;
-      width: 50%;
-      margin: 6px auto 0;
-      border-bottom: 2px solid #731a2f;
-      border-radius: 2px;
-    }
-
-    .back-btn {
-  display: inline-block;
-  font-size: 1.5em;
-  color: #fff;
+/* --- Header --- */
+.header-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.header-wrapper h1 {
+  font-size: 1.8em;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin: 0;
+}
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   background: #731a2f;
   border: none;
-  border-radius: 8px;
-  padding: 4px 8px;
+  color: #fefef6;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 25px;
   cursor: pointer;
-  position: absolute;
-  left: 15px;
-  top: 15px;
+  z-index: 210;
   transition: background 0.3s ease;
 }
+.back-btn:hover {
+  background: #9e5740;
+}
 
-    .header-wrapper {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 20px;
-    }
+/* --- Loader --- */
+.loader {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: transparent;
+  display: none;
+}
+.loader .bar {
+  height: 100%;
+  width: 0;
+  background: #731a2f;
+  box-shadow: 0 0 8px #731a2f, 0 0 15px #731a2f;
+  animation: loadingAnim 5s linear infinite;
+}
+@keyframes loadingAnim {
+  0%   { width: 0; margin-left: 0; }
+  50%  { width: 60%; margin-left: 20%; }
+  100% { width: 0; margin-left: 100%; }
+}
 
-        /* Loader (Under Navigation Bar) */
-    .loader {
-      position: relative;
-      width: 100%;
-      height: 2px;
-      background: transparent;
-      display: none;
-    }
-    .loader .bar {
-      height: 100%;
-      width: 0;
-      background: #731a2f;
-      box-shadow: 0 0 8px #731a2f, 0 0 15px #731a2f;
-      animation: loadingAnim 5s linear infinite;
-    }
-    @keyframes loadingAnim {
-      0%   { width: 0; margin-left: 0; }
-      50%  { width: 60%; margin-left: 20%; }
-      100% { width: 0; margin-left: 100%; }
-    }
+/* --- Product Layout --- */
+.product-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
 
+/* Carousel Section */
+.carousel-container {
+  flex: 1 1 400px;
+  position: relative;
+  display: none;
+}
+.carousel {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  background-color: #fefef6;
+}
+.carousel img {
+  display: none;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: opacity 0.5s ease-in-out;
+}
+.carousel img.active {
+  display: block;
+}
 
-
-
-
-    /* Product Carousel */
-    .carousel-container {
-      position: relative;
-      width: 100%;
-      max-width: 400px;
-      margin: 20px auto;
-      display: none; /* hidden initially */
-    }
-
-    .carousel {
-      overflow: hidden;
-      border-radius: 10px;
-      max-width: 100%;
-      display: block;
-      text-align: center;
-      background-color: #fefef6;
-      position: relative;
-    }
-
-    .carousel img {
-      display: none;
-      width: 100%;
-      height: auto;
-      object-fit: contain; /* Ensure full image is visible */
-      transition: opacity 0.5s ease-in-out;
-    }
-
-    .carousel img.active {
-      display: block; /* Show only the active image */
-    }
-
-   .carousel-arrow {
-  display: none; /* hide arrows initially */
+/* Carousel arrows */
+.carousel-arrow {
+  display: flex;
   align-items: center;
   justify-content: center;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #731a2f;
+  background: rgba(115,26,47,0.9);
   border: none;
-  color: #fefef6;
+  color: #fff;
   font-size: 24px;
-  padding: 3px 7px;
+  padding: 5px 10px;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 50%;
   z-index: 10;
+  transition: background 0.3s ease;
 }
+.carousel-arrow:hover { background: rgba(115,26,47,1); }
+.carousel-arrow.left { left: 10px; }
+.carousel-arrow.right { right: 10px; }
 
-
-    .carousel-arrow.left {
-      left: 10px;
-    }
-
-    .carousel-arrow.right {
-      right: 10px;
-    }
-
-
-.carousel-container,
-.product-info,
-.carousel-arrow {
-  display: none; /* hide everything initially */
-}
-   
-
-    .product-name {
-      font-weight: bold;
-      font-size: 18px;
-      margin-bottom: 5px;
-    }
-
-    .product-price {
-      color: #731a2f;
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-
-     .product-info {
-  display: none;
-  text-align: left;      /* left align details */
-  margin: 15px 0;
-  max-width: 400px;      /* match carousel width */
-  margin-left: auto;     /* center block with image */
-  margin-right: auto;    /* center block with image */
-}
-
-
-    .product-name { font-weight: bold; font-size: 18px; margin-bottom: 5px; }
-
-.product-spec {
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: justify;
-  line-height: 1.6;
-  word-break: break-word;
-  white-space: pre-line;   /* <-- keeps new lines */
+/* Magnify button */
+.magnify-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #fefef6;
+  border: 1px solid #731a2f;
   color: #731a2f;
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 50;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
 }
+.magnify-btn:hover { background: #731a2f; color: #fefef6; }
 
-.product-info h3 {
-  font-size: 14px;
+/* Fullscreen overlay */
+.image-fullscreen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.95);
+  z-index: 200;
+  justify-content: center;
+  align-items: center;
+}
+.image-fullscreen img { max-width: 95%; max-height: 95%; object-fit: contain; }
+
+/* Product Info Section */
+.product-info {
+  flex: 1 1 400px;
+  display: none;
+}
+.product-name {
+  font-size: 1.8em;
   font-weight: bold;
-  color: #731a2f;               /* gold theme color */
-  text-align: left;
-  border-top: 2px solid #731a2f;    /* top border only */
-  border-bottom: 2px solid #731a2f; /* bottom border only */
-  border-left: none;
-  border-right: none;
-  padding: 8px 12px;             /* breathing space inside */
-  margin: 10px 0 15px 0;         /* space above and below */
-  width: calc(100% - 24px);      /* full width minus horizontal padding */
-  box-sizing: border-box;        /* include padding in width */
-  background-color: #fefef6;        /* match page bg */
+  margin-bottom: 15px;
 }
-
-    .delivery-date {
-      color: #731a2f;
-      font-size: 13px;
-      margin-bottom: 15px;
-    }
-
 .price-size-row {
   display: flex;
-  justify-content: space-between; /* size left, price right */
   align-items: center;
-  margin: 10px 0 15px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
   gap: 10px;
 }
-
-.size-container {
-  font-size: 14px;
+.product-price {
+  font-size: 1.6em;
+  font-weight: bold;
   color: #731a2f;
 }
+.size-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.size-select {
+  background: #fff;
+  border: 1px solid #731a2f;
+  border-radius: 25px;
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #731a2f;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.size-select:hover,
+.size-select.active { background: #731a2f; color: #fff; font-weight: bold; }
 
+/* Add-to-cart button */
+.add-cart-btn {
+  background: #731a2f;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  padding: 14px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+.add-cart-btn:hover { background: #9e5740; }
+.add-cart-btn:disabled { background: #555; color: #ccc; cursor: not-allowed; }
 
+/* Description & disclaimer */
+.product-spec {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #731a2f;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+.product-spec b { font-weight: bold; }
+h3 { margin-bottom: 8px; font-size: 16px; }
 
+/* Delivery date */
+.delivery-date {
+  font-size: 13px;
+  margin-bottom: 15px;
+}
 
-    .add-cart-btn {
-      background: #731a2f;
-      color: #fefef6;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .add-cart-btn:disabled {
-      background: #555;
-      cursor: default;
-      color: #ccc;
-    }
-
-    /* Responsive layout for small screens */
-    @media screen and (max-width: 600px) {
-      h1 {
-        font-size: 1.3em;
-      }
-
-      .carousel {
-        height: auto; /* Let height adjust to image height */
-      }
-
-      .carousel img {
-        max-height: 80vh; /* Limit max image height to viewport */
-      }
-
-      .product-name {
-        font-size: 16px;
-      }
-
-      .product-price,
-      .delivery-date {
-        font-size: 14px;
-      }
-
-      .carousel-arrow {
-        font-size: 20px;
-        padding: 4px 8px;
-      }
-    }
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .product-container { flex-direction: column; }
+  .carousel-container, .product-info { flex: 1 1 100%; }
+  h1 { font-size: 1.5em; }
+  .product-name { font-size: 1.5em; }
+  .product-price { font-size: 1.3em; }
+  .size-select { padding: 6px 12px; font-size: 13px; }
+  .add-cart-btn { font-size: 15px; padding: 12px 20px; }
+  .carousel-arrow { font-size: 20px; padding: 4px 8px; }
+  .carousel img { max-height: 70vh; }
+}
   </style>
 </head>
 <body>
@@ -350,36 +323,34 @@
 
   <div class="main">
     <div class="header-wrapper">
-      <button class="back-btn" onclick="backToShopping()">←</button>
       <h1>Product Details</h1>
     </div>
 
    
-
-	<div class="carousel-container" id="carouselContainer" style="display:none;">
+<div class="product-container">
+    <!-- Carousel Section -->
+	<div class="carousel-container" id="carouselContainer">
       <div id="carousel" class="carousel"></div>
       <button id="leftArrow" class="carousel-arrow left" onclick="prevImage()">‹</button>
       <button id="rightArrow" class="carousel-arrow right" onclick="nextImage()">›</button>
     </div>
 
 
-   <div class="product-info" id="productInfo" style="display:none;">
+   <div class="product-info" id="productInfo">
       <div id="productName" class="product-name"></div>
-
       <div class="price-size-row">
   <div class="size-container" id="sizeContainer"></div>
   <div id="productPrice" class="product-price"></div>
 </div>
-
-
       <h3>Description</h3>
       <div id="productSpec" class="product-spec"></div>
 
       <div id="deliveryDate" class="delivery-date"></div>
       <button id="addCartBtn" class="add-cart-btn" onclick="toggleCart()">Add to Cart</button>
-
+       <button class="add-cart-btn" onclick="backToShopping()">Back</button>
    </div>
   </div>
+
 
 <!-- Include Firebase SDKs -->
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>

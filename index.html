@@ -16,8 +16,8 @@
 
 
 
-  <meta name="description" content="Foyer Studio™ is one of the best online boutiques in Kerala, offering elegant women's clothing in Kasaragod, Manjeshwar, and Kunjathur. Shop timeless fashion that inspires confidence and style. Visit foyerstudio.in or contact fashion@foyerstudio.in.">
-  <meta name="keywords" content="best online boutique Kerala, women's boutique Kasaragod, online fashion store Manjeshwar, Kunjathur boutique, Foyer Studio, women's clothing, Kerala fashion boutique, best online seller near me, best boutique near me">
+  <meta name="description" content="Foyer Studio™ is one of the best online boutiques in Kerala, offering elegant clothing in Kasaragod, Manjeshwar, and Kunjathur. Shop timeless fashion that inspires confidence and style. Visit foyerstudio.in or contact fashion@foyerstudio.in.">
+  <meta name="keywords" content="best online boutique Kerala, boutique Kasaragod, online fashion store Manjeshwar, Kunjathur boutique, Foyer Studio, Kerala fashion boutique, best online seller near me, best boutique near me">
   <meta name="author" content="Foyer Studio">
 
   <!-- ✅ Open Graph / Facebook / WhatsApp -->
@@ -146,6 +146,7 @@ body {
   margin-top: 4px;
   text-align: center;
 }
+
 
 /* Floating Menu Button */
 .menu-fab {
@@ -1003,6 +1004,11 @@ input[type=number] {
   100% { transform: scale(1); }
 }
 
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 5px;
+}
 
 
 
@@ -1018,9 +1024,9 @@ input[type=number] {
 
 <!-- Left Sliding Menu -->
 <nav id="menu" class="menu" aria-hidden="true">
-  <a href="#" onclick="openTabFromMenu('shopping'); return false;" style="--i:0">Fashion</a>
+  <a href="#" onclick="openCategoryView(); return false;" style="--i:2">Women</a>
+  <a href="#" onclick="openMenCategoryView(); return false;" style="--i:2">Men</a>
   <a href="#" onclick="openTabFromMenu('fragrance'); return false;" style="--i:1">Fragrance</a>
-  <a href="#" onclick="openCategoryView(); return false;" style="--i:2">Category</a>
   <a href="TC.html" style="--i:3">Terms & Conditions</a>
   <a href="privacy-policy.html" style="--i:4">Privacy Policy</a>
   <a href="shipping-policy.html" style="--i:3">Shipping Policy</a>
@@ -1037,21 +1043,24 @@ input[type=number] {
   </header>
 
   <!-- navigation (scrolls under banner) -->
-  <div class="nav" id="topNav">
-    <button id="tab-category-nav" class="tablink active" onclick="openCategoryView();">Home</button>
-    <button id="tab-shopping" class="tablink" onclick="openTab(event,'shopping')">Fashion</button>
-    <button id="tab-fragrance" class="tablink" onclick="openTab(event,'fragrance')">Fragrance</button>
-    <button id="cartTab" class="tablink" onclick="goToCart()">Cart</button>
-  </div>
+<div class="nav" id="topNav">
+  <button id="tab-category-nav" class="tablink active" onclick="openTab(event, 'categoryView')">Women</button>
+  <button id="tab-Mencategory-nav" class="tablink" onclick="openTab(event, 'MencategoryView')">Men</button>
+  <button id="tab-fragrance" class="tablink" onclick="openTab(event, 'fragrance')">Fragrance</button>
+  <button id="cartTab" class="tablink" onclick="goToCart()">Cart</button>
+</div>
+
 
  <div class="offer-banner">
   <div class="slides">
     <img src="images/pakistani.jpg" class="slide active" alt="Offer 1">
+    <img src="images/Men.jpg" class="slide" alt="Offer 2">
     <img src="images/fragrance.jpg" class="slide" alt="Offer 3">
   </div>
   <div class="dots">
     <span class="dot active" data-index="0"></span>
     <span class="dot" data-index="1"></span>
+    <span class="dot" data-index="2"></span>
   </div>
 </div>
 
@@ -1102,8 +1111,70 @@ input[type=number] {
   </div>
 </div>
 
-<div id="fragrance" class="tabcontent">
-  <div class="header-wrapper"><h1>Fragrance</h1></div>
+
+
+ <!-- Category view (cards) -->
+    <section id="MencategoryView" style="display:none;">
+      <div class="header-wrapper"><h1>Categories</h1></div>
+      <div id="MencategoryGrid" class="grid"></div>
+      <div id="MencategoryNoProducts" class="no-products" style="display:none;">No categories available.</div>
+    </section>
+
+    <!-- Category products view (shows after clicking a category) -->
+    <section id="MencategoryProductsView" style="display:none;">
+  <div class="header-wrapper"><h1 id="MencategoryProductsTitle">Category</h1></div>
+  <div class="search-container" id="MencategoryFilters">
+  <div class="search-row full">
+    <input type="text" id="MensearchCategory" placeholder="Search product name..." />
+  </div>
+
+  <div class="search-row">
+    <select id="MenfilterCategorySize"><option value="">All Sizes</option></select>
+    <select id="MenfilterCategoryColor"><option value="">All Colors</option></select>
+  </div>
+
+  <div class="search-row">
+    <input type="number" id="MencategoryPriceMin" placeholder="Min Price" min="0" />
+    <input type="number" id="MencategoryPriceMax" placeholder="Max Price" min="0" />
+  </div>
+
+  <div class="search-row">
+    <button onclick="showMenCategoryCards()">Back</button>
+    <button id="clearMenCategoryFilters">Clear</button>
+  </div>
+</div>
+
+  <div id="MencategoryProductsGrid" class="grid"></div>
+  <div id="MencategoryProductsNo" class="no-products" style="display:none;">No products in this category.</div>
+</section>
+
+<div id="MensizePopup" class="popup-overlay" style="display:none;">
+  <div class="popup">
+    <button id="MenclosePopup" class="close-btn"><i class="fas fa-times"></i></button>
+    <h3>Size Options Available</h3>
+    <div id="MensizeOptions" class="size-options"></div>
+    <button id="MenconfirmSizeBtn" class="confirm-btn">Add to Cart</button>
+  </div>
+</div>
+
+
+
+
+<section id="FragranceView" style="display:none;">
+  <div class="header-wrapper">
+    <h1>Categories</h1>
+  </div>
+
+  <div id="FragranceProductCategoryGrid" class="grid"></div>
+  <div id="FragranceProductsNo" class="no-products" style="display:none;">
+    No categories available.
+  </div>
+</section>
+
+<section id="FragranceProductsView" style="display:none;">
+  <div class="header-wrapper">
+    <h1 id="fragranceProductsTitle">Fragrance</h1>
+  </div>
 
   <div class="search-container">
     <!-- Search input -->
@@ -1113,12 +1184,12 @@ input[type=number] {
 
     <!-- Size only (no color) -->
     <div class="search-row full">
-   <select id="filterFragranceSize">
-  <option value="">All Sizes</option>
-  <option value="50 ml">50 ml</option>
-  <option value="100 ml">100 ml</option>
-</select>
-</div>
+      <select id="filterFragranceSize">
+        <option value="">All Sizes</option>
+        <option value="50 ml">50 ml</option>
+        <option value="100 ml">100 ml</option>
+      </select>
+    </div>
 
     <!-- Min + Max side by side -->
     <div class="search-row">
@@ -1127,51 +1198,30 @@ input[type=number] {
     </div>
 
     <!-- Clear button -->
-    <div class="search-row full">
+    <div class="search-row">
+      <button onclick="showFragranceCards()">Back</button>
       <button id="clearFragrance">Clear</button>
     </div>
   </div>
 
+  <div id="FragranceProductsGrid" class="grid"></div>
+  <div id="FragranceProductsNo" class="no-products" style="display:none;">
+    No products in this category.
+  </div>
+</section>
 
-<div id="fragranceGrid"></div>
-<div id="fragranceNoProducts" class="no-products" style="display:none;">
-  No match found.
+<div id="FragranceSizePopup" class="popup-overlay" style="display:none;">
+  <div class="popup">
+    <button id="FragranceClosePopup" class="close-btn">
+      <i class="fas fa-times"></i>
+    </button>
+    <h3>Size Options Available</h3>
+    <div id="FragranceSizeOptions" class="size-options"></div>
+    <button id="FragranceConfirmSizeBtn" class="confirm-btn">Add to Cart</button>
+  </div>
 </div>
 
 
-<div id="fragranceGrid" class="product-grid"></div>
-</div>
-
-   
-
-
-   
-
-    <!-- Shopping (Fashion) tab -->
-    <section id="shopping" class="tabcontent">
-      <div class="header-wrapper"><h1>All Products</h1></div>
-
-      <div class="search-container">
-        <div class="search-row full">
-        <input type="text" id="searchShopping" placeholder="Search product..." />
-      </div>
-      <div class="search-row">
-        <select id="filterSize"><option value="">All Sizes</option></select>
-        <select id="filterColor"><option value="">All Colors</option></select>
-      </div>
-      <div class="search-row">
-        <!-- category filter removed -->
-        <input type="number" id="priceMin" placeholder="Min Price" min="0" />
-        <input type="number" id="priceMax" placeholder="Max Price" min="0" />
-      </div>
-      <div class="search-row full">
-        <button id="clearShopping">Clear</button>
-      </div>
-      </div>
-
-      <div id="shoppingGrid" class="grid"></div>
-      <div id="shoppingNoProducts" class="no-products" style="display:none;">No match found.</div>
-    </section>
   </main>
 
   <!-- Elfsight Google Reviews -->
@@ -1227,14 +1277,47 @@ input[type=number] {
     const db = firebase.firestore();
 
     // fetch inventory - unchanged
-    async function fetchInventoryFromFirestore(){
-      try {
-        const snapshot = await db.collection("Inventory").get();
-        const inventory = [];
-        snapshot.forEach(doc => inventory.push({ code: doc.id, ...doc.data() }));
-        return inventory;
-      } catch (err) { console.error("Error fetching inventory from Firestore:", err); return []; }
-    }
+  async function fetchInventoryFromFirestore(tab) {
+  try {
+    const snapshot = await db.collection("Inventory").get();
+    const inventory = [];
+
+    snapshot.forEach(doc => {
+      const data = { code: doc.id, ...doc.data() };
+
+      // Only include if inStock > 0
+      if (Number(data.inStock) > 0) {
+
+        // If tab is empty → include everything
+        if (!tab || tab.trim() === "") {
+          inventory.push(data);
+          return; // skip further filters
+        }
+
+        // --- TAB FILTER LOGIC ---
+        if (tab === "women" && data.code.includes("FS")) {
+          inventory.push(data);
+        }
+        else if (tab === "men" && data.code.includes("FM")) {
+          inventory.push(data);
+        }
+        else if (tab === "fragrance" && data.code.includes("FF")) {
+          inventory.push(data);
+        }
+      }
+    });
+
+    console.log(`📦 [Inventory] Loaded ${inventory.length} products with inStock > 0`);
+    return inventory;
+
+  } catch (err) {
+    console.error("❌ Error fetching inventory from Firestore:", err);
+    return [];
+  }
+}
+
+
+
 
     // Size codes and helper (unchanged)
     const SIZE_CODES = ["XXXS","0XXS","00XS","000S","000M","000L","00XL","0XXL","XXXL","0000","0100","0050"];
@@ -1246,30 +1329,155 @@ input[type=number] {
     function showLoader(){ document.getElementById('loader').style.display = 'block'; }
     function hideLoader(){ document.getElementById('loader').style.display = 'none'; }
 
-    // openTab - ensures only requested tab visible and triggers load/filter setups
-    function openTab(evt, tabName){
-      Array.from(document.getElementsByClassName('tabcontent')).forEach(t=>{ t.classList.remove('active'); t.style.display='none'; t.classList.remove('view-enter'); });
-      Array.from(document.getElementsByClassName('tablink')).forEach(b=>b.classList.remove('active'));
-      const el = document.getElementById(tabName);
-      if (el){ el.classList.add('active'); el.style.display='block'; el.classList.add('view-enter'); }
-      if (evt && evt.currentTarget) evt.currentTarget.classList.add('active');
+    // openTab - ensures only requested tab is visible and triggers relevant setup
+/* ----------------------------------------
+   FIXED: Unified Tab Handling + Cleanup
+-----------------------------------------*/
 
-      // hide category views
-      document.getElementById('categoryView').style.display = 'none';
-      document.getElementById('categoryProductsView').style.display = 'none';
+function openTab(evt, tabName) {
+  console.log("🧭 openTab:", tabName);
 
-      // load the relevant grids & filters
-      if (tabName === 'shopping') {
-        const applyFilters = setupShoppingFiltersAndSearch();
-        loadShoppingGrid(()=>{ populateFiltersFromLocalJSON(()=> restoreFiltersAndApply(applyFilters)); });
-      }
-      if (tabName === 'fragrance') {
-        const applyFilters = setupFragranceFiltersAndSearch();
-        loadFragranceGrid(()=>{ restoreFragranceFiltersAndApply(applyFilters); });
-      }
-      // scroll below banner for user
-      window.scrollTo({ top: (parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 88) + 8, behavior:'smooth' });
-    }
+  // Hide all .tabcontent sections
+  document.querySelectorAll('.tabcontent').forEach(t => {
+    t.classList.remove('active', 'view-enter');
+    t.style.display = 'none';
+  });
+
+  // Deactivate all tab buttons
+  document.querySelectorAll('.tablink').forEach(b => b.classList.remove('active'));
+
+  // --- FIX #1: Clear ALL dynamic grids ---
+  [
+    'categoryGrid',
+    'categoryProductsGrid',
+    'MencategoryGrid',
+    'MencategoryProductsGrid',
+    'FragranceProductCategoryGrid',
+    'FragranceProductsGrid'
+  ].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.innerHTML = '';
+  });
+
+  // --- FIX #2: Hide ALL subviews (Fragrance + Category) ---
+  [
+    'categoryView',
+    'categoryProductsView',
+    'MencategoryView',
+    'MencategoryProductsView',
+    'FragranceView',
+    'FragranceProductsView'
+  ].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'none';
+  });
+
+  // Show selected tabcontent (if it exists)
+  const tabEl = document.getElementById(tabName);
+  if (tabEl) {
+    tabEl.style.display = 'block';
+    tabEl.classList.add('active', 'view-enter');
+  }
+
+  // Activate clicked button
+  if (evt && evt.currentTarget) evt.currentTarget.classList.add('active');
+
+  // Tab-specific actions
+  switch (tabName) {
+    case 'fragrance':
+      showFragranceCards();
+      break;
+
+    case 'categoryView':
+      showCategoryCards(); // Home
+      break;
+
+    case 'MencategoryView':
+      showMenCategoryCards(); // Home
+      break;
+  }
+
+  // Scroll just below header
+  const headerHeight = parseInt(
+    getComputedStyle(document.documentElement)
+      .getPropertyValue('--header-height')
+  ) || 88;
+
+  window.scrollTo({ top: headerHeight + 10, behavior: 'smooth' });
+}
+
+
+
+/* ----------------------------------------
+   FIXED: Open Tab From Left Menu
+-----------------------------------------*/
+function openTabFromMenu(tab) {
+
+  // Remove active class from all tab buttons
+  Array.from(document.getElementsByClassName('tablink'))
+    .forEach(btn => btn.classList.remove('active'));
+
+  let btn, tabName;
+
+  if (tab === 'fragrance') {
+    btn = document.getElementById('tab-fragrance');
+    tabName = 'fragrance';
+
+  } else if (tab === 'category') {
+    btn = document.getElementById('tab-category-nav');
+    tabName = 'categoryView';   // 🔥 Important: points to Home section
+  }
+ else if (tab === 'Mencategory') {
+    btn = document.getElementById('tab-Mencategory-nav');
+    tabName = 'MencategoryView';   // 🔥 Important: points to Home section
+  }
+
+  if (btn) btn.classList.add('active');
+
+  // Open correct tab
+  openTab({ currentTarget: btn }, tabName);
+
+  // Close menu drawer
+  const menu = document.getElementById('menu');
+  const icon = document.getElementById('menuIcon');
+
+  if (menu.classList.contains('show')) {
+    menu.classList.remove('show');
+    icon.classList.remove('open');
+  }
+}
+
+
+
+/* ----------------------------------------
+   FIXED: Home button now just triggers openTab()
+-----------------------------------------*/
+function openCategoryView() {
+  // Home should always go through openTab() for full cleanup
+  const btn = document.getElementById("tab-category-nav");
+  openTab({ currentTarget: btn }, "categoryView");
+  const menu = document.getElementById('menu');
+  const icon = document.getElementById('menuIcon');
+  if (menu && menu.classList.contains('show')) {
+    menu.classList.remove('show');
+    if (icon) icon.classList.remove('open');
+    menu.setAttribute('aria-hidden', 'true');
+  }
+}
+
+function openMenCategoryView() {
+  // Home should always go through openTab() for full cleanup
+  const btn = document.getElementById("tab-Mencategory-nav");
+  openTab({ currentTarget: btn }, "MencategoryView");
+  const menu = document.getElementById('menu');
+  const icon = document.getElementById('menuIcon');
+  if (menu && menu.classList.contains('show')) {
+    menu.classList.remove('show');
+    if (icon) icon.classList.remove('open');
+    menu.setAttribute('aria-hidden', 'true');
+  }
+}
+
 
     // helper used by menu to open fragrance (no event)
    function openTabFromMenu(tab) {
@@ -1282,19 +1490,21 @@ input[type=number] {
     btn = document.getElementById('tab-fragrance');
   } else if (tab === 'category') {
     btn = document.getElementById('tab-category-nav');
-  } else if (tab === 'shopping') {
-    btn = document.getElementById('tab-shopping'); // fashion tab
-  }
-
+  } 
+else if (tab === 'Mencategory') {
+    btn = document.getElementById('tab-Mencategory-nav');
+  } 
   // activate selected button
   if (btn) btn.classList.add('active');
 
   // open the correct tab or category view
   if (tab === 'category') {
     openCategoryView();
-  } else if (tab === 'shopping') {
-    openTab({ currentTarget: btn }, 'shopping'); // fashion tab
-  } else {
+  }
+  else if (tab === 'Mencategory') {
+    openMenCategoryView();
+  }
+   else {
     openTab({ currentTarget: btn }, tab);
   }
 
@@ -1355,167 +1565,180 @@ input[type=number] {
       }).catch(err=>{ console.error("Error fetching filters:", err); if (callback) callback(); });
     }
 
-    // ---------------- Shopping grid (fashion) ----------------
-    function loadShoppingGrid(callbackAfterLoad){
-      showLoader();
-      Promise.all([ fetch('./JSON/products.json').then(r=>r.json()), fetchInventoryFromFirestore() ])
-      .then(([products, inventory])=>{
-        hideLoader();
-        if (!Array.isArray(products) || !Array.isArray(inventory)) return;
-
-        // cache all products for category usage
-        allProductsCache = products;
-
-        const inventoryMap = {};
-        inventory.forEach(item => inventoryMap[item.code] = Number(item.inStock) || 0);
-
-        shoppingProducts = products.filter(p=>{
-          const code = (p.code||"").toLowerCase();
-          return inventoryMap[p.code] > 0 && !code.includes("pf"); // fashion exclude pf
-        });
-        shoppingProducts.reverse();
-
-        const savedFilters = {
-          search: (localStorage.getItem("shoppingSearch")||"").toLowerCase(),
-          size: (localStorage.getItem("shoppingSize")||"").toLowerCase(),
-          color: (localStorage.getItem("shoppingColor")||"").toLowerCase(),
-          minPrice: localStorage.getItem("shoppingMinPrice") || "",
-          maxPrice: localStorage.getItem("shoppingMaxPrice") || ""
-        };
-
-        if (savedFilters.search.includes("pf")) { renderShoppingGrid([]); if (callbackAfterLoad) callbackAfterLoad(); return; }
-
-        const filteredProducts = shoppingProducts.filter(p=>{
-          const cardSize = (p.size||"").toLowerCase();
-          const cardColor = (p.color||"").toLowerCase();
-          const price = parseFloat(p.sellingPrice) || 0;
-          const sizeMatch = !savedFilters.size || cardSize === savedFilters.size;
-          const colorMatch = !savedFilters.color || cardColor === savedFilters.color;
-          const priceMatch = price >= (parseFloat(savedFilters.minPrice) || 0) && price <= (parseFloat(savedFilters.maxPrice) || Infinity);
-          const searchMatch = (p.name||"").toLowerCase().includes(savedFilters.search) || (p.code||"").toLowerCase().includes(savedFilters.search) || (p.sellingPrice||"").toString().includes(savedFilters.search);
-          return sizeMatch && colorMatch && priceMatch && searchMatch;
-        });
-
-        // deduplicate unless size applied
-        let deduped=[]; let seenBase=new Set();
-        if (!savedFilters.size){
-          filteredProducts.forEach(p=>{ const base=getBaseCode(p.code); if(!seenBase.has(base)){ seenBase.add(base); deduped.push(p); }});
-        } else deduped = filteredProducts;
-
-        renderShoppingGrid(deduped);
-        if (callbackAfterLoad) callbackAfterLoad();
-      }).catch(err=>{ hideLoader(); console.error("Error loading shopping grid:", err); });
-    }
-
-    function renderShoppingGrid(products){
-      const grid = document.getElementById("shoppingGrid");
-      const existing = grid.querySelectorAll('.product-card'); existing.forEach(c=>c.style.display='none');
-
-      products.forEach((p, idx)=>{
-        let card = grid.querySelector(`.product-card[data-code="${p.code}"]`);
-        if (!card){
-          card = document.createElement('div'); card.className='product-card'; card.dataset.code = p.code || "";
-          card.dataset.name = p.name || ""; card.dataset.price = p.sellingPrice || ""; card.dataset.size = p.size || ""; card.dataset.color = p.color || ""; card.dataset.category = p.type || "";
-
-          const img = document.createElement('img'); img.loading='lazy';
-          const driveFileId = p.image1;
-          img.src = driveFileId ? `https://drive.google.com/uc?export=view&id=${driveFileId}` : `images/products/${p.code}/1.jpg`;
-          img.alt = p.name || "Product";
-
-          const name = document.createElement('div'); name.className='product-name'; name.textContent = p.name || "";
-          const price = document.createElement('div'); price.className='product-price'; price.textContent = p.sellingPrice ? `₹${p.sellingPrice}` : "";
-
-          card.appendChild(img);
-          img.onload = ()=>{ if (!card.contains(name)) card.appendChild(name); if (!card.contains(price)) card.appendChild(price); };
-          img.onerror = ()=>{ if (!card.contains(name)) card.appendChild(name); if (!card.contains(price)) card.appendChild(price); };
-
-          card.addEventListener('click', ()=>{ 
-  sessionStorage.setItem('fromTab','shopping');  // 👈 remember current tab
-  window.location.href = `shopping-details.html?code=${encodeURIComponent(p.code)}`;
-});
-
-
-          grid.appendChild(card);
-        }
-        // set stagger index variable for CSS animation
-        card.style.setProperty('--i', idx);
-        card.style.display = 'block';
-      });
-      hideLoader();
-    }
-
-    // ---------------- Fragrance ----------------
-    function loadFragranceGrid(callbackAfterLoad){
-      showLoader();
-      Promise.all([ fetch('./JSON/products.json').then(r=>r.json()), fetchInventoryFromFirestore() ])
-      .then(([products, inventory])=>{
-        hideLoader();
-        if (!Array.isArray(products) || !Array.isArray(inventory)) return;
-
-        allProductsCache = products;
-        const inventoryMap = {}; inventory.forEach(i=>inventoryMap[i.code] = Number(i.inStock) || 0);
-
-        fragranceProducts = products.filter(p=>{
-          const code = (p.code||"").toLowerCase();
-          return inventoryMap[p.code] > 0 && code.includes("pf");
-        });
-        fragranceProducts.reverse();
-
-        const savedFilters = {
-          search: localStorage.getItem("searchFragrance") || "",
-          size: localStorage.getItem("filterFragranceSize") || "",
-          minPrice: localStorage.getItem("fragranceMinPrice") || "",
-          maxPrice: localStorage.getItem("fragranceMaxPrice") || ""
-        };
-
-        const filteredProducts = fragranceProducts.filter(p=>{
-          const cardSize = (p.size||"").toLowerCase();
-          const price = parseFloat(p.sellingPrice) || 0;
-          const searchText = savedFilters.search.toLowerCase();
-          const sizeMatch = !savedFilters.size || cardSize === savedFilters.size.toLowerCase();
-          const priceMatch = price >= (parseFloat(savedFilters.minPrice) || 0) && price <= (parseFloat(savedFilters.maxPrice) || Infinity);
-          const searchMatch = (p.name||"").toLowerCase().includes(searchText) || (p.code||"").toLowerCase().includes(searchText) || (p.sellingPrice||"").toString().includes(searchText);
-          return sizeMatch && priceMatch && searchMatch;
-        });
-
-        renderFragranceGrid(filteredProducts);
-        if (callbackAfterLoad) callbackAfterLoad();
-      }).catch(err=>{ hideLoader(); console.error("Error loading fragrance grid:", err); });
-    }
-
-    function renderFragranceGrid(products){
-      const grid = document.getElementById("fragranceGrid");
-      grid.querySelectorAll('.product-card').forEach(c=>c.style.display='none');
-
-      products.forEach((p, idx)=>{
-        let card = grid.querySelector(`.product-card[data-code="${p.code}"]`);
-        if (!card){
-          card = document.createElement('div'); card.className='product-card'; card.dataset.code = p.code || "";
-          const img = document.createElement('img'); img.loading='lazy';
-          const driveFileId = p.image1;
-          img.src = driveFileId ? `https://drive.google.com/uc?export=view&id=${driveFileId}` : `images/products/${p.code}/1.jpg`;
-          img.alt = p.name || "Product";
-          const name = document.createElement('div'); name.className='product-name'; name.textContent = p.name || "";
-          const price = document.createElement('div'); price.className='product-price'; price.textContent = p.sellingPrice ? `₹${p.sellingPrice}` : "";
-          card.appendChild(img);
-          img.onload = ()=>{ if (!card.contains(name)) card.appendChild(name); if (!card.contains(price)) card.appendChild(price); };
-          img.onerror = ()=>{ if (!card.contains(name)) card.appendChild(name); if (!card.contains(price)) card.appendChild(price); };
-          card.addEventListener('click', ()=>{ window.location.href = `fragrance-details.html?code=${encodeURIComponent(p.code)}`; });
-          grid.appendChild(card);
-        }
-        card.style.setProperty('--i', idx);
-        card.style.display = 'block';
-      });
-      hideLoader();
-    }
-
-    // ---------------- Category view logic ----------------
-   async function showCategoryCards() {
-  // hide tabs
+// ---------------- FRAGRANCE MAIN VIEW ----------------
+async function showFragranceCards() {
   document.querySelectorAll('.tabcontent').forEach(t => {
     t.classList.remove('active');
     t.style.display = 'none';
   });
+
+  document.getElementById('categoryProductsView').style.display = 'none';
+  document.getElementById('FragranceProductsView').style.display = 'none';
+
+  const fv = document.getElementById('FragranceView');
+  fv.style.display = 'block';
+  fv.classList.add('view-enter');
+
+  const grid = document.getElementById('FragranceProductCategoryGrid');
+  grid.innerHTML = '';
+  showLoader();
+
+  let products = allProductsCache;
+  const inventory = await fetchInventoryFromFirestore('fragrance');
+  const invMap = {};
+  inventory.forEach(i => invMap[i.code] = Number(i.inStock) || 0);
+
+  if (!Array.isArray(products)) {
+    try {
+      products = await fetch('./JSON/products.json').then(r => r.json());
+      allProductsCache = products;
+    } catch { products = []; }
+  }
+
+  const fragCatMap = new Map();
+  products.forEach(p => {
+    if (p.code.includes('FF') && invMap[p.code] > 0 && p.tags) {
+      p.tags.split(',').map(t => t.trim()).forEach(tag => {
+        if (!fragCatMap.has(tag)) fragCatMap.set(tag, p);
+      });
+    }
+  });
+
+  const sortedTags = Array.from(fragCatMap.keys()).sort((a, b) => {
+    if (a === 'New Arrivals') return -1;
+    if (b === 'New Arrivals') return 1;
+    if (a.includes('Premium') && !b.includes('Premium')) return -1;
+    if (!a.includes('Premium') && b.includes('Premium')) return 1;
+    return a.localeCompare(b);
+  });
+
+  const noProductsEl = document.getElementById('FragranceProductsNo');
+  if (sortedTags.length === 0) {
+    noProductsEl.style.display = 'block';
+  } else {
+    noProductsEl.style.display = 'none';
+    sortedTags.forEach((tag, i) => {
+      const sampleProd = fragCatMap.get(tag);
+      const card = document.createElement('div');
+      card.className = 'product-card category-card';
+      card.dataset.category = tag;
+
+      const img = document.createElement('img');
+      img.loading = 'lazy';
+      const driveFileId = sampleProd.image1;
+      img.src = driveFileId
+        ? `https://drive.google.com/uc?export=view&id=${driveFileId}`
+        : `images/products/${sampleProd.code}/1.jpg`;
+
+      const label = document.createElement('div');
+      label.className = 'product-name';
+      label.textContent = tag;
+
+      card.appendChild(img);
+      card.appendChild(label);
+      card.addEventListener('click', () => showProductsForFragrance(tag));
+      grid.appendChild(card);
+    });
+  }
+
+  hideLoader();
+}
+
+
+
+
+// ---------------- FRAGRANCE PRODUCTS ----------------
+async function showProductsForFragrance(tagName) {
+
+  // Hide other views
+  ['FragranceView', 'categoryProductsView', 'shopping', 'categoryView'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.style.display = 'none';
+  });
+
+  const fpv = document.getElementById('FragranceProductsView');
+  if (!fpv) {
+    return;
+  }
+
+  fpv.style.display = 'block';
+  fpv.classList.add('view-enter');
+  document.getElementById('fragranceProductsTitle').textContent = tagName;
+
+  showLoader();
+
+  // --- Load products and inventory
+  let products = allProductsCache;
+  const inventory = await fetchInventoryFromFirestore('fragrance');
+
+  const invMap = {};
+  inventory.forEach(i => (invMap[i.code] = Number(i.inStock) || 0));
+
+  if (!Array.isArray(products)) {
+    try {
+
+      products = await fetch('./JSON/products.json').then(r => r.json());
+      allProductsCache = products;
+    } catch (err) {
+      products = [];
+    }
+  }
+
+
+  // --- Filter only PF products matching tag
+  const tagProducts = products.filter(p =>
+    p.code?.includes('FF') &&
+    invMap[p.code] > 0 &&
+    p.tags?.split(',').map(t => t.trim()).includes(tagName)
+  );
+
+  // --- Deduplicate
+  const deduped = [];
+  const seen = new Set();
+  tagProducts.forEach(p => {
+    const base = getBaseCode(p.code);
+    if (!seen.has(base)) {
+      seen.add(base);
+      deduped.push(p);
+    }
+  });
+  // --- Render to grid
+  const gridEl = document.getElementById('fragranceGrid') || document.getElementById('FragranceProductsGrid');
+  if (!gridEl) {
+    hideLoader();
+    return;
+  }
+
+  // --- Initialize cart
+  initCartButtons();
+  updateAllCartButtons();
+  
+
+  // --- Show 'no products' message if applicable
+  const noEl = document.getElementById('fragranceNoProducts') || document.getElementById('FragranceProductsNo');
+  if (noEl) {
+    noEl.style.display = deduped.length === 0 ? 'block' : 'none';
+  }
+
+  hideLoader();
+
+  // --- Setup & restore filters
+  
+   setupFragranceFiltersAndSearch(tagProducts, 'fragrance_' + tagName, tagName);
+
+  window.scrollTo({ top: parseInt(getComputedStyle(document.documentElement)
+    .getPropertyValue('--header-height')) + 10, behavior: 'smooth' });
+}
+
+
+
+   // ---------------- CATEGORY VIEW ----------------
+async function showCategoryCards() {
+  document.querySelectorAll('.tabcontent').forEach(t => {
+    t.classList.remove('active');
+    t.style.display = 'none';
+  });
+
   document.getElementById('categoryProductsView').style.display = 'none';
   const cv = document.getElementById('categoryView');
   cv.style.display = 'block';
@@ -1525,8 +1748,9 @@ input[type=number] {
   catGrid.innerHTML = '';
 
   showLoader();
+
   let products = allProductsCache;
-  const inventory = await fetchInventoryFromFirestore();
+  const inventory = await fetchInventoryFromFirestore('women');
   const invMap = {};
   inventory.forEach(i => invMap[i.code] = Number(i.inStock) || 0);
 
@@ -1534,20 +1758,21 @@ input[type=number] {
     try {
       products = await fetch('./JSON/products.json').then(r => r.json());
       allProductsCache = products;
-    } catch (e) { products = []; }
+    } catch { products = []; }
   }
 
-  // --- Collect categories from tags
-  const catMap = new Map(); // key: category name, value: sample product
+  const catMap = new Map();
   products.forEach(p => {
+    if (p.code.includes('FF') || p.code.includes('FM')) return;
     if (invMap[p.code] > 0 && p.tags) {
-      p.tags.split(',').map(tag => tag.trim()).forEach(tag => {
-        if (!catMap.has(tag)) catMap.set(tag, p);
+      p.tags.split(',').map(t => t.trim()).forEach(tag => {
+        if (!catMap.has(tag)) catMap.set(tag, []);
+catMap.get(tag).push(p);
+
       });
     }
   });
 
-  // --- Sort categories: New Arrivals first, Premium second, then alphabetical
   const sortedCategories = Array.from(catMap.keys()).sort((a, b) => {
     if (a === 'New Arrivals') return -1;
     if (b === 'New Arrivals') return 1;
@@ -1561,7 +1786,8 @@ input[type=number] {
   } else {
     document.getElementById('categoryNoProducts').style.display = 'none';
     sortedCategories.forEach((tag, i) => {
-      const sampleProd = catMap.get(tag);
+      const list = catMap.get(tag);
+const sampleProd = list[Math.floor(Math.random() * list.length)];
       const card = document.createElement('div');
       card.className = 'product-card category-card';
       card.dataset.category = tag;
@@ -1581,22 +1807,21 @@ input[type=number] {
       card.appendChild(img);
       card.appendChild(label);
       card.style.setProperty('--i', i);
-      card.addEventListener('click', () => { showProductsForCategory(tag); });
+      card.addEventListener('click', () => showProductsForCategory(tag));
       catGrid.appendChild(card);
     });
   }
 
   hideLoader();
-  document.getElementById('shopping').style.display = 'none';
-  document.getElementById('fragrance').style.display = 'none';
-  window.scrollTo({
-    top: parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) + 10,
-    behavior: 'smooth'
-  });
+  document.getElementById('FragranceView').style.display = 'none';
+  window.scrollTo({ top: parseInt(getComputedStyle(document.documentElement)
+    .getPropertyValue('--header-height')) + 10, behavior: 'smooth' });
 }
 
 
-  async function showProductsForCategory(categoryName) {
+
+  // ---------------- CATEGORY PRODUCTS ----------------
+async function showProductsForCategory(categoryName) {
   document.getElementById('categoryView').style.display = 'none';
   const cpv = document.getElementById('categoryProductsView');
   cpv.style.display = 'block';
@@ -1606,7 +1831,7 @@ input[type=number] {
   showLoader();
 
   let products = allProductsCache;
-  const inventory = await fetchInventoryFromFirestore();
+  const inventory = await fetchInventoryFromFirestore('women');
   const invMap = {};
   inventory.forEach(i => invMap[i.code] = Number(i.inStock) || 0);
 
@@ -1614,17 +1839,15 @@ input[type=number] {
     try {
       products = await fetch('./JSON/products.json').then(r => r.json());
       allProductsCache = products;
-    } catch (e) { products = []; }
+    } catch { products = []; }
   }
 
-  // --- Filter products by category tag and in-stock
   const categoryProducts = products.filter(p =>
+    !p.code.includes('FF') && !p.code.includes('FM') &&
     invMap[p.code] > 0 &&
-    p.tags &&
-    p.tags.split(',').map(t => t.trim()).includes(categoryName)
+    p.tags?.split(',').map(t => t.trim()).includes(categoryName)
   );
 
-  // --- Deduplicate by base product code
   const dedupedProducts = [];
   const seenBase = new Set();
   categoryProducts.forEach(p => {
@@ -1635,43 +1858,281 @@ input[type=number] {
     }
   });
 
-  renderProductsToGrid(dedupedProducts, document.getElementById('categoryProductsGrid'), 'category', categoryName);
   initCartButtons();
   updateAllCartButtons();
-  document.getElementById('categoryProductsNo').style.display = dedupedProducts.length === 0 ? 'block' : 'none';
+
+  document.getElementById('categoryProductsNo').style.display =
+    dedupedProducts.length === 0 ? 'block' : 'none';
 
   hideLoader();
-
-  window.scrollTo({
-    top: parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) + 10,
-    behavior: 'smooth'
-  });
-
-  // --- Setup filters/search using categoryProducts
   setupCategoryFiltersAndSearch(categoryProducts, categoryName);
 
-  // --- Product click handling (same as before)
-  const cards = document.querySelectorAll('#categoryProductsGrid .product-card');
-  cards.forEach(card => {
-    const code = card.dataset.code;
-    const product = categoryProducts.find(p => p.code === code);
-    if (product) {
-      card.addEventListener('click', () => {
-        sessionStorage.setItem('fromTab', 'category');
-        sessionStorage.setItem('fromCategoryName', categoryName);
-        window.location.href = `shopping-details.html?code=${product.code}&from=category`;
+  window.scrollTo({ top: parseInt(getComputedStyle(document.documentElement)
+    .getPropertyValue('--header-height')) + 10, behavior: 'smooth' });
+}
+
+
+  // ---------------- CATEGORY VIEW ----------------
+async function showMenCategoryCards() {
+  document.querySelectorAll('.tabcontent').forEach(t => {
+    t.classList.remove('active');
+    t.style.display = 'none';
+  });
+
+  document.getElementById('MencategoryProductsView').style.display = 'none';
+  const cv = document.getElementById('MencategoryView');
+  cv.style.display = 'block';
+  cv.classList.add('view-enter');
+
+  const catGrid = document.getElementById('MencategoryGrid');
+  catGrid.innerHTML = '';
+
+  showLoader();
+
+  let products = allProductsCache;
+  const inventory = await fetchInventoryFromFirestore('men');
+  const invMap = {};
+  inventory.forEach(i => invMap[i.code] = Number(i.inStock) || 0);
+
+  if (!Array.isArray(products)) {
+    try {
+      products = await fetch('./JSON/products.json').then(r => r.json());
+      allProductsCache = products;
+    } catch { products = []; }
+  }
+
+  const catMap = new Map();
+  products.forEach(p => {
+    if (!p.code.includes('FM')) return;
+    if (invMap[p.code] > 0 && p.tags) {
+      p.tags.split(',').map(t => t.trim()).forEach(tag => {
+        if (!catMap.has(tag)) catMap.set(tag, []);
+catMap.get(tag).push(p);
       });
     }
   });
+
+  const priority = {
+  "New Arrivals": 1,
+  "Top Wear": 2,
+  "Bottoms": 3
+};
+
+const sortedCategories = Array.from(catMap.keys()).sort((a, b) => {
+  const pa = priority[a] || 999;  
+  const pb = priority[b] || 999;
+
+  if (pa !== pb) return pa - pb;
+  return a.localeCompare(b); // alphabetical for others
+});
+
+
+  if (sortedCategories.length === 0) {
+    document.getElementById('MencategoryNoProducts').style.display = 'block';
+  } else {
+    document.getElementById('MencategoryNoProducts').style.display = 'none';
+    sortedCategories.forEach((tag, i) => {
+      const list = catMap.get(tag);
+const sampleProd = list[Math.floor(Math.random() * list.length)];
+      const card = document.createElement('div');
+      card.className = 'product-card category-card';
+      card.dataset.category = tag;
+
+      const img = document.createElement('img');
+      img.loading = 'lazy';
+      const driveFileId = sampleProd.image1;
+      img.src = driveFileId
+        ? `https://drive.google.com/uc?export=view&id=${driveFileId}`
+        : `images/products/${sampleProd.code}/1.jpg`;
+      img.alt = tag;
+
+      const label = document.createElement('div');
+      label.className = 'product-name';
+      label.textContent = tag;
+
+      card.appendChild(img);
+      card.appendChild(label);
+      card.style.setProperty('--i', i);
+      card.addEventListener('click', () => showProductsForMenCategory(tag));
+      catGrid.appendChild(card);
+    });
+  }
+
+  hideLoader();
+  document.getElementById('FragranceView').style.display = 'none';
+  document.getElementById('categoryView').style.display = 'none';
+  window.scrollTo({ top: parseInt(getComputedStyle(document.documentElement)
+    .getPropertyValue('--header-height')) + 10, behavior: 'smooth' });
 }
 
 
 
-  function renderProductsToGrid(products, gridEl, context = '', categoryName = '') {
+  // ---------------- CATEGORY PRODUCTS ----------------
+async function showProductsForMenCategory(categoryName) {
+  document.getElementById('MencategoryView').style.display = 'none';
+  const cpv = document.getElementById('MencategoryProductsView');
+  cpv.style.display = 'block';
+  cpv.classList.add('view-enter');
+  document.getElementById('MencategoryProductsTitle').textContent = categoryName;
+
+  showLoader();
+
+  let products = allProductsCache;
+  const inventory = await fetchInventoryFromFirestore('men');
+  const invMap = {};
+  inventory.forEach(i => invMap[i.code] = Number(i.inStock) || 0);
+
+  if (!Array.isArray(products)) {
+    try {
+      products = await fetch('./JSON/products.json').then(r => r.json());
+      allProductsCache = products;
+    } catch { products = []; }
+  }
+
+  const categoryProducts = products.filter(p =>
+    p.code.includes('FM') &&
+    invMap[p.code] > 0 &&
+    p.tags?.split(',').map(t => t.trim()).includes(categoryName)
+  );
+
+  const dedupedProducts = [];
+  const seenBase = new Set();
+  categoryProducts.forEach(p => {
+    const base = getBaseCode(p.code);
+    if (!seenBase.has(base)) {
+      seenBase.add(base);
+      dedupedProducts.push(p);
+    }
+  });
+
+  initCartButtons();
+  updateAllCartButtons();
+
+  document.getElementById('MencategoryProductsNo').style.display =
+    dedupedProducts.length === 0 ? 'block' : 'none';
+
+  hideLoader();
+  setupMenCategoryFiltersAndSearch(categoryProducts, categoryName);
+
+  window.scrollTo({ top: parseInt(getComputedStyle(document.documentElement)
+    .getPropertyValue('--header-height')) + 10, behavior: 'smooth' });
+}
+
+
+// ------------------- Global Coupon Cache -------------------
+let couponsCache = null;
+
+async function fetchCouponCodes() {
+  try {
+    const snapshot = await db.collection("CouponCode")
+      .where("status", "==", "ACTIVE")   // only active coupons
+      .get();
+
+    const coupons = [];
+    snapshot.forEach(doc => {
+      const data = doc.data();
+      coupons.push({
+        code: data.code,
+        ...data
+      });
+    });
+    return coupons;
+
+  } catch (error) {
+    return [];
+  }
+}
+
+
+async function getCoupons() {
+  if (couponsCache) return couponsCache; // Return cached coupons
+
+  try {
+    couponsCache = await fetchCouponCodes(); // Fetch once
+  } catch (err) {
+    couponsCache = [];
+  }
+  return couponsCache;
+}
+
+// Schedule cache reset at 1 AM every day
+function scheduleCouponCacheReset() {
+  const now = new Date();
+  const nextReset = new Date();
+  nextReset.setHours(1, 0, 0, 0); // 1 AM
+  if (now >= nextReset) nextReset.setDate(nextReset.getDate() + 1);
+
+  const delay = nextReset - now;
+  setTimeout(() => {
+    couponsCache = null;
+    scheduleCouponCacheReset(); // reschedule for next day
+  }, delay);
+}
+scheduleCouponCacheReset();
+
+
+
+async function renderProductsToGrid(products, gridEl, context = '', categoryName = '') {
   if (!gridEl) return;
   gridEl.innerHTML = '';
 
-  products.forEach((p, idx) => {
+  const coupons = await getCoupons(); // Use cached coupons
+
+  const getDiscountedPrice = (productCode, originalPriceRaw, coupons = []) => {
+    const originalPrice = Number(originalPriceRaw);
+    if (isNaN(originalPrice)) return 0;
+
+    let finalPrice = originalPrice;
+    const normalizedCode = productCode.toUpperCase().trim();
+
+    if (!Array.isArray(coupons) || coupons.length === 0) {
+      return finalPrice;
+    }
+
+    // Filter coupons that apply to this product
+    const applicableCoupons = coupons.filter(coupon => {
+      const couponDisc = Number(coupon.discInPct);
+      if (isNaN(couponDisc)) return false;
+
+      const productList = coupon.products === "All Products"
+        ? null
+        : coupon.products.split(',').map(x => x.trim().toUpperCase());
+
+      return !productList || productList.includes(normalizedCode);
+    });
+
+    console.log(`• Applicable Coupons: ${applicableCoupons.length}`);
+    if (applicableCoupons.length === 0) {
+      return finalPrice;
+    }
+
+    // Apply best discount
+    applicableCoupons.forEach(coupon => {
+      const couponDisc = Number(coupon.discInPct);
+      const isFlat = coupon.code.toUpperCase().includes("FLAT");
+
+
+      const discounted = isFlat
+        ? originalPrice - couponDisc
+        : originalPrice * (1 - couponDisc / 100);
+
+
+      if (discounted < finalPrice) {
+        finalPrice = discounted;
+      } else {
+      }
+    });
+
+    return Math.round(finalPrice);
+  };
+
+  // Precompute discounted prices first
+  const productsWithDiscount = products.map(p => {
+    const discounted = getDiscountedPrice(p.code, p.sellingPrice, coupons);
+    return { ...p, discountedPrice: discounted };
+  });
+
+  productsWithDiscount.forEach((p, idx) => {
     // --- Create product card container
     const card = document.createElement('div');
     card.className = 'product-card';
@@ -1697,6 +2158,7 @@ input[type=number] {
     cartBtn.addEventListener('click', (e) => {
       e.stopPropagation(); // Prevent opening product details
       openSizePopup(p); // Custom function for popup
+      console.log(`🛒 [Cart] Opened size popup for:`, p.code);
     });
 
     // Append image and cart button inside wrapper
@@ -1708,10 +2170,13 @@ input[type=number] {
     name.className = 'product-name';
     name.textContent = p.name || '';
 
-    // --- Product Price
     const price = document.createElement('div');
     price.className = 'product-price';
-    price.textContent = p.sellingPrice ? `₹${p.sellingPrice}` : '';
+    if (p.discountedPrice < p.sellingPrice) {
+      price.innerHTML = `<span class="original-price">₹${p.sellingPrice}</span> ₹${p.discountedPrice}`;
+    } else {
+      price.textContent = `₹${p.sellingPrice}`;
+    }
 
     // --- Add elements to card
     card.appendChild(imgWrapper);
@@ -1720,16 +2185,43 @@ input[type=number] {
 
     // --- Handle redirection logic
     const codeLower = (p.code || '').toLowerCase();
-    const fromParam = context === 'category' ? '&from=category' : '';
+
+    // Build query params dynamically
+    const params = new URLSearchParams();
+    params.set('code', p.code);
+    if (context) params.set('from', context);
+
+    // Attach tag or category based on context
+
+  console.log('Context:', context);
+    console.log('Category Name:', categoryName);
+
+    if (context === 'category' && categoryName) {
+      params.set('category', categoryName);
+    } else if (context === 'fragrance' && categoryName) {
+      params.set('category', categoryName);
+    }else if (context === 'Mencategory' && categoryName) {
+      params.set('Mencategory', categoryName);
+    }
 
     const handleClick = (detailPage) => {
+      // Store tab and tag/category for back navigation
       sessionStorage.setItem('fromTab', context || 'shopping');
-      if (context === 'category' && categoryName)
-        sessionStorage.setItem('fromCategoryName', categoryName);
 
-      window.location.href = `${detailPage}?code=${encodeURIComponent(p.code)}${fromParam}`;
+      if (context === 'category' && categoryName) {
+        sessionStorage.setItem('fromCategoryName', categoryName);
+      } else if (context === 'fragrance' && categoryName) {
+        sessionStorage.setItem('fromFragranceTag', categoryName);
+      }
+      else if (context === 'Mencategory' && categoryName) {
+        sessionStorage.setItem('fromMenCategoryName', categoryName);
+      }
+
+      // Redirect to the appropriate detail page
+      window.location.href = `${detailPage}?${params.toString()}`;
     };
 
+    // Decide which detail page
     if (codeLower.includes('pf')) {
       card.addEventListener('click', () => handleClick('fragrance-details.html'));
     } else {
@@ -1742,7 +2234,12 @@ input[type=number] {
     // --- Finally, append card to grid container
     gridEl.appendChild(card);
   });
+
+   // Update cart buttons
+  initCartButtons();
+  updateAllCartButtons();
 }
+
 
 
 function initCartButtons() {
@@ -1777,7 +2274,7 @@ async function openSizePopup(product) {
   const all = allProductsCache.filter(p => p.code.startsWith(baseCode));
 
   // Fetch inventory
-  const inventory = await fetchInventoryFromFirestore();
+  const inventory = await fetchInventoryFromFirestore('');
   const invMap = {};
   inventory.forEach(i => invMap[i.code] = Number(i.inStock) || 0);
 
@@ -1988,8 +2485,6 @@ function updateCartTabCount(cart) {
 }
 
 
-
-
   function setupCategoryFiltersAndSearch(allProducts, categoryName, initialVisible) {
   const grid = document.getElementById('categoryProductsGrid');
   const searchInput = document.getElementById('searchCategory');
@@ -2097,6 +2592,115 @@ function updateCartTabCount(cart) {
 }
 
 
+ function setupMenCategoryFiltersAndSearch(allProducts, categoryName, initialVisible) {
+  const grid = document.getElementById('MencategoryProductsGrid');
+  const searchInput = document.getElementById('MensearchCategory');
+  const sizeSelect = document.getElementById('MenfilterCategorySize');
+  const colorSelect = document.getElementById('MenfilterCategoryColor'); // Added
+  const minInput = document.getElementById('MencategoryPriceMin');
+  const maxInput = document.getElementById('MencategoryPriceMax');
+  const clearBtn = document.getElementById('clearMenCategoryFilters');
+  const noEl = document.getElementById('MencategoryProductsNo');
+
+  if (!grid || !searchInput || !sizeSelect || !colorSelect || !minInput || !maxInput || !clearBtn) return;
+
+  // --- category key for localStorage
+  const catKey = (categoryName || 'default').toLowerCase().replace(/\s+/g, '_');
+
+  // --- Populate size and color dynamically based on available products
+  function populateMenFilters() {
+    const sizes = Array.from(new Set(allProducts.map(p => p.size).filter(Boolean))).sort();
+    sizeSelect.innerHTML = '<option value="">All Sizes</option>';
+    sizes.forEach(s => sizeSelect.appendChild(new Option(s, s)));
+
+    const colors = Array.from(new Set(allProducts.map(p => p.color).filter(Boolean))).sort();
+    colorSelect.innerHTML = '<option value="">All Colors</option>';
+    colors.forEach(c => colorSelect.appendChild(new Option(c, c)));
+  }
+  populateMenFilters();
+
+  // --- save filters
+  function storeMenCategoryFilters() {
+    localStorage.setItem(`${catKey}_search`, searchInput.value || "");
+    localStorage.setItem(`${catKey}_size`, sizeSelect.value || "");
+    localStorage.setItem(`${catKey}_color`, colorSelect.value || "");
+    localStorage.setItem(`${catKey}_minPrice`, minInput.value || "");
+    localStorage.setItem(`${catKey}_maxPrice`, maxInput.value || "");
+  }
+
+  // --- restore filters
+  function restoreMenCategoryFilters() {
+    searchInput.value = localStorage.getItem(`${catKey}_search`) || "";
+    sizeSelect.value = localStorage.getItem(`${catKey}_size`) || "";
+    colorSelect.value = localStorage.getItem(`${catKey}_color`) || "";
+    minInput.value = localStorage.getItem(`${catKey}_minPrice`) || "";
+    maxInput.value = localStorage.getItem(`${catKey}_maxPrice`) || "";
+  }
+
+  // --- filtering logic
+  function applyMenFilters() {
+    const searchText = (searchInput.value || '').toLowerCase().trim();
+    const selectedSize = (sizeSelect.value || '').toLowerCase().trim();
+    const selectedColor = (colorSelect.value || '').toLowerCase().trim();
+    const min = parseFloat(minInput.value) || 0;
+    const max = parseFloat(maxInput.value) || Infinity;
+
+    const filteredAll = allProducts.filter(p => {
+      const nameMatch = ((p.name || '') + ' ' + (p.code || '')).toLowerCase().includes(searchText);
+      const sizeMatch = !selectedSize || (p.size || '').toLowerCase() === selectedSize;
+      const colorMatch = !selectedColor || (p.color || '').toLowerCase() === selectedColor;
+      const price = parseFloat(p.sellingPrice) || 0;
+      const priceMatch = price >= min && price <= max;
+      return nameMatch && sizeMatch && colorMatch && priceMatch;
+    });
+
+    let finalList;
+    if (!selectedSize) {
+      const seen = new Set();
+      finalList = filteredAll.filter(p => {
+        const base = getBaseCode(p.code);
+        if (seen.has(base)) return false;
+        seen.add(base);
+        return true;
+      });
+    } else {
+      finalList = filteredAll;
+    }
+
+    console.log('Context:', 'Mencategory');
+    console.log('Category Name:', categoryName);
+    renderProductsToGrid(finalList, grid, 'Mencategory', categoryName);
+    initCartButtons();
+    updateAllCartButtons();
+    noEl.style.display = (!finalList || finalList.length === 0) ? 'block' : 'none';
+  }
+
+  // --- attach events
+  [searchInput, sizeSelect, colorSelect, minInput, maxInput].forEach(el => {
+    if (!el) return;
+    el.removeEventListener('input', applyMenFilters);
+    el.addEventListener('input', () => {
+      applyMenFilters();
+      storeMenCategoryFilters();
+    });
+  });
+
+  clearBtn.removeEventListener('click', applyMenFilters);
+  clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    sizeSelect.value = '';
+    colorSelect.value = '';
+    minInput.value = '';
+    maxInput.value = '';
+    applyMenFilters();
+    storeMenCategoryFilters();
+  });
+
+  restoreMenCategoryFilters();
+  applyMenFilters();
+}
+
+
 
 
 
@@ -2109,117 +2713,118 @@ function updateCartTabCount(cart) {
       else menu.setAttribute('aria-hidden','true');
     }
 
-    function openCategoryView(){
-      const menu = document.getElementById('menu'); const icon = document.getElementById('menuIcon');
-      if (menu && menu.classList.contains('show')){ menu.classList.remove('show'); if (icon) icon.classList.remove('open'); menu.setAttribute('aria-hidden','true'); }
-      document.querySelectorAll('.tabcontent').forEach(t=>{ t.classList.remove('active'); t.style.display='none'; });
-      document.getElementById('categoryProductsView').style.display = 'none';
-      showCategoryCards();
-      Array.from(document.getElementsByClassName('tablink')).forEach(b=>b.classList.remove('active'));
-      const btn = document.getElementById('tab-category-nav'); if (btn) btn.classList.add('active');
+ function setupFragranceFiltersAndSearch(allProducts, product, tagName) {
+  const grid = document.getElementById('FragranceProductsGrid');
+  const searchInput = document.getElementById('searchFragrance');
+  const sizeSelect = document.getElementById('filterFragranceSize');
+  const minInput = document.getElementById('fragranceMinPrice');
+  const maxInput = document.getElementById('fragranceMaxPrice');
+  const clearBtn = document.getElementById('clearFragrance');
+  const noEl = document.getElementById('FragranceProductsNo');
+
+  if (!grid || !searchInput || !sizeSelect || !minInput || !maxInput || !clearBtn) return;
+
+  // ✅ Shared static key across all fragrance categories
+  const key = 'fragrance_global_filters';
+
+  // --- Populate sizes dynamically
+  function populateSizeOptions() {
+    const sizes = Array.from(new Set(allProducts.map(p => p.size).filter(Boolean))).sort();
+    sizeSelect.innerHTML = '<option value="">All Sizes</option>';
+    sizes.forEach(size => sizeSelect.appendChild(new Option(size, size)));
+
+    // If a previously selected size doesn’t exist in this category, fallback to “All Sizes”
+    const savedSize = localStorage.getItem(`${key}_size`) || '';
+    if (savedSize && !sizes.includes(savedSize)) {
+      sizeSelect.value = '';
+    } else {
+      sizeSelect.value = savedSize;
+    }
+  }
+  populateSizeOptions();
+
+  // --- Save filters to localStorage
+  function storeFilters() {
+    localStorage.setItem(`${key}_search`, searchInput.value || '');
+    localStorage.setItem(`${key}_size`, sizeSelect.value || '');
+    localStorage.setItem(`${key}_min`, minInput.value || '');
+    localStorage.setItem(`${key}_max`, maxInput.value || '');
+    console.log(`Stored [Fragrance Shared Filters] => size: ${sizeSelect.value || 'All'}, min: ${minInput.value}, max: ${maxInput.value}, search: ${searchInput.value}`);
+  }
+
+  // --- Restore filters from localStorage
+  function restoreFilters() {
+    searchInput.value = localStorage.getItem(`${key}_search`) || '';
+    minInput.value = localStorage.getItem(`${key}_min`) || '';
+    maxInput.value = localStorage.getItem(`${key}_max`) || '';
+  }
+
+  // --- Core filter logic
+  function applyFilters() {
+    const searchText = (searchInput.value || '').toLowerCase().trim();
+    const selectedSize = (sizeSelect.value || '').toLowerCase().trim();
+    const min = parseFloat(minInput.value) || 0;
+    const max = parseFloat(maxInput.value) || Infinity;
+
+    const filtered = allProducts.filter(p => {
+      const sizeMatch = !selectedSize || (p.size || '').toLowerCase() === selectedSize;
+      const price = parseFloat(p.sellingPrice) || 0;
+      const priceMatch = price >= min && price <= max;
+      const textMatch = ((p.name || '') + ' ' + (p.code || '')).toLowerCase().includes(searchText);
+      return sizeMatch && priceMatch && textMatch;
+    });
+
+    let finalList;
+    if (!selectedSize) {
+      const seen = new Set();
+      finalList = filtered.filter(p => {
+        const base = getBaseCode(p.code);
+        if (seen.has(base)) return false;
+        seen.add(base);
+        return true;
+      });
+    } else {
+      finalList = filtered;
     }
 
-    // SETUP Shopping/Fragrance filter & search - same logic with restored visuals
-    function setupShoppingFiltersAndSearch(){
-      const searchInput = document.getElementById("searchShopping");
-      const clearBtn = document.getElementById("clearShopping");
-      const sizeFilter = document.getElementById("filterSize");
-      const colorFilter = document.getElementById("filterColor");
-      const minPrice = document.getElementById("priceMin");
-      const maxPrice = document.getElementById("priceMax");
+    renderProductsToGrid(finalList, grid, 'fragrance', tagName);
+    initCartButtons();
+    updateAllCartButtons();
 
-      function applyFiltersAndSearch(){
-        const size = sizeFilter ? sizeFilter.value.toLowerCase() : "";
-        const color = colorFilter ? colorFilter.value.toLowerCase() : "";
-        const min = parseFloat(minPrice.value) || 0;
-        const max = parseFloat(maxPrice.value) || Infinity;
-        const searchText = (searchInput.value||'').toLowerCase();
+    noEl.style.display = filtered.length === 0 ? 'block' : 'none';
+    storeFilters();
+  }
 
-        localStorage.setItem("shoppingSearch", searchInput.value);
-        localStorage.setItem("shoppingSize", sizeFilter ? sizeFilter.value : "");
-        localStorage.setItem("shoppingColor", colorFilter ? colorFilter.value : "");
-        localStorage.setItem("shoppingMinPrice", minPrice.value);
-        localStorage.setItem("shoppingMaxPrice", maxPrice.value);
+  // --- Event bindings
+  [searchInput, sizeSelect, minInput, maxInput].forEach(el => {
+    if (!el) return;
+    el.removeEventListener('input', applyFilters);
+    el.addEventListener('input', applyFilters);
+  });
 
-        const filtered = shoppingProducts.filter(p=>{
-          const cardSize = (p.size||"").toLowerCase();
-          const cardColor = (p.color||"").toLowerCase();
-          const price = parseFloat(p.sellingPrice) || 0;
-          const sizeMatch = !size || cardSize === size;
-          const colorMatch = !color || cardColor === color;
-          const priceMatch = price >= min && price <= max;
-          const searchMatch = (p.name||"").toLowerCase().includes(searchText) || (p.code||"").toLowerCase().includes(searchText) || (p.sellingPrice||"").toString().includes(searchText);
-          return sizeMatch && colorMatch && priceMatch && searchMatch;
-        });
+  clearBtn.removeEventListener('click', applyFilters);
+  clearBtn.addEventListener('click', () => {
+    searchInput.value = '';
+    sizeSelect.value = '';
+    minInput.value = '';
+    maxInput.value = '';
+    applyFilters();
+    storeFilters();
+  });
 
-        let deduped=[]; let seenBase=new Set();
-        if (!size) { filtered.forEach(p=>{ const base=getBaseCode(p.code); if(!seenBase.has(base)){ seenBase.add(base); deduped.push(p); }}); }
-        else deduped = filtered;
+  restoreFilters();
+  applyFilters();
 
-        const grid = document.getElementById('shoppingGrid'), no=document.getElementById('shoppingNoProducts');
-        if (deduped.length===0){ grid.style.display='none'; no.style.display='block'; }
-        else { grid.style.display='grid'; no.style.display='none'; renderShoppingGrid(deduped); }
-      }
+  // Debug: show current shared filter values
+  console.group('[Fragrance Shared Filters]');
+  console.log('Search:', localStorage.getItem(`${key}_search`) || '');
+  console.log('Size:', localStorage.getItem(`${key}_size`) || 'All');
+  console.log('Min:', localStorage.getItem(`${key}_min`) || '');
+  console.log('Max:', localStorage.getItem(`${key}_max`) || '');
+  console.groupEnd();
+}
 
-      [searchInput, sizeFilter, colorFilter, minPrice, maxPrice].forEach(el=>{ if (el) el.addEventListener('input', applyFiltersAndSearch); });
-      clearBtn.addEventListener('click', ()=>{ searchInput.value=''; if (sizeFilter) sizeFilter.value=''; if (colorFilter) colorFilter.value=''; minPrice.value=''; maxPrice.value=''; localStorage.removeItem("shoppingSearch"); localStorage.removeItem("shoppingSize"); localStorage.removeItem("shoppingColor"); localStorage.removeItem("shoppingMinPrice"); localStorage.removeItem("shoppingMaxPrice"); applyFiltersAndSearch(); });
-      return applyFiltersAndSearch;
-    }
 
-    function setupFragranceFiltersAndSearch(){
-      const searchInput = document.getElementById("searchFragrance");
-      const clearBtn = document.getElementById("clearFragrance");
-      const sizeFilter = document.getElementById("filterFragranceSize");
-      const minPrice = document.getElementById("fragranceMinPrice");
-      const maxPrice = document.getElementById("fragranceMaxPrice");
-
-      function applyFiltersAndSearch(){
-        const size = (sizeFilter.value||'').toLowerCase();
-        const min = parseFloat(minPrice.value) || 0;
-        const max = parseFloat(maxPrice.value) || Infinity;
-        const searchText = (searchInput.value||'').toLowerCase();
-
-        localStorage.setItem("searchFragrance", searchInput.value);
-        localStorage.setItem("filterFragranceSize", sizeFilter.value);
-        localStorage.setItem("fragranceMinPrice", minPrice.value);
-        localStorage.setItem("fragranceMaxPrice", maxPrice.value);
-
-        const filtered = fragranceProducts.filter(p=>{
-          const cardSize = (p.size||'').toLowerCase();
-          const price = parseFloat(p.sellingPrice) || 0;
-          const sizeMatch = !size || cardSize === size;
-          const priceMatch = price >= min && price <= max;
-          const searchMatch = (p.name||'').toLowerCase().includes(searchText) || (p.code||'').toLowerCase().includes(searchText) || (p.sellingPrice||'').toString().includes(searchText);
-          return sizeMatch && priceMatch && searchMatch;
-        });
-
-        const grid=document.getElementById('fragranceGrid'), no=document.getElementById('fragranceNoProducts');
-        if (filtered.length===0){ grid.style.display='none'; no.style.display='block'; } else { grid.style.display='grid'; no.style.display='none'; renderFragranceGrid(filtered); }
-      }
-
-      [searchInput, sizeFilter, minPrice, maxPrice].forEach(el=>el.addEventListener('input', applyFiltersAndSearch));
-      clearBtn.addEventListener('click', ()=>{ searchInput.value=''; sizeFilter.value=''; minPrice.value=''; maxPrice.value=''; localStorage.removeItem("searchFragrance"); localStorage.removeItem("filterFragranceSize"); localStorage.removeItem("fragranceMinPrice"); localStorage.removeItem("fragranceMaxPrice"); renderFragranceGrid(fragranceProducts); });
-      return applyFiltersAndSearch;
-    }
-
-    function restoreFiltersAndApply(applyFilters){
-      const searchInput = document.getElementById("searchShopping"), sizeFilter = document.getElementById("filterSize"), colorFilter = document.getElementById("filterColor"), minPrice = document.getElementById("priceMin"), maxPrice = document.getElementById("priceMax");
-      if (searchInput) searchInput.value = localStorage.getItem("shoppingSearch") || "";
-      if (sizeFilter) sizeFilter.value = localStorage.getItem("shoppingSize") || "";
-      if (colorFilter) colorFilter.value = localStorage.getItem("shoppingColor") || "";
-      if (minPrice) minPrice.value = localStorage.getItem("shoppingMinPrice") || "";
-      if (maxPrice) maxPrice.value = localStorage.getItem("shoppingMaxPrice") || "";
-      if (applyFilters) applyFilters();
-    }
-
-    function restoreFragranceFiltersAndApply(applyFilters){
-      const s=document.getElementById("searchFragrance"), sz=document.getElementById("filterFragranceSize"), min=document.getElementById("fragranceMinPrice"), max=document.getElementById("fragranceMaxPrice");
-      if (s) s.value = localStorage.getItem("searchFragrance") || "";
-      if (sz) sz.value = localStorage.getItem("filterFragranceSize") || "";
-      if (min) min.value = localStorage.getItem("fragranceMinPrice") || "";
-      if (max) max.value = localStorage.getItem("fragranceMaxPrice") || "";
-      if (applyFilters) applyFilters();
-    }
 
     // Slideshow (5s)
     function initSlideshow(intervalMs = 5000){
@@ -2403,9 +3008,16 @@ window.addEventListener("beforeunload", () => {
 });
 
   window.addEventListener('DOMContentLoaded', () => {
+  // 🛒 Update cart badge
   updateCartTabCount(getCart());
+
+  // 🔖 Retrieve stored navigation context
   const fromTab = sessionStorage.getItem('fromTab');
   const fromCategory = sessionStorage.getItem('fromCategoryName');
+  const fromFragranceCategory = sessionStorage.getItem('fromFragranceTag');
+  const fromMenCategoryName = sessionStorage.getItem('fromMenCategoryName');
+
+  
 
   // Hide all tab content initially
   document.querySelectorAll('.tabcontent').forEach(t => {
@@ -2413,25 +3025,45 @@ window.addEventListener("beforeunload", () => {
     t.style.display = 'none';
   });
 
-  // ✅ Restore correct tab based on saved state
-  if (fromTab === 'fragrance') {
-    openTabFromMenu('fragrance');
-  } 
-  else if (fromTab === 'shopping') {
-    openTabFromMenu('shopping'); // ✅ restore fashion tab when coming back
+  // Deactivate all tab buttons
+  document.querySelectorAll('.tablink').forEach(b => b.classList.remove('active'));
+
+  // ✅ Restore correct view + highlight the corresponding tab
+  if (fromTab === 'fragrance' && fromFragranceCategory) {
+    // Show fragrance category view
+    showProductsForFragrance(fromFragranceCategory);
+
+    // Highlight fragrance tab
+    const btn = document.getElementById('tab-fragrance');
+    if (btn) btn.classList.add('active');
   } 
   else if (fromTab === 'category' && fromCategory) {
+    // Show products for specific category
     showProductsForCategory(fromCategory);
+
+    // Highlight Home tab
+    const btn = document.getElementById('tab-category-nav');
+    if (btn) btn.classList.add('active');
+  }else if (fromTab === 'Mencategory' && fromMenCategoryName) {
+    // Show products for specific category
+    showProductsForMenCategory(fromMenCategoryName);
+
+    // Highlight Home tab
+    const btn = document.getElementById('tab-Mencategory-nav');
+    if (btn) btn.classList.add('active');
   } 
   else {
-    openTabFromMenu('category'); // ✅ default landing tab is category
+    // Default to Home tab (category view)
+    openTabFromMenu('category');
   }
 
-  // optional: clear session memory for next visit
+  // 🧹 Optional: clear stored state to prevent repeated reloading
   sessionStorage.removeItem('fromTab');
   sessionStorage.removeItem('fromCategoryName');
+  sessionStorage.removeItem('fromFragranceTag');
+  sessionStorage.removeItem('fromMenCategoryName');
 
-  // start banner slideshow
+  // 🎞️ Initialize offer banner slideshow
   initSlideshow();
 });
 

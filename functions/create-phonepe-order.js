@@ -45,7 +45,7 @@ export async function handler(event) {
         amount, // in paise
         paymentFlow: {
           type: "PG_CHECKOUT",
-          message: "Order payment via Foyer Studio checkout",
+          message: "FS-Payment Request",
           merchantUrls: {
             redirectUrl: "",
             callbackUrl: ""

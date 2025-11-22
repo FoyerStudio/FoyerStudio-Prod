@@ -346,8 +346,14 @@ h3 { margin-bottom: 8px; font-size: 16px; }
         <div id="sizeContainer" class="size-container"></div>
         <div id="productPrice" class="product-price"></div>
       </div>
+
       <h3>Description</h3>
       <div id="productSpec" class="product-spec"></div>
+
+<div class="product-spec">
+  <b>Color:</b> <span id="productColor"></span>
+</div>
+
       <div class="product-spec"><b>Disclaimer:</b> For exact product details, please refer to the original images. All displayed images are for reference.</div>
       <div id="deliveryDate" class="delivery-date"></div>
       <button id="addCartBtn" class="add-cart-btn" onclick="toggleCart()">Add to Cart</button>
@@ -514,6 +520,7 @@ function renderProduct(code) {
     productNameEl.textContent = product.name;
     productPriceEl.innerHTML = product.sellingPrice ? `<strong>Price:</strong> ₹${product.sellingPrice}` : '';
     productSpecEl.innerHTML = product.specifications || product.spec;
+    document.getElementById("productColor").textContent = product.color;
     const delivery = new Date(); delivery.setDate(delivery.getDate() + 7);
     deliveryDateEl.innerHTML = `<strong>Expected Delivery:</strong> ${delivery.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' })}`;
 
