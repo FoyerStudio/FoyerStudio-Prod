@@ -306,6 +306,27 @@ h3 { margin-bottom: 8px; font-size: 16px; }
   .carousel img { max-height: 70vh; }
 }
 </style>
+
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '905330835482362');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=905330835482362&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
 </head>
 <body>
 
@@ -375,6 +396,9 @@ h3 { margin-bottom: 8px; font-size: 16px; }
 <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 
 <script>
+
+
+
  // Firebase config
 const firebaseConfig = {
     apiKey: "AIzaSyAjlHBB46moYAuus9aNb_ZYD_C-duqf7lM",
@@ -529,6 +553,15 @@ carouselContainer.style.display = 'none';
 document.querySelector('.product-info').style.display = 'none';
 
 
+fbq('track', 'ViewContent', {
+  content_ids: [code],
+  content_type: 'product',
+  value: product.sellingPrice,
+  currency: 'INR'
+});
+
+
+
     // ---------- Size Dropdown ----------
     
     const availableProducts = products.filter(p => p.code.startsWith(baseCode) && inventoryMap[p.code] > 0);
@@ -622,7 +655,16 @@ function toggleCart() {
     let cart = getCart();
     const idx = cart.findIndex(item => item.code === product.code);
     if (idx >= 0) { cart.splice(idx, 1); addCartBtn.textContent = "Add to Cart"; }
-    else if (cart.length < 3) { cart.push({ code: product.code, name: product.name, price: product.sellingPrice, img: images[0] || '', size: product.size || '-', color: product.color || '-', quantity: 1 }); addCartBtn.textContent = "Remove from Cart"; }
+    else if (cart.length < 3) { cart.push({ code: product.code, name: product.name, price: product.sellingPrice, img: images[0] || '', size: product.size || '-', color: product.color || '-', quantity: 1 }); addCartBtn.textContent = "Remove from Cart"; 
+
+  fbq('track', 'AddToCart', {
+    content_ids: [product.code],
+    content_type: 'product',
+    value: product.sellingPrice,
+    currency: 'INR'
+  });
+
+  }
     localStorage.setItem('cart', JSON.stringify(cart));
     setInitialCartButton();
     updateCartTabCount(cart);

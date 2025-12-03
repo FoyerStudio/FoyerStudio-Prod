@@ -399,13 +399,32 @@
 }
 
 
-
-
-
-
   </style>
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '905330835482362');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=905330835482362&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
   </head>
   <body>
+
+    <script>
+fbq('track', 'InitiateCheckout');
+</script>
 
   <div class="banner">
     <img src="images/logo_red.png" alt="Foyer Studio Logo" class="banner-logo">
@@ -1128,29 +1147,26 @@ try {
   const email = document.getElementById("email").value.trim();
   const mobilenumber = document.getElementById("mobile").value.trim();
 
-  console.log("🏷️ placeOrder called");
-  console.log("Payment Status:", paymentStatus);
-  console.log("Payment Data:", paymentData);
-  console.log("User Details:", { name, addr1, addr2, city, state, country, pin, email, mobilenumber });
-  console.log("Coupon:", coupon);
-  console.log("Cart Items:", filteredCart);
 
   try {
     const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdyj2y19S5FgMHMLTT63iFtXlld-fX5HfArhYY_sZQe8WVQqA/formResponse";
     const formData = new FormData();
+    var eventCode="";
 
     filteredCart.forEach((item, index) => {
-      console.log(`Adding item ${index} to form data:`, item);
       if (index === 0) {
         formData.append("entry.1453696170", "SID001");
         formData.append("entry.2026604478", item.code);
         formData.append("entry.1056003169", item.quantity);
+        eventCode=eventCode+item.code;
       } else if (index === 1) {
         formData.append("entry.636124876", item.code);
         formData.append("entry.852799381", item.quantity);
+        eventCode=eventCode+","+item.code;
       } else if (index === 2) {
         formData.append("entry.467787359", item.code);
         formData.append("entry.1763830691", item.quantity);
+        eventCode=eventCode+","+item.code;
       }
     });
 
@@ -1168,7 +1184,7 @@ try {
     formData.append("entry.1061102400", "Courier Delivery");
     formData.append("entry.1509767842",paymentData);
 
-    console.log("Submitting form data to Google Forms...");
+    
 
     // Safe submission function
     async function safeSubmit(url, formData, retries = 2, delay = 1000) {
@@ -1180,7 +1196,7 @@ try {
             mode: "no-cors",
             body: formData
           });
-          console.log("Form submitted successfully (no-cors mode, can't verify response).");
+          
           return response;
         } catch (err) {
           console.warn(`Form submission failed (attempt ${attempt + 1}):`, err);
@@ -1191,14 +1207,22 @@ try {
     }
 
     await safeSubmit(formUrl, formData, 3, 3000);
-
-    console.log("Clearing cart and updating UI...");
+    
+  fbq('track', 'Purchase', {
+  value: totalCartValue,
+  currency: 'INR',
+  content_ids: [eventCode],
+  content_type: 'product'
+});
+    
     localStorage.removeItem('cart');
     renderCart();
     orderForm.style.display = "none";
 
+  
+
     showPopup(transactionDetails+"Order placed successfully! You’ll get a confirmation email soon.");
-    console.log("Order placed successfully.");
+    
 
   } catch (err) {
     console.error("Error in placeOrder:", err);

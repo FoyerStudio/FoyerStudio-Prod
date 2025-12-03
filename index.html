@@ -1014,6 +1014,24 @@ input[type=number] {
 
 </style>
 
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '905330835482362');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=905330835482362&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 <body>
 
@@ -1231,7 +1249,7 @@ input[type=number] {
   <footer class="site-footer" style="text-align:center; padding:26px 18px; border-top:3px solid #731a2f; background:#fefef6;">
     <div style="margin-bottom:12px;"><img src="images/logo_red.png" alt="Foyer Studio" style="width:100px;"></div>
     <div class="footer-social" style="margin-bottom:12px;">
-      <a href="https://wa.me/919037622566" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp" style="width:28px; margin:0 8px;"></a>
+      <a href="https://wa.me/912269646641" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp" style="width:28px; margin:0 8px;"></a>
       <a href="https://instagram.com/foyerstudio" target="_blank"><img src="images/insta.png" alt="Instagram" style="width:28px; margin:0 8px;"></a>
       <a href="mailto:fashion@foyerstudio.in"><img src="images/mail.png" alt="Email" style="width:28px; margin:0 8px;"></a>
     </div>
@@ -2193,8 +2211,6 @@ async function renderProductsToGrid(products, gridEl, context = '', categoryName
 
     // Attach tag or category based on context
 
-  console.log('Context:', context);
-    console.log('Category Name:', categoryName);
 
     if (context === 'category' && categoryName) {
       params.set('category', categoryName);
@@ -2373,6 +2389,14 @@ function toggleCartFromGrid(prod) {
       color: prod.color || '-',
       quantity: 1
     });
+
+fbq('track', 'AddToCart', {
+    content_ids: [prod.code],
+    content_type: 'product',
+    value: prod.sellingPrice,
+    currency: 'INR'
+  });
+
   }
 
   // Save cart
@@ -2666,8 +2690,7 @@ function updateCartTabCount(cart) {
       finalList = filteredAll;
     }
 
-    console.log('Context:', 'Mencategory');
-    console.log('Category Name:', categoryName);
+    
     renderProductsToGrid(finalList, grid, 'Mencategory', categoryName);
     initCartButtons();
     updateAllCartButtons();
@@ -3051,10 +3074,12 @@ window.addEventListener("beforeunload", () => {
     const btn = document.getElementById('tab-Mencategory-nav');
     if (btn) btn.classList.add('active');
   } 
-  else {
-    // Default to Home tab (category view)
-    openTabFromMenu('category');
-  }
+ else {
+  
+    openTabFromMenu('category'); // ONLY run if no hash used
+  
+}
+
 
   // 🧹 Optional: clear stored state to prevent repeated reloading
   sessionStorage.removeItem('fromTab');
@@ -3066,22 +3091,27 @@ window.addEventListener("beforeunload", () => {
   initSlideshow();
 });
 
-
 window.addEventListener("load", () => {
-  const hash = window.location.hash.replace("#", "");
-
+  const hash = window.location.hash.replace("#", "").toLowerCase();
   if (!hash) return;
 
-  // If it's a normal tab (Women, Men, Fragrance)
-  const tabButton = document.querySelector(`.tablink[onclick*="${hash}"]`);
-  if (tabButton) {
-    tabButton.click();
+  hashTriggered = true;  // <--- FLAG SET
+
+  if (hash === "fragrance") {
+    openTab({ currentTarget: document.getElementById("tab-fragrance") }, "fragrance");
+    return;
+  }
+
+  if (hash === "categoryview") {
+    openCategoryView();
+    return;
+  }
+
+  if (hash === "mencategoryview") {
+    openMenCategoryView();
     return;
   }
 });
-
-
-
 
   </script>
 </body>
