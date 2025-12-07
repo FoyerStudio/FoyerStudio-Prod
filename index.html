@@ -372,7 +372,6 @@ body {
   width: 100%;
   max-height: 400px;      /* cap height on desktop */
   min-height: 200px;      /* ensures visibility if images fail */
-  border: 2px solid #731a2f;
   overflow: hidden;
   position: relative;
   border-radius: 8px;
@@ -1071,14 +1070,16 @@ input[type=number] {
 
  <div class="offer-banner">
   <div class="slides">
-    <img src="images/pakistani.jpg" class="slide active" alt="Offer 1">
-    <img src="images/Men.jpg" class="slide" alt="Offer 2">
-    <img src="images/fragrance.jpg" class="slide" alt="Offer 3">
+    <img src="images/pakistani.jpg" class="slide active" alt="pakisthani">
+    <img src="images/Men.jpg" class="slide" alt="foyermen">
+    <img src="images/fragrance.jpg" class="slide" alt="fragrance">
+    <img src="images/combo.jpg" class="slide" alt="combo">
   </div>
   <div class="dots">
     <span class="dot active" data-index="0"></span>
     <span class="dot" data-index="1"></span>
     <span class="dot" data-index="2"></span>
+    <span class="dot" data-index="3"></span>
   </div>
 </div>
 
@@ -1204,8 +1205,8 @@ input[type=number] {
     <div class="search-row full">
       <select id="filterFragranceSize">
         <option value="">All Sizes</option>
+        <option value="30 ml">30 ml</option>
         <option value="50 ml">50 ml</option>
-        <option value="100 ml">100 ml</option>
       </select>
     </div>
 
@@ -1249,7 +1250,7 @@ input[type=number] {
   <footer class="site-footer" style="text-align:center; padding:26px 18px; border-top:3px solid #731a2f; background:#fefef6;">
     <div style="margin-bottom:12px;"><img src="images/logo_red.png" alt="Foyer Studio" style="width:100px;"></div>
     <div class="footer-social" style="margin-bottom:12px;">
-      <a href="https://wa.me/912269646641" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp" style="width:28px; margin:0 8px;"></a>
+      <a href="https://wa.me/912269646641?text=Hi%20Foyer%20Studio" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp" style="width:28px; margin:0 8px;"></a>
       <a href="https://instagram.com/foyerstudio" target="_blank"><img src="images/insta.png" alt="Instagram" style="width:28px; margin:0 8px;"></a>
       <a href="mailto:fashion@foyerstudio.in"><img src="images/mail.png" alt="Email" style="width:28px; margin:0 8px;"></a>
     </div>
@@ -1338,7 +1339,7 @@ input[type=number] {
 
 
     // Size codes and helper (unchanged)
-    const SIZE_CODES = ["XXXS","0XXS","00XS","000S","000M","000L","00XL","0XXL","XXXL","0000","0100","0050"];
+    const SIZE_CODES = ["XXXS","0XXS","00XS","000S","000M","000L","00XL","0XXL","XXXL","0000","0030","0050"];
     function getBaseCode(code = "") { for (let s of SIZE_CODES) if (code.endsWith(s)) return code.slice(0, -s.length); return code; }
 
     const apiProduct = "https://script.google.com/macros/s/AKfycbwSgPt1bqa11wXfJCzQ1SKxFLGVhVHyr6icSuO6EYmiQgd1t_sSgRrReivvUhKHKdYAmw/exec?type=product";
@@ -1622,13 +1623,24 @@ async function showFragranceCards() {
     }
   });
 
-  const sortedTags = Array.from(fragCatMap.keys()).sort((a, b) => {
-    if (a === 'New Arrivals') return -1;
-    if (b === 'New Arrivals') return 1;
-    if (a.includes('Premium') && !b.includes('Premium')) return -1;
-    if (!a.includes('Premium') && b.includes('Premium')) return 1;
-    return a.localeCompare(b);
-  });
+  // ---------------- PRIORITY BASED SORTING ----------------
+const priority = {
+  "New Arrivals": 1,
+  "Premium": 2,
+  "Men": 3,
+  "Women": 4,
+  "Unisex": 5,
+  "Oriental": 6
+};
+
+const sortedTags = Array.from(fragCatMap.keys()).sort((a, b) => {
+  const pa = priority[a] || 999;
+  const pb = priority[b] || 999;
+
+  if (pa !== pb) return pa - pb;
+  return a.localeCompare(b);
+});
+
 
   const noProductsEl = document.getElementById('FragranceProductsNo');
   if (sortedTags.length === 0) {
@@ -2043,7 +2055,7 @@ let couponsCache = null;
 async function fetchCouponCodes() {
   try {
     const snapshot = await db.collection("CouponCode")
-      .where("status", "==", "ACTIVE")   // only active coupons
+      .where("status", "==", "ACTIVE") // only active coupons
       .get();
 
     const coupons = [];
@@ -2054,12 +2066,18 @@ async function fetchCouponCodes() {
         ...data
       });
     });
-    return coupons;
+
+    // Filter out COMBO coupons
+    const filteredCoupons = coupons.filter(coupon => !coupon.code.includes("COMBO"));
+
+    return filteredCoupons;
 
   } catch (error) {
+    console.error("Error fetching coupons:", error);
     return [];
   }
 }
+
 
 
 async function getCoupons() {
@@ -2238,7 +2256,7 @@ async function renderProductsToGrid(products, gridEl, context = '', categoryName
     };
 
     // Decide which detail page
-    if (codeLower.includes('pf')) {
+    if (codeLower.includes('ff')) {
       card.addEventListener('click', () => handleClick('fragrance-details.html'));
     } else {
       card.addEventListener('click', () => handleClick('shopping-details.html'));
@@ -2299,7 +2317,7 @@ async function openSizePopup(product) {
   const sizeMap = {
     "XXXS":"XXXS","0XXS":"XXS","00XS":"XS","000S":"S","000M":"M",
     "000L":"L","00XL":"XL","0XXL":"XXL","XXXL":"XXXL",
-    "0000":"UnStitched","0100":"100 ml","0050":"50 ml","0030":"30","0032":"32","0034":"34","0036":"36"};
+    "0000":"UnStitched","0029":"30 ml","0050":"50 ml","0030":"30","0032":"32","0034":"34","0036":"36"};
 
   sizeOptions.innerHTML = '';
 
@@ -2380,7 +2398,9 @@ function toggleCartFromGrid(prod) {
     cart.splice(idx, 1);
   } else if (cart.length < 3) {
     // Add to cart
-    cart.push({
+
+if (!prod.code.includes("FF")){
+  cart.push({
       code: prod.code,
       name: prod.name,
       price: prod.sellingPrice,
@@ -2389,6 +2409,18 @@ function toggleCartFromGrid(prod) {
       color: prod.color || '-',
       quantity: 1
     });
+}else{
+   cart.push({
+      code: prod.code,
+      name: prod.name,
+      price: prod.sellingPrice,
+      img: prod.image1 ? `https://drive.google.com/uc?export=view&id=${prod.image1}` : '',
+      size: prod.size || '-',
+      quantity: 1
+    });
+}
+
+   
 
 fbq('track', 'AddToCart', {
     content_ids: [prod.code],

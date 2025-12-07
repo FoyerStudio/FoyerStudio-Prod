@@ -625,7 +625,7 @@ fbq('track', 'InitiateCheckout');
   window.goToIndex = (tab)=>{ window.location.href=`index.html?tab=${tab}`; }
   window.goToProduct = (code) => {
     const lowerCode = (code || "").toLowerCase();
-    if (lowerCode.includes("pf")) {
+    if (lowerCode.includes("ff")) {
       window.location.href = `fragrance-details.html?code=${code}`;
     } else {
       window.location.href = `shopping-details.html?code=${code}`;
@@ -723,22 +723,60 @@ fbq('track', 'InitiateCheckout');
           let originalPrice = Number(item.price || 0);
           let discountedPrice = originalPrice;
 
-          if(currentCoupon){
-              const applicableProductsRaw = currentCoupon.products || "No Products";
-              const applicableProducts = applicableProductsRaw === "All Products"
-                  ? ["All Products"]
-                  : applicableProductsRaw.split(",").map(p => p.trim());
+          if (currentCoupon) {
 
-              if(currentCoupon.code.includes("FLAT")){
-                  if(applicableProducts.includes("All Products") || applicableProducts.includes(item.code)){
-                      discountedPrice = Math.max(0, originalPrice - Number(currentCoupon.discInPct || 0));
-                  }
-              } else { // percentage
-                  if(applicableProducts.includes("All Products") || applicableProducts.includes(item.code)){
-                      discountedPrice = Math.max(0, originalPrice * (1 - (Number(currentCoupon.discInPct || 0)/100)));
-                  }
-              }
-          }
+    const applicableProductsRaw = currentCoupon.products || "All Products";
+    const applicableProducts = applicableProductsRaw === "All Products"
+        ? ["All Products"]
+        : applicableProductsRaw.split(",").map(p => p.trim());
+
+    // --- COMBO COUPON LOGIC ---
+    if (currentCoupon.code.includes("COMBO")) {
+
+        // Use `cart` instead of allCartItems
+        const categories = new Set();
+        cart.forEach(ci => {
+            const prefix = ci.code.substring(0, 2); // FS / FM / FF
+            if (["FS", "FM", "FF"].includes(prefix)) {
+                categories.add(prefix);
+            }
+        });
+
+        // Apply discount only if 2 or more different categories exist
+        if (categories.size >= 2) {
+            if (applicableProducts.includes("All Products") || applicableProducts.includes(item.code)) {
+                discountedPrice = Math.max(
+                    0,
+                    originalPrice * (1 - (Number(currentCoupon.discInPct || 0) / 100))
+                );
+            }
+        } else {
+            // Not eligible → keep original price
+            discountedPrice = originalPrice;
+        }
+
+    }
+
+    // --- FLAT COUPON ---
+    else if (currentCoupon.code.includes("FLAT")) {
+        if (applicableProducts.includes("All Products") || applicableProducts.includes(item.code)) {
+            discountedPrice = Math.max(
+                0,
+                originalPrice - Number(currentCoupon.discInPct || 0)
+            );
+        }
+    } 
+    // --- PERCENTAGE COUPON ---
+    else {
+        if (applicableProducts.includes("All Products") || applicableProducts.includes(item.code)) {
+            discountedPrice = Math.max(
+                0,
+                originalPrice * (1 - (Number(currentCoupon.discInPct || 0) / 100))
+            );
+        }
+    }
+}
+
 
           // Round off discounted price
           discountedPrice = Math.round(discountedPrice);
@@ -814,6 +852,9 @@ fbq('track', 'InitiateCheckout');
           couponNote.textContent = "Coupon not found!";
         } else if (currentCoupon.code.includes("FLAT")) {
           couponNote.textContent = "Code is applied only for applicable products.";
+        } 
+        else if (currentCoupon.code.includes("COMBO")) {
+          couponNote.textContent = "Coupon applies only when at least two products are added, each from different collections among Men, Women, and Fragrance.";
         } else {
           couponNote.textContent = "Code is applied only for applicable products.";
         }
