@@ -423,7 +423,6 @@ body {
     height: auto;          /* match image height */
     max-height: none;      /* remove fixed limit */
     min-height: unset;     /* remove unnecessary min height */
-    border: 2px solid #731a2f;
     border-radius: 8px;
     overflow: hidden;
   }
@@ -1339,7 +1338,7 @@ input[type=number] {
 
 
     // Size codes and helper (unchanged)
-    const SIZE_CODES = ["XXXS","0XXS","00XS","000S","000M","000L","00XL","0XXL","XXXL","0000","0030","0050"];
+    const SIZE_CODES = ["XXXS","0XXS","00XS","000S","000M","000L","00XL","0XXL","XXXL","0000","0030","0060"];
     function getBaseCode(code = "") { for (let s of SIZE_CODES) if (code.endsWith(s)) return code.slice(0, -s.length); return code; }
 
     const apiProduct = "https://script.google.com/macros/s/AKfycbwSgPt1bqa11wXfJCzQ1SKxFLGVhVHyr6icSuO6EYmiQgd1t_sSgRrReivvUhKHKdYAmw/exec?type=product";
@@ -1618,19 +1617,22 @@ async function showFragranceCards() {
   products.forEach(p => {
     if (p.code.includes('FF') && invMap[p.code] > 0 && p.tags) {
       p.tags.split(',').map(t => t.trim()).forEach(tag => {
-        if (!fragCatMap.has(tag)) fragCatMap.set(tag, p);
+        if (!fragCatMap.has(tag)) fragCatMap.set(tag, []);
+        fragCatMap.get(tag).push(p);
+
       });
     }
   });
 
   // ---------------- PRIORITY BASED SORTING ----------------
 const priority = {
-  "New Arrivals": 1,
-  "Premium": 2,
-  "Men": 3,
-  "Women": 4,
-  "Unisex": 5,
-  "Oriental": 6
+  "Signature" : 1,
+  "New Arrivals": 2,
+  "Premium": 3,
+  "Men": 4,
+  "Women": 5,
+  "Unisex": 6,
+  "Oriental": 7
 };
 
 const sortedTags = Array.from(fragCatMap.keys()).sort((a, b) => {
@@ -1648,7 +1650,8 @@ const sortedTags = Array.from(fragCatMap.keys()).sort((a, b) => {
   } else {
     noProductsEl.style.display = 'none';
     sortedTags.forEach((tag, i) => {
-      const sampleProd = fragCatMap.get(tag);
+      const list = fragCatMap.get(tag);
+      const sampleProd = list[Math.floor(Math.random() * list.length)];
       const card = document.createElement('div');
       card.className = 'product-card category-card';
       card.dataset.category = tag;
@@ -2317,7 +2320,7 @@ async function openSizePopup(product) {
   const sizeMap = {
     "XXXS":"XXXS","0XXS":"XXS","00XS":"XS","000S":"S","000M":"M",
     "000L":"L","00XL":"XL","0XXL":"XXL","XXXL":"XXXL",
-    "0000":"UnStitched","0029":"30 ml","0050":"50 ml","0030":"30","0032":"32","0034":"34","0036":"36"};
+    "0000":"UnStitched","0029":"30 ml","0060":"60 ml","0030":"30","0032":"32","0034":"34","0036":"36"};
 
   sizeOptions.innerHTML = '';
 
