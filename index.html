@@ -1070,15 +1070,21 @@ input[type=number] {
  <div class="offer-banner">
   <div class="slides">
     <img src="images/pakistani.jpg" class="slide active" alt="pakisthani">
-    <img src="images/Men.jpg" class="slide" alt="foyermen">
+     <video class="slide" autoplay muted playsinline preload="auto">
+  <source src="images/video.MP4" type="video/mp4">
+</video>
     <img src="images/fragrance.jpg" class="slide" alt="fragrance">
     <img src="images/combo.jpg" class="slide" alt="combo">
+   
+
+    
   </div>
   <div class="dots">
     <span class="dot active" data-index="0"></span>
     <span class="dot" data-index="1"></span>
     <span class="dot" data-index="2"></span>
     <span class="dot" data-index="3"></span>
+
   </div>
 </div>
 
@@ -2883,20 +2889,66 @@ function updateCartTabCount(cart) {
 
 
 
-    // Slideshow (5s)
-    function initSlideshow(intervalMs = 5000){
-      const slides = document.querySelectorAll('.slide');
-      const dots = document.querySelectorAll('.dot');
-      if (!slides || slides.length === 0) return;
-      let currentIndex = 0;
-      function showSlide(i){
-        slides.forEach((s, idx)=> s.classList.toggle('active', idx === i));
-        dots.forEach((d, idx)=> d.classList.toggle('active', idx === i));
-        currentIndex = i;
+   // Slideshow (image = interval, video = full play)
+function initSlideshow(intervalMs = 5000) {
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  if (!slides || slides.length === 0) return;
+
+  let currentIndex = 0;
+  let auto = null;
+
+  function clearAuto() {
+    if (auto) clearTimeout(auto);
+    auto = null;
+  }
+
+  function showSlide(i) {
+    clearAuto();
+
+    slides.forEach((s, idx) => {
+      const isActive = idx === i;
+      s.classList.toggle('active', isActive);
+
+      // Handle video reset
+      if (s.tagName === 'VIDEO') {
+        s.pause();
+        s.currentTime = 0;
       }
-      let auto = setInterval(()=> showSlide((currentIndex+1)%slides.length), intervalMs);
-      dots.forEach(dot=> dot.addEventListener('click', ()=>{ clearInterval(auto); showSlide(Number(dot.dataset.index)); auto = setInterval(()=> showSlide((currentIndex+1)%slides.length), intervalMs); }));
+    });
+
+    dots.forEach((d, idx) => d.classList.toggle('active', idx === i));
+    currentIndex = i;
+
+    const activeSlide = slides[currentIndex];
+
+    // 🎥 If video → wait till end
+    if (activeSlide.tagName === 'VIDEO') {
+      activeSlide.play();
+
+      activeSlide.onended = () => {
+        showSlide((currentIndex + 1) % slides.length);
+      };
+    } 
+    // 🖼 If image → normal timer
+    else {
+      auto = setTimeout(() => {
+        showSlide((currentIndex + 1) % slides.length);
+      }, intervalMs);
     }
+  }
+
+  // Dot click
+  dots.forEach(dot =>
+    dot.addEventListener('click', () => {
+      showSlide(Number(dot.dataset.index));
+    })
+  );
+
+  // Init
+  showSlide(0);
+}
+
 
 
     // small helper search for grids
