@@ -1070,11 +1070,13 @@ input[type=number] {
  <div class="offer-banner">
   <div class="slides">
     <img src="images/pakistani.jpg" class="slide active" alt="pakisthani">
-     <video class="slide" autoplay muted playsinline preload="auto">
-  <source src="images/video.MP4" type="video/mp4">
-</video>
-    <img src="images/fragrance.jpg" class="slide" alt="fragrance">
     <img src="images/combo.jpg" class="slide" alt="combo">
+    
+     <video class="slide" autoplay muted playsinline preload="auto">
+  <source src="images/video.mp4" type="video/mp4">
+</video>
+    
+    <img src="images/fragrance.jpg" class="slide" alt="fragrance">
    
 
     
@@ -1635,10 +1637,12 @@ const priority = {
   "Signature" : 1,
   "New Arrivals": 2,
   "Premium": 3,
-  "Men": 4,
-  "Women": 5,
-  "Unisex": 6,
-  "Oriental": 7
+  "Inspired Collections":4,
+  "Oriental": 5,
+  "Men": 6,
+  "Women": 7,
+  "Unisex": 8
+  
 };
 
 const sortedTags = Array.from(fragCatMap.keys()).sort((a, b) => {
@@ -2077,7 +2081,23 @@ async function fetchCouponCodes() {
     });
 
     // Filter out COMBO coupons
-    const filteredCoupons = coupons.filter(coupon => !coupon.code.includes("COMBO"));
+    const EXCLUDED_CODES = [
+  "COMBO",
+  "HAFEEZA",
+  "SHAIBA",
+  "KALLU",
+  "SYED",
+  "SUHANA",
+  "SID",
+  "PROMO"
+];
+
+const filteredCoupons = coupons.filter(coupon =>
+  !EXCLUDED_CODES.some(keyword =>
+    coupon.code?.toUpperCase().includes(keyword)
+  )
+);
+
 
     return filteredCoupons;
 

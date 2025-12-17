@@ -398,6 +398,40 @@
   border-color: #a12c48;
 }
 
+.coupon-pills {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.coupon-pill {
+  padding: 6px 14px;
+  border: 1px dashed #d4af37;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 13px;
+  background: #fff8e1;
+  transition: all 0.2s ease;
+}
+
+.coupon-pill:hover {
+  background: #d4af37;
+  color: #000;
+}
+
+/* Match coupon input with other order form fields */
+.coupon-input input {
+  height: 40px;                 /* match your other inputs */
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+
 
   </style>
 
@@ -457,12 +491,17 @@ fbq('track', 'InitiateCheckout');
 
 
 
+   <label>Available Coupon Codes</label>
 
+<div id="coupon-pills" class="coupon-pills"></div>
 
-    <label for="coupon">Coupon Codes</label>
-   <select id="coupon" name="coupon">
-      <option value=""></option>
-  </select>
+<div class="coupon-input">
+  <input type="text" id="coupon" name="coupon" placeholder="Enter coupon code">
+  <button type="button" id="applyCouponBtn">Apply</button>
+</div>
+
+<p id="coupon-msg"></p>
+
 
   <div id="couponNote" style="color:#731a2f; font-size:0.9rem; margin-top:4px;"></div>
 
@@ -607,7 +646,6 @@ fbq('track', 'InitiateCheckout');
   const placeOrderBtn = document.getElementById("placeOrderBtn");
   const orderForm = document.getElementById("orderForm");
   const confirmOrderBtn = document.getElementById("confirmOrderBtn");
-  const couponSelect = document.getElementById('coupon');
   const couponNote = document.getElementById('couponNote');
 
   let inventoryMap = {};
@@ -818,54 +856,92 @@ fbq('track', 'InitiateCheckout');
 
 
   // ------------------ Load Coupons ------------------
-  async function loadCoupons() {
-    try {
-      const data = await fetchCouponsFromFirestore();
-      couponSelect.innerHTML = '<option value="">--Select Coupon--</option>';
-      data.forEach(coupon => {
-        const option = document.createElement('option');
-        option.value = coupon.code;
-        option.textContent = coupon.code;
-        couponSelect.appendChild(option);
-      });
-    } catch (error) {
-      console.error('Failed to load coupons:', error);
-      showToast('Could not load coupons');
+
+async function renderCoupons() {
+  const coupons = await fetchCouponsFromFirestore();
+  const container = document.getElementById("coupon-pills");
+  container.innerHTML = "";
+
+  const EXCLUDED_CODES = [
+    "HAFEEZA",
+    "SHAIBA",
+    "KALLU",
+    "SYED",
+    "SUHANA",
+    "SID",
+    "PROMO"
+  ];
+
+  coupons.forEach(coupon => {
+    // 🚫 Skip excluded coupons
+    if (
+      EXCLUDED_CODES.some(word =>
+        coupon.code?.toUpperCase().includes(word)
+      )
+    ) {
+      return;
+    }
+
+    // ✅ Render pill
+    const pill = document.createElement("span");
+    pill.className = "coupon-pill";
+    pill.textContent = coupon.code;
+    pill.dataset.code = coupon.code;
+
+    pill.onclick = () => {
+      document.getElementById("coupon").value = coupon.code;
+      applyCoupon(coupon.code);
+    };
+
+    container.appendChild(pill);
+  });
+}
+
+
+
+
+async function applyCoupon(code) {
+  if (!code) {
+    currentCoupon = null;
+    couponNote.textContent = "";
+    renderCart();
+    return;
+  }
+
+  const allCoupons = await fetchCouponsFromFirestore();
+  const selected = allCoupons.find(c => c.code === code);
+
+  if (!selected) {
+    currentCoupon = null;
+    couponNote.textContent = "Invalid coupon code";
+  } else {
+    currentCoupon = selected;
+
+    if (selected.code.includes("COMBO")) {
+      couponNote.textContent =
+        "Applies when at least two products from different collections are added.";
+    } else {
+      couponNote.textContent =
+        "Coupon applied to applicable products.";
     }
   }
 
+  renderCart();
+}
+
+
+document.getElementById("applyCouponBtn").addEventListener("click", () => {
+  const code = document.getElementById("coupon").value.trim().toUpperCase();
+  applyCoupon(code);
+});
+
+
 
   // ------------------ Coupon Select Listener ------------------
-  couponSelect.addEventListener('change', async () => {
-    const value = couponSelect.value;
 
-    if (!value) {
-      couponNote.textContent = "";
-      currentCoupon = null;
-    } else {
-      try {
-        const allCoupons = await fetchCouponsFromFirestore();
-        const selected = allCoupons.find(c => c.code === value);
-        currentCoupon = selected || null;
 
-        if (!currentCoupon) {
-          couponNote.textContent = "Coupon not found!";
-        } else if (currentCoupon.code.includes("FLAT")) {
-          couponNote.textContent = "Code is applied only for applicable products.";
-        } 
-        else if (currentCoupon.code.includes("COMBO")) {
-          couponNote.textContent = "Coupon applies only when at least two products are added, each from different collections among Men, Women, and Fragrance.";
-        } else {
-          couponNote.textContent = "Code is applied only for applicable products.";
-        }
-      } catch (err) {
-        console.error("Coupon fetch error:", err);
-        showToast("Error applying coupon");
-      }
-    }
 
-    renderCart();
-  });
+
 
   // ------------------ Load Cart ------------------
   async function loadCart(){
@@ -883,7 +959,7 @@ fbq('track', 'InitiateCheckout');
       renderCart();
     } catch(e){ console.error(e);}
     hideLoader();
-    loadCoupons();
+    renderCoupons();
   }
 
   // ------------------ Place & Confirm Order ------------------
@@ -1173,11 +1249,11 @@ try {
 
   // ------------------ Init ------------------
   loadCart();
-  loadCoupons();
+  renderCoupons();
   let filteredCart = [];
   // Function to handle form submission
   async function placeOrder(paymentStatus, paymentData,transactionDetails) {
-  const coupon = document.getElementById("coupon").value;
+  const coupon = document.getElementById("coupon").value.toUpperCase();
   const name = document.getElementById("name").value.trim();
   const addr1 = document.getElementById("address1").value.trim();
   const addr2 = document.getElementById("address2").value.trim();
@@ -1193,10 +1269,27 @@ try {
     const formUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdyj2y19S5FgMHMLTT63iFtXlld-fX5HfArhYY_sZQe8WVQqA/formResponse";
     const formData = new FormData();
     var eventCode="";
+    var sid="SID001";
+
+    if(coupon){
+      if(coupon.includes("HAFEEZA")){
+        sid="SID004";
+      }else if(coupon.includes("SUHANA")){
+        sid="SID002";
+      }else if(coupon.includes("SHAIBA")){
+        sid="SID003";
+      }else if(coupon.includes("SYED")){
+        sid="SID004";
+      }else if(coupon.includes("KALLU")){
+        sid="SID006";
+      }else if(coupon.includes("SID")){
+        sid=coupon.match(/^[A-Z]{3}\d{3}/)?.[0] || "SID001";
+      }
+    }
 
     filteredCart.forEach((item, index) => {
       if (index === 0) {
-        formData.append("entry.1453696170", "SID001");
+        formData.append("entry.1453696170", sid);
         formData.append("entry.2026604478", item.code);
         formData.append("entry.1056003169", item.quantity);
         eventCode=eventCode+item.code;

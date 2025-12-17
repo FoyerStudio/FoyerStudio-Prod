@@ -13,17 +13,37 @@
     "code": "FS0001BL0000",
     "name": "Malika Karachi Cotton Salwar Suit",
     "sellingPrice": 649,
-    "spec": "100% Cotton Salwar Suits<br><br><b>Top</b> Pure Cotton with beautiful print neck pattern <br><b>Bottom</b> Pure Cotton <br><b>Dupatta</b> Pure Cotton with print <br><br><b>Top</b>- 2.25mtr <br><b>Bottom</b> - 2.25 mtr <br><b>Dupatta</b> - 2.25 mtr",
+    "spec": "100% Cotton Salwar Suits\n\n<b>Top</b> Pure Cotton with beautiful print neck pattern \n<b>Bottom</b> Pure Cotton \n<b>Dupatta</b> Pure Cotton with print \n\n<b>Top</b>- 2.25mtr \n<b>Bottom</b> - 2.25 mtr \n<b>Dupatta</b> - 2.25 mtr",
     "size": "UnStitched",
     "color": "Blue",
     "type": "Daily Wear",
     "tags": "UnStitched"
   },
   {
+    "code": "FS0002BR000L",
+    "name": "Malika Karachi Cotton Salwar Suit",
+    "sellingPrice": 649,
+    "spec": "100% Cotton Salwar Suits\n\n<b>Top</b> Pure Cotton with beautiful print neck pattern \n<b>Bottom</b> Pure Cotton \n<b>Dupatta</b> Pure Cotton with print \n\n<b>Top</b>- 2.25mtr \n<b>Bottom</b> - 2.25 mtr \n<b>Dupatta</b> - 2.25 mtr",
+    "size": "L",
+    "color": "Brown",
+    "type": "Daily Wear",
+    "tags": "Daily Wear"
+  },
+  {
+    "code": "FS0005GR000L",
+    "name": "Zellbury Cotton Salwar Suits",
+    "sellingPrice": 649,
+    "spec": "100% Cotton Salwar Suits\n\n<b>Top</b> Pure Cotton with beautiful print neck pattern \n<b>Bottom</b> Pure Cotton \n<b>Dupatta</b> Pure Cotton with print \n\n<b>Top</b>- 2.25mtr \n<b>Bottom</b> - 2.25 mtr \n<b>Dupatta</b> - 2.25 mtr",
+    "size": "L",
+    "color": "Green",
+    "type": "Daily Wear",
+    "tags": "Daily Wear"
+  },
+  {
     "code": "FS0006BL0000",
     "name": "Zellbury Cotton Salwar Suit",
     "sellingPrice": 649,
-    "spec": "100% Cotton Salwar Suits<br><br><b>Top</b> Pure Cotton with beautiful print neck pattern <br><b>Bottom</b> Pure Cotton <br><b>Dupatta</b> Pure Cotton with print <br><br><b>Top</b>- 2.25mtr <br><b>Bottom</b> - 2.25 mtr <br><b>Dupatta</b> - 2.25 mtr",
+    "spec": "100% Cotton Salwar Suits\n\n<b>Top</b> Pure Cotton with beautiful print neck pattern \n<b>Bottom</b> Pure Cotton \n<b>Dupatta</b> Pure Cotton with print \n\n<b>Top</b>- 2.25mtr \n<b>Bottom</b> - 2.25 mtr \n<b>Dupatta</b> - 2.25 mtr",
     "size": "UnStitched",
     "color": "Blue",
     "type": "Daily Wear",
@@ -33,7 +53,7 @@
     "code": "FS0007PP0000",
     "name": "Zellbury Cotton Salwar Suit",
     "sellingPrice": 649,
-    "spec": "100% Cotton Salwar Suits<br><br><b>Top</b> Pure Cotton with beautiful print neck pattern <br><b>Bottom</b> Pure Cotton <br><b>Dupatta</b> Pure Cotton with print <br><br><b>Top</b>- 2.25mtr <br><b>Bottom</b> - 2.25 mtr <br><b>Dupatta</b> - 2.25 mtr",
+    "spec": "100% Cotton Salwar Suits\n\n<b>Top</b> Pure Cotton with beautiful print neck pattern \n<b>Bottom</b> Pure Cotton \n<b>Dupatta</b> Pure Cotton with print \n\n<b>Top</b>- 2.25mtr \n<b>Bottom</b> - 2.25 mtr \n<b>Dupatta</b> - 2.25 mtr",
     "size": "UnStitched",
     "color": "Purple",
     "type": "Daily Wear",
@@ -43,7 +63,7 @@
     "code": "FS0008BR0000",
     "name": "Zellbury Cotton Salwar Suit",
     "sellingPrice": 649,
-    "spec": "100% Cotton Salwar Suits<br><br><b>Top</b> Pure Cotton with beautiful print neck pattern <br><b>Bottom</b> Pure Cotton <br><b>Dupatta</b> Pure Cotton with print <br><br><b>Top</b>- 2.25mtr <br><b>Bottom</b> - 2.25 mtr <br><b>Dupatta</b> - 2.25 mtr",
+    "spec": "100% Cotton Salwar Suits\n\n<b>Top</b> Pure Cotton with beautiful print neck pattern \n<b>Bottom</b> Pure Cotton \n<b>Dupatta</b> Pure Cotton with print \n\n<b>Top</b>- 2.25mtr \n<b>Bottom</b> - 2.25 mtr \n<b>Dupatta</b> - 2.25 mtr",
     "size": "UnStitched",
     "color": "Brown",
     "type": "Daily Wear",
@@ -53,7 +73,7 @@
     "code": "FS0010BP0000",
     "name": "Riwayat Lawn Suit",
     "sellingPrice": 649,
-    "spec": "Lawn Suits<br><br><b>Top</b> Pure lawn with beautiful print neck pattern <br><b>Bottom</b> Pure lawn <br><b>Dupatta</b> Pure lawn with print <br><br><b>Top</b>- 2.25mtr <br><b>Bottom</b> - 2.25 mtr <br><b>Dupatta</b> - 2.25 mtr",
+    "spec": "Lawn Suits\n\n<b>Top</b> Pure lawn with beautiful print neck pattern \n<b>Bottom</b> Pure lawn \n<b>Dupatta</b> Pure lawn with print \n\n<b>Top</b>- 2.25mtr \n<b>Bottom</b> - 2.25 mtr \n<b>Dupatta</b> - 2.25 mtr",
     "size": "UnStitched",
     "color": "Baby Pink",
     "type": "Daily Wear",
@@ -63,7 +83,7 @@
     "code": "FS0011PK000M",
     "name": "Jaipur Gown Top",
     "sellingPrice": 599,
-    "spec": "Lace Pattern Gown Tops<br><br><b>Fabric:</b> Cotton with floral prints<br><b>Combo :< /b>Single<br><b>Sleeve Length :</b> Three Quarter Sleeves<br><b>Length :</b> Ankle Length<br><b>Fit or Shape :</b> Fit and Flare",
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
     "size": "M",
     "color": "Pink",
     "type": "Work & Casuals",
@@ -73,7 +93,7 @@
     "code": "FS0011PK000L",
     "name": "Jaipur Gown Top",
     "sellingPrice": 599,
-    "spec": "Lace Pattern Gown Tops<br><br><b>Fabric:</b> Cotton with floral prints<br><b>Combo :< /b>Single<br><b>Sleeve Length :</b> Three Quarter Sleeves<br><b>Length :</b> Ankle Length<br><b>Fit or Shape :</b> Fit and Flare",
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
     "size": "L",
     "color": "Pink",
     "type": "Work & Casuals",
@@ -83,7 +103,7 @@
     "code": "FS0011PK00XL",
     "name": "Jaipur Gown Top",
     "sellingPrice": 599,
-    "spec": "Lace Pattern Gown Tops<br><br><b>Fabric:</b> Cotton with floral prints<br><b>Combo :< /b>Single<br><b>Sleeve Length :</b> Three Quarter Sleeves<br><b>Length :</b> Ankle Length<br><b>Fit or Shape :</b> Fit and Flare",
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
     "size": "XL",
     "color": "Pink",
     "type": "Work & Casuals",
@@ -93,7 +113,7 @@
     "code": "FS0012BL000M",
     "name": "Jaipur Gown Top",
     "sellingPrice": 599,
-    "spec": "Lace Pattern Gown Tops<br><br><b>Fabric:</b> Cotton with floral prints<br><b>Combo :< /b>Single<br><b>Sleeve Length :</b> Three Quarter Sleeves<br><b>Length :</b> Ankle Length<br><b>Fit or Shape :</b> Fit and Flare",
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
     "size": "M",
     "color": "Blue",
     "type": "Work & Casuals",
@@ -103,7 +123,7 @@
     "code": "FS0012BL000L",
     "name": "Jaipur Gown Top",
     "sellingPrice": 599,
-    "spec": "Lace Pattern Gown Tops<br><br><b>Fabric:</b> Cotton with floral prints<br><b>Combo :< /b>Single<br><b>Sleeve Length :</b> Three Quarter Sleeves<br><b>Length :</b> Ankle Length<br><b>Fit or Shape :</b> Fit and Flare",
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
     "size": "L",
     "color": "Blue",
     "type": "Work & Casuals",
@@ -113,7 +133,7 @@
     "code": "FS0012BL00XL",
     "name": "Jaipur Gown Top",
     "sellingPrice": 599,
-    "spec": "Lace Pattern Gown Tops<br><br><b>Fabric:</b> Cotton with floral prints<br><b>Combo :< /b>Single<br><b>Sleeve Length :</b> Three Quarter Sleeves<br><b>Length :</b> Ankle Length<br><b>Fit or Shape :</b> Fit and Flare",
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
     "size": "XL",
     "color": "Blue",
     "type": "Work & Casuals",
@@ -123,7 +143,7 @@
     "code": "FS0013MG000M",
     "name": "Jaipur Gown top",
     "sellingPrice": 599,
-    "spec": "Lace Pattern Gown Tops<br><br><b>Fabric:</b> Cotton with floral prints<br><b>Combo :< /b>Single<br><b>Sleeve Length :</b> Three Quarter Sleeves<br><b>Length :</b> Ankle Length<br><b>Fit or Shape :</b> Fit and Flare",
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
     "size": "M",
     "color": "Magenta",
     "type": "Work & Casuals",
@@ -133,7 +153,7 @@
     "code": "FS0013MG000L",
     "name": "Jaipur Gown Top",
     "sellingPrice": 599,
-    "spec": "Lace Pattern Gown Tops<br><br><b>Fabric:</b> Cotton with floral prints<br><b>Combo :< /b>Single<br><b>Sleeve Length :</b> Three Quarter Sleeves<br><b>Length :</b> Ankle Length<br><b>Fit or Shape :</b> Fit and Flare",
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
     "size": "L",
     "color": "Magenta",
     "type": "Work & Casuals",
@@ -143,7 +163,7 @@
     "code": "FS0013MG00XL",
     "name": "Jaipur Gown Top",
     "sellingPrice": 599,
-    "spec": "Lace Pattern Gown Tops<br><br><b>Fabric:</b> Cotton with floral prints<br><b>Combo :< /b>Single<br><b>Sleeve Length :</b> Three Quarter Sleeves<br><b>Length :</b> Ankle Length<br><b>Fit or Shape :</b> Fit and Flare",
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
     "size": "XL",
     "color": "Magenta",
     "type": "Work & Casuals",
@@ -153,7 +173,7 @@
     "code": "FS0013MG0XXL",
     "name": "Jaipur Gown Top",
     "sellingPrice": 599,
-    "spec": "Lace Pattern Gown Tops<br><br><b>Fabric:</b> Cotton with floral prints<br><b>Combo :< /b>Single<br><b>Sleeve Length :</b> Three Quarter Sleeves<br><b>Length :</b> Ankle Length<br><b>Fit or Shape :</b> Fit and Flare",
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
     "size": "XXL",
     "color": "Magenta",
     "type": "Work & Casuals",
@@ -163,7 +183,7 @@
     "code": "FS0014MR000M",
     "name": "Jaipur Gown Top",
     "sellingPrice": 599,
-    "spec": "Lace Pattern Gown Tops<br><br><b>Fabric:</b> Cotton with floral prints<br><b>Combo :< /b>Single<br><b>Sleeve Length :</b> Three Quarter Sleeves<br><b>Length :</b> Ankle Length<br><b>Fit or Shape :</b> Fit and Flare",
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
     "size": "M",
     "color": "Maroon",
     "type": "Work & Casuals",
@@ -173,7 +193,7 @@
     "code": "FS0014MR000L",
     "name": "Jaipur Gown Top",
     "sellingPrice": 599,
-    "spec": "Lace Pattern Gown Tops<br><br><b>Fabric:</b> Cotton with floral prints<br><b>Combo :< /b>Single<br><b>Sleeve Length :</b> Three Quarter Sleeves<br><b>Length :</b> Ankle Length<br><b>Fit or Shape :</b> Fit and Flare",
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
     "size": "L",
     "color": "Maroon",
     "type": "Work & Casuals",
@@ -183,7 +203,7 @@
     "code": "FS0014MR00XL",
     "name": "Jaipur Gown Top",
     "sellingPrice": 599,
-    "spec": "Lace Pattern Gown Tops<br><br><b>Fabric:</b> Cotton with floral prints<br><b>Combo :< /b>Single<br><b>Sleeve Length :</b> Three Quarter Sleeves<br><b>Length :</b> Ankle Length<br><b>Fit or Shape :</b> Fit and Flare",
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
     "size": "XL",
     "color": "Maroon",
     "type": "Work & Casuals",
@@ -193,7 +213,7 @@
     "code": "FS0014MR0XXL",
     "name": "Jaipur Gown Top",
     "sellingPrice": 599,
-    "spec": "Lace Pattern Gown Tops<br><br><b>Fabric:</b> Cotton with floral prints<br><b>Combo :< /b>Single<br><b>Sleeve Length :</b> Three Quarter Sleeves<br><b>Length :</b> Ankle Length<br><b>Fit or Shape :</b> Fit and Flare",
+    "spec": "Lace Pattern Gown Tops\n\n<b>Fabric:</b> Cotton with floral prints\n<b>Combo :< /b>Single\n<b>Sleeve Length :</b> Three Quarter Sleeves\n<b>Length :</b> Ankle Length\n<b>Fit or Shape :</b> Fit and Flare",
     "size": "XXL",
     "color": "Maroon",
     "type": "Work & Casuals",
@@ -203,7 +223,7 @@
     "code": "FS0015YL000M",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "M",
     "color": "Yellow",
     "type": "Work & Casuals",
@@ -213,7 +233,7 @@
     "code": "FS0015YL000L",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "L",
     "color": "Yellow",
     "type": "Work & Casuals",
@@ -223,7 +243,7 @@
     "code": "FS0015YL00XL",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "XL",
     "color": "Yellow",
     "type": "Work & Casuals",
@@ -233,7 +253,7 @@
     "code": "FS0016PK000M",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "M",
     "color": "Pink",
     "type": "Work & Casuals",
@@ -243,7 +263,7 @@
     "code": "FS0016PK000L",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "L",
     "color": "Pink",
     "type": "Work & Casuals",
@@ -253,7 +273,7 @@
     "code": "FS0016PK00XL",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "XL",
     "color": "Pink",
     "type": "Work & Casuals",
@@ -263,7 +283,7 @@
     "code": "FS0016PK0XXL",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "XXL",
     "color": "Pink",
     "type": "Work & Casuals",
@@ -273,7 +293,7 @@
     "code": "FS0017LV000M",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "M",
     "color": "Lavender",
     "type": "Work & Casuals",
@@ -283,7 +303,7 @@
     "code": "FS0017LV000L",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "L",
     "color": "Lavender",
     "type": "Work & Casuals",
@@ -293,7 +313,7 @@
     "code": "FS0017LV00XL",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "XL",
     "color": "Lavender",
     "type": "Work & Casuals",
@@ -303,7 +323,7 @@
     "code": "FS0018BL00XL",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "XL",
     "color": "Blue",
     "type": "Work & Casuals",
@@ -313,7 +333,7 @@
     "code": "FS0019HN000M",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "M",
     "color": "Hazlnut",
     "type": "Work & Casuals",
@@ -323,7 +343,7 @@
     "code": "FS0019HN000L",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "L",
     "color": "Hazlnut",
     "type": "Work & Casuals",
@@ -333,7 +353,7 @@
     "code": "FS0021YL00XL",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "XL",
     "color": "Yellow",
     "type": "Work & Casuals",
@@ -343,7 +363,7 @@
     "code": "FS0021YL0XXL",
     "name": "Jaipur Cotton Suit",
     "sellingPrice": 699,
-    "spec": "Jaipur Printed Cotton Suit Set<br><br><b>Fabric:</b>100% breathable cotton<br><b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves<br><b>Bottom:</b> Printed cotton pants for comfort<br><b>Dupatta:</b> Coordinated printed cotton with traditional motifs<br><b>Occasion:</b> Casual, festive, and semi-formal wear",
+    "spec": "Jaipur Printed Cotton Suit Set\n\n<b>Fabric:</b>100% breathable cotton\n<b>Kurta:</b> Straight-cut with V-neck and 3/4th sleeves\n<b>Bottom:</b> Printed cotton pants for comfort\n<b>Dupatta:</b> Coordinated printed cotton with traditional motifs\n<b>Occasion:</b> Casual, festive, and semi-formal wear",
     "size": "XXL",
     "color": "Yellow",
     "type": "Work & Casuals",
@@ -353,7 +373,7 @@
     "code": "FS0022GR000L",
     "name": "Pakistani Cotton  Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top With GPO Laces Attached <br><br>Cotton stitched pant <br><br>Printed Cotton dupatta<br>",
+    "spec": "Full Stitched Cotton Top With GPO Laces Attached \n\nCotton stitched pant \n\nPrinted Cotton dupatta\n",
     "size": "L",
     "color": "Green",
     "type": "Daily Wear",
@@ -363,7 +383,7 @@
     "code": "FS0022GR00XL",
     "name": "Pakistani Cotton  Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top With GPO Laces Attached <br><br>Cotton stitched pant <br><br>Printed Cotton dupatta",
+    "spec": "Full Stitched Cotton Top With GPO Laces Attached \n\nCotton stitched pant \n\nPrinted Cotton dupatta",
     "size": "XL",
     "color": "Green",
     "type": "Daily Wear",
@@ -373,7 +393,7 @@
     "code": "FS0022GR0XXL",
     "name": "Pakistani Cotton  Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top With GPO Laces Attached <br><br>Cotton stitched pant <br><br>Printed Cotton dupatta",
+    "spec": "Full Stitched Cotton Top With GPO Laces Attached \n\nCotton stitched pant \n\nPrinted Cotton dupatta",
     "size": "XXL",
     "color": "Green",
     "type": "Daily Wear",
@@ -383,7 +403,7 @@
     "code": "FS0024PP0XXL",
     "name": "Pakistani Cotton  Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top With GPO Laces Attached <br><br>Cotton stitched pant <br><br>Printed Cotton dupatta",
+    "spec": "Full Stitched Cotton Top With GPO Laces Attached \n\nCotton stitched pant \n\nPrinted Cotton dupatta",
     "size": "XXL",
     "color": "Purple",
     "type": "Daily Wear",
@@ -393,7 +413,7 @@
     "code": "FS0024PPXXXL",
     "name": "Pakistani Cotton  Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top With GPO Laces Attached <br><br>Cotton stitched pant <br><br>Printed Cotton dupatta",
+    "spec": "Full Stitched Cotton Top With GPO Laces Attached \n\nCotton stitched pant \n\nPrinted Cotton dupatta",
     "size": "XXXL",
     "color": "Purple",
     "type": "Daily Wear",
@@ -403,7 +423,7 @@
     "code": "FS0029GR000M",
     "name": "Vatican Silk Suit",
     "sellingPrice": 1049,
-    "spec": "This product is ready to wear three-piece kurti suit material set designed for women. The set features a soft olive green color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:<br>* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.<br>* A matching plain bottom fabric in a similar olive green shade.<br>* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
+    "spec": "This product is ready to wear three-piece kurti suit material set designed for women. The set features a soft olive green color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:\n* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.\n* A matching plain bottom fabric in a similar olive green shade.\n* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
     "size": "M",
     "color": "Green",
     "type": "Party & Festive Wear",
@@ -413,7 +433,7 @@
     "code": "FS0029GR000L",
     "name": "Vatican Silk Suit",
     "sellingPrice": 1049,
-    "spec": "This product is ready to wear three-piece kurti suit material set designed for women. The set features a soft olive green color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:<br>* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.<br>* A matching plain bottom fabric in a similar olive green shade.<br>* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
+    "spec": "This product is ready to wear three-piece kurti suit material set designed for women. The set features a soft olive green color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:\n* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.\n* A matching plain bottom fabric in a similar olive green shade.\n* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
     "size": "L",
     "color": "Green",
     "type": "Party & Festive Wear",
@@ -423,7 +443,7 @@
     "code": "FS0029GR0XXL",
     "name": "Vatican Silk Suit",
     "sellingPrice": 1049,
-    "spec": "This product is ready to wear three-piece kurti suit material set designed for women. The set features a soft olive green color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:<br>* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.<br>* A matching plain bottom fabric in a similar olive green shade.<br>* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
+    "spec": "This product is ready to wear three-piece kurti suit material set designed for women. The set features a soft olive green color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:\n* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.\n* A matching plain bottom fabric in a similar olive green shade.\n* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
     "size": "XXL",
     "color": "Green",
     "type": "Party & Festive Wear",
@@ -433,7 +453,7 @@
     "code": "FS0030PK000M",
     "name": "Vatican Silk Suit",
     "sellingPrice": 1049,
-    "spec": "This product is an ready to wear three-piece kurti suit material set designed for women. The set features a pink color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:<br>* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.<br>* A matching plain bottom fabric in a similar pink shade.<br>* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
+    "spec": "This product is an ready to wear three-piece kurti suit material set designed for women. The set features a pink color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:\n* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.\n* A matching plain bottom fabric in a similar pink shade.\n* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
     "size": "M",
     "color": "Pink",
     "type": "Party & Festive Wear",
@@ -443,7 +463,7 @@
     "code": "FS0030PK00XL",
     "name": "Vatican Silk Suit",
     "sellingPrice": 1049,
-    "spec": "This product is an ready to wear three-piece kurti suit material set designed for women. The set features a pink color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:<br>* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.<br>* A matching plain bottom fabric in a similar pink shade.<br>* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
+    "spec": "This product is an ready to wear three-piece kurti suit material set designed for women. The set features a pink color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:\n* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.\n* A matching plain bottom fabric in a similar pink shade.\n* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
     "size": "XL",
     "color": "Pink",
     "type": "Party & Festive Wear",
@@ -453,7 +473,7 @@
     "code": "FS0030PK0XXL",
     "name": "Vatican Silk Suit",
     "sellingPrice": 1049,
-    "spec": "This product is an ready to wear three-piece kurti suit material set designed for women. The set features a pink color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:<br>* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.<br>* A matching plain bottom fabric in a similar pink shade.<br>* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
+    "spec": "This product is an ready to wear three-piece kurti suit material set designed for women. The set features a pink color with subtle beadwork and small embroidered patterns on the kurti fabric. The material includes:\n* A kurti (top) fabric with intricate bead and sequin handwork running vertically along the center and border accents on the sleeve ends.\n* A matching plain bottom fabric in a similar pink shade.\n* A coordinating dupatta (scarf) with an embellished border that complements the kurti's design.",
     "size": "XXL",
     "color": "Pink",
     "type": "Party & Festive Wear",
@@ -463,7 +483,7 @@
     "code": "FS0031BK000L",
     "name": "Pakistani Lawn Suit",
     "sellingPrice": 1199,
-    "spec": "Pakistani Lawn Suit <br>Top with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
     "size": "L",
     "color": "Black",
     "type": "Semi Casual",
@@ -473,7 +493,7 @@
     "code": "FS0032PK000L",
     "name": "Pakistani Lawn Suit",
     "sellingPrice": 1199,
-    "spec": "Pakistani Lawn Suit <br>Top with floral prints and embroidery patches on neck, tassels on slit with plain bottom and cotton dupatta.",
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tassels on slit with plain bottom and cotton dupatta.",
     "size": "L",
     "color": "Pink",
     "type": "Semi Casual",
@@ -483,7 +503,7 @@
     "code": "FS0033RD00XL",
     "name": "Pakistani Lawn Suit",
     "sellingPrice": 1199,
-    "spec": "Pakistani Lawn Suit <br>Top with floral prints and embroidery patches on neck and hand, tassels on slit with plain bottom and cotton dupatta.",
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck and hand, tassels on slit with plain bottom and cotton dupatta.",
     "size": "XL",
     "color": "Red",
     "type": "Semi Casual",
@@ -493,7 +513,7 @@
     "code": "FS0034GR000L",
     "name": "Pakistani Cotton Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top attached with GPO laces<br>Cotton stitched pant & printed cotton dupatta",
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
     "size": "L",
     "color": "Green",
     "type": "Daily Wear",
@@ -503,7 +523,7 @@
     "code": "FS0034GR00XL",
     "name": "Pakistani Cotton Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top attached with GPO laces<br>Cotton stitched pant & printed cotton dupatta",
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
     "size": "XL",
     "color": "Green",
     "type": "Daily Wear",
@@ -513,7 +533,7 @@
     "code": "FS0035BL000L",
     "name": "Pakistani Cotton Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top attached with GPO laces<br>Cotton stitched pant & printed cotton dupatta",
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
     "size": "L",
     "color": "Blue",
     "type": "Daily Wear",
@@ -523,7 +543,7 @@
     "code": "FS0035BL00XL",
     "name": "Pakistani Cotton Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top attached with GPO laces<br>Cotton stitched pant & printed cotton dupatta",
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
     "size": "XL",
     "color": "Blue",
     "type": "Daily Wear",
@@ -533,7 +553,7 @@
     "code": "FS0035BL0XXL",
     "name": "Pakistani Cotton Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top attached with GPO laces<br>Cotton stitched pant & printed cotton dupatta",
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
     "size": "XXL",
     "color": "Blue",
     "type": "Daily Wear",
@@ -543,7 +563,7 @@
     "code": "FS0031BL0XXL",
     "name": "Pakistani Lawn Suit",
     "sellingPrice": 1199,
-    "spec": "Pakistani Lawn Suit <br>Top with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
     "size": "XXL",
     "color": "Blue",
     "type": "Semi Casual",
@@ -553,7 +573,7 @@
     "code": "FS0036BL000L",
     "name": "Pakistani Lawn Suit",
     "sellingPrice": 1199,
-    "spec": "Pakistani Lawn Suit <br>Top with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
     "size": "L",
     "color": "Blue",
     "type": "Semi Casual",
@@ -563,7 +583,7 @@
     "code": "FS0036BL00XL",
     "name": "Pakistani Lawn Suit",
     "sellingPrice": 1199,
-    "spec": "Pakistani Lawn Suit <br>Top with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
     "size": "XL",
     "color": "Blue",
     "type": "Semi Casual",
@@ -573,7 +593,7 @@
     "code": "FS0036BL0XXL",
     "name": "Pakistani Lawn Suit",
     "sellingPrice": 1199,
-    "spec": "Pakistani Lawn Suit <br>Top with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
     "size": "XXL",
     "color": "Blue",
     "type": "Semi Casual",
@@ -583,7 +603,7 @@
     "code": "FS0036BLXXXL",
     "name": "Pakistani Lawn Suit",
     "sellingPrice": 1199,
-    "spec": "Pakistani Lawn Suit <br>Top with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
     "size": "XXXL",
     "color": "Blue",
     "type": "Semi Casual",
@@ -593,7 +613,7 @@
     "code": "FS0037MR00XL",
     "name": "Pakistani Lawn Suit",
     "sellingPrice": 1099,
-    "spec": "Pakistani Lawn Suit <br>Top with floral prints and embroidery patches and tessels on slit with floral bottom and cotton dupatta.",
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with floral bottom and cotton dupatta.",
     "size": "XL",
     "color": "Maroon",
     "type": "Semi Casual",
@@ -603,7 +623,7 @@
     "code": "FS0038BK000L",
     "name": "Pakistani Lawn Suit",
     "sellingPrice": 1099,
-    "spec": "Pakistani Lawn Suit <br>Top with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.",
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.",
     "size": "L",
     "color": "Black",
     "type": "Semi Casual",
@@ -613,7 +633,7 @@
     "code": "FS0038BK00XL",
     "name": "Pakistani Lawn Suit",
     "sellingPrice": 1099,
-    "spec": "Pakistani Lawn Suit <br>Top with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.",
+    "spec": "Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.",
     "size": "XL",
     "color": "Black",
     "type": "Semi Casual",
@@ -623,7 +643,7 @@
     "code": "FS0039YL00XL",
     "name": "Pakistani Lawn Suit",
     "sellingPrice": 1099,
-    "spec": "\"Pakistani Lawn Suit <br>Top with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.\"",
+    "spec": "\"Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.\"",
     "size": "XL",
     "color": "Yellow",
     "type": "Semi Casual",
@@ -633,7 +653,7 @@
     "code": "FS0039YL0XXL",
     "name": "Pakistani Lawn Suit",
     "sellingPrice": 1099,
-    "spec": "\"Pakistani Lawn Suit <br>Top with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.\"",
+    "spec": "\"Pakistani Lawn Suit \nTop with floral prints and embroidery patches and tessels on slit with plain bottom and cotton dupatta.\"",
     "size": "XXL",
     "color": "Yellow",
     "type": "Semi Casual",
@@ -643,7 +663,7 @@
     "code": "FS0040PP000L",
     "name": "Pakistani Cotton Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top attached with GPO laces<br>Cotton stitched pant & printed cotton dupatta",
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
     "size": "L",
     "color": "Purple",
     "type": "Daily Wear",
@@ -653,7 +673,7 @@
     "code": "FS0040PP00XL",
     "name": "Pakistani Cotton Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top attached with GPO laces<br>Cotton stitched pant & printed cotton dupatta",
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
     "size": "XL",
     "color": "Purple",
     "type": "Daily Wear",
@@ -663,7 +683,7 @@
     "code": "FS0040PP0XXL",
     "name": "Pakistani Cotton Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top attached with GPO laces<br>Cotton stitched pant & printed cotton dupatta",
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
     "size": "XXL",
     "color": "Purple",
     "type": "Daily Wear",
@@ -673,7 +693,7 @@
     "code": "FS0040PPXXXL",
     "name": "Pakistani Cotton Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top attached with GPO laces<br>Cotton stitched pant & printed cotton dupatta",
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
     "size": "XXXL",
     "color": "Purple",
     "type": "Daily Wear",
@@ -683,7 +703,7 @@
     "code": "FS0041BR000L",
     "name": "Pakistani Cotton Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top attached with GPO laces<br>Cotton stitched pant & printed cotton dupatta",
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
     "size": "L",
     "color": "Brown",
     "type": "Daily Wear",
@@ -693,7 +713,7 @@
     "code": "FS0041BR00XL",
     "name": "Pakistani Cotton Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top attached with GPO laces<br>Cotton stitched pant & printed cotton dupatta",
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
     "size": "XL",
     "color": "Brown",
     "type": "Daily Wear",
@@ -703,7 +723,7 @@
     "code": "FS0041BR0XXL",
     "name": "Pakistani Cotton Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top attached with GPO laces<br>Cotton stitched pant & printed cotton dupatta",
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
     "size": "XXL",
     "color": "Brown",
     "type": "Daily Wear",
@@ -713,7 +733,7 @@
     "code": "FS0041BRXXXL",
     "name": "Pakistani Cotton Suit",
     "sellingPrice": 899,
-    "spec": "Full Stitched Cotton Top attached with GPO laces<br>Cotton stitched pant & printed cotton dupatta",
+    "spec": "Full Stitched Cotton Top attached with GPO laces\nCotton stitched pant & printed cotton dupatta",
     "size": "XXXL",
     "color": "Brown",
     "type": "Daily Wear",
@@ -1095,16 +1115,6 @@
     "sellingPrice": 949,
     "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
     "size": "M",
-    "color": "Yellow",
-    "type": "Top Wear",
-    "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
-  },
-  {
-    "code": "FM0002YL000L",
-    "name": "Cavalry Stripes",
-    "sellingPrice": 949,
-    "spec": "A classic cavalry stripe shirt with fine vertical lines, soft fabric, and a clean tailored fit. Simple, versatile, and effortlessly stylish.",
-    "size": "L",
     "color": "Yellow",
     "type": "Top Wear",
     "tags": "Top Wear,New Arrivals,Cavalry Stripes Shirts"
@@ -1800,16 +1810,6 @@
     "tags": "Bottoms,New Arrivals,Relaxed Linen Bottoms"
   },
   {
-    "code": "FS0045BL000M",
-    "name": "Short Kurti",
-    "sellingPrice": 399,
-    "spec": "Breathable cotton short kurti with soothing blue tones —lightweight, stylish, and easy to pair with anything.",
-    "size": "M",
-    "color": "Blue",
-    "type": "Work & Casuals",
-    "tags": "Work & Casuals,New Arrivals,Short Kurti"
-  },
-  {
     "code": "FS0045BL000L",
     "name": "Short Kurti",
     "sellingPrice": 399,
@@ -1836,16 +1836,6 @@
     "spec": "Breathable cotton short kurti with soothing blue tones —lightweight, stylish, and easy to pair with anything.",
     "size": "XXL",
     "color": "Blue",
-    "type": "Work & Casuals",
-    "tags": "Work & Casuals,New Arrivals,Short Kurti"
-  },
-  {
-    "code": "FS0046MR000M",
-    "name": "Short Kurti",
-    "sellingPrice": 399,
-    "spec": "Breathable cotton short kurti with intricate red and cream prints—lightweight, stylish, and easy to pair with anything.",
-    "size": "M",
-    "color": "Maroon",
     "type": "Work & Casuals",
     "tags": "Work & Casuals,New Arrivals,Short Kurti"
   },
@@ -1903,7 +1893,7 @@
     "code": "FS0048BK000M",
     "name": "Short Kurti",
     "sellingPrice": 299,
-    "spec": "Breathable cotton short kurti with intricate grey and rose motifs —lightweight, stylish, and easy to pair with anything.",
+    "spec": "spec: \"Breathable cotton short kurti with intricate grey and rose motifs —lightweight, stylish, and easy to pair with anything.\",",
     "size": "M",
     "color": "Black",
     "type": "Work & Casuals",
@@ -1913,18 +1903,8 @@
     "code": "FS0048BK000L",
     "name": "Short Kurti",
     "sellingPrice": 299,
-    "spec": "Breathable cotton short kurti with intricate grey and rose motifs —lightweight, stylish, and easy to pair with anything.",
+    "spec": "spec: \"Breathable cotton short kurti with intricate grey and rose motifs —lightweight, stylish, and easy to pair with anything.\",",
     "size": "L",
-    "color": "Black",
-    "type": "Work & Casuals",
-    "tags": "Work & Casuals,New Arrivals,Short Kurti"
-  },
-  {
-    "code": "FS0048BK00XL",
-    "name": "Short Kurti",
-    "sellingPrice": 299,
-    "spec": "Breathable cotton short kurti with intricate grey and rose motifs —lightweight, stylish, and easy to pair with anything.",
-    "size": "XL",
     "color": "Black",
     "type": "Work & Casuals",
     "tags": "Work & Casuals,New Arrivals,Short Kurti"
@@ -1933,7 +1913,7 @@
     "code": "FS0048BK0XXL",
     "name": "Short Kurti",
     "sellingPrice": 299,
-    "spec": "Breathable cotton short kurti with intricate grey and rose motifs —lightweight, stylish, and easy to pair with anything.",
+    "spec": "spec: \"Breathable cotton short kurti with intricate grey and rose motifs —lightweight, stylish, and easy to pair with anything.\",",
     "size": "XXL",
     "color": "Black",
     "type": "Work & Casuals",
@@ -1960,26 +1940,6 @@
     "tags": "Women,New Arrivals,Signature"
   },
   {
-    "code": "FF0001000029",
-    "name": "Zafir",
-    "sellingPrice": 1499,
-    "spec": "Experience the allure of a true <b>Oriental Spicy</b> masterpiece, crafted for fragrance lovers who appreciate rich depth, warmth, and luxury. This premium blend opens with bold saffron and Ceylon cinnamon, unfolding into a smooth suede and exotic floral heart, before settling into a sensual base of vanilla, tobacco, and musk. A deeply captivating scent — bold, elegant, and extremely popular across the UAE.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Saffron, Ceylon Cinnamon<br>\n• <b>Heart Notes:</b> Suede, Ylang, Agarwood (Oud)<br>\n• <b>Base Notes:</b> Vanilla, Tobacco, Musk<br><br>\n\nA sophisticated oriental profile that leaves a long-lasting, unforgettable trail. Perfect for evening wear, special occasions, or anyone seeking a signature scent with a luxurious Middle Eastern touch.",
-    "size": "30 ml",
-    "color": "Perfume",
-    "type": "Premium",
-    "tags": "Men,New Arrivals,Premium,Oriental"
-  },
-  {
-    "code": "FF0001000060",
-    "name": "Zafir",
-    "sellingPrice": 2299,
-    "spec": "Experience the allure of a true <b>Oriental Spicy</b> masterpiece, crafted for fragrance lovers who appreciate rich depth, warmth, and luxury. This premium blend opens with bold saffron and Ceylon cinnamon, unfolding into a smooth suede and exotic floral heart, before settling into a sensual base of vanilla, tobacco, and musk. A deeply captivating scent — bold, elegant, and extremely popular across the UAE.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Saffron, Ceylon Cinnamon<br>\n• <b>Heart Notes:</b> Suede, Ylang, Agarwood (Oud)<br>\n• <b>Base Notes:</b> Vanilla, Tobacco, Musk<br><br>\n\nA sophisticated oriental profile that leaves a long-lasting, unforgettable trail. Perfect for evening wear, special occasions, or anyone seeking a signature scent with a luxurious Middle Eastern touch.",
-    "size": "60 ml",
-    "color": "Perfume",
-    "type": "Premium",
-    "tags": "Men,New Arrivals,Premium,Oriental"
-  },
-  {
     "code": "FF0002000029",
     "name": "Aswad",
     "sellingPrice": 799,
@@ -1987,7 +1947,7 @@
     "size": "30 ml",
     "color": "Perfume",
     "type": "Men",
-    "tags": "Men,New Arrivals"
+    "tags": "Men,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0002000060",
@@ -1997,7 +1957,7 @@
     "size": "60 ml",
     "color": "Perfume",
     "type": "Men",
-    "tags": "Men,New Arrivals"
+    "tags": "Men,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0003000029",
@@ -2027,7 +1987,7 @@
     "size": "30 ml",
     "color": "Perfume",
     "type": "Women",
-    "tags": "Women,New Arrivals"
+    "tags": "Women,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0004000060",
@@ -2037,7 +1997,7 @@
     "size": "60 ml",
     "color": "Perfume",
     "type": "Women",
-    "tags": "Women,New Arrivals"
+    "tags": "Women,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0005000029",
@@ -2067,7 +2027,7 @@
     "size": "30 ml",
     "color": "Perfume",
     "type": "Women",
-    "tags": "Women,New Arrivals"
+    "tags": "Women,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0006000060",
@@ -2077,7 +2037,7 @@
     "size": "60 ml",
     "color": "Perfume",
     "type": "Women",
-    "tags": "Women,New Arrivals"
+    "tags": "Women,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0007000029",
@@ -2107,7 +2067,7 @@
     "size": "30 ml",
     "color": "Perfume",
     "type": "Women",
-    "tags": "Women,New Arrivals"
+    "tags": "Women,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0008000060",
@@ -2117,7 +2077,7 @@
     "size": "60 ml",
     "color": "Perfume",
     "type": "Women",
-    "tags": "Women,New Arrivals"
+    "tags": "Women,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0009000029",
@@ -2200,26 +2160,6 @@
     "tags": "Unisex,New Arrivals"
   },
   {
-    "code": "FF0015000029",
-    "name": "Gully Boy",
-    "sellingPrice": 799,
-    "spec": "✨ <b>Oriental Fougere Essence</b><br><br>\n\nA bold and sophisticated <b>Oriental Fougere</b> fragrance crafted for those who appreciate depth, texture, and refined masculinity.<br>\nIt opens with a fresh yet spicy fusion of cardamom, juniper, and bright bergamot, delivering an invigorating spark that immediately commands attention.<br>\nThe heart unfolds into a smooth aromatic blend of violet and clary sage, adding an elegant herbal freshness that feels modern and confident.<br>\nAs it settles, the fragrance wraps the skin in a rich, sensual base of tobacco, soft suede, and ambergris, creating a warm, smoky, and irresistibly luxurious trail.<br>\nPerfect for evening wear, special occasions, or any moment where you want to leave a lasting impression.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Cardamom<br>\n• Juniper<br>\n• Bergamot<br><br>\n\n<b>Heart Notes:</b><br>\n• Violet<br>\n• Clary Sage<br><br>\n\n<b>Base Notes:</b><br>\n• Tobacco<br>\n• Suede<br>\n• Ambergris<br>",
-    "size": "30 ml",
-    "color": "Perfume",
-    "type": "Men",
-    "tags": "Men,New Arrivals"
-  },
-  {
-    "code": "FF0015000060",
-    "name": "Gully Boy",
-    "sellingPrice": 1199,
-    "spec": "✨ <b>Oriental Fougere Essence</b><br><br>\n\nA bold and sophisticated <b>Oriental Fougere</b> fragrance crafted for those who appreciate depth, texture, and refined masculinity.<br>\nIt opens with a fresh yet spicy fusion of cardamom, juniper, and bright bergamot, delivering an invigorating spark that immediately commands attention.<br>\nThe heart unfolds into a smooth aromatic blend of violet and clary sage, adding an elegant herbal freshness that feels modern and confident.<br>\nAs it settles, the fragrance wraps the skin in a rich, sensual base of tobacco, soft suede, and ambergris, creating a warm, smoky, and irresistibly luxurious trail.<br>\nPerfect for evening wear, special occasions, or any moment where you want to leave a lasting impression.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Cardamom<br>\n• Juniper<br>\n• Bergamot<br><br>\n\n<b>Heart Notes:</b><br>\n• Violet<br>\n• Clary Sage<br><br>\n\n<b>Base Notes:</b><br>\n• Tobacco<br>\n• Suede<br>\n• Ambergris<br>",
-    "size": "60 ml",
-    "color": "Perfume",
-    "type": "Men",
-    "tags": "Men,New Arrivals"
-  },
-  {
     "code": "FF0016000029",
     "name": "Khober",
     "sellingPrice": 799,
@@ -2238,26 +2178,6 @@
     "color": "Perfume",
     "type": "Unisex",
     "tags": "Unisex,New Arrivals,Oriental"
-  },
-  {
-    "code": "FF0017000029",
-    "name": "Megamare",
-    "sellingPrice": 1499,
-    "spec": "🌊 <b>Aromatic Aquatic Freshness</b><br><br>\n\nA crisp and energizing <b>Aromatic Aquatic</b> fragrance that captures the purity of ocean air and the freshness of sunlit waters.<br>\nThe scent opens with a sparkling burst of bergamot and lemon, delivering an uplifting citrus brightness that feels clean and refreshing.<br>\nAt the heart, marine notes of seaweed and calone create a true oceanic sensation—cool, airy, and effortlessly aquatic.<br>\nAs it dries down, the fragrance rests on a modern blend of musk, ambroxan, and cedar, adding depth, smoothness, and a lingering woody freshness that stays on the skin like a gentle sea breeze.<br>\nPerfect for daytime wear, beach vibes, and anyone who loves clean, fresh, and contemporary scents.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Bergamot<br>\n• Lemon<br><br>",
-    "size": "30 ml",
-    "color": "Perfume",
-    "type": "Men",
-    "tags": "Men,New Arrivals,Premium"
-  },
-  {
-    "code": "FF0017000060",
-    "name": "Megamare",
-    "sellingPrice": 2299,
-    "spec": "🌊 <b>Aromatic Aquatic Freshness</b><br><br>\n\nA crisp and energizing <b>Aromatic Aquatic</b> fragrance that captures the purity of ocean air and the freshness of sunlit waters.<br>\nThe scent opens with a sparkling burst of bergamot and lemon, delivering an uplifting citrus brightness that feels clean and refreshing.<br>\nAt the heart, marine notes of seaweed and calone create a true oceanic sensation—cool, airy, and effortlessly aquatic.<br>\nAs it dries down, the fragrance rests on a modern blend of musk, ambroxan, and cedar, adding depth, smoothness, and a lingering woody freshness that stays on the skin like a gentle sea breeze.<br>\nPerfect for daytime wear, beach vibes, and anyone who loves clean, fresh, and contemporary scents.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Bergamot<br>\n• Lemon<br><br>",
-    "size": "60 ml",
-    "color": "Perfume",
-    "type": "Men",
-    "tags": "Men,New Arrivals,Premium"
   },
   {
     "code": "FF0018000029",
@@ -2280,26 +2200,6 @@
     "tags": "Unisex,New Arrivals,Oriental"
   },
   {
-    "code": "FF0019000029",
-    "name": "Timeline",
-    "sellingPrice": 1499,
-    "spec": "✨ <b>Oriental Floral Fragrance</b><br><br>\n\nA graceful <b>Oriental Floral</b> fragrance that captures elegance, warmth, and timeless femininity.<br>\nIt opens with the soft radiance of orange blossom, offering a fresh, floral sweetness that feels pure, delicate, and instantly uplifting.<br>\nThe heart warms into a smooth glow of amber, adding depth, sensuality, and a golden richness that wraps the skin beautifully.<br>\nFinally, the scent settles into gentle woody notes, creating a refined and comforting trail that lingers with quiet sophistication.<br>\nPerfect for daily wear, romantic evenings, and anyone who loves soft florals paired with warm oriental charm.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Main Notes:</b><br>\n• Orange Blossom<br>\n• Amber<br>\n• Woody Notes<br>",
-    "size": "30 ml",
-    "color": "Perfume",
-    "type": "Unisex",
-    "tags": "Unisex,New Arrivals,Premium"
-  },
-  {
-    "code": "FF0019000060",
-    "name": "Timeline",
-    "sellingPrice": 2299,
-    "spec": "✨ <b>Oriental Floral Fragrance</b><br><br>\n\nA graceful <b>Oriental Floral</b> fragrance that captures elegance, warmth, and timeless femininity.<br>\nIt opens with the soft radiance of orange blossom, offering a fresh, floral sweetness that feels pure, delicate, and instantly uplifting.<br>\nThe heart warms into a smooth glow of amber, adding depth, sensuality, and a golden richness that wraps the skin beautifully.<br>\nFinally, the scent settles into gentle woody notes, creating a refined and comforting trail that lingers with quiet sophistication.<br>\nPerfect for daily wear, romantic evenings, and anyone who loves soft florals paired with warm oriental charm.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Main Notes:</b><br>\n• Orange Blossom<br>\n• Amber<br>\n• Woody Notes<br>",
-    "size": "60 ml",
-    "color": "Perfume",
-    "type": "Unisex",
-    "tags": "Unisex,New Arrivals,Premium"
-  },
-  {
     "code": "FF0020000029",
     "name": "Ziva",
     "sellingPrice": 799,
@@ -2307,7 +2207,7 @@
     "size": "30 ml",
     "color": "Perfume",
     "type": "Unisex",
-    "tags": "Unisex,New Arrivals"
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0020000060",
@@ -2317,7 +2217,7 @@
     "size": "60 ml",
     "color": "Perfume",
     "type": "Unisex",
-    "tags": "Unisex,New Arrivals"
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0021000029",
@@ -2327,7 +2227,7 @@
     "size": "30 ml",
     "color": "Perfume",
     "type": "Women",
-    "tags": "Women,New Arrivals"
+    "tags": "Women,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0021000060",
@@ -2337,7 +2237,7 @@
     "size": "60 ml",
     "color": "Perfume",
     "type": "Women",
-    "tags": "Women,New Arrivals"
+    "tags": "Women,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0022000029",
@@ -2347,7 +2247,7 @@
     "size": "30 ml",
     "color": "Perfume",
     "type": "Women",
-    "tags": "Women,New Arrivals"
+    "tags": "Women,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0022000060",
@@ -2357,7 +2257,7 @@
     "size": "60 ml",
     "color": "Perfume",
     "type": "Women",
-    "tags": "Women,New Arrivals"
+    "tags": "Women,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0023000029",
@@ -2367,7 +2267,7 @@
     "size": "30 ml",
     "color": "Perfume",
     "type": "Unisex",
-    "tags": "Unisex,New Arrivals"
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0023000060",
@@ -2377,7 +2277,7 @@
     "size": "60 ml",
     "color": "Perfume",
     "type": "Unisex",
-    "tags": "Unisex,New Arrivals"
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0024000029",
@@ -2387,7 +2287,7 @@
     "size": "30 ml",
     "color": "Perfume",
     "type": "Unisex",
-    "tags": "Unisex,New Arrivals"
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0024000060",
@@ -2397,47 +2297,27 @@
     "size": "60 ml",
     "color": "Perfume",
     "type": "Unisex",
-    "tags": "Unisex,New Arrivals"
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0025000029",
     "name": "Her Blossom",
     "sellingPrice": 799,
-    "spec": "Experience the airy elegance of a luminous <b>Floral Fresh</b> fragrance. Sparkling citrus and soft spice open the scent, leading into a delicate floral heart and settling into a clean, comforting base — perfect for daily freshness and effortless sophistication.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Mandarin Orange, Pink Pepper<br>\n• <b>Heart Notes:</b> Peony, Plum Blossom<br>\n• <b>Base Notes:</b> Musk, Sandalwood<br><br>\n\n<b>Fragrance Style:</b> Fresh · Soft · Elegant<br>\n\n<b>Ideal For:</b> Everyday wear, office, and anyone who enjoys clean, bright, and beautifully feminine fragrances.",
+    "spec": "Experience the airy elegance of a luminous <b>Floral Fresh</b> fragrance. Sparkling citrus and soft spice open the scent, leading into a delicate floral heart and settling into a clean, comforting base — perfect for daily freshness and effortless sophistication.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Mandarin Orange, Pink Pepper<br>\n• <b>Heart Notes:</b> Peony, Plum Blossom<br>\n• <b>Base Notes:</b> Musk, Sandalwood<br><br>\n\n<b>Fragrance Style:</b> Fresh · Soft · Elegant<br>\n\n<b>Ideal For:</b> Everyday wear, office, and anyone who enjoys clean, bright, and beautifully feminine fragrances.<br><br>\n<b>Inspired Version Of:</b> Burberry Her Blossom",
     "size": "30 ml",
     "color": "Perfume",
     "type": "Women",
-    "tags": "Women,New Arrivals"
+    "tags": "Women,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0025000060",
     "name": "Her Blossom",
     "sellingPrice": 1199,
-    "spec": "Experience the airy elegance of a luminous <b>Floral Fresh</b> fragrance. Sparkling citrus and soft spice open the scent, leading into a delicate floral heart and settling into a clean, comforting base — perfect for daily freshness and effortless sophistication.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Mandarin Orange, Pink Pepper<br>\n• <b>Heart Notes:</b> Peony, Plum Blossom<br>\n• <b>Base Notes:</b> Musk, Sandalwood<br><br>\n\n<b>Fragrance Style:</b> Fresh · Soft · Elegant<br>\n\n<b>Ideal For:</b> Everyday wear, office, and anyone who enjoys clean, bright, and beautifully feminine fragrances.",
+    "spec": "Experience the airy elegance of a luminous <b>Floral Fresh</b> fragrance. Sparkling citrus and soft spice open the scent, leading into a delicate floral heart and settling into a clean, comforting base — perfect for daily freshness and effortless sophistication.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Mandarin Orange, Pink Pepper<br>\n• <b>Heart Notes:</b> Peony, Plum Blossom<br>\n• <b>Base Notes:</b> Musk, Sandalwood<br><br>\n\n<b>Fragrance Style:</b> Fresh · Soft · Elegant<br>\n\n<b>Ideal For:</b> Everyday wear, office, and anyone who enjoys clean, bright, and beautifully feminine fragrances.<br><br>\n<b>Inspired Version Of:</b> Burberry Her Blossom",
     "size": "60 ml",
     "color": "Perfume",
     "type": "Women",
-    "tags": "Women,New Arrivals"
-  },
-  {
-    "code": "FF0026000029",
-    "name": "Irish Leather",
-    "sellingPrice": 1499,
-    "spec": "Experience the bold sophistication of a truly premium <b>Leather</b> fragrance. Spicy freshness opens the composition, blending into an aromatic heart before settling into a rich, masculine leather base — crafted for those who appreciate depth, power, and timeless luxury.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Pepper, Mandarin<br>\n• <b>Heart Notes:</b> Sage, Iris<br>\n• <b>Base Notes:</b> Leather, Cedarwood<br><br>\n\n<b>Fragrance Style:</b> Bold · Masculine · Luxurious<br>\n\n<b>Ideal For:</b> Evening wear, special occasions, and anyone who loves strong, confident, and premium leather scents.",
-    "size": "30 ml",
-    "color": "Perfume",
-    "type": "Unisex",
-    "tags": "Unisex,New Arrivals,Premium"
-  },
-  {
-    "code": "FF0026000060",
-    "name": "Irish Leather",
-    "sellingPrice": 2299,
-    "spec": "Experience the bold sophistication of a truly premium <b>Leather</b> fragrance. Spicy freshness opens the composition, blending into an aromatic heart before settling into a rich, masculine leather base — crafted for those who appreciate depth, power, and timeless luxury.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Pepper, Mandarin<br>\n• <b>Heart Notes:</b> Sage, Iris<br>\n• <b>Base Notes:</b> Leather, Cedarwood<br><br>\n\n<b>Fragrance Style:</b> Bold · Masculine · Luxurious<br>\n\n<b>Ideal For:</b> Evening wear, special occasions, and anyone who loves strong, confident, and premium leather scents.",
-    "size": "60 ml",
-    "color": "Perfume",
-    "type": "Unisex",
-    "tags": "Unisex,New Arrivals,Premium"
+    "tags": "Women,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0027000029",
@@ -2480,24 +2360,104 @@
     "tags": "Unisex,New Arrivals"
   },
   {
+    "code": "FS0049CR000S",
+    "name": "Authentic Pakistani Lawn Suit",
+    "sellingPrice": 2499,
+    "spec": "<b>Authentic Pakistani Pure Lawn</b><br><br>\n\n• <b>Fabric:</b> Premium pure lawn for soft, breathable comfort<br>\n• <b>Top & Pant:</b> Cream base with bold black floral prints for a striking contrast<br>\n• <b>Dupatta:</b> Rich black dupatta with intricate white motifs and luxe lace borders<br>\n• <b>Design Details:</b> Delicate black lace on cuffs and hemline for added elegance<br>\n• <b>Style Vibe:</b> Effortlessly classy, high-fashion, and beautifully balanced in contrast<br>",
+    "size": "S",
+    "color": "Cream",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals"
+  },
+  {
+    "code": "FS0049CR000M",
+    "name": "Authentic Pakistani Lawn Suit",
+    "sellingPrice": 2499,
+    "spec": "<b>Authentic Pakistani Pure Lawn</b><br><br>\n\n• <b>Fabric:</b> Premium pure lawn for soft, breathable comfort<br>\n• <b>Top & Pant:</b> Cream base with bold black floral prints for a striking contrast<br>\n• <b>Dupatta:</b> Rich black dupatta with intricate white motifs and luxe lace borders<br>\n• <b>Design Details:</b> Delicate black lace on cuffs and hemline for added elegance<br>\n• <b>Style Vibe:</b> Effortlessly classy, high-fashion, and beautifully balanced in contrast<br>",
+    "size": "M",
+    "color": "Cream",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals"
+  },
+  {
+    "code": "FS0049CR000L",
+    "name": "Authentic Pakistani Lawn Suit",
+    "sellingPrice": 2499,
+    "spec": "<b>Authentic Pakistani Pure Lawn</b><br><br>\n\n• <b>Fabric:</b> Premium pure lawn for soft, breathable comfort<br>\n• <b>Top & Pant:</b> Cream base with bold black floral prints for a striking contrast<br>\n• <b>Dupatta:</b> Rich black dupatta with intricate white motifs and luxe lace borders<br>\n• <b>Design Details:</b> Delicate black lace on cuffs and hemline for added elegance<br>\n• <b>Style Vibe:</b> Effortlessly classy, high-fashion, and beautifully balanced in contrast<br>",
+    "size": "L",
+    "color": "Cream",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals"
+  },
+  {
+    "code": "FS0049CR00XL",
+    "name": "Authentic Pakistani Lawn Suit",
+    "sellingPrice": 2499,
+    "spec": "<b>Authentic Pakistani Pure Lawn</b><br><br>\n\n• <b>Fabric:</b> Premium pure lawn for soft, breathable comfort<br>\n• <b>Top & Pant:</b> Cream base with bold black floral prints for a striking contrast<br>\n• <b>Dupatta:</b> Rich black dupatta with intricate white motifs and luxe lace borders<br>\n• <b>Design Details:</b> Delicate black lace on cuffs and hemline for added elegance<br>\n• <b>Style Vibe:</b> Effortlessly classy, high-fashion, and beautifully balanced in contrast<br>",
+    "size": "XL",
+    "color": "Cream",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals"
+  },
+  {
+    "code": "FS0050PC000S",
+    "name": "Authentic Pakistani Lawn Suit",
+    "sellingPrice": 2499,
+    "spec": "<b>Authentic Pakistani Pure Lawn Suit</b><br><br>\n\n• <b>Top:</b> Soft beige striped base with delicate multicolour floral prints<br>\n• <b>Neckline & Sleeves:</b> Enhanced with elegant soft lace detailing<br>\n• <b>Pant:</b> Finished with delicate lace work at the hem for a neat, refined look<br>\n• <b>Dupatta:</b> Vibrant chevron patterns with playful polka accents and intricate floral detailing<br>\n• <b>Border:</b> Dupatta completed with a beautiful lace-cutwork border for a stylish, premium finish<br>",
+    "size": "S",
+    "color": "Peach",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals"
+  },
+  {
+    "code": "FS0050PC000M",
+    "name": "Authentic Pakistani Lawn Suit",
+    "sellingPrice": 2499,
+    "spec": "<b>Authentic Pakistani Pure Lawn Suit</b><br><br>\n\n• <b>Top:</b> Soft beige striped base with delicate multicolour floral prints<br>\n• <b>Neckline & Sleeves:</b> Enhanced with elegant soft lace detailing<br>\n• <b>Pant:</b> Finished with delicate lace work at the hem for a neat, refined look<br>\n• <b>Dupatta:</b> Vibrant chevron patterns with playful polka accents and intricate floral detailing<br>\n• <b>Border:</b> Dupatta completed with a beautiful lace-cutwork border for a stylish, premium finish<br>",
+    "size": "M",
+    "color": "Peach",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals"
+  },
+  {
+    "code": "FS0050PC000L",
+    "name": "Authentic Pakistani Lawn Suit",
+    "sellingPrice": 2499,
+    "spec": "<b>Authentic Pakistani Pure Lawn Suit</b><br><br>\n\n• <b>Top:</b> Soft beige striped base with delicate multicolour floral prints<br>\n• <b>Neckline & Sleeves:</b> Enhanced with elegant soft lace detailing<br>\n• <b>Pant:</b> Finished with delicate lace work at the hem for a neat, refined look<br>\n• <b>Dupatta:</b> Vibrant chevron patterns with playful polka accents and intricate floral detailing<br>\n• <b>Border:</b> Dupatta completed with a beautiful lace-cutwork border for a stylish, premium finish<br>",
+    "size": "L",
+    "color": "Peach",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals"
+  },
+  {
+    "code": "FS0050PC00XL",
+    "name": "Authentic Pakistani Lawn Suit",
+    "sellingPrice": 2499,
+    "spec": "<b>Authentic Pakistani Pure Lawn Suit</b><br><br>\n\n• <b>Top:</b> Soft beige striped base with delicate multicolour floral prints<br>\n• <b>Neckline & Sleeves:</b> Enhanced with elegant soft lace detailing<br>\n• <b>Pant:</b> Finished with delicate lace work at the hem for a neat, refined look<br>\n• <b>Dupatta:</b> Vibrant chevron patterns with playful polka accents and intricate floral detailing<br>\n• <b>Border:</b> Dupatta completed with a beautiful lace-cutwork border for a stylish, premium finish<br>",
+    "size": "XL",
+    "color": "Peach",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals"
+  },
+  {
     "code": "FF0029000029",
     "name": "212 VIP",
     "sellingPrice": 799,
-    "spec": "A bold and intriguing <b>Aromatic Spicy</b> fragrance that blends herbal freshness with warm, sensual depth.<br>\nIt opens with an intense and distinctive mix of absinthe, anise, and fennel, creating a sharp, aromatic spice that feels mysterious and captivating.<br>\nAt the heart, smooth lavender adds a calming herbal elegance, balancing the bold opening with refined freshness.<br>\nAs it settles, the fragrance melts into a rich, addictive base of black vanilla, husk, and musk, leaving a warm, slightly smoky, and long-lasting trail.<br>\nPerfect for those who enjoy unique, aromatic spices with a deep, modern, and confident character.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Absinthe<br>\n• Anise<br>\n• Fennel<br><br>\n\n<b>Heart Notes:</b><br>\n• Lavender<br><br>\n\n<b>Base Notes:</b><br>\n• Black Vanilla<br>\n• Husk<br>\n• Musk<br>\n",
+    "spec": "A bold and intriguing <b>Aromatic Spicy</b> fragrance that blends herbal freshness with warm, sensual depth.<br>\nIt opens with an intense and distinctive mix of absinthe, anise, and fennel, creating a sharp, aromatic spice that feels mysterious and captivating.<br>\nAt the heart, smooth lavender adds a calming herbal elegance, balancing the bold opening with refined freshness.<br>\nAs it settles, the fragrance melts into a rich, addictive base of black vanilla, husk, and musk, leaving a warm, slightly smoky, and long-lasting trail.<br>\nPerfect for those who enjoy unique, aromatic spices with a deep, modern, and confident character.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Absinthe<br>\n• Anise<br>\n• Fennel<br><br>\n\n<b>Heart Notes:</b><br>\n• Lavender<br><br>\n\n<b>Base Notes:</b><br>\n• Black Vanilla<br>\n• Husk<br>\n• Musk\n<br><br>\n<b>Inspired Version of:</b> Carolina Herrera – 212 VIP Men",
     "size": "30 ml",
     "color": "Perfume",
     "type": "Men",
-    "tags": "Men,New Arrivals"
+    "tags": "Men,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0029000060",
     "name": "212 VIP",
     "sellingPrice": 1199,
-    "spec": "A bold and intriguing <b>Aromatic Spicy</b> fragrance that blends herbal freshness with warm, sensual depth.<br>\nIt opens with an intense and distinctive mix of absinthe, anise, and fennel, creating a sharp, aromatic spice that feels mysterious and captivating.<br>\nAt the heart, smooth lavender adds a calming herbal elegance, balancing the bold opening with refined freshness.<br>\nAs it settles, the fragrance melts into a rich, addictive base of black vanilla, husk, and musk, leaving a warm, slightly smoky, and long-lasting trail.<br>\nPerfect for those who enjoy unique, aromatic spices with a deep, modern, and confident character.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Absinthe<br>\n• Anise<br>\n• Fennel<br><br>\n\n<b>Heart Notes:</b><br>\n• Lavender<br><br>\n\n<b>Base Notes:</b><br>\n• Black Vanilla<br>\n• Husk<br>\n• Musk<br>\n",
+    "spec": "A bold and intriguing <b>Aromatic Spicy</b> fragrance that blends herbal freshness with warm, sensual depth.<br>\nIt opens with an intense and distinctive mix of absinthe, anise, and fennel, creating a sharp, aromatic spice that feels mysterious and captivating.<br>\nAt the heart, smooth lavender adds a calming herbal elegance, balancing the bold opening with refined freshness.<br>\nAs it settles, the fragrance melts into a rich, addictive base of black vanilla, husk, and musk, leaving a warm, slightly smoky, and long-lasting trail.<br>\nPerfect for those who enjoy unique, aromatic spices with a deep, modern, and confident character.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Absinthe<br>\n• Anise<br>\n• Fennel<br><br>\n\n<b>Heart Notes:</b><br>\n• Lavender<br><br>\n\n<b>Base Notes:</b><br>\n• Black Vanilla<br>\n• Husk<br>\n• Musk\n<br><br>\n<b>Inspired Version of:</b> Carolina Herrera – 212 VIP Men",
     "size": "60 ml",
     "color": "Perfume",
     "type": "Men",
-    "tags": "Men,New Arrivals"
+    "tags": "Men,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0030000029",
@@ -2507,7 +2467,7 @@
     "size": "30 ml",
     "color": "Perfume",
     "type": "Men",
-    "tags": "Men,New Arrivals"
+    "tags": "Men,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0030000060",
@@ -2517,7 +2477,7 @@
     "size": "60 ml",
     "color": "Perfume",
     "type": "Men",
-    "tags": "Men,New Arrivals"
+    "tags": "Men,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0031000029",
@@ -2543,61 +2503,61 @@
     "code": "FF0032000029",
     "name": "Flame",
     "sellingPrice": 799,
-    "spec": "A refined and energizing <b>Woody Spicy</b> fragrance that blends freshness, florals, and warm woods with effortless elegance.<br>\nIt opens with a vibrant burst of rosemary, orange, lemon, and pepper, creating a fresh, zesty, and spicy introduction that feels lively and confident.<br>\nAt the heart, geranium and rose are accented with pepper, adding a smooth floral warmth balanced by subtle spice and sophistication.<br>\nAs it settles, the fragrance reveals a comforting and sensual base of vanilla, tonka bean, and sandalwood, leaving a creamy, woody, and long-lasting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Rosemary<br>\n• Orange<br>\n• Lemon<br>\n• Pepper<br><br>\n\n<b>Heart Notes:</b><br>\n• Geranium<br>\n• Rose<br>\n• Pepper<br><br>\n\n<b>Base Notes:</b><br>\n• Vanilla<br>\n• Tonka Bean<br>\n• Sandalwood<br>",
+    "spec": "A refined and energizing <b>Woody Spicy</b> fragrance that blends freshness, florals, and warm woods with effortless elegance.<br>\nIt opens with a vibrant burst of rosemary, orange, lemon, and pepper, creating a fresh, zesty, and spicy introduction that feels lively and confident.<br>\nAt the heart, geranium and rose are accented with pepper, adding a smooth floral warmth balanced by subtle spice and sophistication.<br>\nAs it settles, the fragrance reveals a comforting and sensual base of vanilla, tonka bean, and sandalwood, leaving a creamy, woody, and long-lasting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Rosemary<br>\n• Orange<br>\n• Lemon<br>\n• Pepper<br><br>\n\n<b>Heart Notes:</b><br>\n• Geranium<br>\n• Rose<br>\n• Pepper<br><br>\n\n<b>Base Notes:</b><br>\n• Vanilla<br>\n• Tonka Bean<br>\n• Sandalwood\n<br><br>\n<b>Inspired Version of:</b> Versace – Eros Flame",
     "size": "30 ml",
     "color": "Perfume",
     "type": "Men",
-    "tags": "Men,New Arrivals"
+    "tags": "Men,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0032000060",
     "name": "Flame",
     "sellingPrice": 1199,
-    "spec": "A refined and energizing <b>Woody Spicy</b> fragrance that blends freshness, florals, and warm woods with effortless elegance.<br>\nIt opens with a vibrant burst of rosemary, orange, lemon, and pepper, creating a fresh, zesty, and spicy introduction that feels lively and confident.<br>\nAt the heart, geranium and rose are accented with pepper, adding a smooth floral warmth balanced by subtle spice and sophistication.<br>\nAs it settles, the fragrance reveals a comforting and sensual base of vanilla, tonka bean, and sandalwood, leaving a creamy, woody, and long-lasting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Rosemary<br>\n• Orange<br>\n• Lemon<br>\n• Pepper<br><br>\n\n<b>Heart Notes:</b><br>\n• Geranium<br>\n• Rose<br>\n• Pepper<br><br>\n\n<b>Base Notes:</b><br>\n• Vanilla<br>\n• Tonka Bean<br>\n• Sandalwood<br>",
+    "spec": "A refined and energizing <b>Woody Spicy</b> fragrance that blends freshness, florals, and warm woods with effortless elegance.<br>\nIt opens with a vibrant burst of rosemary, orange, lemon, and pepper, creating a fresh, zesty, and spicy introduction that feels lively and confident.<br>\nAt the heart, geranium and rose are accented with pepper, adding a smooth floral warmth balanced by subtle spice and sophistication.<br>\nAs it settles, the fragrance reveals a comforting and sensual base of vanilla, tonka bean, and sandalwood, leaving a creamy, woody, and long-lasting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Rosemary<br>\n• Orange<br>\n• Lemon<br>\n• Pepper<br><br>\n\n<b>Heart Notes:</b><br>\n• Geranium<br>\n• Rose<br>\n• Pepper<br><br>\n\n<b>Base Notes:</b><br>\n• Vanilla<br>\n• Tonka Bean<br>\n• Sandalwood\n<br><br>\n<b>Inspired Version of:</b> Versace – Eros Flame",
     "size": "60 ml",
     "color": "Perfume",
     "type": "Men",
-    "tags": "Men,New Arrivals"
+    "tags": "Men,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0033000029",
     "name": "Oud Solid",
     "sellingPrice": 799,
-    "spec": "A rich and captivating <b>Oriental Woody</b> fragrance that blends warm spice, aromatic freshness, and deep sensual woods.<br>\nIt opens with an alluring mix of saffron and nutmeg, softened by the calming elegance of lavender, creating a refined yet intriguing first impression.<br>\nAt the heart, precious agarwood (oud) unfolds with smoky depth and exotic warmth, adding a luxurious oriental character.<br>\nAs it settles, patchouli and musk form a smooth, earthy base that lingers on the skin with warmth, mystery, and lasting sophistication.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Saffron<br>\n• Nutmeg<br>\n• Lavender<br><br>\n\n<b>Heart Notes:</b><br>\n• Agarwood (Oud)<br><br>\n\n<b>Base Notes:</b><br>\n• Patchouli<br>\n• Musk<br>",
+    "spec": "A rich and captivating <b>Oriental Woody</b> fragrance that blends warm spice, aromatic freshness, and deep sensual woods.<br>\nIt opens with an alluring mix of saffron and nutmeg, softened by the calming elegance of lavender, creating a refined yet intriguing first impression.<br>\nAt the heart, precious agarwood (oud) unfolds with smoky depth and exotic warmth, adding a luxurious oriental character.<br>\nAs it settles, patchouli and musk form a smooth, earthy base that lingers on the skin with warmth, mystery, and lasting sophistication.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Saffron<br>\n• Nutmeg<br>\n• Lavender<br><br>\n\n<b>Heart Notes:</b><br>\n• Agarwood (Oud)<br><br>\n\n<b>Base Notes:</b><br>\n• Patchouli<br>\n• Musk\n<br><br>\n<b>Inspired Version of:</b> Initio Parfums Privés – Oud for Greatness",
     "size": "30 ml",
     "color": "Perfume",
     "type": "Unisex",
-    "tags": "Unisex,New Arrivals"
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0033000060",
     "name": "Oud Solid",
     "sellingPrice": 1199,
-    "spec": "A rich and captivating <b>Oriental Woody</b> fragrance that blends warm spice, aromatic freshness, and deep sensual woods.<br>\nIt opens with an alluring mix of saffron and nutmeg, softened by the calming elegance of lavender, creating a refined yet intriguing first impression.<br>\nAt the heart, precious agarwood (oud) unfolds with smoky depth and exotic warmth, adding a luxurious oriental character.<br>\nAs it settles, patchouli and musk form a smooth, earthy base that lingers on the skin with warmth, mystery, and lasting sophistication.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Saffron<br>\n• Nutmeg<br>\n• Lavender<br><br>\n\n<b>Heart Notes:</b><br>\n• Agarwood (Oud)<br><br>\n\n<b>Base Notes:</b><br>\n• Patchouli<br>\n• Musk<br>",
+    "spec": "A rich and captivating <b>Oriental Woody</b> fragrance that blends warm spice, aromatic freshness, and deep sensual woods.<br>\nIt opens with an alluring mix of saffron and nutmeg, softened by the calming elegance of lavender, creating a refined yet intriguing first impression.<br>\nAt the heart, precious agarwood (oud) unfolds with smoky depth and exotic warmth, adding a luxurious oriental character.<br>\nAs it settles, patchouli and musk form a smooth, earthy base that lingers on the skin with warmth, mystery, and lasting sophistication.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Saffron<br>\n• Nutmeg<br>\n• Lavender<br><br>\n\n<b>Heart Notes:</b><br>\n• Agarwood (Oud)<br><br>\n\n<b>Base Notes:</b><br>\n• Patchouli<br>\n• Musk\n<br><br>\n<b>Inspired Version of:</b> Initio Parfums Privés – Oud for Greatness",
     "size": "60 ml",
     "color": "Perfume",
     "type": "Unisex",
-    "tags": "Unisex,New Arrivals"
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0034000029",
     "name": "Red Tobacco",
     "sellingPrice": 799,
-    "spec": "A bold and luxurious <b>Woody Spicy</b> fragrance that blends rich spices, smoky woods, and warm sensuality.<br>\nIt opens with an intense burst of cinnamon and saffron, enriched by the deep, resinous character of agarwood, creating a powerful and captivating first impression.<br>\nThe heart reveals a sophisticated blend of patchouli, jasmine, and nutmeg, adding earthy depth with a subtle floral-spice balance.<br>\nAs it settles, the fragrance unfolds into a warm and addictive base of tobacco, creamy vanilla, and glowing amber, leaving a long-lasting, opulent, and irresistibly smooth trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Cinnamon<br>\n• Agarwood (Oud)<br>\n• Saffron<br><br>\n\n<b>Heart Notes:</b><br>\n• Patchouli<br>\n• Jasmine<br>\n• Nutmeg<br><br>\n\n<b>Base Notes:</b><br>\n• Tobacco<br>\n• Vanilla<br>\n• Amber<br>",
+    "spec": "A bold and luxurious <b>Woody Spicy</b> fragrance that blends rich spices, smoky woods, and warm sensuality.<br>\nIt opens with an intense burst of cinnamon and saffron, enriched by the deep, resinous character of agarwood, creating a powerful and captivating first impression.<br>\nThe heart reveals a sophisticated blend of patchouli, jasmine, and nutmeg, adding earthy depth with a subtle floral-spice balance.<br>\nAs it settles, the fragrance unfolds into a warm and addictive base of tobacco, creamy vanilla, and glowing amber, leaving a long-lasting, opulent, and irresistibly smooth trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Cinnamon<br>\n• Agarwood (Oud)<br>\n• Saffron<br><br>\n\n<b>Heart Notes:</b><br>\n• Patchouli<br>\n• Jasmine<br>\n• Nutmeg<br><br>\n\n<b>Base Notes:</b><br>\n• Tobacco<br>\n• Vanilla<br>\n• Amber\n<br><br>\n<b>Inspired Version of:</b> Mancera – Red Tobacco",
     "size": "30 ml",
     "color": "Perfume",
     "type": "Unisex",
-    "tags": "Unisex,New Arrivals"
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0034000060",
     "name": "Red Tobacco",
     "sellingPrice": 1199,
-    "spec": "A bold and luxurious <b>Woody Spicy</b> fragrance that blends rich spices, smoky woods, and warm sensuality.<br>\nIt opens with an intense burst of cinnamon and saffron, enriched by the deep, resinous character of agarwood, creating a powerful and captivating first impression.<br>\nThe heart reveals a sophisticated blend of patchouli, jasmine, and nutmeg, adding earthy depth with a subtle floral-spice balance.<br>\nAs it settles, the fragrance unfolds into a warm and addictive base of tobacco, creamy vanilla, and glowing amber, leaving a long-lasting, opulent, and irresistibly smooth trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Cinnamon<br>\n• Agarwood (Oud)<br>\n• Saffron<br><br>\n\n<b>Heart Notes:</b><br>\n• Patchouli<br>\n• Jasmine<br>\n• Nutmeg<br><br>\n\n<b>Base Notes:</b><br>\n• Tobacco<br>\n• Vanilla<br>\n• Amber<br>",
+    "spec": "A bold and luxurious <b>Woody Spicy</b> fragrance that blends rich spices, smoky woods, and warm sensuality.<br>\nIt opens with an intense burst of cinnamon and saffron, enriched by the deep, resinous character of agarwood, creating a powerful and captivating first impression.<br>\nThe heart reveals a sophisticated blend of patchouli, jasmine, and nutmeg, adding earthy depth with a subtle floral-spice balance.<br>\nAs it settles, the fragrance unfolds into a warm and addictive base of tobacco, creamy vanilla, and glowing amber, leaving a long-lasting, opulent, and irresistibly smooth trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Cinnamon<br>\n• Agarwood (Oud)<br>\n• Saffron<br><br>\n\n<b>Heart Notes:</b><br>\n• Patchouli<br>\n• Jasmine<br>\n• Nutmeg<br><br>\n\n<b>Base Notes:</b><br>\n• Tobacco<br>\n• Vanilla<br>\n• Amber\n<br><br>\n<b>Inspired Version of:</b> Mancera – Red Tobacco",
     "size": "60 ml",
     "color": "Perfume",
     "type": "Unisex",
-    "tags": "Unisex,New Arrivals"
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0035000029",
@@ -2607,7 +2567,7 @@
     "size": "30 ml",
     "color": "Perfume",
     "type": "Unisex",
-    "tags": "Unisex,New Arrivals"
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0035000060",
@@ -2617,86 +2577,756 @@
     "size": "60 ml",
     "color": "Perfume",
     "type": "Unisex",
-    "tags": "Unisex,New Arrivals"
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0036000029",
     "name": "Tobacco Vanilla",
     "sellingPrice": 799,
-    "spec": "A rich and intoxicating <b>Oriental Spicy</b> fragrance that blends deep warmth with irresistible sweetness and spice.<br>\nIt opens with the bold aroma of tobacco leaves infused with spicy notes, creating a powerful and seductive first impression.<br>\nAt the heart, creamy vanilla, smooth cacao, and tonka beans add a luxurious sweetness that feels warm, indulgent, and addictive.<br>\nAs it settles, dried fruits and woody notes emerge, lending depth, richness, and a long-lasting, sensual trail with true oriental character.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Tobacco Leaves<br>\n• Spicy Notes<br><br>\n\n<b>Heart Notes:</b><br>\n• Vanilla<br>\n• Cacao<br>\n• Tonka Beans<br><br>\n\n<b>Base Notes:</b><br>\n• Dried Fruits<br>\n• Woody Notes<br>",
+    "spec": "A rich and intoxicating <b>Oriental Spicy</b> fragrance that blends deep warmth with irresistible sweetness and spice.<br>\nIt opens with the bold aroma of tobacco leaves infused with spicy notes, creating a powerful and seductive first impression.<br>\nAt the heart, creamy vanilla, smooth cacao, and tonka beans add a luxurious sweetness that feels warm, indulgent, and addictive.<br>\nAs it settles, dried fruits and woody notes emerge, lending depth, richness, and a long-lasting, sensual trail with true oriental character.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Tobacco Leaves<br>\n• Spicy Notes<br><br>\n\n<b>Heart Notes:</b><br>\n• Vanilla<br>\n• Cacao<br>\n• Tonka Beans<br><br>\n\n<b>Base Notes:</b><br>\n• Dried Fruits<br>\n• Woody Notes\n<br><br>\n<b>Inspired Version of:</b> Tom Ford – Tobacco Vanille",
     "size": "30 ml",
     "color": "Perfume",
     "type": "Unisex",
-    "tags": "Unisex,New Arrivals"
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0036000060",
     "name": "Tobacco Vanilla",
     "sellingPrice": 1199,
-    "spec": "A rich and intoxicating <b>Oriental Spicy</b> fragrance that blends deep warmth with irresistible sweetness and spice.<br>\nIt opens with the bold aroma of tobacco leaves infused with spicy notes, creating a powerful and seductive first impression.<br>\nAt the heart, creamy vanilla, smooth cacao, and tonka beans add a luxurious sweetness that feels warm, indulgent, and addictive.<br>\nAs it settles, dried fruits and woody notes emerge, lending depth, richness, and a long-lasting, sensual trail with true oriental character.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Tobacco Leaves<br>\n• Spicy Notes<br><br>\n\n<b>Heart Notes:</b><br>\n• Vanilla<br>\n• Cacao<br>\n• Tonka Beans<br><br>\n\n<b>Base Notes:</b><br>\n• Dried Fruits<br>\n• Woody Notes<br>",
+    "spec": "A rich and intoxicating <b>Oriental Spicy</b> fragrance that blends deep warmth with irresistible sweetness and spice.<br>\nIt opens with the bold aroma of tobacco leaves infused with spicy notes, creating a powerful and seductive first impression.<br>\nAt the heart, creamy vanilla, smooth cacao, and tonka beans add a luxurious sweetness that feels warm, indulgent, and addictive.<br>\nAs it settles, dried fruits and woody notes emerge, lending depth, richness, and a long-lasting, sensual trail with true oriental character.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Tobacco Leaves<br>\n• Spicy Notes<br><br>\n\n<b>Heart Notes:</b><br>\n• Vanilla<br>\n• Cacao<br>\n• Tonka Beans<br><br>\n\n<b>Base Notes:</b><br>\n• Dried Fruits<br>\n• Woody Notes\n<br><br>\n<b>Inspired Version of:</b> Tom Ford – Tobacco Vanille",
     "size": "60 ml",
     "color": "Perfume",
     "type": "Unisex",
-    "tags": "Unisex,New Arrivals"
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0037000029",
     "name": "Tygar",
     "sellingPrice": 799,
-    "spec": "A refreshing and energetic <b>Citrus Aromatic</b> fragrance that blends sparkling citrus with warm aromatic depth.<br>\nIt opens with a vibrant burst of grapefruit and lemon, delivering a crisp, juicy freshness that instantly awakens the senses.<br>\nAt the heart, spicy ginger meets soft ambrette, adding a smooth, slightly musky warmth that feels modern and refined.<br>\nAs it dries down, the fragrance settles into a clean yet earthy base of musk, vetiver, and patchouli, leaving a fresh, elegant, and long-lasting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Grapefruit<br>\n• Lemon<br><br>\n\n<b>Heart Notes:</b><br>\n• Ginger<br>\n• Ambrette<br><br>\n\n<b>Base Notes:</b><br>\n• Musk<br>\n• Vetiver<br>\n• Patchouli<br>",
+    "spec": "A refreshing and energetic <b>Citrus Aromatic</b> fragrance that blends sparkling citrus with warm aromatic depth.<br>\nIt opens with a vibrant burst of grapefruit and lemon, delivering a crisp, juicy freshness that instantly awakens the senses.<br>\nAt the heart, spicy ginger meets soft ambrette, adding a smooth, slightly musky warmth that feels modern and refined.<br>\nAs it dries down, the fragrance settles into a clean yet earthy base of musk, vetiver, and patchouli, leaving a fresh, elegant, and long-lasting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Grapefruit<br>\n• Lemon<br><br>\n\n<b>Heart Notes:</b><br>\n• Ginger<br>\n• Ambrette<br><br>\n\n<b>Base Notes:</b><br>\n• Musk<br>\n• Vetiver<br>\n• Patchouli\n<br><br>\n<b>Inspired Version of:</b> Bvlgari – Tygar",
     "size": "30 ml",
     "color": "Perfume",
     "type": "Men",
-    "tags": "Men,New Arrivals"
+    "tags": "Men,New Arrivals,Inspired Collections"
   },
   {
     "code": "FF0037000060",
     "name": "Tygar",
     "sellingPrice": 1199,
-    "spec": "A refreshing and energetic <b>Citrus Aromatic</b> fragrance that blends sparkling citrus with warm aromatic depth.<br>\nIt opens with a vibrant burst of grapefruit and lemon, delivering a crisp, juicy freshness that instantly awakens the senses.<br>\nAt the heart, spicy ginger meets soft ambrette, adding a smooth, slightly musky warmth that feels modern and refined.<br>\nAs it dries down, the fragrance settles into a clean yet earthy base of musk, vetiver, and patchouli, leaving a fresh, elegant, and long-lasting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Grapefruit<br>\n• Lemon<br><br>\n\n<b>Heart Notes:</b><br>\n• Ginger<br>\n• Ambrette<br><br>\n\n<b>Base Notes:</b><br>\n• Musk<br>\n• Vetiver<br>\n• Patchouli<br>",
+    "spec": "A refreshing and energetic <b>Citrus Aromatic</b> fragrance that blends sparkling citrus with warm aromatic depth.<br>\nIt opens with a vibrant burst of grapefruit and lemon, delivering a crisp, juicy freshness that instantly awakens the senses.<br>\nAt the heart, spicy ginger meets soft ambrette, adding a smooth, slightly musky warmth that feels modern and refined.<br>\nAs it dries down, the fragrance settles into a clean yet earthy base of musk, vetiver, and patchouli, leaving a fresh, elegant, and long-lasting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Grapefruit<br>\n• Lemon<br><br>\n\n<b>Heart Notes:</b><br>\n• Ginger<br>\n• Ambrette<br><br>\n\n<b>Base Notes:</b><br>\n• Musk<br>\n• Vetiver<br>\n• Patchouli\n<br><br>\n<b>Inspired Version of:</b> Bvlgari – Tygar",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Men",
+    "tags": "Men,New Arrivals,Inspired Collections"
+  },
+  {
+    "code": "FF0038000029",
+    "name": "Velvet Tonka",
+    "sellingPrice": 799,
+    "spec": "A smooth and elegant <b>Floral</b> fragrance that blends soft sweetness with warm, sensual depth.<br>\nIt opens with a delicate harmony of almond and orange blossom, offering a creamy, slightly nutty freshness wrapped in luminous floral softness.<br>\nThe heart reveals a rich contrast of tobacco and rose oil, adding a sophisticated warmth and a velvety floral character with a subtle smoky nuance.<br>\nAs it settles, the fragrance melts into a luxurious base of tonka beans, vanilla, and amberwood, leaving a warm, addictive, and long-lasting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Almond<br>\n• Orange Blossom<br><br>\n\n<b>Heart Notes:</b><br>\n• Tobacco<br>\n• Rose Oil<br><br>\n\n<b>Base Notes:</b><br>\n• Tonka Beans<br>\n• Vanilla<br>\n• Amberwood\n<br><br>\n<b>Inspired Version of:</b> BDK Parfums – Velvet Tonka",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Inspired Collections"
+  },
+  {
+    "code": "FF0038000060",
+    "name": "Velvet Tonka",
+    "sellingPrice": 1199,
+    "spec": "A smooth and elegant <b>Floral</b> fragrance that blends soft sweetness with warm, sensual depth.<br>\nIt opens with a delicate harmony of almond and orange blossom, offering a creamy, slightly nutty freshness wrapped in luminous floral softness.<br>\nThe heart reveals a rich contrast of tobacco and rose oil, adding a sophisticated warmth and a velvety floral character with a subtle smoky nuance.<br>\nAs it settles, the fragrance melts into a luxurious base of tonka beans, vanilla, and amberwood, leaving a warm, addictive, and long-lasting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Almond<br>\n• Orange Blossom<br><br>\n\n<b>Heart Notes:</b><br>\n• Tobacco<br>\n• Rose Oil<br><br>\n\n<b>Base Notes:</b><br>\n• Tonka Beans<br>\n• Vanilla<br>\n• Amberwood\n<br><br>\n<b>Inspired Version of:</b> BDK Parfums – Velvet Tonka",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Inspired Collections"
+  },
+  {
+    "code": "FF0039000029",
+    "name": "Very Sexy",
+    "sellingPrice": 799,
+    "spec": "A soft and comforting <b>Powdery Vanilla</b> fragrance that wraps the skin in creamy sweetness and gentle warmth.<br>\nIt opens with a delicious blend of coconut and milk, creating a smooth, milky softness that feels cozy and indulgent.<br>\nAt the heart, rich vanilla meets delicate powdery notes, adding an elegant, airy sweetness that feels clean and soothing.<br>\nAs it settles, the fragrance lingers with a sensual base of musk and Madagascar vanilla, leaving a warm, creamy, and irresistibly comforting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Coconut<br>\n• Milk<br><br>\n\n<b>Heart Notes:</b><br>\n• Vanilla<br>\n• Powder Notes<br><br>\n\n<b>Base Notes:</b><br>\n• Musk<br>\n• Madagascar Vanilla\n<br><br>\n<b>Inspired Version of:</b> Rose Kazan – Very Sexy",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Inspired Collections"
+  },
+  {
+    "code": "FF0039000060",
+    "name": "Very Sexy",
+    "sellingPrice": 1199,
+    "spec": "A soft and comforting <b>Powdery Vanilla</b> fragrance that wraps the skin in creamy sweetness and gentle warmth.<br>\nIt opens with a delicious blend of coconut and milk, creating a smooth, milky softness that feels cozy and indulgent.<br>\nAt the heart, rich vanilla meets delicate powdery notes, adding an elegant, airy sweetness that feels clean and soothing.<br>\nAs it settles, the fragrance lingers with a sensual base of musk and Madagascar vanilla, leaving a warm, creamy, and irresistibly comforting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Coconut<br>\n• Milk<br><br>\n\n<b>Heart Notes:</b><br>\n• Vanilla<br>\n• Powder Notes<br><br>\n\n<b>Base Notes:</b><br>\n• Musk<br>\n• Madagascar Vanilla\n<br><br>\n<b>Inspired Version of:</b> Rose Kazan – Very Sexy",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Inspired Collections"
+  },
+  {
+    "code": "FS0051BK000S",
+    "name": "Cotton Embroidered 3-pc Suit",
+    "sellingPrice": 1799,
+    "spec": "Black Embroidered Cotton Muslin 3-Piece Set\n\nTop: Cottonflex, Solid black base with elegant floral embroidery-style prints highlighted along the neckline, sleeves, and hem.\nPant: Cotton, Black with subtle floral embroidery placed near the hem for a coordinated look.\nDupatta: Cotton Muslin,Black with scattered small floral embroidery, keeping it minimal yet graceful.",
+    "size": "S",
+    "color": "Black",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals,Cotton 3 Pcs Suits"
+  },
+  {
+    "code": "FS0051BK000M",
+    "name": "Cotton Embroidered 3-pc Suit",
+    "sellingPrice": 1799,
+    "spec": "Black Embroidered Cotton Muslin 3-Piece Set\nTop: Cotton, Solid black base with elegant floral embroidery-style prints highlighted along the neckline, sleeves, and hem.\nPant: Cotton, Black with subtle floral embroidery placed near the hem for a coordinated look.\nDupatta: Muslin,Black with scattered small floral embroidery, keeping it minimal yet graceful.",
+    "size": "M",
+    "color": "Black",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals,Cotton 3 Pcs Suits"
+  },
+  {
+    "code": "FS0051BK000L",
+    "name": "Cotton Embroidered 3-pc Suit",
+    "sellingPrice": 1799,
+    "spec": "Black Embroidered Cotton Muslin 3-Piece Set\nTop: Cotton, Solid black base with elegant floral embroidery-style prints highlighted along the neckline, sleeves, and hem.\nPant: Cotton, Black with subtle floral embroidery placed near the hem for a coordinated look.\nDupatta: Muslin,Black with scattered small floral embroidery, keeping it minimal yet graceful.",
+    "size": "L",
+    "color": "Black",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals,Cotton 3 Pcs Suits"
+  },
+  {
+    "code": "FS0051BK00XL",
+    "name": "Cotton Embroidered 3-pc Suit",
+    "sellingPrice": 1799,
+    "spec": "Black Embroidered Cotton Muslin 3-Piece Set\nTop: Cotton, Solid black base with elegant floral embroidery-style prints highlighted along the neckline, sleeves, and hem.\nPant: Cotton, Black with subtle floral embroidery placed near the hem for a coordinated look.\nDupatta: Muslin,Black with scattered small floral embroidery, keeping it minimal yet graceful.",
+    "size": "XL",
+    "color": "Black",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals,Cotton 3 Pcs Suits"
+  },
+  {
+    "code": "FS0051BK0XXL",
+    "name": "Cotton Embroidered 3-pc Suit",
+    "sellingPrice": 1799,
+    "spec": "Black Embroidered Cotton Muslin 3-Piece Set\nTop: Cotton, Solid black base with elegant floral embroidery-style prints highlighted along the neckline, sleeves, and hem.\nPant: Cotton, Black with subtle floral embroidery placed near the hem for a coordinated look.\nDupatta: Muslin,Black with scattered small floral embroidery, keeping it minimal yet graceful.",
+    "size": "XXL",
+    "color": "Black",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals,Cotton 3 Pcs Suits"
+  },
+  {
+    "code": "FS0052MR000S",
+    "name": "Cotton Embroidered 3-pc Suit",
+    "sellingPrice": 1799,
+    "spec": "Cotton & Muslin 3-Piece Embroidered Set\n\nTop : Solid deep maroon cotton, featuring delicate white embroidery along the neckline, front panels, and sleeve borders, finished with fabric buttons.\nPant: Matching maroon cotton pants with embroidered detailing at the hem with a coordinated finish.\nDupatta: Lightweight maroon muslin dupatta with small scattered white embroidered motifs.\n\nPerfect for festive wear, casual gatherings, or elegant day outings.",
+    "size": "S",
+    "color": "Maroon",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals,Cotton 3 Pcs Suits"
+  },
+  {
+    "code": "FS0052MR000M",
+    "name": "Cotton Embroidered 3-pc Suit",
+    "sellingPrice": 1799,
+    "spec": "Cotton & Muslin 3-Piece Embroidered Set\n\nTop : Solid deep maroon cotton, featuring delicate white embroidery along the neckline, front panels, and sleeve borders, finished with fabric buttons.\nPant: Matching maroon cotton pants with embroidered detailing at the hem with a coordinated finish.\nDupatta: Lightweight maroon muslin dupatta with small scattered white embroidered motifs.\n\nPerfect for festive wear, casual gatherings, or elegant day outings.",
+    "size": "M",
+    "color": "Maroon",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals,Cotton 3 Pcs Suits"
+  },
+  {
+    "code": "FS0052MR000L",
+    "name": "Cotton Embroidered 3-pc Suit",
+    "sellingPrice": 1799,
+    "spec": "Cotton & Muslin 3-Piece Embroidered Set\n\nTop : Solid deep maroon cotton, featuring delicate white embroidery along the neckline, front panels, and sleeve borders, finished with fabric buttons.\nPant: Matching maroon cotton pants with embroidered detailing at the hem with a coordinated finish.\nDupatta: Lightweight maroon muslin dupatta with small scattered white embroidered motifs.\n\nPerfect for festive wear, casual gatherings, or elegant day outings.",
+    "size": "L",
+    "color": "Maroon",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals,Cotton 3 Pcs Suits"
+  },
+  {
+    "code": "FS0052MR00XL",
+    "name": "Cotton Embroidered 3-pc Suit",
+    "sellingPrice": 1799,
+    "spec": "Cotton & Muslin 3-Piece Embroidered Set\n\nTop : Solid deep maroon cotton, featuring delicate white embroidery along the neckline, front panels, and sleeve borders, finished with fabric buttons.\nPant: Matching maroon cotton pants with embroidered detailing at the hem with a coordinated finish.\nDupatta: Lightweight maroon muslin dupatta with small scattered white embroidered motifs.\n\nPerfect for festive wear, casual gatherings, or elegant day outings.",
+    "size": "XL",
+    "color": "Maroon",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals,Cotton 3 Pcs Suits"
+  },
+  {
+    "code": "FS0052MR0XXL",
+    "name": "Cotton Embroidered 3-pc Suit",
+    "sellingPrice": 1799,
+    "spec": "Cotton & Muslin 3-Piece Embroidered Set\n\nTop : Solid deep maroon cotton, featuring delicate white embroidery along the neckline, front panels, and sleeve borders, finished with fabric buttons.\nPant: Matching maroon cotton pants with embroidered detailing at the hem with a coordinated finish.\nDupatta: Lightweight maroon muslin dupatta with small scattered white embroidered motifs.\n\nPerfect for festive wear, casual gatherings, or elegant day outings.",
+    "size": "XXL",
+    "color": "Maroon",
+    "type": "Party & Festive Wear",
+    "tags": "Party & Festive Wear,New Arrivals,Cotton 3 Pcs Suits"
+  },
+  {
+    "code": "FS0053BG000M",
+    "name": "3 pcs Cotton Suit",
+    "sellingPrice": 1199,
+    "spec": "Cotton & Muslin 3-Piece Set.\nTop features traditional floral motifs, stylised flowers in deep red and contrast geometric borders at the neckline and sleeves.\nPant Cotton coordinated prints, complementing the top.\nDupatta: Matching muslin dupatta with floral prints.",
+    "size": "M",
+    "color": "Beige",
+    "type": "Cotton 3 Pcs Suits",
+    "tags": "Cotton 3 Pcs Suits,New Arrivals"
+  },
+  {
+    "code": "FS0053BG000L",
+    "name": "3 pcs Cotton Suit",
+    "sellingPrice": 1199,
+    "spec": "Cotton & Muslin 3-Piece Set.\nTop features traditional floral motifs, stylised flowers in deep red and contrast geometric borders at the neckline and sleeves.\nPant Cotton coordinated prints, complementing the top.\nDupatta: Matching muslin dupatta with floral prints.",
+    "size": "L",
+    "color": "Beige",
+    "type": "Cotton 3 Pcs Suits",
+    "tags": "Cotton 3 Pcs Suits,New Arrivals"
+  },
+  {
+    "code": "FS0053BG00XL",
+    "name": "3 pcs Cotton Suit",
+    "sellingPrice": 1199,
+    "spec": "Cotton & Muslin 3-Piece Set.\nTop features traditional floral motifs, stylised flowers in deep red and contrast geometric borders at the neckline and sleeves.\nPant Cotton coordinated prints, complementing the top.\nDupatta: Matching muslin dupatta with floral prints.",
+    "size": "XL",
+    "color": "Beige",
+    "type": "Cotton 3 Pcs Suits",
+    "tags": "Cotton 3 Pcs Suits,New Arrivals"
+  },
+  {
+    "code": "FS0053BG0XXL",
+    "name": "3 pcs Cotton Suit",
+    "sellingPrice": 1199,
+    "spec": "Cotton & Muslin 3-Piece Set.\nTop features traditional floral motifs, stylised flowers in deep red and contrast geometric borders at the neckline and sleeves.\nPant Cotton coordinated prints, complementing the top.\nDupatta: Matching muslin dupatta with floral prints.",
+    "size": "XXL",
+    "color": "Beige",
+    "type": "Cotton 3 Pcs Suits",
+    "tags": "Cotton 3 Pcs Suits,New Arrivals"
+  },
+  {
+    "code": "FS0053BGXXXL",
+    "name": "3 pcs Cotton Suit",
+    "sellingPrice": 1199,
+    "spec": "Cotton & Muslin 3-Piece Set.\nTop features traditional floral motifs, stylised flowers in deep red and contrast geometric borders at the neckline and sleeves.\nPant Cotton coordinated prints, complementing the top.\nDupatta: Matching muslin dupatta with floral prints.",
+    "size": "XXXL",
+    "color": "Beige",
+    "type": "Cotton 3 Pcs Suits",
+    "tags": "Cotton 3 Pcs Suits,New Arrivals"
+  },
+  {
+    "code": "FS0054BL000S",
+    "name": "Co-Ord Set",
+    "sellingPrice": 1099,
+    "spec": "Cotton Cambric Long Coord Set\n\nTop: Made from premium cotton cambric, the long kurta features a classic shirt collar, front button detailing, three-quarter sleeves, and a soft floral print that gives a graceful everyday appeal.\nPant: Paired with straight-cut cotton cambric pants in a matching floral print, designed for comfort and effortless styling.\n\nMinimal yet charming, ideal for casual outings, workwear, or relaxed day styling",
+    "size": "S",
+    "color": "Blue",
+    "type": "Co-ord Sets",
+    "tags": "Co-ord Sets,New Arrivals"
+  },
+  {
+    "code": "FS0054BL000M",
+    "name": "Co-Ord Set",
+    "sellingPrice": 1099,
+    "spec": "Cotton Cambric Long Coord Set\n\nTop: Made from premium cotton cambric, the long kurta features a classic shirt collar, front button detailing, three-quarter sleeves, and a soft floral print that gives a graceful everyday appeal.\nPant: Paired with straight-cut cotton cambric pants in a matching floral print, designed for comfort and effortless styling.\n\nMinimal yet charming, ideal for casual outings, workwear, or relaxed day styling",
+    "size": "M",
+    "color": "Blue",
+    "type": "Co-ord Sets",
+    "tags": "Co-ord Sets,New Arrivals"
+  },
+  {
+    "code": "FS0054BL000L",
+    "name": "Co-Ord Set",
+    "sellingPrice": 1099,
+    "spec": "Cotton Cambric Long Coord Set\n\nTop: Made from premium cotton cambric, the long kurta features a classic shirt collar, front button detailing, three-quarter sleeves, and a soft floral print that gives a graceful everyday appeal.\nPant: Paired with straight-cut cotton cambric pants in a matching floral print, designed for comfort and effortless styling.\n\nMinimal yet charming, ideal for casual outings, workwear, or relaxed day styling",
+    "size": "L",
+    "color": "Blue",
+    "type": "Co-ord Sets",
+    "tags": "Co-ord Sets,New Arrivals"
+  },
+  {
+    "code": "FS0054BL00XL",
+    "name": "Co-Ord Set",
+    "sellingPrice": 1099,
+    "spec": "Cotton Cambric Long Coord Set\n\nTop: Made from premium cotton cambric, the long kurta features a classic shirt collar, front button detailing, three-quarter sleeves, and a soft floral print that gives a graceful everyday appeal.\nPant: Paired with straight-cut cotton cambric pants in a matching floral print, designed for comfort and effortless styling.\n\nMinimal yet charming, ideal for casual outings, workwear, or relaxed day styling",
+    "size": "XL",
+    "color": "Blue",
+    "type": "Co-ord Sets",
+    "tags": "Co-ord Sets,New Arrivals"
+  },
+  {
+    "code": "FS0054BL0XXL",
+    "name": "Co-Ord Set",
+    "sellingPrice": 1099,
+    "spec": "Cotton Cambric Long Coord Set\n\nTop: Made from premium cotton cambric, the long kurta features a classic shirt collar, front button detailing, three-quarter sleeves, and a soft floral print that gives a graceful everyday appeal.\nPant: Paired with straight-cut cotton cambric pants in a matching floral print, designed for comfort and effortless styling.\n\nMinimal yet charming, ideal for casual outings, workwear, or relaxed day styling",
+    "size": "XXL",
+    "color": "Blue",
+    "type": "Co-ord Sets",
+    "tags": "Co-ord Sets,New Arrivals"
+  },
+  {
+    "code": "FS0055PK000S",
+    "name": "Co-Ord Set",
+    "sellingPrice": 1099,
+    "spec": "Cotton Cambric Long Coord Set\n\nTop: Made from premium cotton cambric, the long kurta features a classic shirt collar, front button detailing, three-quarter sleeves, and a soft floral print that gives a graceful everyday appeal.\nPant: Paired with straight-cut cotton cambric pants in a matching floral print, designed for comfort and effortless styling.\n\nMinimal yet charming, ideal for casual outings, workwear, or relaxed day styling",
+    "size": "S",
+    "color": "Pink",
+    "type": "Co-ord Sets",
+    "tags": "Co-ord Sets,New Arrivals"
+  },
+  {
+    "code": "FS0055PK000M",
+    "name": "Co-Ord Set",
+    "sellingPrice": 1099,
+    "spec": "Cotton Cambric Long Coord Set\n\nTop: Made from premium cotton cambric, the long kurta features a classic shirt collar, front button detailing, three-quarter sleeves, and a soft floral print that gives a graceful everyday appeal.\nPant: Paired with straight-cut cotton cambric pants in a matching floral print, designed for comfort and effortless styling.\n\nMinimal yet charming, ideal for casual outings, workwear, or relaxed day styling",
+    "size": "M",
+    "color": "Pink",
+    "type": "Co-ord Sets",
+    "tags": "Co-ord Sets,New Arrivals"
+  },
+  {
+    "code": "FS0055PK000L",
+    "name": "Co-Ord Set",
+    "sellingPrice": 1099,
+    "spec": "Cotton Cambric Long Coord Set\n\nTop: Made from premium cotton cambric, the long kurta features a classic shirt collar, front button detailing, three-quarter sleeves, and a soft floral print that gives a graceful everyday appeal.\nPant: Paired with straight-cut cotton cambric pants in a matching floral print, designed for comfort and effortless styling.\n\nMinimal yet charming, ideal for casual outings, workwear, or relaxed day styling",
+    "size": "L",
+    "color": "Pink",
+    "type": "Co-ord Sets",
+    "tags": "Co-ord Sets,New Arrivals"
+  },
+  {
+    "code": "FS0055PK00XL",
+    "name": "Co-Ord Set",
+    "sellingPrice": 1099,
+    "spec": "Cotton Cambric Long Coord Set\n\nTop: Made from premium cotton cambric, the long kurta features a classic shirt collar, front button detailing, three-quarter sleeves, and a soft floral print that gives a graceful everyday appeal.\nPant: Paired with straight-cut cotton cambric pants in a matching floral print, designed for comfort and effortless styling.\n\nMinimal yet charming, ideal for casual outings, workwear, or relaxed day styling",
+    "size": "XL",
+    "color": "Pink",
+    "type": "Co-ord Sets",
+    "tags": "Co-ord Sets,New Arrivals"
+  },
+  {
+    "code": "FS0055PK0XXL",
+    "name": "Co-Ord Set",
+    "sellingPrice": 1099,
+    "spec": "Cotton Cambric Long Coord Set\n\nTop: Made from premium cotton cambric, the long kurta features a classic shirt collar, front button detailing, three-quarter sleeves, and a soft floral print that gives a graceful everyday appeal.\nPant: Paired with straight-cut cotton cambric pants in a matching floral print, designed for comfort and effortless styling.\n\nMinimal yet charming, ideal for casual outings, workwear, or relaxed day styling",
+    "size": "XXL",
+    "color": "Pink",
+    "type": "Co-ord Sets",
+    "tags": "Co-ord Sets,New Arrivals"
+  },
+  {
+    "code": "FF0040000029",
+    "name": "Absolute",
+    "sellingPrice": 799,
+    "spec": "<b>Oriental Woody Fragrance</b><br><br>\n\nA bold and sophisticated blend crafted for those who appreciate depth, warmth, and character. This oriental woody fragrance opens with the rich, smooth intensity of leather, creating a powerful first impression. The heart reveals aromatic cypress and earthy patchouli, adding elegance and mystery, while the base settles into refined woody notes and smoky vetiver for a long-lasting, confident trail.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Leather<br>\n• <b>Heart Notes:</b> Cypress, Patchouli<br>\n• <b>Base Notes:</b> Woody Notes, Vetiver<br><br>\n\n<b>Vibe:</b> Warm • Bold • Elegant • Masculine<br><br>\n\nPerfect for evening wear and special occasions, this scent leaves a lasting impression of strength, refinement, and timeless appeal.",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Oriental"
+  },
+  {
+    "code": "FF0040000060",
+    "name": "Absolute",
+    "sellingPrice": 1199,
+    "spec": "<b>Oriental Woody Fragrance</b><br><br>\n\nA bold and sophisticated blend crafted for those who appreciate depth, warmth, and character. This oriental woody fragrance opens with the rich, smooth intensity of leather, creating a powerful first impression. The heart reveals aromatic cypress and earthy patchouli, adding elegance and mystery, while the base settles into refined woody notes and smoky vetiver for a long-lasting, confident trail.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Leather<br>\n• <b>Heart Notes:</b> Cypress, Patchouli<br>\n• <b>Base Notes:</b> Woody Notes, Vetiver<br><br>\n\n<b>Vibe:</b> Warm • Bold • Elegant • Masculine<br><br>\n\nPerfect for evening wear and special occasions, this scent leaves a lasting impression of strength, refinement, and timeless appeal.",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Oriental"
+  },
+  {
+    "code": "FF0041000029",
+    "name": "Coco Chanel",
+    "sellingPrice": 799,
+    "spec": "<b>Oriental Floral Fragrance</b><br><br>\n\nAn elegant and captivating blend that balances fresh brightness with sensual warmth. This oriental floral fragrance opens with a sparkling burst of orange and bergamot, creating a lively and uplifting introduction. The heart unfolds into a rich bouquet of ylang ylang and jasmine, adding creamy florals and romantic depth. As it settles, patchouli, soft musk, and sweet tonka come together to leave a warm, alluring, and long-lasting trail.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Orange, Bergamot<br>\n• <b>Heart Notes:</b> Ylang Ylang, Jasmine<br>\n• <b>Base Notes:</b> Patchouli, Musk, Tonka<br><br>\n\n<b>Vibe:</b> Floral • Warm • Sensual • Elegant<br><br>\n\nPerfect for both day and evening wear, this fragrance is designed for those who love timeless florals wrapped in a luxurious oriental touch.",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Women",
+    "tags": "Women,New Arrivals"
+  },
+  {
+    "code": "FF0041000060",
+    "name": "Coco Chanel",
+    "sellingPrice": 1199,
+    "spec": "<b>Oriental Floral Fragrance</b><br><br>\n\nAn elegant and captivating blend that balances fresh brightness with sensual warmth. This oriental floral fragrance opens with a sparkling burst of orange and bergamot, creating a lively and uplifting introduction. The heart unfolds into a rich bouquet of ylang ylang and jasmine, adding creamy florals and romantic depth. As it settles, patchouli, soft musk, and sweet tonka come together to leave a warm, alluring, and long-lasting trail.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Orange, Bergamot<br>\n• <b>Heart Notes:</b> Ylang Ylang, Jasmine<br>\n• <b>Base Notes:</b> Patchouli, Musk, Tonka<br><br>\n\n<b>Vibe:</b> Floral • Warm • Sensual • Elegant<br><br>\n\nPerfect for both day and evening wear, this fragrance is designed for those who love timeless florals wrapped in a luxurious oriental touch.",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Women",
+    "tags": "Women,New Arrivals"
+  },
+  {
+    "code": "FF0042000029",
+    "name": "Cola’s",
+    "sellingPrice": 799,
+    "spec": "<b>Floral Musk Fragrance</b><br><br>\n\nA soft yet radiant composition that blends fresh citrus, delicate florals, and modern musky warmth. This floral musk fragrance opens with a bright splash of lime paired with luminous jasmine, creating a clean and uplifting introduction. The heart blooms with powdery heliotrope and elegant orange blossom, adding smooth floral depth. As the scent settles, sensual musk and contemporary ambroxan wrap the fragrance in a refined, long-lasting trail that feels both comforting and sophisticated.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Lime, Jasmine<br>\n• <b>Heart Notes:</b> Heliotrope, Orange Blossom<br>\n• <b>Base Notes:</b> Musk, Ambroxan<br><br>\n\n<b>Vibe:</b> Fresh • Floral • Soft • Modern<br><br>\n\nPerfect for everyday wear, this fragrance offers a clean, graceful aura with a subtle yet memorable presence.",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Women",
+    "tags": "Women,New Arrivals"
+  },
+  {
+    "code": "FF0042000060",
+    "name": "Cola’s",
+    "sellingPrice": 1199,
+    "spec": "<b>Floral Musk Fragrance</b><br><br>\n\nA soft yet radiant composition that blends fresh citrus, delicate florals, and modern musky warmth. This floral musk fragrance opens with a bright splash of lime paired with luminous jasmine, creating a clean and uplifting introduction. The heart blooms with powdery heliotrope and elegant orange blossom, adding smooth floral depth. As the scent settles, sensual musk and contemporary ambroxan wrap the fragrance in a refined, long-lasting trail that feels both comforting and sophisticated.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Lime, Jasmine<br>\n• <b>Heart Notes:</b> Heliotrope, Orange Blossom<br>\n• <b>Base Notes:</b> Musk, Ambroxan<br><br>\n\n<b>Vibe:</b> Fresh • Floral • Soft • Modern<br><br>\n\nPerfect for everyday wear, this fragrance offers a clean, graceful aura with a subtle yet memorable presence.",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Women",
+    "tags": "Women,New Arrivals"
+  },
+  {
+    "code": "FF0043000029",
+    "name": "Desert Oud",
+    "sellingPrice": 799,
+    "spec": "<b>Woody Fragrance</b><br><br>\n\nA rich and modern woody composition designed for those who love depth and sophistication. This fragrance opens with the powerful warmth of oud and amber, creating an intense and luxurious introduction. The heart reveals earthy patchouli, adding richness and character, while the base settles into smooth musk and contemporary ambroxan for a refined, long-lasting trail that feels both bold and elegant.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Oud, Amber<br>\n• <b>Heart Notes:</b> Patchouli<br>\n• <b>Base Notes:</b> Musk, Ambroxan<br><br>\n\n<b>Vibe:</b> Woody • Warm • Modern • Sophisticated<br><br>\n\nPerfect for evening wear and cooler seasons, this fragrance leaves a confident and lasting impression with its deep, woody allure.",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Oriental"
+  },
+  {
+    "code": "FF0043000060",
+    "name": "Desert Oud",
+    "sellingPrice": 1199,
+    "spec": "<b>Woody Fragrance</b><br><br>\n\nA rich and modern woody composition designed for those who love depth and sophistication. This fragrance opens with the powerful warmth of oud and amber, creating an intense and luxurious introduction. The heart reveals earthy patchouli, adding richness and character, while the base settles into smooth musk and contemporary ambroxan for a refined, long-lasting trail that feels both bold and elegant.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Oud, Amber<br>\n• <b>Heart Notes:</b> Patchouli<br>\n• <b>Base Notes:</b> Musk, Ambroxan<br><br>\n\n<b>Vibe:</b> Woody • Warm • Modern • Sophisticated<br><br>\n\nPerfect for evening wear and cooler seasons, this fragrance leaves a confident and lasting impression with its deep, woody allure.",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Oriental"
+  },
+  {
+    "code": "FF0044000029",
+    "name": "Fahrenheit",
+    "sellingPrice": 799,
+    "spec": "<b>Aromatic Leathery Fragrance</b><br><br>\n\nA refined and charismatic blend that brings together fresh aromatics and smooth leather warmth. This aromatic leathery fragrance opens with the spicy elegance of nutmeg paired with calming lavender, creating a balanced and confident introduction. The heart unfolds into creamy sandalwood and soft violet, adding depth and a subtle floral nuance. As it dries down, musk, amber, and patchouli form a warm, sensual base that lingers with timeless sophistication.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Nutmeg, Lavender<br>\n• <b>Heart Notes:</b> Sandalwood, Violet<br>\n• <b>Base Notes:</b> Musk, Amber, Patchouli<br><br>\n\n<b>Vibe:</b> Aromatic • Leathery • Warm • Elegant<br><br>\n\nPerfect for evening wear and special occasions, this fragrance delivers a smooth, confident presence with a classic yet modern appeal.",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Men",
+    "tags": "Men,New Arrivals"
+  },
+  {
+    "code": "FF0044000060",
+    "name": "Fahrenheit",
+    "sellingPrice": 1199,
+    "spec": "<b>Aromatic Leathery Fragrance</b><br><br>\n\nA refined and charismatic blend that brings together fresh aromatics and smooth leather warmth. This aromatic leathery fragrance opens with the spicy elegance of nutmeg paired with calming lavender, creating a balanced and confident introduction. The heart unfolds into creamy sandalwood and soft violet, adding depth and a subtle floral nuance. As it dries down, musk, amber, and patchouli form a warm, sensual base that lingers with timeless sophistication.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Nutmeg, Lavender<br>\n• <b>Heart Notes:</b> Sandalwood, Violet<br>\n• <b>Base Notes:</b> Musk, Amber, Patchouli<br><br>\n\n<b>Vibe:</b> Aromatic • Leathery • Warm • Elegant<br><br>\n\nPerfect for evening wear and special occasions, this fragrance delivers a smooth, confident presence with a classic yet modern appeal.",
     "size": "60 ml",
     "color": "Perfume",
     "type": "Men",
     "tags": "Men,New Arrivals"
   },
   {
-    "code": "FF0038000029",
-    "name": "Velvet Tonka",
+    "code": "FF0045000029",
+    "name": "IKIGAI",
     "sellingPrice": 799,
-    "spec": "A smooth and elegant <b>Floral</b> fragrance that blends soft sweetness with warm, sensual depth.<br>\nIt opens with a delicate harmony of almond and orange blossom, offering a creamy, slightly nutty freshness wrapped in luminous floral softness.<br>\nThe heart reveals a rich contrast of tobacco and rose oil, adding a sophisticated warmth and a velvety floral character with a subtle smoky nuance.<br>\nAs it settles, the fragrance melts into a luxurious base of tonka beans, vanilla, and amberwood, leaving a warm, addictive, and long-lasting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Almond<br>\n• Orange Blossom<br><br>\n\n<b>Heart Notes:</b><br>\n• Tobacco<br>\n• Rose Oil<br><br>\n\n<b>Base Notes:</b><br>\n• Tonka Beans<br>\n• Vanilla<br>\n• Amberwood<br>",
+    "spec": "<b>Oriental Woody Fragrance</b><br><br>\n\nA vibrant yet sophisticated composition that blends juicy fruits, aromatic florals, and warm woods. This oriental woody fragrance opens with a lively burst of raspberry, orange, and bergamot, offering a bright and slightly sweet introduction. The heart reveals an elegant fusion of jasmine and calming lavender, adding floral depth with an aromatic twist. As the scent settles, patchouli and creamy sandalwood create a smooth, woody base that lingers with warmth and refinement.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Raspberry, Orange, Bergamot<br>\n• <b>Heart Notes:</b> Jasmine, Lavender<br>\n• <b>Base Notes:</b> Patchouli, Sandalwood<br><br>\n\n<b>Vibe:</b> Fruity • Woody • Warm • Elegant<br><br>\n\nPerfect for both day and evening wear, this fragrance offers a balanced blend of freshness and depth, leaving a confident and memorable impression.",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Oriental"
+  },
+  {
+    "code": "FF0045000060",
+    "name": "IKIGAI",
+    "sellingPrice": 1199,
+    "spec": "<b>Oriental Woody Fragrance</b><br><br>\n\nA vibrant yet sophisticated composition that blends juicy fruits, aromatic florals, and warm woods. This oriental woody fragrance opens with a lively burst of raspberry, orange, and bergamot, offering a bright and slightly sweet introduction. The heart reveals an elegant fusion of jasmine and calming lavender, adding floral depth with an aromatic twist. As the scent settles, patchouli and creamy sandalwood create a smooth, woody base that lingers with warmth and refinement.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Raspberry, Orange, Bergamot<br>\n• <b>Heart Notes:</b> Jasmine, Lavender<br>\n• <b>Base Notes:</b> Patchouli, Sandalwood<br><br>\n\n<b>Vibe:</b> Fruity • Woody • Warm • Elegant<br><br>\n\nPerfect for both day and evening wear, this fragrance offers a balanced blend of freshness and depth, leaving a confident and memorable impression.",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Oriental"
+  },
+  {
+    "code": "FF0046000029",
+    "name": "Latte",
+    "sellingPrice": 799,
+    "spec": "<b>Coffee Creamy Fragrance</b><br><br>\n\nA deliciously warm and comforting scent crafted for those who love rich gourmand notes. This coffee creamy fragrance opens with smooth caramel blended with creamy milk, creating a sweet and indulgent first impression. The heart reveals the deep, aromatic richness of freshly roasted coffee beans, adding depth and character. As it settles, soft vanilla wraps the fragrance in a cozy, velvety finish that lingers beautifully on the skin.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Caramel, Milk<br>\n• <b>Heart Notes:</b> Coffee Beans<br>\n• <b>Base Notes:</b> Vanilla<br><br>\n\n<b>Vibe:</b> Creamy • Gourmand • Warm • Addictive<br><br>\n\nPerfect for cooler days and evenings, this fragrance feels like a comforting cup of coffee with a sweet, creamy twist — rich, cozy, and irresistible.",
     "size": "30 ml",
     "color": "Perfume",
     "type": "Unisex",
     "tags": "Unisex,New Arrivals"
   },
   {
-    "code": "FF0038000060",
-    "name": "Velvet Tonka",
+    "code": "FF0046000060",
+    "name": "Latte",
     "sellingPrice": 1199,
-    "spec": "A smooth and elegant <b>Floral</b> fragrance that blends soft sweetness with warm, sensual depth.<br>\nIt opens with a delicate harmony of almond and orange blossom, offering a creamy, slightly nutty freshness wrapped in luminous floral softness.<br>\nThe heart reveals a rich contrast of tobacco and rose oil, adding a sophisticated warmth and a velvety floral character with a subtle smoky nuance.<br>\nAs it settles, the fragrance melts into a luxurious base of tonka beans, vanilla, and amberwood, leaving a warm, addictive, and long-lasting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Almond<br>\n• Orange Blossom<br><br>\n\n<b>Heart Notes:</b><br>\n• Tobacco<br>\n• Rose Oil<br><br>\n\n<b>Base Notes:</b><br>\n• Tonka Beans<br>\n• Vanilla<br>\n• Amberwood<br>",
+    "spec": "<b>Coffee Creamy Fragrance</b><br><br>\n\nA deliciously warm and comforting scent crafted for those who love rich gourmand notes. This coffee creamy fragrance opens with smooth caramel blended with creamy milk, creating a sweet and indulgent first impression. The heart reveals the deep, aromatic richness of freshly roasted coffee beans, adding depth and character. As it settles, soft vanilla wraps the fragrance in a cozy, velvety finish that lingers beautifully on the skin.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Caramel, Milk<br>\n• <b>Heart Notes:</b> Coffee Beans<br>\n• <b>Base Notes:</b> Vanilla<br><br>\n\n<b>Vibe:</b> Creamy • Gourmand • Warm • Addictive<br><br>\n\nPerfect for cooler days and evenings, this fragrance feels like a comforting cup of coffee with a sweet, creamy twist — rich, cozy, and irresistible.",
     "size": "60 ml",
     "color": "Perfume",
     "type": "Unisex",
     "tags": "Unisex,New Arrivals"
   },
   {
-    "code": "FF0039000029",
-    "name": "Very Sexy",
+    "code": "FF0047000029",
+    "name": "Lucky",
     "sellingPrice": 799,
-    "spec": "A soft and comforting <b>Powdery Vanilla</b> fragrance that wraps the skin in creamy sweetness and gentle warmth.<br>\nIt opens with a delicious blend of coconut and milk, creating a smooth, milky softness that feels cozy and indulgent.<br>\nAt the heart, rich vanilla meets delicate powdery notes, adding an elegant, airy sweetness that feels clean and soothing.<br>\nAs it settles, the fragrance lingers with a sensual base of musk and Madagascar vanilla, leaving a warm, creamy, and irresistibly comforting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Coconut<br>\n• Milk<br><br>\n\n<b>Heart Notes:</b><br>\n• Vanilla<br>\n• Powder Notes<br><br>\n\n<b>Base Notes:</b><br>\n• Musk<br>\n• Madagascar Vanilla<br>",
+    "spec": "<b>Sweet Woody Fragrance</b><br><br>\n\nA luscious and elegant blend where fruity sweetness meets earthy woods. This sweet woody fragrance opens with the juicy richness of plum, brightened by fresh grapefruit and sparkling bergamot for a vibrant first impression. The heart reveals a delicious combination of hazelnut and golden honey, adding warmth and a smooth gourmand touch. As it settles, patchouli and oakmoss create a deep, woody base that brings balance, depth, and long-lasting sophistication.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Plum, Grapefruit, Bergamot<br>\n• <b>Heart Notes:</b> Hazelnut, Honey<br>\n• <b>Base Notes:</b> Patchouli, Oakmoss<br><br>\n\n<b>Vibe:</b> Sweet • Woody • Warm • Elegant<br><br>\n\nPerfect for evening wear and special occasions, this fragrance delivers a rich, cozy sweetness wrapped in a refined woody trail that feels both modern and timeless.",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Men",
+    "tags": "Men,New Arrivals"
+  },
+  {
+    "code": "FF0047000060",
+    "name": "Lucky",
+    "sellingPrice": 1199,
+    "spec": "<b>Sweet Woody Fragrance</b><br><br>\n\nA luscious and elegant blend where fruity sweetness meets earthy woods. This sweet woody fragrance opens with the juicy richness of plum, brightened by fresh grapefruit and sparkling bergamot for a vibrant first impression. The heart reveals a delicious combination of hazelnut and golden honey, adding warmth and a smooth gourmand touch. As it settles, patchouli and oakmoss create a deep, woody base that brings balance, depth, and long-lasting sophistication.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Plum, Grapefruit, Bergamot<br>\n• <b>Heart Notes:</b> Hazelnut, Honey<br>\n• <b>Base Notes:</b> Patchouli, Oakmoss<br><br>\n\n<b>Vibe:</b> Sweet • Woody • Warm • Elegant<br><br>\n\nPerfect for evening wear and special occasions, this fragrance delivers a rich, cozy sweetness wrapped in a refined woody trail that feels both modern and timeless.",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Men",
+    "tags": "Men,New Arrivals"
+  },
+  {
+    "code": "FF0048000029",
+    "name": "Matsukita",
+    "sellingPrice": 799,
+    "spec": "<b>Woody Chypre Fragrance</b><br><br>\n\nA refined and modern chypre composition that blends fresh brightness with deep woody warmth. This woody chypre fragrance opens with the crisp sparkle of bergamot accented by the subtle spice of pink pepper, creating an elegant and lively introduction. The heart reveals aromatic mate paired with the soft floral touch of Chinese jasmine, adding depth and character. As it dries down, smooth musk and warm amber form a sophisticated base that lingers with understated sensuality.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Bergamot, Pink Pepper<br>\n• <b>Heart Notes:</b> Mate, Chinese Jasmine<br>\n• <b>Base Notes:</b> Musk, Amber<br><br>\n\n<b>Vibe:</b> Fresh • Woody • Elegant • Modern<br><br>\n\nPerfect for both daytime refinement and evening sophistication, this fragrance delivers a balanced blend of freshness and warmth with a classic chypre character reimagined for today.",
     "size": "30 ml",
     "color": "Perfume",
     "type": "Unisex",
     "tags": "Unisex,New Arrivals"
   },
   {
-    "code": "FF0039000060",
-    "name": "Very Sexy",
+    "code": "FF0048000060",
+    "name": "Matsukita",
     "sellingPrice": 1199,
-    "spec": "A soft and comforting <b>Powdery Vanilla</b> fragrance that wraps the skin in creamy sweetness and gentle warmth.<br>\nIt opens with a delicious blend of coconut and milk, creating a smooth, milky softness that feels cozy and indulgent.<br>\nAt the heart, rich vanilla meets delicate powdery notes, adding an elegant, airy sweetness that feels clean and soothing.<br>\nAs it settles, the fragrance lingers with a sensual base of musk and Madagascar vanilla, leaving a warm, creamy, and irresistibly comforting trail.<br><br>\n\n<b>Key Notes</b><br><br>\n\n<b>Top Notes:</b><br>\n• Coconut<br>\n• Milk<br><br>\n\n<b>Heart Notes:</b><br>\n• Vanilla<br>\n• Powder Notes<br><br>\n\n<b>Base Notes:</b><br>\n• Musk<br>\n• Madagascar Vanilla<br>",
+    "spec": "<b>Woody Chypre Fragrance</b><br><br>\n\nA refined and modern chypre composition that blends fresh brightness with deep woody warmth. This woody chypre fragrance opens with the crisp sparkle of bergamot accented by the subtle spice of pink pepper, creating an elegant and lively introduction. The heart reveals aromatic mate paired with the soft floral touch of Chinese jasmine, adding depth and character. As it dries down, smooth musk and warm amber form a sophisticated base that lingers with understated sensuality.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Bergamot, Pink Pepper<br>\n• <b>Heart Notes:</b> Mate, Chinese Jasmine<br>\n• <b>Base Notes:</b> Musk, Amber<br><br>\n\n<b>Vibe:</b> Fresh • Woody • Elegant • Modern<br><br>\n\nPerfect for both daytime refinement and evening sophistication, this fragrance delivers a balanced blend of freshness and warmth with a classic chypre character reimagined for today.",
     "size": "60 ml",
     "color": "Perfume",
     "type": "Unisex",
     "tags": "Unisex,New Arrivals"
+  },
+  {
+    "code": "FF0049000029",
+    "name": "Most Wanted",
+    "sellingPrice": 799,
+    "spec": "<b>Oriental Spicy Fragrance</b><br><br>\n\nA rich and inviting composition where warm spice meets indulgent sweetness. This oriental spicy fragrance opens with the aromatic warmth of cardamom, delivering an immediate sense of depth and intrigue. The heart introduces smooth, mouth-watering toffee, adding a creamy sweetness that feels both comforting and addictive. As it settles, amber wood forms a warm, resinous base that lingers with elegance and sensual intensity.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Cardamom<br>\n• <b>Heart Notes:</b> Toffee<br>\n• <b>Base Notes:</b> Amber Wood<br><br>\n\n<b>Vibe:</b> Spicy • Sweet • Warm • Luxurious<br><br>\n\nPerfect for evenings and cooler weather, this fragrance leaves a bold yet comforting trail — rich, modern, and irresistibly alluring.",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Men",
+    "tags": "Men,New Arrivals"
+  },
+  {
+    "code": "FF0049000060",
+    "name": "Most Wanted",
+    "sellingPrice": 1199,
+    "spec": "<b>Oriental Spicy Fragrance</b><br><br>\n\nA rich and inviting composition where warm spice meets indulgent sweetness. This oriental spicy fragrance opens with the aromatic warmth of cardamom, delivering an immediate sense of depth and intrigue. The heart introduces smooth, mouth-watering toffee, adding a creamy sweetness that feels both comforting and addictive. As it settles, amber wood forms a warm, resinous base that lingers with elegance and sensual intensity.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Cardamom<br>\n• <b>Heart Notes:</b> Toffee<br>\n• <b>Base Notes:</b> Amber Wood<br><br>\n\n<b>Vibe:</b> Spicy • Sweet • Warm • Luxurious<br><br>\n\nPerfect for evenings and cooler weather, this fragrance leaves a bold yet comforting trail — rich, modern, and irresistibly alluring.",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Men",
+    "tags": "Men,New Arrivals"
+  },
+  {
+    "code": "FF0050000029",
+    "name": "Oud & Musk",
+    "sellingPrice": 799,
+    "spec": "<b>Oriental Musky Fragrance</b><br><br>\n\nA refined and sensual blend that pairs aromatic freshness with smooth, musky warmth. This oriental musky fragrance opens with the elegant clarity of Earl Grey tea infused with bright bergamot, creating a calm yet uplifting introduction. The heart unfolds into soft suede and powdery orris, adding a luxurious, velvety texture. As the fragrance settles, rich agarwood and creamy sandalwood form a deep, warm base that lingers with quiet sophistication and depth.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Earl Grey Tea, Bergamot<br>\n• <b>Heart Notes:</b> Suede, Orris<br>\n• <b>Base Notes:</b> Agarwood, Sandalwood<br><br>\n\n<b>Vibe:</b> Musky • Warm • Elegant • Refined<br><br>\n\nPerfect for those who appreciate subtle luxury, this fragrance is ideal for both day and evening wear, leaving a smooth and memorable impression.",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals"
+  },
+  {
+    "code": "FF0050000060",
+    "name": "Oud & Musk",
+    "sellingPrice": 1199,
+    "spec": "<b>Oriental Musky Fragrance</b><br><br>\n\nA refined and sensual blend that pairs aromatic freshness with smooth, musky warmth. This oriental musky fragrance opens with the elegant clarity of Earl Grey tea infused with bright bergamot, creating a calm yet uplifting introduction. The heart unfolds into soft suede and powdery orris, adding a luxurious, velvety texture. As the fragrance settles, rich agarwood and creamy sandalwood form a deep, warm base that lingers with quiet sophistication and depth.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Earl Grey Tea, Bergamot<br>\n• <b>Heart Notes:</b> Suede, Orris<br>\n• <b>Base Notes:</b> Agarwood, Sandalwood<br><br>\n\n<b>Vibe:</b> Musky • Warm • Elegant • Refined<br><br>\n\nPerfect for those who appreciate subtle luxury, this fragrance is ideal for both day and evening wear, leaving a smooth and memorable impression.",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals"
+  },
+  {
+    "code": "FF0051000029",
+    "name": "Oud & Roses",
+    "sellingPrice": 799,
+    "spec": "<b>Woody Floral Fragrance</b><br><br>\n\nA timeless and elegant composition where delicate florals meet soft woods. This woody floral fragrance centers around the romantic beauty of rose, offering a refined and graceful floral opening. The heart transitions into smooth, natural wood notes that add warmth and depth, while the base of clean musk brings a gentle, long-lasting softness to the scent. The result is a perfectly balanced fragrance that feels both classic and modern.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Rose<br>\n• <b>Heart Notes:</b> Wood<br>\n• <b>Base Notes:</b> Musk<br><br>\n\n<b>Vibe:</b> Floral • Woody • Soft • Elegant<br><br>\n\nIdeal for everyday wear and special moments alike, this fragrance leaves a subtle yet sophisticated trail — graceful, comforting, and effortlessly refined.",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals"
+  },
+  {
+    "code": "FF0051000060",
+    "name": "Oud & Roses",
+    "sellingPrice": 1199,
+    "spec": "<b>Woody Floral Fragrance</b><br><br>\n\nA timeless and elegant composition where delicate florals meet soft woods. This woody floral fragrance centers around the romantic beauty of rose, offering a refined and graceful floral opening. The heart transitions into smooth, natural wood notes that add warmth and depth, while the base of clean musk brings a gentle, long-lasting softness to the scent. The result is a perfectly balanced fragrance that feels both classic and modern.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Rose<br>\n• <b>Heart Notes:</b> Wood<br>\n• <b>Base Notes:</b> Musk<br><br>\n\n<b>Vibe:</b> Floral • Woody • Soft • Elegant<br><br>\n\nIdeal for everyday wear and special moments alike, this fragrance leaves a subtle yet sophisticated trail — graceful, comforting, and effortlessly refined.",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals"
+  },
+  {
+    "code": "FF0052000029",
+    "name": "Smoking Rouge",
+    "sellingPrice": 799,
+    "spec": "<b>Sweet Vanilla Fragrance</b><br><br>\n\nA deliciously soft and addictive blend where creamy sweetness meets gentle spice. This sweet vanilla fragrance opens with juicy cherry and a subtle touch of pink pepper, creating a playful yet elegant introduction. At its heart, smooth vanilla melts into powdery heliotrope, adding warmth and comfort. The base of ambroxan and musk leaves a clean, modern trail that lingers beautifully on the skin.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Cherry, Pink Pepper<br>\n• <b>Heart Notes:</b> Vanilla, Heliotrope<br>\n• <b>Base Notes:</b> Ambroxan, Musk<br><br>\n\n<b>Vibe:</b> Sweet • Creamy • Soft • Modern<br><br>\n\nPerfect for those who love cozy, crowd-pleasing scents with a refined twist, this fragrance feels warm, comforting, and irresistibly charming.",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Men",
+    "tags": "Men,New Arrivals"
+  },
+  {
+    "code": "FF0052000060",
+    "name": "Smoking Rouge",
+    "sellingPrice": 1199,
+    "spec": "<b>Sweet Vanilla Fragrance</b><br><br>\n\nA deliciously soft and addictive blend where creamy sweetness meets gentle spice. This sweet vanilla fragrance opens with juicy cherry and a subtle touch of pink pepper, creating a playful yet elegant introduction. At its heart, smooth vanilla melts into powdery heliotrope, adding warmth and comfort. The base of ambroxan and musk leaves a clean, modern trail that lingers beautifully on the skin.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Cherry, Pink Pepper<br>\n• <b>Heart Notes:</b> Vanilla, Heliotrope<br>\n• <b>Base Notes:</b> Ambroxan, Musk<br><br>\n\n<b>Vibe:</b> Sweet • Creamy • Soft • Modern<br><br>\n\nPerfect for those who love cozy, crowd-pleasing scents with a refined twist, this fragrance feels warm, comforting, and irresistibly charming.",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Men",
+    "tags": "Men,New Arrivals"
+  },
+  {
+    "code": "FF0053000029",
+    "name": "Smoky",
+    "sellingPrice": 799,
+    "spec": "<b>Woody Smoky Fragrance</b><br><br>\n\nA bold and intriguing blend that combines spicy warmth with smoky, woody depth. This woody smoky fragrance opens with aromatic cloves and a hint of pink pepper, creating a spicy and captivating introduction. The heart reveals rich chestnut and crisp juniper, adding a smoky, textured character. As it settles, smooth vanilla and cozy cashmeran form a warm, long-lasting base that exudes sophistication and allure.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Cloves, Pink Pepper<br>\n• <b>Heart Notes:</b> Chestnut, Juniper<br>\n• <b>Base Notes:</b> Vanilla, Cashmeran<br><br>\n\n<b>Vibe:</b> Woody • Smoky • Spicy • Sophisticated<br><br>\n\nPerfect for evenings and colder seasons, this fragrance leaves a memorable, alluring trail — bold, warm, and deeply captivating.",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Men",
+    "tags": "Men,New Arrivals"
+  },
+  {
+    "code": "FF0053000060",
+    "name": "Smoky",
+    "sellingPrice": 1199,
+    "spec": "<b>Woody Smoky Fragrance</b><br><br>\n\nA bold and intriguing blend that combines spicy warmth with smoky, woody depth. This woody smoky fragrance opens with aromatic cloves and a hint of pink pepper, creating a spicy and captivating introduction. The heart reveals rich chestnut and crisp juniper, adding a smoky, textured character. As it settles, smooth vanilla and cozy cashmeran form a warm, long-lasting base that exudes sophistication and allure.<br><br>\n\n<b>Fragrance Profile:</b><br>\n• <b>Top Notes:</b> Cloves, Pink Pepper<br>\n• <b>Heart Notes:</b> Chestnut, Juniper<br>\n• <b>Base Notes:</b> Vanilla, Cashmeran<br><br>\n\n<b>Vibe:</b> Woody • Smoky • Spicy • Sophisticated<br><br>\n\nPerfect for evenings and colder seasons, this fragrance leaves a memorable, alluring trail — bold, warm, and deeply captivating.",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Men",
+    "tags": "Men,New Arrivals"
+  },
+  {
+    "code": "FF0054000029",
+    "name": "Rumi",
+    "sellingPrice": 799,
+    "spec": "<b>Fruity Leather Fragrance</b><br><br>\n\nAn intoxicating fusion of juicy fruits and bold leather, this fragrance delivers a perfect balance of sweetness, spice, and depth. It opens with a vibrant burst of ripe raspberry wrapped in warm cinnamon, creating an irresistible first impression. The heart reveals a refined floral-leathery nuance, where delicate osmanthus blends seamlessly with smooth cedarwood. As it settles, a rich and sensual base of leather, smoky oud, and creamy vanilla leaves a powerful, long-lasting trail — bold, luxurious, and unforgettable.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Raspberry, Cinnamon<br>\n• <b>Heart Notes:</b> Osmanthus, Cedarwood<br>\n• <b>Base Notes:</b> Leather, Oud, Vanilla\n<br><br>\n<b>Inspired Version of:</b> Maison Crivelli – Cuir Infrarouge",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Oriental,Inspired Collections"
+  },
+  {
+    "code": "FF0054000060",
+    "name": "Rumi",
+    "sellingPrice": 1199,
+    "spec": "<b>Fruity Leather Fragrance</b><br><br>\n\nAn intoxicating fusion of juicy fruits and bold leather, this fragrance delivers a perfect balance of sweetness, spice, and depth. It opens with a vibrant burst of ripe raspberry wrapped in warm cinnamon, creating an irresistible first impression. The heart reveals a refined floral-leathery nuance, where delicate osmanthus blends seamlessly with smooth cedarwood. As it settles, a rich and sensual base of leather, smoky oud, and creamy vanilla leaves a powerful, long-lasting trail — bold, luxurious, and unforgettable.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Raspberry, Cinnamon<br>\n• <b>Heart Notes:</b> Osmanthus, Cedarwood<br>\n• <b>Base Notes:</b> Leather, Oud, Vanilla\n<br><br>\n<b>Inspired Version of:</b> Maison Crivelli – Cuir Infrarouge",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Oriental,Inspired Collections"
+  },
+  {
+    "code": "FF0055000029",
+    "name": "Creek Night",
+    "sellingPrice": 799,
+    "spec": "<b>Oriental Fresh Fragrance</b><br><br>\n\nA refreshing take on oriental perfumery, this fragrance blends bright citrus with warm spices and modern musky woods. It opens with a sparkling trio of bergamot, lemon, and orange, delivering an instant burst of freshness. The heart introduces a subtle exotic warmth, where rich agarwood is softened by aromatic cinnamon. In the dry-down, smooth musk and radiant ambroxan merge with creamy tonka, creating a clean yet sensual trail that feels both fresh and deeply alluring.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Bergamot, Lemon, Orange<br>\n• <b>Heart Notes:</b> Agarwood, Cinnamon<br>\n• <b>Base Notes:</b> Musk, Ambroxan, Tonka\n<br><br>\n<b>Inspired Version of:</b> Lattafa – Khamrah",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Oriental,Inspired Collections"
+  },
+  {
+    "code": "FF0055000060",
+    "name": "Creek Night",
+    "sellingPrice": 1199,
+    "spec": "<b>Oriental Fresh Fragrance</b><br><br>\n\nA refreshing take on oriental perfumery, this fragrance blends bright citrus with warm spices and modern musky woods. It opens with a sparkling trio of bergamot, lemon, and orange, delivering an instant burst of freshness. The heart introduces a subtle exotic warmth, where rich agarwood is softened by aromatic cinnamon. In the dry-down, smooth musk and radiant ambroxan merge with creamy tonka, creating a clean yet sensual trail that feels both fresh and deeply alluring.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Bergamot, Lemon, Orange<br>\n• <b>Heart Notes:</b> Agarwood, Cinnamon<br>\n• <b>Base Notes:</b> Musk, Ambroxan, Tonka\n<br><br>\n<b>Inspired Version of:</b> Lattafa – Khamrah",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Oriental,Inspired Collections"
+  },
+  {
+    "code": "FF0056000029",
+    "name": "White Creed",
+    "sellingPrice": 799,
+    "spec": "<b>Aromatic Fresh Fragrance</b><br><br>\n\nCrisp, uplifting, and effortlessly refreshing, this aromatic fragrance captures the essence of clean elegance. It opens with a zesty blend of bergamot, lime, and orange, delivering a vibrant citrus sparkle. The heart unfolds into a soothing aromatic accord where green tea meets the subtle fruitiness of blackcurrant, adding freshness with a modern twist. The base settles into soft musk and creamy sandalwood, enriched by green, resinous galbanum, leaving a smooth, refreshing trail that feels calm, refined, and long-lasting.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Bergamot, Lime, Orange<br>\n• <b>Heart Notes:</b> Green Tea, Blackcurrant<br>\n• <b>Base Notes:</b> Musk, Sandalwood, Galbanum\n<br><br>\n<b>Inspired Version of:</b> Creed – Silver Mountain Water",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Men",
+    "tags": "Men,New Arrivals,Inspired Collections"
+  },
+  {
+    "code": "FF0056000060",
+    "name": "White Creed",
+    "sellingPrice": 1199,
+    "spec": "<b>Aromatic Fresh Fragrance</b><br><br>\n\nCrisp, uplifting, and effortlessly refreshing, this aromatic fragrance captures the essence of clean elegance. It opens with a zesty blend of bergamot, lime, and orange, delivering a vibrant citrus sparkle. The heart unfolds into a soothing aromatic accord where green tea meets the subtle fruitiness of blackcurrant, adding freshness with a modern twist. The base settles into soft musk and creamy sandalwood, enriched by green, resinous galbanum, leaving a smooth, refreshing trail that feels calm, refined, and long-lasting.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Bergamot, Lime, Orange<br>\n• <b>Heart Notes:</b> Green Tea, Blackcurrant<br>\n• <b>Base Notes:</b> Musk, Sandalwood, Galbanum\n<br><br>\n<b>Inspired Version of:</b> Creed – Silver Mountain Water",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Men",
+    "tags": "Men,New Arrivals,Inspired Collections"
+  },
+  {
+    "code": "FF0057000029",
+    "name": "Allure Sport",
+    "sellingPrice": 799,
+    "spec": "<b>Oriental Fresh Fragrance</b><br><br>\n\nA vibrant blend of freshness and warmth, this oriental fresh fragrance opens with juicy orange wrapped in breezy sea notes, creating an instantly uplifting and modern introduction. The heart adds a refined spicy–floral touch, where crisp pepper meets luminous neroli and smooth cedarwood. As the scent settles, a sensual base of glowing amber, soft musk, and creamy vanilla emerges, leaving a clean yet addictive trail that is fresh, elegant, and effortlessly captivating.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Orange, Sea Notes<br>\n• <b>Heart Notes:</b> Pepper, Neroli, Cedar<br>\n• <b>Base Notes:</b> Amber, Musk, Vanilla\n<br><br>\n<b>Inspired Version of:</b> Chanel – Allure Homme Sport",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Men",
+    "tags": "Men,New Arrivals,Inspired Collections"
+  },
+  {
+    "code": "FF0057000060",
+    "name": "Allure Sport",
+    "sellingPrice": 1199,
+    "spec": "<b>Oriental Fresh Fragrance</b><br><br>\n\nA vibrant blend of freshness and warmth, this oriental fresh fragrance opens with juicy orange wrapped in breezy sea notes, creating an instantly uplifting and modern introduction. The heart adds a refined spicy–floral touch, where crisp pepper meets luminous neroli and smooth cedarwood. As the scent settles, a sensual base of glowing amber, soft musk, and creamy vanilla emerges, leaving a clean yet addictive trail that is fresh, elegant, and effortlessly captivating.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Orange, Sea Notes<br>\n• <b>Heart Notes:</b> Pepper, Neroli, Cedar<br>\n• <b>Base Notes:</b> Amber, Musk, Vanilla\n<br><br>\n<b>Inspired Version of:</b> Chanel – Allure Homme Sport",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Men",
+    "tags": "Men,New Arrivals,Inspired Collections"
+  },
+  {
+    "code": "FF0058000029",
+    "name": "Valaya",
+    "sellingPrice": 799,
+    "spec": "<b>Floral Fruity Fragrance</b><br><br>\n\nA radiant and playful composition, this floral fruity fragrance opens with the juicy sweetness of ripe peach, brightened by sparkling bergamot and orange. The heart blooms into a fresh floral embrace, where luminous orange blossom and soft petalia are balanced by an earthy touch of vetiver. In the dry-down, smooth musk and modern ambroxan blend with creamy vanilla, creating a delicate yet long-lasting trail that feels elegant, cheerful, and irresistibly charming.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Peach, Bergamot, Orange<br>\n• <b>Heart Notes:</b> Orange Blossom, Petalia, Vetiver<br>\n• <b>Base Notes:</b> Musk, Ambroxan, Vanilla\n<br><br>\n<b>Inspired Version of:</b> Parfums de Marly – Valaya",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Inspired Collections"
+  },
+  {
+    "code": "FF0058000060",
+    "name": "Valaya",
+    "sellingPrice": 1199,
+    "spec": "<b>Floral Fruity Fragrance</b><br><br>\n\nA radiant and playful composition, this floral fruity fragrance opens with the juicy sweetness of ripe peach, brightened by sparkling bergamot and orange. The heart blooms into a fresh floral embrace, where luminous orange blossom and soft petalia are balanced by an earthy touch of vetiver. In the dry-down, smooth musk and modern ambroxan blend with creamy vanilla, creating a delicate yet long-lasting trail that feels elegant, cheerful, and irresistibly charming.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Peach, Bergamot, Orange<br>\n• <b>Heart Notes:</b> Orange Blossom, Petalia, Vetiver<br>\n• <b>Base Notes:</b> Musk, Ambroxan, Vanilla\n<br><br>\n<b>Inspired Version of:</b> Parfums de Marly – Valaya",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Inspired Collections"
+  },
+  {
+    "code": "FF0059000029",
+    "name": "Dunya",
+    "sellingPrice": 799,
+    "spec": "<b>Oriental Mullak Fragrance</b><br><br>\n\nDeep, mystical, and intensely captivating, this oriental mullak fragrance is a tribute to traditional Middle Eastern perfumery. It opens with the powerful richness of oud intertwined with earthy vetiver, setting a bold and commanding tone. The heart reveals a sacred smoky accord of incense and loban, adding depth, warmth, and spiritual elegance. As it dries down, sensual musk blends with green oakmoss and glowing amber, leaving a long-lasting, opulent trail that feels dark, refined, and profoundly luxurious.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Oud, Vetiver<br>\n• <b>Heart Notes:</b> Incense, Loban<br>\n• <b>Base Notes:</b> Musk, Oakmoss, Amber",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Oriental"
+  },
+  {
+    "code": "FF0059000060",
+    "name": "Dunya",
+    "sellingPrice": 1199,
+    "spec": "<b>Oriental Mullak Fragrance</b><br><br>\n\nDeep, mystical, and intensely captivating, this oriental mullak fragrance is a tribute to traditional Middle Eastern perfumery. It opens with the powerful richness of oud intertwined with earthy vetiver, setting a bold and commanding tone. The heart reveals a sacred smoky accord of incense and loban, adding depth, warmth, and spiritual elegance. As it dries down, sensual musk blends with green oakmoss and glowing amber, leaving a long-lasting, opulent trail that feels dark, refined, and profoundly luxurious.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Oud, Vetiver<br>\n• <b>Heart Notes:</b> Incense, Loban<br>\n• <b>Base Notes:</b> Musk, Oakmoss, Amber",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Oriental"
+  },
+  {
+    "code": "FF0060000029",
+    "name": "Crystal Saffron",
+    "sellingPrice": 799,
+    "spec": "<b>Oriental Spicy Fragrance</b><br><br>\n\nMysterious and intensely sensual, this oriental spicy fragrance is built around warmth, spice, and modern depth. It opens with a clean yet seductive touch of musk, setting a smooth and alluring foundation. At the heart, precious saffron unfolds with its rich, leathery spice, adding an opulent and exotic character. The base reveals a powerful blend of glowing ambroxan and smoky incense, creating a long-lasting trail that feels bold, magnetic, and unmistakably luxurious.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Musk<br>\n• <b>Heart Notes:</b> Saffron<br>\n• <b>Base Notes:</b> Ambroxan, Incense\n<br><br>\n<b>Inspired Version of:</b> Matière Première – Crystal Saffron",
+    "size": "30 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Inspired Collections"
+  },
+  {
+    "code": "FF0060000060",
+    "name": "Crystal Saffron",
+    "sellingPrice": 1199,
+    "spec": "<b>Oriental Spicy Fragrance</b><br><br>\n\nMysterious and intensely sensual, this oriental spicy fragrance is built around warmth, spice, and modern depth. It opens with a clean yet seductive touch of musk, setting a smooth and alluring foundation. At the heart, precious saffron unfolds with its rich, leathery spice, adding an opulent and exotic character. The base reveals a powerful blend of glowing ambroxan and smoky incense, creating a long-lasting trail that feels bold, magnetic, and unmistakably luxurious.<br><br>\n\n<b>Key Notes:</b><br>\n• <b>Top Notes:</b> Musk<br>\n• <b>Heart Notes:</b> Saffron<br>\n• <b>Base Notes:</b> Ambroxan, Incense\n<br><br>\n<b>Inspired Version of:</b> Matière Première – Crystal Saffron",
+    "size": "60 ml",
+    "color": "Perfume",
+    "type": "Unisex",
+    "tags": "Unisex,New Arrivals,Inspired Collections"
   }
 ]
