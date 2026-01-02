@@ -284,6 +284,7 @@ body {
 .menu.show a:nth-child(6) { animation-delay: 0.30s; }
 .menu.show a:nth-child(7) { animation-delay: 0.35s; }
 .menu.show a:nth-child(8) { animation-delay: 0.40s; }
+.menu.show a:nth-child(9) { animation-delay: 0.45s; }
 
 /* Keyframes: soft fade + slide horizontally */
 @keyframes fadeSlideInX {
@@ -323,6 +324,7 @@ body {
   .menu.show a:nth-child(6) { animation-delay: 0.30s; }
   .menu.show a:nth-child(7) { animation-delay: 0.35s; }
   .menu.show a:nth-child(8) { animation-delay: 0.40s; }
+  .menu.show a:nth-child(9) { animation-delay: 0.45s; }
 
   /* Reaffirm keyframes direction */
   @keyframes fadeSlideInX {
@@ -1008,6 +1010,116 @@ input[type=number] {
   margin-right: 5px;
 }
 
+/* Wrapper */
+.wa-pill-wrapper {
+  max-width: 460px;
+  margin: 6px auto 10px;
+}
+
+/* Pill container */
+.wa-pill-form {
+  display: flex;
+  align-items: center;
+  background: #fefef6;
+  border: 1px solid rgba(115, 26, 47, 0.35);
+  border-radius: 999px;
+  padding: 4px 6px 4px 16px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Focus state */
+.wa-pill-form:focus-within {
+  border-color: #731a2f;
+  box-shadow: 0 0 0 3px rgba(115, 26, 47, 0.08);
+}
+
+/* Input */
+.wa-pill-form input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: #731a2f;
+  font-family: 'Poppins', sans-serif;
+  padding: 8px 6px;
+}
+
+/* Placeholder text */
+.wa-pill-form input::placeholder {
+  color: rgba(115, 26, 47, 0.55);
+  font-weight: 400;
+}
+
+/* Arrow button */
+.wa-pill-form button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #731a2f;
+  color: #fefef6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Arrow style */
+.wa-arrow {
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* Hover animation */
+.wa-pill-form button:hover {
+  transform: translateX(2px);
+  box-shadow: 0 4px 10px rgba(115, 26, 47, 0.25);
+}
+
+/* Tap feedback */
+.wa-pill-form button:active {
+  transform: translateX(4px);
+}
+
+/* Success message */
+.wa-success {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #731a2f;
+}
+
+@media (max-width: 480px) {
+
+  .wa-pill-wrapper {
+    max-width: 100%;
+    margin: 10px auto 8px;
+    padding: 0 12px; /* prevents edge touching */
+  }
+
+  .wa-pill-form {
+    padding: 6px 6px 6px 18px;
+  }
+
+  .wa-pill-form input {
+    font-size: 15px;
+    padding: 10px 6px;
+  }
+
+  .wa-arrow {
+    font-size: 20px;
+  }
+
+  .wa-success {
+    font-size: 13px;
+    margin-top: 8px;
+  }
+}
+
+
+
 
 
 </style>
@@ -1040,14 +1152,15 @@ input[type=number] {
 
 <!-- Left Sliding Menu -->
 <nav id="menu" class="menu" aria-hidden="true">
-  <a href="#" onclick="openCategoryView(); return false;" style="--i:2">Women</a>
+  <a href="#" onclick="openCategoryView(); return false;" style="--i:1">Women</a>
   <a href="#" onclick="openMenCategoryView(); return false;" style="--i:2">Men</a>
-  <a href="#" onclick="openTabFromMenu('fragrance'); return false;" style="--i:1">Fragrance</a>
-  <a href="TC.html" style="--i:3">Terms & Conditions</a>
-  <a href="privacy-policy.html" style="--i:4">Privacy Policy</a>
-  <a href="shipping-policy.html" style="--i:3">Shipping Policy</a>
-  <a href="return-policy.html" style="--i:5">Return Policy</a>
-  <a href="https://foyerstudio.track123.com/?nums=" style="--i:6">Track Your Order</a>
+  <a href="#" onclick="openTabFromMenu('fragrance'); return false;" style="--i:3">Fragrance</a>
+  <a href="TC.html" style="--i:4">Terms & Conditions</a>
+  <a href="privacy-policy.html" style="--i:5">Privacy Policy</a>
+  <a href="shipping-policy.html" style="--i:6">Shipping Policy</a>
+  <a href="return-policy.html" style="--i:7">Return Policy</a>
+  <a href="https://foyerstudio.track123.com/?nums=" style="--i:8">Track Your Order</a>
+  <a href="https://g.page/r/CfKbNpvzPwY2EBM/review" style="--i:9">Write a Review</a>
 </nav>
 
 
@@ -1070,12 +1183,11 @@ input[type=number] {
  <div class="offer-banner">
   <div class="slides">
     <img src="images/pakistani.jpg" class="slide active" alt="pakisthani">
-    <img src="images/christmas.jpg" class="slide" alt="fragrance">
+    <!-- <img src="images/christmas.jpg" class="slide" alt="fragrance"> -->
     <img src="images/combo.jpg" class="slide" alt="combo">
     
-     <!-- <video class="slide" autoplay muted playsinline preload="auto"> -->
-  <!-- <source src="images/video.mp4" type="video/mp4"> -->
-<!-- </video> -->
+  <video class="slide" autoplay muted playsinline preload="auto"> 
+  <source src="images/video.mp4" type="video/mp4"> </video> 
 
     <img src="images/fragrance.jpg" class="slide" alt="fragrance">
    
@@ -1253,10 +1365,39 @@ input[type=number] {
 
   <!-- Elfsight Google Reviews -->
 <script src="https://elfsightcdn.com/platform.js" async></script>
-<div class="elfsight-app-12c65bc7-9246-4ffa-9e19-3775ffd32f2d" data-elfsight-app-lazy style="margin-top: 20px;"></div>
+<div class="elfsight-app-12c65bc7-9246-4ffa-9e19-3775ffd32f2d" data-elfsight-app-lazy style="margin-top: 20px;margin-bottom:5px;"></div>
 
-  <footer class="site-footer" style="text-align:center; padding:26px 18px; border-top:3px solid #731a2f; background:#fefef6;">
-    <div style="margin-bottom:12px;"><img src="images/logo_red.png" alt="Foyer Studio" style="width:100px;"></div>
+  <footer class="site-footer" style="text-align:center; padding:10px 18px; border-top:3px solid #731a2f; background:#fefef6;">
+   
+
+
+<div class="wa-pill-wrapper">
+  <form class="wa-pill-form" onsubmit="return submitWASubscription();">
+    <input
+      type="tel"
+      id="waNumber"
+      placeholder="Want new arrivals on WhatsApp?"
+      maxlength="10"
+      pattern="[0-9]{10}"
+      required
+    />
+
+    <button type="submit" aria-label="Subscribe">
+      <span class="wa-arrow">→</span>
+    </button>
+  </form>
+
+  <p class="wa-success" id="waSuccess" style="display:none;">
+    ✓ Thanks for subscribing!
+  </p>
+</div>
+
+
+ <!-- <div style="margin-bottom:1px;"><img src="images/logo_red.png" alt="Foyer Studio" style="width:100px;"></div> -->
+
+
+
+
     <div class="footer-social" style="margin-bottom:12px;">
       <a href="https://wa.me/912269646641?text=Hi%20Foyer%20Studio" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp" style="width:28px; margin:0 8px;"></a>
       <a href="https://instagram.com/foyerstudio" target="_blank"><img src="images/insta.png" alt="Instagram" style="width:28px; margin:0 8px;"></a>
@@ -1281,6 +1422,52 @@ input[type=number] {
   <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
 
   <script>
+
+    
+
+
+const waInput = document.getElementById("waNumber");
+
+// Hard block non-numeric input (typing + paste)
+waInput.addEventListener("input", function () {
+  this.value = this.value.replace(/\D/g, "").slice(0, 10);
+});
+
+function submitWASubscription() {
+  const input = document.getElementById("waNumber");
+  const success = document.getElementById("waSuccess");
+
+  const num = input.value.trim();
+
+  // Final strict validation
+  if (!/^[0-9]{10}$/.test(num)) {
+    alert("Please enter a valid 10-digit mobile number");
+    return false;
+  }
+
+  // Google Form submit
+  const formURL =
+    "https://docs.google.com/forms/d/e/1FAIpQLSfzWiwQwjeUUzkU0JjLB-GqT8Ki-yJyMKZrRpl5V446E91WwA/formResponse";
+
+  const formData = new FormData();
+  formData.append("entry.2082135508", num);
+
+  fetch(formURL, {
+    method: "POST",
+    mode: "no-cors",
+    body: formData
+  });
+
+  // Clear field
+  input.value = "";
+
+  // Success message
+  success.style.display = "block";
+  setTimeout(() => (success.style.display = "none"), 4000);
+
+  return false;
+}
+
 
    function toggleMenu() {
   const icon = document.getElementById('menuIcon');
