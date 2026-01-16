@@ -3408,6 +3408,68 @@ window.addEventListener("load", () => {
   }
 });
 
+const KIOSK_STORAGE_KEY = 'kiosk_attribution';
+
+function setKioskAttribution(sellerId) {
+  const now = Date.now();
+  const expiresAt = now + (24 * 60 * 60 * 1000); // 24 hours
+
+  const data = {
+    sellerId,
+    expiresAt
+  };
+
+  localStorage.setItem(KIOSK_STORAGE_KEY, JSON.stringify(data));
+}
+
+function getValidKioskAttribution() {
+  try {
+    const data = JSON.parse(localStorage.getItem(KIOSK_STORAGE_KEY));
+    if (!data) return null;
+
+    if (Date.now() > data.expiresAt) {
+      localStorage.removeItem(KIOSK_STORAGE_KEY);
+      return null;
+    }
+
+    return data.sellerId;
+  } catch {
+    localStorage.removeItem(KIOSK_STORAGE_KEY);
+    return null;
+  }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const params = new URLSearchParams(window.location.search);
+  const kiosk = params.get('kiosk');
+
+  // ✅ Only act if kiosk param exists
+  if (!kiosk) return;
+
+  // ✅ Do not overwrite valid existing attribution
+  if (getValidKioskAttribution()) return;
+
+  let sellerId = null;
+
+  switch (kiosk.toUpperCase()) {
+    case 'K001':
+      sellerId = 'SID018';
+      break;
+
+    case 'K002':
+      sellerId = 'SID019';
+      break;
+
+    default:
+      sellerId = 'SID001'; // fallback / house account
+  }
+
+  if (sellerId) {
+    setKioskAttribution(sellerId);
+    console.log('✅ Kiosk attribution set:', sellerId);
+  }
+});
+
   </script>
 </body>
 </html>
