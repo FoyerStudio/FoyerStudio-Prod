@@ -845,51 +845,103 @@ fbq('track', 'InitiateCheckout');
         ? ["All Products"]
         : applicableProductsRaw.split(",").map(p => p.trim());
 
-    // --- COMBO COUPON LOGIC ---
-    if (currentCoupon.code.includes("COMBO")) {
+   // --- COUPLE COUPON LOGIC ---
+if (currentCoupon.code.startsWith("COUPLE")) {
 
-        // Use `cart` instead of allCartItems
-        const categories = new Set();
-        cart.forEach(ci => {
-            const prefix = ci.code.substring(0, 2); // FS / FM / FF
-            if (["FS", "FM", "FF"].includes(prefix)) {
-                categories.add(prefix);
-            }
-        });
+    // total qty of the two couple SKUs
+    let coupleQty = 0;
 
-        // Apply discount only if 2 or more different categories exist
-        if (categories.size >= 2) {
-            if (applicableProducts.includes("All Products") || applicableProducts.includes(item.code)) {
-                discountedPrice = Math.max(
-                    0,
-                    originalPrice * (1 - (Number(currentCoupon.discInPct || 0) / 100))
-                );
-            }
-        } else {
-            // Not eligible → keep original price
-            discountedPrice = originalPrice;
+    cart.forEach(ci => {
+        if (
+            ci.code === "FF0012000060" ||
+            ci.code === "FF0013000060"
+        ) {
+            coupleQty += Number(ci.quantity || 0);
         }
+    });
 
+    // Apply only if total qty > 1 AND only to those products
+    if (
+        coupleQty > 1 &&
+        (item.code === "FF0012000060" || item.code === "FF0013000060")
+    ) {
+        discountedPrice = Math.max(
+            0,
+            originalPrice * (1 - (Number(currentCoupon.discInPct || 0) / 100))
+        );
+    } else {
+        discountedPrice = originalPrice;
     }
+}
 
-    // --- FLAT COUPON ---
-    else if (currentCoupon.code.includes("FLAT")) {
-        if (applicableProducts.includes("All Products") || applicableProducts.includes(item.code)) {
-            discountedPrice = Math.max(
-                0,
-                originalPrice - Number(currentCoupon.discInPct || 0)
-            );
+// --- SPECIAL COUPON LOGIC ---
+else if (currentCoupon.code.startsWith("SPECIAL")) {
+
+    let ffQty = 0;
+
+    cart.forEach(ci => {
+        if (ci.code.startsWith("FF")) {
+            ffQty += Number(ci.quantity || 0);
         }
-    } 
-    // --- PERCENTAGE COUPON ---
-    else {
+    });
+
+    // Apply only to FF products if total FF qty > 1
+    if (ffQty > 1 && item.code.startsWith("FF")) {
+        discountedPrice = Math.max(
+            0,
+            originalPrice * (1 - (Number(currentCoupon.discInPct || 0) / 100))
+        );
+    } else {
+        discountedPrice = originalPrice;
+    }
+}
+
+// --- COMBO COUPON LOGIC ---
+else if (currentCoupon.code.includes("COMBO")) {
+
+    const categories = new Set();
+
+    cart.forEach(ci => {
+        const prefix = ci.code.substring(0, 2); // FS / FM / FF
+        if (["FS", "FM", "FF"].includes(prefix)) {
+            categories.add(prefix);
+        }
+    });
+
+    if (categories.size >= 2) {
         if (applicableProducts.includes("All Products") || applicableProducts.includes(item.code)) {
             discountedPrice = Math.max(
                 0,
                 originalPrice * (1 - (Number(currentCoupon.discInPct || 0) / 100))
             );
         }
+    } else {
+        discountedPrice = originalPrice;
     }
+}
+
+// --- FLAT COUPON ---
+else if (currentCoupon.code.includes("FLAT")) {
+
+    if (applicableProducts.includes("All Products") || applicableProducts.includes(item.code)) {
+        discountedPrice = Math.max(
+            0,
+            originalPrice - Number(currentCoupon.discInPct || 0)
+        );
+    }
+}
+
+// --- PERCENTAGE COUPON ---
+else {
+
+    if (applicableProducts.includes("All Products") || applicableProducts.includes(item.code)) {
+        discountedPrice = Math.max(
+            0,
+            originalPrice * (1 - (Number(currentCoupon.discInPct || 0) / 100))
+        );
+    }
+}
+
 }
 
 
@@ -997,6 +1049,18 @@ async function applyCoupon(code) {
     if (selected.code.includes("COMBO")) {
       couponNote.textContent =
         "Applies when at least two products from different collections are added.";
+    } 
+    else if (selected.code.includes("COUPLE")) {
+      couponNote.textContent =
+        "Applies when Romeo & Juliet fragrances are added.";
+    }
+    else if (selected.code.includes("SPECIAL")) {
+      couponNote.textContent =
+        "Applies when 2 or more fragrances are added.";
+    } 
+    else if (selected.code.includes("JAIPUR")) {
+      couponNote.textContent =
+        "Applies only for jaipur products.";
     } else {
       couponNote.textContent =
         "Coupon applied to applicable products.";
