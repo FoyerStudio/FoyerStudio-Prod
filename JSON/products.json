@@ -1,5 +1,325 @@
 [
   {
+    "code": "FS0060YL000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit in mustard yellow top with floral prints and tessels on slits ,plain bottom and dupatta red in colour with floral prints.",
+    "size": "L",
+    "color": "Yellow",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0060YL00XL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit in mustard yellow top with floral prints and tessels on slits ,plain bottom and dupatta red in colour with floral prints.",
+    "size": "XL",
+    "color": "Yellow",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0060YL0XXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit in mustard yellow top with floral prints and tessels on slits ,plain bottom and dupatta red in colour with floral prints.",
+    "size": "XXL",
+    "color": "Yellow",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0060YLXXXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit in mustard yellow top with floral prints and tessels on slits ,plain bottom and dupatta red in colour with floral prints.",
+    "size": "XXXL",
+    "color": "Yellow",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0061BL000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani Lawn Suit Top with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "size": "L",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0061BL00XL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani Lawn Suit Top with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "size": "XL",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0061BL0XXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani Lawn Suit Top with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "size": "XXL",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0061BLXXXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani Lawn Suit Top with floral prints and embroidery patches on neck, tessels on slit with plain bottom and cotton dupatta.",
+    "size": "XXXL",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0062BK000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top with floral prints and GPO laces attached,tessels in hand and plain bottom with cotton dupatta",
+    "size": "L",
+    "color": "Black",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0062BK00XL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top with floral prints and GPO laces attached,tessels in hand and plain bottom with cotton dupatta",
+    "size": "XL",
+    "color": "Black",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0062BK0XXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top with floral prints and GPO laces attached,tessels in hand and plain bottom with cotton dupatta",
+    "size": "XXL",
+    "color": "Black",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0062BKXXXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top with floral prints and GPO laces attached,tessels in hand and plain bottom with cotton dupatta",
+    "size": "XXXL",
+    "color": "Black",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0063BL000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top with floral prints and GPO laces attached, and plain bottom with cotton dupatta",
+    "size": "L",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0063BL00XL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top with floral prints and GPO laces attached and plain bottom with cotton dupatta",
+    "size": "XL",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0063BL0XXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top with floral prints and GPO laces attached and plain bottom with cotton dupatta",
+    "size": "XXL",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0063BLXXXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top with floral prints and GPO laces attached and plain bottom with cotton dupatta",
+    "size": "XXXL",
+    "color": "Blue",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0064BG000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit  top with beautiful teal embroidery & tassel detail, plain bottom and floral cotton dupatta",
+    "size": "L",
+    "color": "Beige",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0064BG00XL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top with beautiful teal embroidery & tassel detail, plain bottom with floral cotton duppata ",
+    "size": "XL",
+    "color": "Beige",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0064BG0XXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top with beautiful teal embroidery & tassel detail, plain bottom with floral cotton duppata",
+    "size": "XXL",
+    "color": "Beige",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0064BGXXXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top with beautiful teal embroidery & tassel detail, plain bottom with floral cotton duppata",
+    "size": "XXXL",
+    "color": "Beige",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0065PC000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top in pastel florals with delicate white embroidery and plain bottom with cotton dupatta",
+    "size": "L",
+    "color": "Peach",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0065PC00XL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top in pastel florals with delicate white embroidery and plain bottom with cotton dupatta",
+    "size": "XL",
+    "color": "Peach",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0065PC0XXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top in pastel florals with delicate white embroidery and plain bottom with cotton dupatta",
+    "size": "XXL",
+    "color": "Peach",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0065PCXXXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit top in pastel florals with delicate white embroidery and plain bottom with cotton dupatta",
+    "size": "XXXL",
+    "color": "Peach",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0066GR000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit floral top with pink embroidery and plain bottom with floral dupatta ",
+    "size": "L",
+    "color": "Green",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0066GR00XL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit floral top with pink embroidery and plain bottom with floral dupatta ",
+    "size": "XL",
+    "color": "Green",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0066GR0XXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit floral top with pink embroidery and plain bottom with floral dupatta ",
+    "size": "XXL",
+    "color": "Green",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0066GRXXXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit floral top with pink embroidery and plain bottom with floral dupatta ",
+    "size": "XXXL",
+    "color": "Green",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0067BK000L",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit floral top with white embroidery and plain bottom with floral dupatta ",
+    "size": "L",
+    "color": "Black",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0067BK00XL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit floral top with black embroidery and plain bottom with floral dupatta ",
+    "size": "XL",
+    "color": "Black",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0067BK0XXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit floral top with white embroidery and plain bottom with floral dupatta ",
+    "size": "XXL",
+    "color": "Black",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
+    "code": "FS0067BKXXXL",
+    "name": "Pakistani Lawn Suit",
+    "sellingPrice": "1299",
+    "spec": "Pakistani lawn suit floral top with white embroidery and plain bottom with floral dupatta ",
+    "size": "XXXL",
+    "color": "Black",
+    "type": "Semi Casual",
+    "tags": "Semi Casual,New Arrivals"
+  },
+  {
     "code": "FS0050PC000S",
     "name": "Authentic Pakistani Lawn Suit",
     "sellingPrice": 2499,
@@ -797,7 +1117,7 @@
     "size": "L",
     "color": "Black",
     "type": "Semi Casual",
-    "tags": "Semi Casual,New Arrivals"
+    "tags": "Semi Casual"
   },
   {
     "code": "FS0032PK000L",
@@ -807,7 +1127,7 @@
     "size": "L",
     "color": "Pink",
     "type": "Semi Casual",
-    "tags": "Semi Casual,New Arrivals"
+    "tags": "Semi Casual"
   },
   {
     "code": "FS0033RD00XL",
@@ -817,7 +1137,7 @@
     "size": "XL",
     "color": "Red",
     "type": "Semi Casual",
-    "tags": "Semi Casual,New Arrivals"
+    "tags": "Semi Casual"
   },
   {
     "code": "FS0034GR000L",
@@ -827,7 +1147,7 @@
     "size": "L",
     "color": "Green",
     "type": "Daily Wear",
-    "tags": "Daily Wear,New Arrivals"
+    "tags": "Daily Wear"
   },
   {
     "code": "FS0034GR00XL",
@@ -837,7 +1157,7 @@
     "size": "XL",
     "color": "Green",
     "type": "Daily Wear",
-    "tags": "Daily Wear,New Arrivals"
+    "tags": "Daily Wear"
   },
   {
     "code": "FS0035BL000L",
@@ -847,7 +1167,7 @@
     "size": "L",
     "color": "Blue",
     "type": "Daily Wear",
-    "tags": "Daily Wear,New Arrivals"
+    "tags": "Daily Wear"
   },
   {
     "code": "FS0035BL00XL",
@@ -857,7 +1177,7 @@
     "size": "XL",
     "color": "Blue",
     "type": "Daily Wear",
-    "tags": "Daily Wear,New Arrivals"
+    "tags": "Daily Wear"
   },
   {
     "code": "FS0035BL0XXL",
@@ -867,7 +1187,7 @@
     "size": "XXL",
     "color": "Blue",
     "type": "Daily Wear",
-    "tags": "Daily Wear,New Arrivals"
+    "tags": "Daily Wear"
   },
   {
     "code": "FS0031BL0XXL",
@@ -877,7 +1197,7 @@
     "size": "XXL",
     "color": "Blue",
     "type": "Semi Casual",
-    "tags": "Semi Casual,New Arrivals"
+    "tags": "Semi Casual"
   },
   {
     "code": "FS0036BL000L",
@@ -887,7 +1207,7 @@
     "size": "L",
     "color": "Blue",
     "type": "Semi Casual",
-    "tags": "Semi Casual,New Arrivals"
+    "tags": "Semi Casual"
   },
   {
     "code": "FS0036BL00XL",
@@ -897,7 +1217,7 @@
     "size": "XL",
     "color": "Blue",
     "type": "Semi Casual",
-    "tags": "Semi Casual,New Arrivals"
+    "tags": "Semi Casual"
   },
   {
     "code": "FS0036BL0XXL",
@@ -907,7 +1227,7 @@
     "size": "XXL",
     "color": "Blue",
     "type": "Semi Casual",
-    "tags": "Semi Casual,New Arrivals"
+    "tags": "Semi Casual"
   },
   {
     "code": "FS0036BLXXXL",
@@ -917,7 +1237,7 @@
     "size": "XXXL",
     "color": "Blue",
     "type": "Semi Casual",
-    "tags": "Semi Casual,New Arrivals"
+    "tags": "Semi Casual"
   },
   {
     "code": "FS0037MR00XL",
@@ -927,7 +1247,7 @@
     "size": "XL",
     "color": "Maroon",
     "type": "Semi Casual",
-    "tags": "Semi Casual,New Arrivals"
+    "tags": "Semi Casual"
   },
   {
     "code": "FS0038BK000L",
@@ -937,7 +1257,7 @@
     "size": "L",
     "color": "Black",
     "type": "Semi Casual",
-    "tags": "Semi Casual,New Arrivals"
+    "tags": "Semi Casual"
   },
   {
     "code": "FS0038BK00XL",
@@ -947,7 +1267,7 @@
     "size": "XL",
     "color": "Black",
     "type": "Semi Casual",
-    "tags": "Semi Casual,New Arrivals"
+    "tags": "Semi Casual"
   },
   {
     "code": "FS0039YL00XL",
@@ -957,7 +1277,7 @@
     "size": "XL",
     "color": "Yellow",
     "type": "Semi Casual",
-    "tags": "Semi Casual,New Arrivals"
+    "tags": "Semi Casual"
   },
   {
     "code": "FS0039YL0XXL",
@@ -967,7 +1287,7 @@
     "size": "XXL",
     "color": "Yellow",
     "type": "Semi Casual",
-    "tags": "Semi Casual,New Arrivals"
+    "tags": "Semi Casual"
   },
   {
     "code": "FS0040PP000L",
@@ -977,7 +1297,7 @@
     "size": "L",
     "color": "Purple",
     "type": "Daily Wear",
-    "tags": "Daily Wear,New Arrivals"
+    "tags": "Daily Wear"
   },
   {
     "code": "FS0040PP00XL",
@@ -987,7 +1307,7 @@
     "size": "XL",
     "color": "Purple",
     "type": "Daily Wear",
-    "tags": "Daily Wear,New Arrivals"
+    "tags": "Daily Wear"
   },
   {
     "code": "FS0040PP0XXL",
@@ -997,7 +1317,7 @@
     "size": "XXL",
     "color": "Purple",
     "type": "Daily Wear",
-    "tags": "Daily Wear,New Arrivals"
+    "tags": "Daily Wear"
   },
   {
     "code": "FS0040PPXXXL",
@@ -1007,7 +1327,7 @@
     "size": "XXXL",
     "color": "Purple",
     "type": "Daily Wear",
-    "tags": "Daily Wear,New Arrivals"
+    "tags": "Daily Wear"
   },
   {
     "code": "FS0041BR000L",
@@ -1017,7 +1337,7 @@
     "size": "L",
     "color": "Brown",
     "type": "Daily Wear",
-    "tags": "Daily Wear,New Arrivals"
+    "tags": "Daily Wear"
   },
   {
     "code": "FS0041BR00XL",
@@ -1027,7 +1347,7 @@
     "size": "XL",
     "color": "Brown",
     "type": "Daily Wear",
-    "tags": "Daily Wear,New Arrivals"
+    "tags": "Daily Wear"
   },
   {
     "code": "FS0041BR0XXL",
@@ -1037,7 +1357,7 @@
     "size": "XXL",
     "color": "Brown",
     "type": "Daily Wear",
-    "tags": "Daily Wear,New Arrivals"
+    "tags": "Daily Wear"
   },
   {
     "code": "FS0041BRXXXL",
@@ -1047,7 +1367,7 @@
     "size": "XXXL",
     "color": "Brown",
     "type": "Daily Wear",
-    "tags": "Daily Wear,New Arrivals"
+    "tags": "Daily Wear"
   },
   {
     "code": "FM0001GR000S",
@@ -2127,7 +2447,7 @@
     "size": "L",
     "color": "Blue",
     "type": "Work & Casuals",
-    "tags": "Work & Casuals,New Arrivals,Short Kurti"
+    "tags": "Work & Casuals,Short Kurti"
   },
   {
     "code": "FS0045BL00XL",
@@ -2137,7 +2457,7 @@
     "size": "XL",
     "color": "Blue",
     "type": "Work & Casuals",
-    "tags": "Work & Casuals,New Arrivals,Short Kurti"
+    "tags": "Work & Casuals,Short Kurti"
   },
   {
     "code": "FS0045BL0XXL",
@@ -2147,7 +2467,7 @@
     "size": "XXL",
     "color": "Blue",
     "type": "Work & Casuals",
-    "tags": "Work & Casuals,New Arrivals,Short Kurti"
+    "tags": "Work & Casuals,Short Kurti"
   },
   {
     "code": "FS0046MR000L",
@@ -2157,7 +2477,7 @@
     "size": "L",
     "color": "Maroon",
     "type": "Work & Casuals",
-    "tags": "Work & Casuals,New Arrivals,Short Kurti"
+    "tags": "Work & Casuals,Short Kurti"
   },
   {
     "code": "FS0046MR00XL",
@@ -2167,7 +2487,7 @@
     "size": "XL",
     "color": "Maroon",
     "type": "Work & Casuals",
-    "tags": "Work & Casuals,New Arrivals,Short Kurti"
+    "tags": "Work & Casuals,Short Kurti"
   },
   {
     "code": "FS0046MR0XXL",
@@ -2177,7 +2497,7 @@
     "size": "XXL",
     "color": "Maroon",
     "type": "Work & Casuals",
-    "tags": "Work & Casuals,New Arrivals,Short Kurti"
+    "tags": "Work & Casuals,Short Kurti"
   },
   {
     "code": "FS0047BL000M",
@@ -2187,7 +2507,7 @@
     "size": "M",
     "color": "Blue",
     "type": "Work & Casuals",
-    "tags": "Work & Casuals,New Arrivals,Short Kurti"
+    "tags": "Work & Casuals,Short Kurti"
   },
   {
     "code": "FS0047BL000L",
@@ -2197,7 +2517,7 @@
     "size": "L",
     "color": "Blue",
     "type": "Work & Casuals",
-    "tags": "Work & Casuals,New Arrivals,Short Kurti"
+    "tags": "Work & Casuals,Short Kurti"
   },
   {
     "code": "FS0048BK000M",
@@ -2207,7 +2527,7 @@
     "size": "M",
     "color": "Black",
     "type": "Work & Casuals",
-    "tags": "Work & Casuals,New Arrivals,Short Kurti"
+    "tags": "Work & Casuals,Short Kurti"
   },
   {
     "code": "FS0048BK000L",
@@ -2217,7 +2537,7 @@
     "size": "L",
     "color": "Black",
     "type": "Work & Casuals",
-    "tags": "Work & Casuals,New Arrivals,Short Kurti"
+    "tags": "Work & Casuals,Short Kurti"
   },
   {
     "code": "FS0048BK0XXL",
@@ -2227,7 +2547,7 @@
     "size": "XXL",
     "color": "Black",
     "type": "Work & Casuals",
-    "tags": "Work & Casuals,New Arrivals,Short Kurti"
+    "tags": "Work & Casuals,Short Kurti"
   },
   {
     "code": "FF0012000060",
