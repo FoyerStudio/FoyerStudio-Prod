@@ -375,7 +375,7 @@ h3 { margin-bottom: 8px; font-size: 16px; }
   <b>Color:</b> <span id="productColor"></span>
 </div>
 
-      <div class="product-spec"><b>Disclaimer:</b> For exact product details, please refer to the original images. All displayed images are for reference.</div>
+      <div class="product-spec"><b>Disclaimer:</b> For exact product details, please refer to the original images. All displayed cover images are AI generated.</div>
       <div id="deliveryDate" class="delivery-date"></div>
       <button id="addCartBtn" class="add-cart-btn" onclick="toggleCart()">Add to Cart</button>
       <button class="add-cart-btn" onclick="backToShopping()">Back</button>
@@ -593,7 +593,7 @@ fbq('track', 'ViewContent', {
 
     function tryLoad() {
         const img = new Image();
-        img.src = `images/products/${product.code}/${imgIndex}.jpg`;
+        img.src = `images/products/${product.code}/${imgIndex}.webp`;
 
         img.onload = () => {
             img.classList.add('carousel-img');

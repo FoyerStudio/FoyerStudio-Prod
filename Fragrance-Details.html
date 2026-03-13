@@ -597,7 +597,7 @@ fbq('track', 'ViewContent', {
 
     function tryLoad() {
         const img = new Image();
-        img.src = `images/products/${product.code}/${imgIndex}.jpg`;
+        img.src = `images/products/${product.code}/${imgIndex}.webp`;
 
         img.onload = () => {
             img.classList.add('carousel-img');

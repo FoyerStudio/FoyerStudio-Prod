@@ -1860,7 +1860,7 @@ const sortedTags = Array.from(fragCatMap.keys()).sort((a, b) => {
       const driveFileId = sampleProd.image1;
       img.src = driveFileId
         ? `https://drive.google.com/uc?export=view&id=${driveFileId}`
-        : `images/products/${sampleProd.code}/1.jpg`;
+        : `images/products/${sampleProd.code}/1.webp`;
 
       const label = document.createElement('div');
       label.className = 'product-name';
@@ -2029,7 +2029,7 @@ const sampleProd = list[Math.floor(Math.random() * list.length)];
       const driveFileId = sampleProd.image1;
       img.src = driveFileId
         ? `https://drive.google.com/uc?export=view&id=${driveFileId}`
-        : `images/products/${sampleProd.code}/1.jpg`;
+        : `images/products/${sampleProd.code}/1.webp`;
       img.alt = tag;
 
       const label = document.createElement('div');
@@ -2175,7 +2175,7 @@ const sampleProd = list[Math.floor(Math.random() * list.length)];
       const driveFileId = sampleProd.image1;
       img.src = driveFileId
         ? `https://drive.google.com/uc?export=view&id=${driveFileId}`
-        : `images/products/${sampleProd.code}/1.jpg`;
+        : `images/products/${sampleProd.code}/1.webp`;
       img.alt = tag;
 
       const label = document.createElement('div');
@@ -2402,7 +2402,7 @@ async function renderProductsToGrid(products, gridEl, context = '', categoryName
     const driveFileId = p.image1;
     img.src = driveFileId
       ? `https://drive.google.com/uc?export=view&id=${driveFileId}`
-      : `images/products/${p.code}/1.jpg`;
+      : `images/products/${p.code}/1.webp`;
     img.alt = p.name || 'Product';
 
     // --- Create cart icon button (bottom-right of image)
@@ -2576,7 +2576,7 @@ async function openSizePopup(product) {
 
     const imgSrc = selectedProduct.image1
     ? `https://drive.google.com/uc?export=view&id=${selectedProduct.image1}`
-    : `images/products/${selectedProduct.code}/1.jpg`;
+    : `images/products/${selectedProduct.code}/1.webp`;
   animateToCart(imgSrc);
 
     // Disable add-to-cart button on the product card
